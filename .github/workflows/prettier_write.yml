@@ -1,0 +1,17 @@
+name: Prettier Write
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repository
+        uses: actions/checkout@v2
+
+      - name: Run Prettier Check
+        run: docker run --rm -v $PWD:/app -w /app prettier/prettier:latest --write .
