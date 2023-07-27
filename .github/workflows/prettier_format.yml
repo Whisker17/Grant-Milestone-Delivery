@@ -3,7 +3,7 @@ name: Prettier Auto-Format
 on:
   push:
     branches:
-      - master
+      - feat/add-prettier-format
 
 jobs:
   prettier:
@@ -16,8 +16,18 @@ jobs:
       - name: Install Prettier
         run: npm install prettier --global
 
-      - name: Display Prettier Version
-        run: prettier --version
+      - name: Format Files
+        run: |
+          prettier --write .
 
-      - name: Run Prettier Auto-Format
-        run: prettier --write .
+      - name: Commit Changes
+        run: |
+          git config --global user.name "Whisker17"
+          git config --global user.email "demiwhisker@gmail.com"
+          git add .
+          git commit -m "Auto-format code with Prettier [skip ci]"
+
+      - name: Push Changes
+        run: |
+          branch_name=${{ github.ref }}
+          git push origin $branch_name

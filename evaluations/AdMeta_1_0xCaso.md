@@ -1,11 +1,14 @@
 # Evaluation
 
 
+
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/AdMeta.md
 - **Milestone:** 1
 - **Kusama Identity:** [HC8pZ53SejB9YALHn2qXea6XMFFNgxpdXhVvtF7uU5dTSqu](https://kusama.subscan.io/account/HC8pZ53SejB9YALHn2qXea6XMFFNgxpdXhVvtF7uU5dTSqu)
 - **Previously successfully merged evaluation:** All by 0xCaso
+
+
 
 | Number | Deliverable | Accepted | Link | Evaluation Notes |
 | ------ | ----------- | -------- | ---- |----------------- |
@@ -22,6 +25,7 @@
 
 ## General Notes v2 - Jan 11, 2023
 
+
 The Testing Guide has been updated, it's findable in the WebApp [README](https://github.com/AdMetaNetwork/admeta-webapp/blob/bb74d090d815bb9af5cfb9314968672bffa54ffa/README.md).
 
 ## General Notes v1 - Jan 9, 2023
@@ -30,6 +34,8 @@ Overall the delivery is really good. The main functionalities work and the UI is
 - I encountered some minor issues with the webapp local setup. In the [PR discussion](https://github.com/w3f/Grant-Milestone-Delivery/pull/667), the devs helped to fix them;
 - The webapp lets you try all the most important functionalities;
 - For now, users can claim rewards without doing any tasks, but the team [stated](https://github.com/w3f/Grant-Milestone-Delivery/pull/667#issuecomment-1375771236) that they plan to make this impossible (users should complete some tasks while watching ads to claim rewards);
+
+
 
 As the main problem was the local testing, I ask the team to slightly improve the WebApp Guide:
 
