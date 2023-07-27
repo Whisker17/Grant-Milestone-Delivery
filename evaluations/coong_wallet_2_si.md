@@ -1,27 +1,24 @@
 # Evaluation Coong Wallet
 
-
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/coong_wallet.md
 - **Milestone:** 2
 - **Kusama Identity:** Ha27MB4gKH36ieRPa1T1ASqhUz4sVxMoVmK7o5CS6tXDqjW
-- **Previously successfully merged evaluation:** 
+- **Previously successfully merged evaluation:**
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>|[Link](https://github.com/CoongCrafts/coong-wallet/blob/w3f-milestone-2/LICENSE)| License is Ok. Please add year and owner on line 189. |
-| 0b.  | Documentation |<ul><li>[x] </li></ul>|[Link](https://github.com/CoongCrafts/coong-wallet/blob/w3f-milestone-2/README.md)|Documentation is extensive.  |
-| 0c. | Testing Guide |<ul><li>[x] </li></ul>|[Link](https://github.com/CoongCrafts/coong-wallet/tree/w3f-milestone-2#how-to-run-tests)| Test run successfully. There are plenty of tests so coverage is fairly high.|
-| 0d.  | Docker |<ul><li>[x] </li></ul>|[Link](https://github.com/CoongCrafts/coong-wallet/blob/w3f-milestone-2/Dockerfile)| Good. Perhaps an improvement could be to add your images to DockerHub.  |
-| 0e. | Article |<ul><li>[ ] </li></ul>| [Link](https://docs.google.com/document/d/1nZUzetDZvLReof3easrRvR5HQSpjags-XShYj55gJEo/edit?usp=sharing)| Your google docs requires persmission to be accessed. Publish your article on Medium or other open platforms. |
-| 1.  | Wallet App |<ul><li>[x] </li></ul>|[Link](https://dapp.coongwallet.io/)| App implements the required features. |
-| 2 | Demo App |<ul><li>[x] </li></ul>|[Link](https://www.youtube.com/watch?v=9fIcAlpx_UI)| Good demo videos that showcase implemented functionality. |
-
-
+| Number | Deliverable   | Accepted               | Link                                                                                                     | Evaluation Notes                                                                                              |
+| ------ | ------------- | ---------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License       | <ul><li>[x] </li></ul> | [Link](https://github.com/CoongCrafts/coong-wallet/blob/w3f-milestone-2/LICENSE)                         | License is Ok. Please add year and owner on line 189.                                                         |
+| 0b.    | Documentation | <ul><li>[x] </li></ul> | [Link](https://github.com/CoongCrafts/coong-wallet/blob/w3f-milestone-2/README.md)                       | Documentation is extensive.                                                                                   |
+| 0c.    | Testing Guide | <ul><li>[x] </li></ul> | [Link](https://github.com/CoongCrafts/coong-wallet/tree/w3f-milestone-2#how-to-run-tests)                | Test run successfully. There are plenty of tests so coverage is fairly high.                                  |
+| 0d.    | Docker        | <ul><li>[x] </li></ul> | [Link](https://github.com/CoongCrafts/coong-wallet/blob/w3f-milestone-2/Dockerfile)                      | Good. Perhaps an improvement could be to add your images to DockerHub.                                        |
+| 0e.    | Article       | <ul><li>[ ] </li></ul> | [Link](https://docs.google.com/document/d/1nZUzetDZvLReof3easrRvR5HQSpjags-XShYj55gJEo/edit?usp=sharing) | Your google docs requires persmission to be accessed. Publish your article on Medium or other open platforms. |
+| 1.     | Wallet App    | <ul><li>[x] </li></ul> | [Link](https://dapp.coongwallet.io/)                                                                     | App implements the required features.                                                                         |
+| 2      | Demo App      | <ul><li>[x] </li></ul> | [Link](https://www.youtube.com/watch?v=9fIcAlpx_UI)                                                      | Good demo videos that showcase implemented functionality.                                                     |
 
 ## General Notes
 
-1. There are some warnings given by Yarn that are usually related to incompatible versions. 
+1. There are some warnings given by Yarn that are usually related to incompatible versions.
 
 ```
 ➤ YN0000: ┌ Resolution step
@@ -41,7 +38,7 @@
 ➤ YN0000: └ Completed
 ```
 
-2. Test are passing successfully. There are some warnings that might require attention. 
+2. Test are passing successfully. There are some warnings that might require attention.
 
 ```
  Test Files  20 passed (20)
@@ -49,10 +46,11 @@
    Start at  18:28:51
    Duration  29.18s (transform 642ms, setup 3.17s, collect 65.35s, tests 91.66s)
 ```
+
 3. Docker image build and run works correctly:
 
 ```
-[+] Building 162.6s (12/12) FINISHED                                                                                                                                                                     
+[+] Building 162.6s (12/12) FINISHED
  => [internal] load build definition from Dockerfile                                                                                                                                                0.0s
  => => transferring dockerfile: 168B                                                                                                                                                                0.0s
  => [internal] load .dockerignore                                                                                                                                                                   0.0s
@@ -90,7 +88,7 @@
  => exporting to image                                                                                                                                                                             12.4s
  => => exporting layers                                                                                                                                                                            12.4s
  => => writing image sha256:33964388f842d35758ec61ddf2f6b08e6a3992cb855a30cc7ddc330d566ae844                                                                                                        0.0s
- => => naming to docker.io/library/coong-wallet 
+ => => naming to docker.io/library/coong-wallet
 ```
 
-4. Creating a separate git branch for the delivery was a good idea to ensure that the functionality can be tested. Nice job! 
+4. Creating a separate git branch for the delivery was a good idea to ensure that the functionality can be tested. Nice job!

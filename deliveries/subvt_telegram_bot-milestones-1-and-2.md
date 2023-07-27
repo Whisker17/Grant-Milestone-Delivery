@@ -2,10 +2,10 @@
 
 **The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform)
 has been filled out correctly for this milestone and the delivery is according to the official
-[milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
+[milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** [link](https://github.com/w3f/Grants-Program/blob/master/applications/subvt-telegram-bot.md)
-* **Milestone Number:** 1 and 2
+- **Application Document:** [link](https://github.com/w3f/Grants-Program/blob/master/applications/subvt-telegram-bot.md)
+- **Milestone Number:** 1 and 2
 
 ## Context
 
@@ -36,7 +36,7 @@ for a complete list of commands notifications.
 as described in [RUN.md](https://github.com/helikon-labs/subvt-backend/blob/main/subvt-telegram-bot/RUN.md).
 
 | Number | Deliverable                       | Link                                                                                                                                 | Notes                                                                                           |
-|--------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| ------ | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
 | 0.     | License                           | [GNU GPL v3.0](https://github.com/helikon-labs/subvt-backend/blob/main/LICENSE)                                                      |                                                                                                 |
 | 1.     | SubVT Kusama Bot                  | [https://t.me/subvt_kusama_bot](https://t.me/subvt_kusama_bot)                                                                       | Live Kusama bot.                                                                                |
 | 2.     | SubVT Polkadot Bot                | [https://t.me/subvt_polkadot_bot](https://t.me/subvt_polkadot_bot)                                                                   | Live Polkadot bot.                                                                              |

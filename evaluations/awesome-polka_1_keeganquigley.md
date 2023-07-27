@@ -5,15 +5,14 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| **0a.** | License | <ul><li>[x] </li></ul> | [MIT](https://github.com/tolgayayci/awesome-polka/blob/dev/LICENSE) | |
-| **0b.** | Documentation | <ul><li>[x] </li></ul> | [Awesome Polka Docs](https://docs.awesomepolka.org/docs/awesome-polka/getting-started) | Ok. |
-| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul> | [Guide](https://docs.awesomepolka.org/docs/technical-details/testing) | Ok. |
-| **0e.** | Article | <ul><li>[x] </li></ul> | [Documentation Includes](https://docs.awesomepolka.org/docs/awesome-polka/getting-started) | Ok. |
-| **1.** | UI & UX Development | <ul><li>[x] </li></ul> | **Home Page:** [Link](https://awesomepolka.org) <br /><br /> **Projects Page:**  [Link](https://awesomepolka.org/projects)</br></br>**Project Detail Page:**  [Link](https://awesomepolka.org/projects/awesome-polka)<br /></br>**Articles Page:**  [Link](https://awesomepolka.org/articles)<br /></br>**Article Detail Page:**  [Link](https://awesomepolka.org/articles/09885b15-3a16-478f-aa2f-d6929d2f05c8)<br /></br>**Ranking Page:** [Link](https://awesomepolka.org/ranking)</br></br> **Learn Page:** [Link](https://awesomepolka.org/learn)</br></br> **UX Improvements & Testing:**  [Link](https://docs.awesomepolka.org/docs/technical-details/testing)| See below.
-| *2.* | Project Owner Dashboard  | <ul><li>[x] </li></ul> | [Dashboard Link](https://awesomepolka.org/dashboard/project) | See below. |
+| Number  | Deliverable               | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Notes      |
+| ------- | ------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **0a.** | License                   | <ul><li>[x] </li></ul> | [MIT](https://github.com/tolgayayci/awesome-polka/blob/dev/LICENSE)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |            |
+| **0b.** | Documentation             | <ul><li>[x] </li></ul> | [Awesome Polka Docs](https://docs.awesomepolka.org/docs/awesome-polka/getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Ok.        |
+| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul> | [Guide](https://docs.awesomepolka.org/docs/technical-details/testing)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Ok.        |
+| **0e.** | Article                   | <ul><li>[x] </li></ul> | [Documentation Includes](https://docs.awesomepolka.org/docs/awesome-polka/getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Ok.        |
+| **1.**  | UI & UX Development       | <ul><li>[x] </li></ul> | **Home Page:** [Link](https://awesomepolka.org) <br /><br /> **Projects Page:** [Link](https://awesomepolka.org/projects)</br></br>**Project Detail Page:** [Link](https://awesomepolka.org/projects/awesome-polka)<br /></br>**Articles Page:** [Link](https://awesomepolka.org/articles)<br /></br>**Article Detail Page:** [Link](https://awesomepolka.org/articles/09885b15-3a16-478f-aa2f-d6929d2f05c8)<br /></br>**Ranking Page:** [Link](https://awesomepolka.org/ranking)</br></br> **Learn Page:** [Link](https://awesomepolka.org/learn)</br></br> **UX Improvements & Testing:** [Link](https://docs.awesomepolka.org/docs/technical-details/testing) | See below. |
+| _2._    | Project Owner Dashboard   | <ul><li>[x] </li></ul> | [Dashboard Link](https://awesomepolka.org/dashboard/project)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | See below. |
 
 # General Notes
 
@@ -31,10 +30,10 @@ Please address issues below:
 
 ![article](https://github.com/w3f/Grant-Milestone-Delivery/assets/35080151/33aebf00-7be6-4517-8df2-8acb098e47bc)
 
-
 ## Tests
 
 8 unit tests pass (validation using Yup)
+
 ```js
 yarn run v1.22.15
 warning ../package.json: No license field
@@ -55,11 +54,13 @@ Time:        1.782 s
 Ran all test suites.
 ✨  Done in 2.92s.
 ```
+
 ## General Notes V2
 
 **UPDATE:** Above issues have been resolved. I can now create article posts and the app store icons have been removed.
 
 **UPDATE:** Unit tests were added for hooks:
+
 ```js
 yarn test
 yarn run v1.22.15
@@ -154,4 +155,3 @@ Tests:       42 passed, 42 total
 Snapshots:   0 total
 Time:        3.469 s
 ```
-

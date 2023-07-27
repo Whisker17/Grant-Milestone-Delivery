@@ -6,16 +6,15 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0b | Inline Documentation |<ul><li>[x] </li></ul>|  |  | 
-| 0c  | Testing Guide |<ul><li>[x] </li></ul>| [fast_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/fast_blockchain/README.md), [heavy_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/heavy_blockchain/README.md)|  |
-| 0d | Docker |<ul><li>[x] </li></ul>| [fast_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/heavy_blockchain/docker-compose.yml), [heavy_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/fast_blockchain/docker-compose.yml)|  | 
-| 0e | Medium Article |<ul><li>[x] </li></ul>| [link](https://medium.com/@viacc/datagen-project-dev-blog-web3-fundation-milestone-1-b3ec2bdb1a95) |
-| 1 | Pallet  |<ul><li>[x] </li></ul>| [random-node-selector](https://github.com/Datagen-Project/Datagen-Substrate-Grant/tree/main/heavy_blockchain/pallets/random_node_selector) | |
-| 2 | Pallet |<ul><li>[x] </li></ul>| [computational-work](https://github.com/Datagen-Project/Datagen-Substrate-Grant/tree/main/fast_blockchain/pallets/computational-work) | |
-| 3 | Pallet |<ul><li>[x] </li></ul>| [check-computational-work](https://github.com/Datagen-Project/Datagen-Substrate-Grant/tree/main/fast_blockchain/pallets/check-node-computational-work) | See doubt in testing guide |
+| Number | Deliverable          | Accepted               | Link                                                                                                                                                                                                                                                     | Evaluation Notes           |
+| ------ | -------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| 0b     | Inline Documentation | <ul><li>[x] </li></ul> |                                                                                                                                                                                                                                                          |                            |
+| 0c     | Testing Guide        | <ul><li>[x] </li></ul> | [fast_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/fast_blockchain/README.md), [heavy_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/heavy_blockchain/README.md)                   |                            |
+| 0d     | Docker               | <ul><li>[x] </li></ul> | [fast_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/heavy_blockchain/docker-compose.yml), [heavy_blockchain](https://github.com/Datagen-Project/Datagen-Substrate-Grant/blob/main/fast_blockchain/docker-compose.yml) |                            |
+| 0e     | Medium Article       | <ul><li>[x] </li></ul> | [link](https://medium.com/@viacc/datagen-project-dev-blog-web3-fundation-milestone-1-b3ec2bdb1a95)                                                                                                                                                       |
+| 1      | Pallet               | <ul><li>[x] </li></ul> | [random-node-selector](https://github.com/Datagen-Project/Datagen-Substrate-Grant/tree/main/heavy_blockchain/pallets/random_node_selector)                                                                                                               |                            |
+| 2      | Pallet               | <ul><li>[x] </li></ul> | [computational-work](https://github.com/Datagen-Project/Datagen-Substrate-Grant/tree/main/fast_blockchain/pallets/computational-work)                                                                                                                    |                            |
+| 3      | Pallet               | <ul><li>[x] </li></ul> | [check-computational-work](https://github.com/Datagen-Project/Datagen-Substrate-Grant/tree/main/fast_blockchain/pallets/check-node-computational-work)                                                                                                   | See doubt in testing guide |
 
 ## General Comments
 
@@ -23,7 +22,7 @@
 
 ### Testing guides
 
-All tests worked now. 
+All tests worked now.
 
 ### Docker
 
@@ -31,7 +30,7 @@ The build and run worked well. However, please notice that is expected that dock
 
 ### Tests coverage
 
-- random_node_selector - lib.rs	99 / 127 (77.95%) (+20.14%) - Good Coverage.
+- random_node_selector - lib.rs 99 / 127 (77.95%) (+20.14%) - Good Coverage.
 
 ### Static Analysis
 
@@ -41,16 +40,14 @@ The alerts remain but they were justified.
 
 The problems were fixed.
 
-
-
-
 ## Evaluation V1
 
 ### Testing guides
 
 fast_blockchain / heavy_blockchain:
-* I was not able to spin up the nodes and run the extrinsic. However, I didn't see the FinalResult event happening. There is something that I need to do to check that?
-* Fixed things in code. There are some fixed behaviors in the code, like fibonacci sequence for work calculation or the nodes (or the number of nodes) in the heavy blockchain. Is this intentional? Will be removed/made flexible in some milestone?
+
+- I was not able to spin up the nodes and run the extrinsic. However, I didn't see the FinalResult event happening. There is something that I need to do to check that?
+- Fixed things in code. There are some fixed behaviors in the code, like fibonacci sequence for work calculation or the nodes (or the number of nodes) in the heavy blockchain. Is this intentional? Will be removed/made flexible in some milestone?
 
 ### Docker
 
@@ -88,7 +85,7 @@ node-template1 |   make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/protoc.dir
 node-template1 |   make: *** [Makefile:130: all] Error 2
 node-template1 |   thread 'main' panicked at '
 node-template1 |   command did not execute successfully, got: exit status: 2
-node-template1 | 
+node-template1 |
 node-template1 |   build script failed, must exit now', /var/www/node-template/.cargo/registry/src/github.com-1ecc6299db9ec823/cmake-0.1.48/src/lib.rs:975:5
 node-template1 |   stack backtrace:
 node-template1 |      0: rust_begin_unwind
@@ -111,12 +108,11 @@ node-template1 exited with code 101
 
 ```
 
-
 ### Test coverage
 
-- random_node_selector - lib.rs	74 / 128 (57.81%) - some full methods not covered.
+- random_node_selector - lib.rs 74 / 128 (57.81%) - some full methods not covered.
 
-- check_node_computational_work - lib.rs	93 / 103 (90.29%) - good coverage.
+- check_node_computational_work - lib.rs 93 / 103 (90.29%) - good coverage.
 
 - computational_work - lib.rs - 61 / 67 (91.04%) - good coverage.
 
@@ -234,10 +230,9 @@ warning: `node-template` (bin "node-template") generated 7 warnings (2 duplicate
 ### Code Documentation
 
 - heavy_blockchain good code documentation.
-- fast_blockchain 
+- fast_blockchain
 
-This error was presented during the generation of the docs: 
-
+This error was presented during the generation of the docs:
 
 ```
  --> pallets/computational-work/src/lib.rs:105:3
@@ -248,7 +243,7 @@ This error was presented during the generation of the docs:
     |
     = note: `#[warn(rustdoc::broken_intra_doc_links)]` on by default
     = note: the link appears in this line:
-            
+
             [x_block]
              ^^^^^^^
     = note: no item named `x_block` in scope
@@ -260,6 +255,3 @@ warning: `pallet-computational-work` (lib doc) generated 1 warning
 ```
 
 Some documentation comments with // instead of ///.
-
-
-

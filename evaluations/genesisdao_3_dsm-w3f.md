@@ -6,20 +6,20 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | Licence |<ul><li>[x] </li></ul>| n/a |  | 
-| 0b. | Documentation |<ul><li>[x] </li></ul>| n/a |  | 
-| 0c. | Testing and Testing Guide |<ul><li>[x] </li></ul>|  |
-| 0d. | Docker |<ul><li>[x] </li></ul>| [node Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/Dockerfile), [frontend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/Dockerfile), [backend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-service/blob/main/Dockerfile) |  |
-| 0e. | Article |<ul><li>[x] </li></ul>| [Link](https://docs.google.com/document/d/1c3B9iyoHE7cP5a5qYwa-A_0Vy5zo1uAo-S1vcZ5h_B4/edit#heading=h.obore8uev3ox) |  |
-| 1. | Substrate module: pallet_dao_vote |<ul><li>[x] </li></ul>| [Link](https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-votes) |  |
-| 2. | Frontend Implementation	|<ul><li>[x] </li></ul>| [Website](https://genesis-dao.org). [Repo](https://github.com/deep-ink-ventures/genesis-dao-frontend) |  |
-| 3. | Product Touches |<ul><li>[x] </li></ul>| n/a |  |
+| Number | Deliverable                       | Accepted               | Link                                                                                                                                                                                                                                                                                                      | Evaluation Notes |
+| ------ | --------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | Licence                           | <ul><li>[x] </li></ul> | n/a                                                                                                                                                                                                                                                                                                       |                  |
+| 0b.    | Documentation                     | <ul><li>[x] </li></ul> | n/a                                                                                                                                                                                                                                                                                                       |                  |
+| 0c.    | Testing and Testing Guide         | <ul><li>[x] </li></ul> |                                                                                                                                                                                                                                                                                                           |
+| 0d.    | Docker                            | <ul><li>[x] </li></ul> | [node Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/Dockerfile), [frontend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/Dockerfile), [backend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-service/blob/main/Dockerfile) |                  |
+| 0e.    | Article                           | <ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1c3B9iyoHE7cP5a5qYwa-A_0Vy5zo1uAo-S1vcZ5h_B4/edit#heading=h.obore8uev3ox)                                                                                                                                                                                       |                  |
+| 1.     | Substrate module: pallet_dao_vote | <ul><li>[x] </li></ul> | [Link](https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-votes)                                                                                                                                                                                                                 |                  |
+| 2.     | Frontend Implementation           | <ul><li>[x] </li></ul> | [Website](https://genesis-dao.org). [Repo](https://github.com/deep-ink-ventures/genesis-dao-frontend)                                                                                                                                                                                                     |                  |
+| 3.     | Product Touches                   | <ul><li>[x] </li></ul> | n/a                                                                                                                                                                                                                                                                                                       |                  |
 
-## Evaluation V6 
+## Evaluation V6
 
-The problem reported in Evaluation V5 was fixed. But I have a similar problem from Evaluation V4.  Probably is a small problem in the frontend of the application, and this do not prevent the acceptions of the milestone since it is mostly working. I recorded the problem to help to fix it.
+The problem reported in Evaluation V5 was fixed. But I have a similar problem from Evaluation V4. Probably is a small problem in the frontend of the application, and this do not prevent the acceptions of the milestone since it is mostly working. I recorded the problem to help to fix it.
 
 In this video, I show the creation of the DAO with 1,000,000 tokens, the pop-up error, and the frontend didn't update the voting count, but the voting is registered in the pokadot.js.
 
@@ -27,10 +27,7 @@ https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/266c7475-801d-4
 
 In this other video, I show the application working fine when I created the DAO with 100,000 tokens.
 
-
 https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/67d1a362-9f9a-4665-8c77-30b46ef06f2f
-
-
 
 ## Evaluation V5
 
@@ -38,11 +35,9 @@ I ran the docker to set up all components. I was creating the DAO like before, a
 
 ![pasted image 0 (5)](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/4fd6b17a-d1ce-4b21-955f-49d44d195f0c)
 
-
 I checked the console and viewed this error.
 
 ![pasted image 0 (6)](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/38a1eeb1-a8f7-4a4e-8043-93ced6786878)
-
 
 I checked this using Firefox and Chrome. This error prevented me to continue the evaluation.
 
@@ -61,7 +56,6 @@ I created a proposal but when I voted the vote count didn't update with the vote
 When I reloaded the page no proposal was listed. I tried to create another one but the interface didn't list the new proposal.
 
 ![image (21)](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/14166868-c8dd-4e61-a8f2-18715f792486)
-
 
 I created another DAO with 100,000 tokens the application worked fine. I was able to approve the proposal and mark it as implemented but the interface didn't appear with any information saying the proposal was implemented. Would be nice if the frontend have this information.
 
@@ -217,7 +211,7 @@ error: test failed, to rerun pass `--test test_dao_lifecycle`
 
 Could you provide a manual testing guide that shows the usage of the new features?
 
-I tested the software even without this manual. I could create a DAO, a proposal and vote for this proposal. Do I need to wait until the end of the timer to close the proposal? How do I report the proposal using the frontend? Can I change the proposal duration and cust using the frontend? When I tried to use some commands, for example, `faultProposal` from votes in substrate using the account that created the DAO, I received the  "vote.SenderIsNotDaoOwner" error.
+I tested the software even without this manual. I could create a DAO, a proposal and vote for this proposal. Do I need to wait until the end of the timer to close the proposal? How do I report the proposal using the frontend? Can I change the proposal duration and cust using the frontend? When I tried to use some commands, for example, `faultProposal` from votes in substrate using the account that created the DAO, I received the "vote.SenderIsNotDaoOwner" error.
 
 ### Code Quality
 
@@ -231,7 +225,7 @@ info  - Loaded env from /home/user/Documents/genesisdao/genesis-dao-frontend/.en
 ✔ No ESLint warnings or errors
 Done in 2.42s.
 ```
- 
+
 I ran `cargo tarpaulin` to check the coverage of the pallet dao-votes, the coverage could be improved, but it isn't mandatory.
 
 ```

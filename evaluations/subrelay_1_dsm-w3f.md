@@ -6,17 +6,17 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>| https://github.com/subrelay/subrelay-api/blob/main/LICENSE https://github.com/subrelay/interface/blob/main/LICENSE | | 
-| 0b.  | Documentation |<ul><li>[x] </li></ul>| https://github.com/subrelay/interface#readme https://github.com/subrelay/subrelay-api#readme  https://api.subrelay.xyz/api |  | 
-| 0c. | Docker file |<ul><li>[x] </li></ul>| https://github.com/subrelay/subrelay-api#self-hosting |  | 
-| 1.  | Feature: Authentication by PolkadotJs wallet |<ul><li>[x] </li></ul>| https://app.subrelay.xyz/#/welcome |  |
-| 2.  | Feature: Create a new workflow |<ul><li>[x] </li></ul>| https://app.subrelay.xyz/#/editor/new-flow/trigger |  | 
-| 3.  | Feature: List of workflows |<ul><li>[x] </li></ul>| https://app.subrelay.xyz/#/home/workflows |  | 
-| 4.  | Feature: Executions of workflows |<ul><li>[x] </li></ul>| https://app.subrelay.xyz/#/home/history |  | 
-| 5.  | API |<ul><li>[x] </li></ul>| https://api.subrelay.xyz/api |  | 
-| 6.  | Integration |<ul><li>[x] </li></ul>| https://app.subrelay.xyz |  | 
+| Number | Deliverable                                  | Accepted               | Link                                                                                                                      | Evaluation Notes |
+| ------ | -------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                                      | <ul><li>[x] </li></ul> | https://github.com/subrelay/subrelay-api/blob/main/LICENSE https://github.com/subrelay/interface/blob/main/LICENSE        |                  |
+| 0b.    | Documentation                                | <ul><li>[x] </li></ul> | https://github.com/subrelay/interface#readme https://github.com/subrelay/subrelay-api#readme https://api.subrelay.xyz/api |                  |
+| 0c.    | Docker file                                  | <ul><li>[x] </li></ul> | https://github.com/subrelay/subrelay-api#self-hosting                                                                     |                  |
+| 1.     | Feature: Authentication by PolkadotJs wallet | <ul><li>[x] </li></ul> | https://app.subrelay.xyz/#/welcome                                                                                        |                  |
+| 2.     | Feature: Create a new workflow               | <ul><li>[x] </li></ul> | https://app.subrelay.xyz/#/editor/new-flow/trigger                                                                        |                  |
+| 3.     | Feature: List of workflows                   | <ul><li>[x] </li></ul> | https://app.subrelay.xyz/#/home/workflows                                                                                 |                  |
+| 4.     | Feature: Executions of workflows             | <ul><li>[x] </li></ul> | https://app.subrelay.xyz/#/home/history                                                                                   |                  |
+| 5.     | API                                          | <ul><li>[x] </li></ul> | https://api.subrelay.xyz/api                                                                                              |                  |
+| 6.     | Integration                                  | <ul><li>[x] </li></ul> | https://app.subrelay.xyz                                                                                                  |                  |
 
 ## Evaluation V4
 
@@ -32,14 +32,11 @@ I was able to run the system locally and it worked well. However, I need to perf
 4. On the API project, change the DB_HOST .env variable back to 'postgres'.
 5. Use the system.
 
-
-
 ## Evaluation V2
 
 ### Documentation
 
 A quick start guide was provided. However, it is not enough to run the system properly. See the problems below.
-
 
 Docker compose is still failing to start some services. The api and event service is restarting due to the lack of some dist files. See the traces below:
 
@@ -53,24 +50,27 @@ e2035ae2771f   subrelay-event-service   "docker-entrypoint.s…"   16 minutes ag
 4643bf06c5f8   redis                    "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes                   6379/tcp                                         subrelay-api_redis_1
 
 ```
+
 Inspecting the logs of the api service:
+
 ```
 docker logs subrelay-api_api_1
 node:internal/modules/cjs/loader:1050
   throw err;
-  ^                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                             
-Error: Cannot find module '/app/dist/main'                                                                                                                                                                                                                   
-    at Module._resolveFilename (node:internal/modules/cjs/loader:1047:15)                                                                                                                                                                                    
-    at Module._load (node:internal/modules/cjs/loader:893:27)                                                                                                                                                                                                
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)                                                                                                                                                                    
-    at node:internal/main/run_main_module:23:47 {                                                                                                                                                                                                            
+  ^
+
+Error: Cannot find module '/app/dist/main'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1047:15)
+    at Module._load (node:internal/modules/cjs/loader:893:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
   code: 'MODULE_NOT_FOUND',
   requireStack: []
 }
 
 Node.js v18.14.0
 ```
+
 Inspecting the logs of the event service. In this case seem that the database tables are not created only with the quickstart instructions.
 
 ```
@@ -117,12 +117,12 @@ error: relation "workflow_version" does not exist
 ```
 
 ### Code Quality
+
 The problems reported by EsLint have been fixed.
 
 ### System Test
 
 It seems that the history is now working (testes with the on-line app). We will test again when all parts are available for testing locally.
-
 
 ## Evaluation V1
 
@@ -134,11 +134,10 @@ Please provide a testing guide for the application with examples and expected re
 
 We tried the interface locally but using an external API. We notice that when a workflow is created and executed the events don't appear in history.
 
-
-*Workflow*
+_Workflow_
 ![image (5)](https://user-images.githubusercontent.com/112647953/218554654-60b4b6e8-2aa4-4432-869c-cbd31b637d76.png)
 
-*History*
+_History_
 
 ![image (6)](https://user-images.githubusercontent.com/112647953/218554719-6028d51d-4bc3-4616-83e8-b09c93ff7ba0.png)
 
@@ -207,7 +206,6 @@ Found 4 error(s).
 
 I ran `docker-compose up -d --build` and got the same error as before to start the services:
 
-
 ```
 user@localhost:~/Documents/Subrelay/subrelay-api$ docker-compose up -d --build
 Building api
@@ -260,7 +258,6 @@ ERROR: Service 'api' failed to build: The command '/bin/sh -c npm run build' ret
 ```
 
 To test the subrelay-API, I need a testing Guide with examples to follow.
-
 
 ### Code Quality
 

@@ -6,9 +6,9 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** All by takahser
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 1.     | State of the Stablecoin Industry | <ul><li>[x] </li></ul> | [Presentation](https://github.com/adit313/State-of-the-Stablecoin-Industry/blob/79e38f0adc7fa8896948673d2ee7e043000f0d4a/State%20of%20the%20Industry.pdf) | Presentation |
+| Number | Deliverable                      | Accepted               | Link                                                                                                                                                      | Evaluation Notes |
+| ------ | -------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 1.     | State of the Stablecoin Industry | <ul><li>[x] </li></ul> | [Presentation](https://github.com/adit313/State-of-the-Stablecoin-Industry/blob/79e38f0adc7fa8896948673d2ee7e043000f0d4a/State%20of%20the%20Industry.pdf) | Presentation     |
 
 Ideally all links inside the above table should include the commit hash,
 which was used for testing the delivery. It should also be checked if the software is published under the correct open-source license.

@@ -1,4 +1,3 @@
-
 # Evaluation
 
 - **Status:** In Progress
@@ -7,19 +6,19 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>|https://github.com/Zkvers/substrate-zk/blob/master/LICENSE| | 
-| 0b. | Documentation | <ul><li>[ ] </li></ul>| https://github.com/Zkvers/substrate-zk/blob/master/zk-tutorials/proof-system/groth16/theory_to_practice.md| Not fully evaluated yet  | 
-| 0c. | Testing Guide |<ul><li>[x] </li></ul>| https://github.com/Zkvers/substrate-zk/|  |
-| 0d.  |Docker |<ul><li>[x] </li></ul>| https://github.com/Zkvers/substrate-zk/blob/master/docker-compose.yml| Works but could be improved |
-| 1.  |make groth16 compatible with substrate |<ul><li>[x] </li></ul>| https://github.com/Zkvers/substrate-zk/tree/master/bellman-verifier|  |
-| 2.  |adapt snarkjs and bellman |<ul><li>[x] </li></ul>| https://github.com/Zkvers/snarkjs-bellman-adapter/tree/main|  |
-| 3.  |ZKP education |<ul><li>[ ] </li></ul>| https://github.com/Zkvers/substrate-zk/tree/master/zk-tutorials| Not fully evaluated yet |
+| Number | Deliverable                            | Accepted               | Link                                                                                                       | Evaluation Notes            |
+| ------ | -------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------- |
+| 0a.    | License                                | <ul><li>[x] </li></ul> | https://github.com/Zkvers/substrate-zk/blob/master/LICENSE                                                 |                             |
+| 0b.    | Documentation                          | <ul><li>[ ] </li></ul> | https://github.com/Zkvers/substrate-zk/blob/master/zk-tutorials/proof-system/groth16/theory_to_practice.md | Not fully evaluated yet     |
+| 0c.    | Testing Guide                          | <ul><li>[x] </li></ul> | https://github.com/Zkvers/substrate-zk/                                                                    |                             |
+| 0d.    | Docker                                 | <ul><li>[x] </li></ul> | https://github.com/Zkvers/substrate-zk/blob/master/docker-compose.yml                                      | Works but could be improved |
+| 1.     | make groth16 compatible with substrate | <ul><li>[x] </li></ul> | https://github.com/Zkvers/substrate-zk/tree/master/bellman-verifier                                        |                             |
+| 2.     | adapt snarkjs and bellman              | <ul><li>[x] </li></ul> | https://github.com/Zkvers/snarkjs-bellman-adapter/tree/main                                                |                             |
+| 3.     | ZKP education                          | <ul><li>[ ] </li></ul> | https://github.com/Zkvers/substrate-zk/tree/master/zk-tutorials                                            | Not fully evaluated yet     |
 
 ## Evaluation V3
 
-### Docker 
+### Docker
 
 Now Docker works without problems, but it created the folder `target` needing permission to use, and it only installs rust and starts the substrate. I still need to install other things like the circom compiler and snarkjs. Would be nice if the Docker provided a container with all requirements installed.
 
@@ -85,21 +84,21 @@ I tried to run the docker in the substrate and got this error:
 ```
 user@localhost:~/Documents/zkverse/substrate-zk$ docker compose up
 [+] Running 7/7
- ✔ dev 6 layers [⣿⣿⣿⣿⣿⣿]      0B/0B      Pulled                                                                                                                                                              31.7s 
-   ✔ d121f8d1c412 Pull complete                                                                                                                                                                               2.0s 
-   ✔ 1b985895e9b7 Pull complete                                                                                                                                                                               2.0s 
-   ✔ 809a473c961b Pull complete                                                                                                                                                                               2.1s 
-   ✔ 89f7c794c3df Pull complete                                                                                                                                                                               2.2s 
-   ✔ ea120af1c111 Pull complete                                                                                                                                                                              21.1s 
-   ✔ de2c35bb8bf1 Pull complete                                                                                                                                                                              28.9s 
+ ✔ dev 6 layers [⣿⣿⣿⣿⣿⣿]      0B/0B      Pulled                                                                                                                                                              31.7s
+   ✔ d121f8d1c412 Pull complete                                                                                                                                                                               2.0s
+   ✔ 1b985895e9b7 Pull complete                                                                                                                                                                               2.0s
+   ✔ 809a473c961b Pull complete                                                                                                                                                                               2.1s
+   ✔ 89f7c794c3df Pull complete                                                                                                                                                                               2.2s
+   ✔ ea120af1c111 Pull complete                                                                                                                                                                              21.1s
+   ✔ de2c35bb8bf1 Pull complete                                                                                                                                                                              28.9s
 [+] Running 1/1
- ✔ Container node-template  Created                                                                                                                                                                           5.2s 
+ ✔ Container node-template  Created                                                                                                                                                                           5.2s
 Attaching to node-template
 node-template  | error: failed to parse manifest at `/var/www/node-template/node/Cargo.toml`
-node-template  | 
+node-template  |
 node-template  | Caused by:
 node-template  |   failed to parse the `edition` key
-node-template  | 
+node-template  |
 node-template  | Caused by:
 node-template  |   this version of Cargo is older than the `2021` edition, and only supports `2015` and `2018` editions.
 node-template exited with code 101
@@ -107,8 +106,8 @@ node-template exited with code 101
 
 ### Code Quality
 
-
 I ran `cargo clippy` and got some warnings, for example:
+
 ```
 warning: redundant clone
    --> node/src/benchmarking.rs:166:40

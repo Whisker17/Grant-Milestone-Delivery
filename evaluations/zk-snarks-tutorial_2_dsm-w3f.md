@@ -6,19 +6,19 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** [M1](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/zk-snarks-tutorial_1_dsm-w3f.md)
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| **0a.** | License | <ul><li>[x] </li></ul>|  MIT  | |
-| **0b.** | Documentation | <ul><li>[x] </li></ul>|Documentation can be found in the [README](https://github.com/bright/zk-snarks-with-substrate/tree/main/pallets/zk-snarks/README.md) file. |  | 
-| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul>| [Repository](https://github.com/bright/zk-snarks-with-substrate/) |  |
-| **0d.** | Docker | <ul><li>[x] </li></ul>| [Repository](https://github.com/bright/zk-snarks-with-substrate/) | 
-| 1. | Research notes | <ul><li>[x] </li></ul>| Notes can be found in the [QAP_NOTES](https://github.com/bright/zk-snarks-with-substrate/blob/main/notes/qap_notes.pdf) file. |  | 
-| 2. | Groth16  proof verification method | <ul><li>[x] </li></ul>| Code for Groth16 proof verification can be found in the [verify.rs](https://github.com/bright/zk-snarks-with-substrate/tree/main/pallets/zk-snarks/src/verify.rs) file.|  |
-| 3. | Demo | <ul><li>[x] </li></ul>| Demo part is done in our cycle of articles, but the details commands which should be run can be found in the [README](https://github.com/bright/zk-snarks-with-substrate/tree/main/circom/README.md) file.| | 
-| 4. | Circuits in circom | <ul><li>[x] </li></ul>| Circuit template is in the [task.circom](https://github.com/bright/zk-snarks-with-substrate/tree/main/circom/task.circom) file.| | 
-| 5. | Blog post: Tutorial Groth16 (Part 1) | <ul><li>[x] </li></ul>|   Blog post is in the [groth16.md](https://github.com/bright/zk-snarks-with-substrate/tree/main/blog/groth16.md) file.|  |
-| 6. | Blog post: Tutorial Pallet (Part 2) | <ul><li>[x] </li></ul>| Blog post is in the [zk-snark-pallet.md](https://github.com/bright/zk-snarks-with-substrate/tree/main/blog/zk-snark-pallet.md) file.|  | 
-| 7. | Youtube video | <ul><li>[x] </li></ul>| Video is in the [zk-snarks.mp4](https://github.com/bright/zk-snarks-with-substrate/tree/main/video/zk-snarks.mp4) file.| | 
+| Number  | Deliverable                          | Accepted               | Link                                                                                                                                                                                                       | Evaluation Notes |
+| ------- | ------------------------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **0a.** | License                              | <ul><li>[x] </li></ul> | MIT                                                                                                                                                                                                        |                  |
+| **0b.** | Documentation                        | <ul><li>[x] </li></ul> | Documentation can be found in the [README](https://github.com/bright/zk-snarks-with-substrate/tree/main/pallets/zk-snarks/README.md) file.                                                                 |                  |
+| **0c.** | Testing and Testing Guide            | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/zk-snarks-with-substrate/)                                                                                                                                          |                  |
+| **0d.** | Docker                               | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/zk-snarks-with-substrate/)                                                                                                                                          |
+| 1.      | Research notes                       | <ul><li>[x] </li></ul> | Notes can be found in the [QAP_NOTES](https://github.com/bright/zk-snarks-with-substrate/blob/main/notes/qap_notes.pdf) file.                                                                              |                  |
+| 2.      | Groth16 proof verification method    | <ul><li>[x] </li></ul> | Code for Groth16 proof verification can be found in the [verify.rs](https://github.com/bright/zk-snarks-with-substrate/tree/main/pallets/zk-snarks/src/verify.rs) file.                                    |                  |
+| 3.      | Demo                                 | <ul><li>[x] </li></ul> | Demo part is done in our cycle of articles, but the details commands which should be run can be found in the [README](https://github.com/bright/zk-snarks-with-substrate/tree/main/circom/README.md) file. |                  |
+| 4.      | Circuits in circom                   | <ul><li>[x] </li></ul> | Circuit template is in the [task.circom](https://github.com/bright/zk-snarks-with-substrate/tree/main/circom/task.circom) file.                                                                            |                  |
+| 5.      | Blog post: Tutorial Groth16 (Part 1) | <ul><li>[x] </li></ul> | Blog post is in the [groth16.md](https://github.com/bright/zk-snarks-with-substrate/tree/main/blog/groth16.md) file.                                                                                       |                  |
+| 6.      | Blog post: Tutorial Pallet (Part 2)  | <ul><li>[x] </li></ul> | Blog post is in the [zk-snark-pallet.md](https://github.com/bright/zk-snarks-with-substrate/tree/main/blog/zk-snark-pallet.md) file.                                                                       |                  |
+| 7.      | Youtube video                        | <ul><li>[x] </li></ul> | Video is in the [zk-snarks.mp4](https://github.com/bright/zk-snarks-with-substrate/tree/main/video/zk-snarks.mp4) file.                                                                                    |                  |
 
 ## Evaluation V2
 
@@ -34,7 +34,6 @@ Some of the formulas in the tutorial are not rendering. Could you please assist 
 
 ![image](https://user-images.githubusercontent.com/112647953/217236118-f260accd-c78c-468a-94d2-208e9d61208c.png)
 
-
 ### System Test
 
 The application works fine following the Groth16, Pallet, and Youtube video Tutorials.
@@ -43,7 +42,7 @@ The application works fine following the Groth16, Pallet, and Youtube video Tuto
 
 All unit tests are passing and the coverage is good:
 
-Coverage: pallets	531 / 567 (93.65%).
+Coverage: pallets 531 / 567 (93.65%).
 
 ```
 user@localhost:~/Documents/zk-snarks-with-substrate$ cargo test

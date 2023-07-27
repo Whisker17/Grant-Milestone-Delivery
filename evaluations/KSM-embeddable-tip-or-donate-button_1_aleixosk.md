@@ -1,16 +1,15 @@
 # Evaluation
 
+- **Status:** Accepted
+- **PR Link:** [https://github.com/w3f/Open-Grants-Program/pull/64](https://github.com/w3f/Open-Grants-Program/pull/64)
+- **Milestone:** 1
+- **Kusama Identity:** [EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw](https://polkascan.io/kusama/account/EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw)
+- **Previously successfully merged evaluation:** none
 
-* **Status:** Accepted
-* **PR Link:** [https://github.com/w3f/Open-Grants-Program/pull/64](https://github.com/w3f/Open-Grants-Program/pull/64)
-* **Milestone:** 1
-* **Kusama Identity:** [EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw](https://polkascan.io/kusama/account/EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw)
-* **Previously successfully merged evaluation:** none
-
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 1. | Embedded code | <ul><li>[x] </li></ul> |?| No URL parsing as proposed is done as far as I can tell |
-| 2. | Connecting to PolkadotJS extension | <ul><li>[x] </li></ul> |[Connect.svelte](https://github.com/Shard-Labs/kusama-tips-widget/blob/e2e1629ba77449c4141d5a7c1374cbd3874ba623/src/components/modals/Connect.svelte)| Works like a charm, see UX suggestion below |
+| Number | Deliverable                        | Accepted               | Link                                                                                                                                                  | Evaluation Notes                                        |
+| ------ | ---------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1.     | Embedded code                      | <ul><li>[x] </li></ul> | ?                                                                                                                                                     | No URL parsing as proposed is done as far as I can tell |
+| 2.     | Connecting to PolkadotJS extension | <ul><li>[x] </li></ul> | [Connect.svelte](https://github.com/Shard-Labs/kusama-tips-widget/blob/e2e1629ba77449c4141d5a7c1374cbd3874ba623/src/components/modals/Connect.svelte) | Works like a charm, see UX suggestion below             |
 
 ## General Notes
 

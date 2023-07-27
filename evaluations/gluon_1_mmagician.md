@@ -1,17 +1,18 @@
 # Evaluation
 
 - **Status:** Accepted
-- **PR Link:** https://github.com/w3f/Open-Grants-Program/pull/182 
+- **PR Link:** https://github.com/w3f/Open-Grants-Program/pull/182
 - **Milestone:** 1
+
 * **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
 * **Previously successfully merged evaluation:** All by mmagician
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0 | Gluon Website and Web Portal Framework | <ul><li>[x] </li></ul> | [web portal](http://www.gluonwallet.com website), [repo](https://github.com/tearust/gluon-website) | |
-| 1 | Milestone1 feature list and test instruction | <ul><li>[x] </li></ul> | [Tutorial](https://github.com/tearust/gluon-app/blob/milestone1/readme.md) | |
-| 2 | Test docker-compose | <ul><li>[x] </li></ul> | [docker-compose.yml](https://github.com/tearust/gluon-app/blob/main/docker-compose.yml) | |
-| 3 | Source code on GitHub | <ul><li>[x] </li></ul> | [gluon-app](https://github.com/tearust/gluon-app/tree/milestone1), [gluon-pallet](https://github.com/tearust/gluon-pallet/tree/milestone-1), [node](https://github.com/tearust/tea-layer1/tree/milestone-1) | |
+| Number | Deliverable                                  | Accepted               | Link                                                                                                                                                                                                        | Evaluation Notes |
+| ------ | -------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0      | Gluon Website and Web Portal Framework       | <ul><li>[x] </li></ul> | [web portal](http://www.gluonwallet.com website), [repo](https://github.com/tearust/gluon-website)                                                                                                          |                  |
+| 1      | Milestone1 feature list and test instruction | <ul><li>[x] </li></ul> | [Tutorial](https://github.com/tearust/gluon-app/blob/milestone1/readme.md)                                                                                                                                  |                  |
+| 2      | Test docker-compose                          | <ul><li>[x] </li></ul> | [docker-compose.yml](https://github.com/tearust/gluon-app/blob/main/docker-compose.yml)                                                                                                                     |                  |
+| 3      | Source code on GitHub                        | <ul><li>[x] </li></ul> | [gluon-app](https://github.com/tearust/gluon-app/tree/milestone1), [gluon-pallet](https://github.com/tearust/gluon-pallet/tree/milestone-1), [node](https://github.com/tearust/tea-layer1/tree/milestone-1) |                  |
 
 ## General Notes
 
@@ -34,4 +35,3 @@ The codebase looks solid. The design choice for having two maps for BrowserAppPa
 ### Communication
 
 Very responsive developer: updated the docs and provided fixes rather quickly.
-

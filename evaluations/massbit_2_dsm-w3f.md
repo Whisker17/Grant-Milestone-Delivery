@@ -6,19 +6,17 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** [M1](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/massbit_1_takahser.md)
 
-
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0.a    | License                                                                           | <ul><li>[x] </li></ul> | [Massbit Chain - Apache 2.0 ](https://github.com/massbitprotocol/massbitchain/blob/main/LICENSE)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       |
-| 0.b    | Documentation                                                                     | <ul><li>[x] </li></ul> | [Massbit Components](https://docs.massbit.io/massbit-route-mbr/components), [Massbit Architecture](https://docs.massbit.io/massbit-route-mbr/architecture)                                                                                                                                                                                                                                                                                                                                                                                                                                                   |       |
-| 0.c    | Testing Guide                                                                     | <ul><li>[x] </li></ul> | [Testing Massbit Route on Docker environment and Unit Test](https://github.com/massbitprotocol/w3f-testing-guide/tree/w3f-milestone-2)<br /> [Testing Massbit Route on Testnet](https://docs.massbit.io/massbit-route-mbr/guides)                                                                                                                                                                                                                                                                                                                                                                                                   | Execution propblems      |
-| 0.d    | Docker release                                                                    | <ul><li>[x] </li></ul> | The following images for the Milestone 2 components have been published on Docker hub: <br /> - **Web Portal image:** massbit/massbitroute_web:w3f-milestone-2 <br />- **Fisherman image:** massbit/massbitroute_fisherman:w3f-milestone-2  <br />- **Massbit Chain image:** massbit/massbitroute_chain:w3f-milestone-2-submit  <br />- **Massbit Core image:** massbit/massbitroute_api:v0.1.15 <br />- **Gateway Manager image:** massbit/massbitroute_gwman:v0.1.8  <br />- **Massbit Node image:** massbit/massbitroute_node:v0.1.8 <br />- **Massbit Gateway image:** massbit/massbitroute_gateway:v0.1.11 <br />- **Massbit Stat image:** massbit/massbitroute_stat:v0.1.0 <br />- **Massbit Session image:** massbit/massbitroute_session:v0.1.0|       |  |  |
-| 0.e    | Article                                                                           | <ul><li>[x] </li></ul> | [Article for Community on running Massbit Node/Gateway](https://blog.massbit.io/launching-mbr-testnet-phase-ii-staking-with-rewards-2/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       |
-| 1.     | Fisherman Pallet - offchain worker (Lua)                                                 | <ul><li>[x] </li></ul> | [Offchain worker Git](https://github.com/massbitprotocol/massbitchain/tree/wf-grant/pallets/fisherman)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |       |
-| 2.     | Session Manager (Rust)	(C)                                                | <ul><li>[x] </li></ul> | [Session Manager Git](https://github.com/massbitprotocol/massbitroute_session/releases/tag/v0.1.0)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       |
-| 3.     | Node Provider staking Pallet - Provider incentive pot                                      | <ul><li>[x] </li></ul> | [Staking Pallet Git](https://github.com/massbitprotocol/massbitchain/tree/wf-grant/pallets/dapi-staking)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       |
-| 4.     | Stats and monitoring system implementation  (Lua)                                                  | <ul><li>[x] </li></ul> | [Massbit Stat Git](https://github.com/massbitprotocol/massbitroute_stat/releases/tag/v0.1.0)                                                                                                                                                                                                                                                                                                                                                                                 |       |
-
+| Number | Deliverable                                           | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Evaluation Notes    |
+| ------ | ----------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | --- | --- |
+| 0.a    | License                                               | <ul><li>[x] </li></ul> | [Massbit Chain - Apache 2.0 ](https://github.com/massbitprotocol/massbitchain/blob/main/LICENSE)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                     |
+| 0.b    | Documentation                                         | <ul><li>[x] </li></ul> | [Massbit Components](https://docs.massbit.io/massbit-route-mbr/components), [Massbit Architecture](https://docs.massbit.io/massbit-route-mbr/architecture)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                     |
+| 0.c    | Testing Guide                                         | <ul><li>[x] </li></ul> | [Testing Massbit Route on Docker environment and Unit Test](https://github.com/massbitprotocol/w3f-testing-guide/tree/w3f-milestone-2)<br /> [Testing Massbit Route on Testnet](https://docs.massbit.io/massbit-route-mbr/guides)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Execution propblems |
+| 0.d    | Docker release                                        | <ul><li>[x] </li></ul> | The following images for the Milestone 2 components have been published on Docker hub: <br /> - **Web Portal image:** massbit/massbitroute_web:w3f-milestone-2 <br />- **Fisherman image:** massbit/massbitroute_fisherman:w3f-milestone-2 <br />- **Massbit Chain image:** massbit/massbitroute_chain:w3f-milestone-2-submit <br />- **Massbit Core image:** massbit/massbitroute_api:v0.1.15 <br />- **Gateway Manager image:** massbit/massbitroute_gwman:v0.1.8 <br />- **Massbit Node image:** massbit/massbitroute_node:v0.1.8 <br />- **Massbit Gateway image:** massbit/massbitroute_gateway:v0.1.11 <br />- **Massbit Stat image:** massbit/massbitroute_stat:v0.1.0 <br />- **Massbit Session image:** massbit/massbitroute_session:v0.1.0 |                     |     |     |
+| 0.e    | Article                                               | <ul><li>[x] </li></ul> | [Article for Community on running Massbit Node/Gateway](https://blog.massbit.io/launching-mbr-testnet-phase-ii-staking-with-rewards-2/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                     |
+| 1.     | Fisherman Pallet - offchain worker (Lua)              | <ul><li>[x] </li></ul> | [Offchain worker Git](https://github.com/massbitprotocol/massbitchain/tree/wf-grant/pallets/fisherman)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                     |
+| 2.     | Session Manager (Rust) (C)                            | <ul><li>[x] </li></ul> | [Session Manager Git](https://github.com/massbitprotocol/massbitroute_session/releases/tag/v0.1.0)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                     |
+| 3.     | Node Provider staking Pallet - Provider incentive pot | <ul><li>[x] </li></ul> | [Staking Pallet Git](https://github.com/massbitprotocol/massbitchain/tree/wf-grant/pallets/dapi-staking)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                     |
+| 4.     | Stats and monitoring system implementation (Lua)      | <ul><li>[x] </li></ul> | [Massbit Stat Git](https://github.com/massbitprotocol/massbitroute_stat/releases/tag/v0.1.0)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                     |
 
 ## General notes
 
@@ -28,12 +26,11 @@
 
 Worked well with the help of hoanito.
 
-
-### 1. 	Fisherman Pallet - offchain worker (code quality)
+### 1. Fisherman Pallet - offchain worker (code quality)
 
 #### Tests Coverage:
 
-Improved. lib.rs	51 / 113 (45.13%) (+3.53%).
+Improved. lib.rs 51 / 113 (45.13%) (+3.53%).
 
 #### Static Analysis:
 
@@ -125,14 +122,13 @@ Improved, added some code documentation.
 
 #### Tests and Documentation
 
-Tests ran ok (see script ./scripts/run \_run_test). 
+Tests ran ok (see script ./scripts/run \_run_test).
 
 Code documentation is still missing.
 
 #### Static Analysis
 
-The same warnings remain. 
-
+The same warnings remain.
 
 ### 3. Node Provider staking Pallet - Provider incentive pot (code quality)
 
@@ -149,16 +145,15 @@ Covered: 98 of 368 (26.63%)
 
 #### Tests and Code Documentation
 
-Tests ran ok (see script ./scripts/run \_run_test). 
+Tests ran ok (see script ./scripts/run \_run_test).
 
 Code documentation is still missing.
 
 #### Static Analysis
 
-The same warnings remain. 
+The same warnings remain.
 
-
-----
+---
 
 ## Evaluation V1
 
@@ -280,15 +275,13 @@ ERROR: .FileNotFoundError: [Errno 2] No such file or directory: './network.yaml'
 
 In the second tutorial, I could register a user but I didn't receive the e-mail confirmation for the user register. This prevented me to proceed with the other steps.
 
-
-### 1. 	Fisherman Pallet - offchain worker (code quality)
-
+### 1. Fisherman Pallet - offchain worker (code quality)
 
 #### Tests Coverage:
 
 massbitchain/pallets/fisherman/src/lib.rs
 Covered: 52 of 125 (41.60%)
-Some paths and full methods not covered. 
+Some paths and full methods not covered.
 
 #### Static Analysis:
 
@@ -429,15 +422,15 @@ warning: `pallet-fisherman` (lib) generated 8 warnings
 
 Some methods do have code documentation.
 
-
 ### 2. Session Manager (code quality)
 
 #### Tests and Documentation
+
 - There is no automated test and code documentation.
 
 #### Static Analysis
 
-`luacheck` generated these warnings. They seems to be false positives. Feel free to fix the ones that make sense to you. 
+`luacheck` generated these warnings. They seems to be false positives. Feel free to fix the ones that make sense to you.
 
 ```
 Checking apps/api/conf/app_config.lua             OK
@@ -493,7 +486,7 @@ In base.sh line 119:
                 cd $_dir
                 ^------^ SC2164: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
 
-Did you mean: 
+Did you mean:
                 cd $_dir || exit
 
 
@@ -515,7 +508,7 @@ In base.sh line 146:
 In run line 67:
         if [ \( -z "$GIT_PRIVATE_READ_URL" \) -o \( -z "$GIT_PRIVATE_DOMAIN" ] \) ]; then
            ^-- SC1073: Couldn't parse this test expression. Fix to allow more checks.
-                                                                             ^-- SC1072:  Fix any mentioned problems and try again.                                                                                                                       
+                                                                             ^-- SC1072:  Fix any mentioned problems and try again.
 
 For more information:
   https://www.shellcheck.net/wiki/SC2068 -- Double quote array expansions to ...
@@ -525,9 +518,7 @@ For more information:
 
 ### 3. Node Provider staking Pallet - Provider incentive pot (code quality)
 
-
 #### Static Analysis
-
 
 cargo clippy resulted in 4 warnings:
 
@@ -570,14 +561,13 @@ warning: using `clone` on type `<<T as pallet::Config>::Currency as frame_suppor
    --> pallets/dapi-staking/src/lib.rs:783:56
     |
 783 |                 EraMetadata { rewards: Default::default(), staked: state.staked.clone() },
-    |                                                                    ^^^^^^^^^^^^^^^^^^^^ help: try removing the `clone` call: `state.staked`                                                                                                         
+    |                                                                    ^^^^^^^^^^^^^^^^^^^^ help: try removing the `clone` call: `state.staked`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
 warning: `pallet-dapi-staking` (lib) generated 4 warnings
 ```
-
 
 #### Tests Coverage
 
@@ -587,7 +577,6 @@ Covered: 98 of 368 (26.63%)
 #### Code Documentation
 
 Good code documentation.
-
 
 ### 4. Stats and monitoring system implementation (Lua) (code quality)
 
@@ -647,7 +636,7 @@ SITE_ROOT=$(realpath $(dirname $(realpath $0))/..)
 
 In run line 9:
 if [ -f "$SITE_ROOT/.env_raw" ]; then source $SITE_ROOT/.env_raw; fi
-                                             ^-----------------^ SC1090: Can't follow non-constant source. Use a directive to specify location.                                                                                                           
+                                             ^-----------------^ SC1090: Can't follow non-constant source. Use a directive to specify location.
 
 
 In run line 10:
@@ -659,13 +648,13 @@ In run line 12:
 cd $SITE_ROOT
 ^-----------^ SC2164: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
 
-Did you mean: 
+Did you mean:
 cd $SITE_ROOT || exit
 
 
 In run line 25:
         if [ -f "$SITE_ROOT/.env_raw" ]; then source $SITE_ROOT/.env_raw; fi
-                                                     ^-----------------^ SC1090: Can't follow non-constant source. Use a directive to specify location.                                                                                                   
+                                                     ^-----------------^ SC1090: Can't follow non-constant source. Use a directive to specify location.
 
 
 In run line 98:
@@ -682,7 +671,7 @@ In run line 208:
         cd $SITE_ROOT
         ^-----------^ SC2164: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
 
-Did you mean: 
+Did you mean:
         cd $SITE_ROOT || exit
 
 
@@ -695,7 +684,7 @@ In run line 238:
         cd $SITE_ROOT
         ^-----------^ SC2164: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
 
-Did you mean: 
+Did you mean:
         cd $SITE_ROOT || exit
 
 
@@ -703,7 +692,7 @@ In run line 282:
         cd $_dir
         ^------^ SC2164: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
 
-Did you mean: 
+Did you mean:
         cd $_dir || exit
 
 
@@ -721,7 +710,7 @@ In run line 318:
         cd $SITE_ROOT
         ^-----------^ SC2164: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
 
-Did you mean: 
+Did you mean:
         cd $SITE_ROOT || exit
 
 
@@ -735,5 +724,3 @@ For more information:
   https://www.shellcheck.net/wiki/SC2034 -- SITE_ROOT appears unused. Verify ...
 
 ```
-
-

@@ -3,25 +3,22 @@
 - **Status:** In Progress
 - **PR Link:** https://github.com/w3f/Grant-Milestone-Delivery/pull/167
 - **Milestone:** 2
+
 * **Kusama Identity:** [HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve](https://polkascan.io/pre/kusama/account/HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve)
 * **Previously successfully merged evaluation:** All evaluations by Noc2
 
-
-
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | :------: | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/LICENSE)| Correct License |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [user-stories.md](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/docs/user-stories.md)| — |
-| 0c. | Testing guide | <ul><li>[x] </li></ul> | [testing-guide.md](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/docs/testing-guide.md)| — |
-| 0d. | Docker | <ul><li>[x] </li></ul> | [docker-compose.yml](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/docker-compose.yml)| — |
-| 0e. | Article | <ul><li>[ ] </li></ul> | [ ]()| Not yet published |
-| 1. | Web-based UI | <ul><li>[ ] </li></ul> | [src](https://github.com/vedai-org/polkadot-grant-delivery/tree/master/src)| The sign-up doesn't work for me. "Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED". No MongoDb for web-based app backend open source. The delivery looks different from: "Manage working groups (DAOs), project management", see [mockups of the application](https://github.com/w3f/Grants-Program/blob/master/applications/deip.md)  |
-
+| Number | Deliverable   |        Accepted        | Link                                                                                                       | Evaluation Notes                                                                                                                                                                                                                                                                                                                             |
+| ------ | ------------- | :--------------------: | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License       | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/LICENSE)                        | Correct License                                                                                                                                                                                                                                                                                                                              |
+| 0b.    | Documentation | <ul><li>[x] </li></ul> | [user-stories.md](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/docs/user-stories.md)   | —                                                                                                                                                                                                                                                                                                                                            |
+| 0c.    | Testing guide | <ul><li>[x] </li></ul> | [testing-guide.md](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/docs/testing-guide.md) | —                                                                                                                                                                                                                                                                                                                                            |
+| 0d.    | Docker        | <ul><li>[x] </li></ul> | [docker-compose.yml](https://github.com/vedai-org/polkadot-grant-delivery/blob/master/docker-compose.yml)  | —                                                                                                                                                                                                                                                                                                                                            |
+| 0e.    | Article       | <ul><li>[ ] </li></ul> | [ ]()                                                                                                      | Not yet published                                                                                                                                                                                                                                                                                                                            |
+| 1.     | Web-based UI  | <ul><li>[ ] </li></ul> | [src](https://github.com/vedai-org/polkadot-grant-delivery/tree/master/src)                                | The sign-up doesn't work for me. "Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED". No MongoDb for web-based app backend open source. The delivery looks different from: "Manage working groups (DAOs), project management", see [mockups of the application](https://github.com/w3f/Grants-Program/blob/master/applications/deip.md) |
 
 ## General Notes
 
-Published as part of a separate repo, which makes it difficult to find for others 
-
+Published as part of a separate repo, which makes it difficult to find for others
 
 <pre><font color="#12488B"><b>polkadot-grant-delivery</b></font>$ snyk test
 

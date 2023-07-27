@@ -1,13 +1,13 @@
 # Evaluation
 
-* **Status:** Accepted
-* **PR Link:** https://github.com/w3f/Open-Grants-Program/pull/96
-* **Milestone:** 1
-* **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
-* **Previously successfully merged evaluation:** All by mmagician
+- **Status:** Accepted
+- **PR Link:** https://github.com/w3f/Open-Grants-Program/pull/96
+- **Milestone:** 1
+- **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
+- **Previously successfully merged evaluation:** All by mmagician
 
 | Number | Deliverable         | Accepted               | Link                                                                                                                                                                                                               | Evaluation Notes                                                                               |
-|--------|---------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ------ | ------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
 | 0a.    | License             | <ul><li>[x] </li></ul> | [Apache](https://github.com/idavollnetwork/idavoll/blob/main/LICENSE)                                                                                                                                              |                                                                                                |
 | 0b.    | Documentation       | <ul><li>[x] </li></ul> |                                                                                                                                                                                                                    | Inline documentation OK, [Usage instructions](https://github.com/idavollnetwork/idavoll#usage) |
 | 0c.    | Testing Guide       | <ul><li>[x] </li></ul> | [Unit tests idavoll-asset](https://github.com/idavollnetwork/idavoll/blob/main/pallets/idavoll-asset/src/lib.rs#L359), [idavoll](https://github.com/idavollnetwork/idavoll/blob/main/pallets/idavoll/src/tests.rs) |                                                                                                |
@@ -19,6 +19,7 @@
 ## General Notes
 
 Initially there were a number of issues with the project:
+
 - sloppy code documentation & method descriptions
 - code duplication
 - UI not working due to incorrect types.json

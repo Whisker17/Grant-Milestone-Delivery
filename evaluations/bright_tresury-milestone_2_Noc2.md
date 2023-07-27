@@ -2,27 +2,28 @@
 
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/bright_treasury.md
+
 * **Milestone:** 2
 * **Kusama Identity:** [HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve](https://polkascan.io/pre/kusama/account/HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve)
 * **Previously successfully merged evaluation:** All evaluations by Noc2
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [License](https://github.com/bright/bright-tresury/blob/master/LICENSE.md)  | Apache 2.0 |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [Readme](https://github.com/bright/bright-tresury/blob/milestone1/README.md) |  Repo is well documented |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [Readme](https://github.com/bright/bright-tresury/blob/milestone1/README.md) | Front-end has 90 tests	|
-|	1.	|	User story 14	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/?networkId=development-2)  |  Let's you easily switch networks, ui changes	|
-|	2.	|	User story 15	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/ideas/new?networkId=development-2)  |  Works	|
-|	3.	|	User story 16	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/ideas?filter=mine)  |  It showed me "No injected accounts", even though my account was connected, after reloading it worked	|
-|	4.	|	User story 17	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/ideas?filter=mine)  |  Works	|
-|	5.	|	User story 18	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/stats?networkId=polkadot)  | Looks good and clean |
-|	6.	|	User story 19	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/?networkId=development-2)  | Looks nice and works|
-|	7.	|	User story 20	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/)  |  Works	|
-|	8.	|	User story 21	|	<ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/)  |  Works | 
+| Number | Deliverable   | Accepted               | Link                                                                                  | Evaluation Notes                                                                                     |
+| ------ | ------------- | ---------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 0a.    | License       | <ul><li>[x] </li></ul> | [License](https://github.com/bright/bright-tresury/blob/master/LICENSE.md)            | Apache 2.0                                                                                           |
+| 0b.    | Documentation | <ul><li>[x] </li></ul> | [Readme](https://github.com/bright/bright-tresury/blob/milestone1/README.md)          | Repo is well documented                                                                              |
+| 0c.    | Testing Guide | <ul><li>[x] </li></ul> | [Readme](https://github.com/bright/bright-tresury/blob/milestone1/README.md)          | Front-end has 90 tests                                                                               |
+| 1.     | User story 14 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/?networkId=development-2)          | Let's you easily switch networks, ui changes                                                         |
+| 2.     | User story 15 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/ideas/new?networkId=development-2) | Works                                                                                                |
+| 3.     | User story 16 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/ideas?filter=mine)                 | It showed me "No injected accounts", even though my account was connected, after reloading it worked |
+| 4.     | User story 17 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/ideas?filter=mine)                 | Works                                                                                                |
+| 5.     | User story 18 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/stats?networkId=polkadot)          | Looks good and clean                                                                                 |
+| 6.     | User story 19 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/?networkId=development-2)          | Looks nice and works                                                                                 |
+| 7.     | User story 20 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/)                                  | Works                                                                                                |
+| 8.     | User story 21 | <ul><li>[x] </li></ul> | [app](https://testing.treasury.brightinventions.pl/)                                  | Works                                                                                                |
 
 ## General Notes
 
-Milestone 2 branch: https://github.com/bright/bright-tresury/tree/milestone2. Very good delivery. Everything immediately worked and the app is well tested and documented. Also the design looks very clean. Snyk complained about a few things (see below), but that’s not a big problem at this stage. 
+Milestone 2 branch: https://github.com/bright/bright-tresury/tree/milestone2. Very good delivery. Everything immediately worked and the app is well tested and documented. Also the design looks very clean. Snyk complained about a few things (see below), but that’s not a big problem at this stage.
 
 **snky test**
 

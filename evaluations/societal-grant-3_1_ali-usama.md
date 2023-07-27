@@ -1,13 +1,13 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:** [Societal SaaS Application](https://github.com/w3f/Grants-Program/blob/master/applications/societal_saas_pricing.md) 
+- **Application Document:** [Societal SaaS Application](https://github.com/w3f/Grants-Program/blob/master/applications/societal_saas_pricing.md)
 - **Milestone:** 1
 - **Kusama Identity:** Eexv1mKLiCidz2gGh6vfowtXgSSc7mvD4xEb2ji998W4DPs
 - **Previously successfully merged evaluation:** All evaluations by ali-usama
 
 | Number | Deliverable                               | Accepted               | Link                                                                                                                                                                                                                                                                             | Evaluation Notes               |
-|--------|-------------------------------------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| ------ | ----------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | 0a.    | Licence                                   | <ul><li>[x] </li></ul> | [Apache 2.0](https://github.com/sctllabs/societal-node/blob/grant3_m1/LICENSE)                                                                                                                                                                                                   | Correct Licence                |
 | 0b.    | Documentation                             | <ul><li>[x] </li></ul> | [ReadMe](https://github.com/sctllabs/societal-node/blob/grant3_m1/README.md)                                                                                                                                                                                                     | Well-explained Readme          |
 | 0c.    | Testing Guide                             | <ul><li>[x] </li></ul> | [TestingGuide](https://github.com/sctllabs/societal-node/blob/grant3_m1/docs/SubscriptionTestingGuide.md)                                                                                                                                                                        | Working as per the application |
@@ -15,12 +15,12 @@
 | 1.     | Substrate Module: DAO Subscription pallet | <ul><li>[x] </li></ul> | [DAO subscription](https://github.com/sctllabs/societal-node/tree/grant3_m1/pallets/dao-subscription)                                                                                                                                                                            | Working as per the application |
 | 2.     | Client Modules                            | <ul><li>[x] </li></ul> | [Pallets](https://github.com/sctllabs/societal-node/tree/grant3_m1/pallets)                                                                                                                                                                                                      | Working as per the application |
 
-
 ## General Notes
 
 The repository is well-structured and well-documented, and all the features mentioned in the milestone are working as expected. The Subsciption testing has been done using the Polkadot JS UI, and the details of unit tests are attached below:
 
 ### `cargo test` output
+
 ```
 Running unittests src/lib.rs (target/debug/deps/dao_primitives-5304105fe2657841)
 
@@ -72,7 +72,7 @@ test tests::force_asset_status_should_work ... ok
 test tests::force_cancel_approval_works ... ok
 test tests::minting_insufficient_assets_with_deposit_without_consumer_should_work ... ok
 test tests::lifecycle_should_work ... ok
-Jul 07 18:08:55.849 ERROR runtime::system: Logic error: Unexpected underflow in reducing consumer    
+Jul 07 18:08:55.849 ERROR runtime::system: Logic error: Unexpected underflow in reducing consumer
 test tests::minting_insufficient_asset_with_deposit_should_work_when_consumers_exhausted ... ok
 test tests::freezer_should_work ... ok
 test tests::normal_asset_create_and_destroy_callbacks_should_work ... ok

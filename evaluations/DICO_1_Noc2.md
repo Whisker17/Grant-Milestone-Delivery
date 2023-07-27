@@ -1,23 +1,24 @@
 # Evaluation
 
-- **Status:** In Progress 
+- **Status:** In Progress
 - **Application:** https://github.com/w3f/Grants-Program/blob/master/applications/DICO.md
+
 * **Milestone:** 1
 * **Kusama Identity:** [HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve](https://polkascan.io/pre/kusama/account/HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve)
 * **Previously successfully merged evaluation:** All evaluations by Noc2
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0 | License | <ul><li>[x] </li></ul> | [LICENSE-APACHE](https://github.com/DICO-TEAM/dico-chain/blob/main/LICENSE-APACHE), [Front-end License](https://github.com/DICO-TEAM/dicolite/blob/main/LICENSE) | Correct License |
-| 1.a | Substrate module: KYC pallet | <ul><li>[ ] </li></ul> | [kyc](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/kyc) | Generally seems to be according to the contract, but I get a lot of warnings (see below). Also some of the names seem strange, e.g. "sword_holder_provide_judgement"  |
-| 1.b | Substrate module: ICO pallet | <ul><li>[ ] </li></ul> | [ico](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/ico) |  |
-| 1.c | Substrate module: DAO pallet | <ul><li>[ ] </li></ul> | [dao](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/dao) |  |
-| 2.a. | Integration with front-end(dapp) | <ul><li>[ ] </li></ul> | [dicolite](https://github.com/DICO-TEAM/dicolite) | **28.02.22:** Not open source? **15.03.22:** The team open sourced the delivery. But the readme doesn’t contain any information on how to compile it  |
-| 2.b | Tutorial| <ul><li>[ ] </li></ul> | [DICO-Lite-user-manual](https://wiki.dico.io/docs/DICO-Lite-user-manual) | **28.02.22:** Screenshot tutorial, but no demo video **15.03.22:** They shared some videos (https://www.youtube.com/watch?v=gt1BfWZaVWs, https://www.youtube.com/watch?v=we9feIzIJW8, https://www.youtube.com/watch?v=qQuMZ87G2UU), but none seems to be demo video according to the contract |
-| 3. | Testing Guide/Documentation	 | <ul><li>[ ] </li></ul> | [DEVELOPMENT.md](https://github.com/DICO-TEAM/dico-chain/blob/main/.github/DEVELOPMENT.md) | Inline documentation provided, the guide doesn’t describe how to run the unit tests  |
-| 4. | Docker | <ul><li>[ ] </li></ul> | [dockerfiles](https://github.com/DICO-TEAM/dico-chain/blob/main/scripts/dockerfiles/dico/dico_builder.Dockerfile) |  |
-| 5. | Docker-compose | <ul><li>[ ] </li></ul> | []() |  |
-| 6.  | Lending module(research oriented)| <ul><li>[ ] </li></ul> | []() | Seems to be missing |
+| Number | Deliverable                       | Accepted               | Link                                                                                                                                                             | Evaluation Notes                                                                                                                                                                                                                                                                              |
+| ------ | --------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0      | License                           | <ul><li>[x] </li></ul> | [LICENSE-APACHE](https://github.com/DICO-TEAM/dico-chain/blob/main/LICENSE-APACHE), [Front-end License](https://github.com/DICO-TEAM/dicolite/blob/main/LICENSE) | Correct License                                                                                                                                                                                                                                                                               |
+| 1.a    | Substrate module: KYC pallet      | <ul><li>[ ] </li></ul> | [kyc](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/kyc)                                                                                             | Generally seems to be according to the contract, but I get a lot of warnings (see below). Also some of the names seem strange, e.g. "sword_holder_provide_judgement"                                                                                                                          |
+| 1.b    | Substrate module: ICO pallet      | <ul><li>[ ] </li></ul> | [ico](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/ico)                                                                                             |                                                                                                                                                                                                                                                                                               |
+| 1.c    | Substrate module: DAO pallet      | <ul><li>[ ] </li></ul> | [dao](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/dao)                                                                                             |                                                                                                                                                                                                                                                                                               |
+| 2.a.   | Integration with front-end(dapp)  | <ul><li>[ ] </li></ul> | [dicolite](https://github.com/DICO-TEAM/dicolite)                                                                                                                | **28.02.22:** Not open source? **15.03.22:** The team open sourced the delivery. But the readme doesn’t contain any information on how to compile it                                                                                                                                          |
+| 2.b    | Tutorial                          | <ul><li>[ ] </li></ul> | [DICO-Lite-user-manual](https://wiki.dico.io/docs/DICO-Lite-user-manual)                                                                                         | **28.02.22:** Screenshot tutorial, but no demo video **15.03.22:** They shared some videos (https://www.youtube.com/watch?v=gt1BfWZaVWs, https://www.youtube.com/watch?v=we9feIzIJW8, https://www.youtube.com/watch?v=qQuMZ87G2UU), but none seems to be demo video according to the contract |
+| 3.     | Testing Guide/Documentation       | <ul><li>[ ] </li></ul> | [DEVELOPMENT.md](https://github.com/DICO-TEAM/dico-chain/blob/main/.github/DEVELOPMENT.md)                                                                       | Inline documentation provided, the guide doesn’t describe how to run the unit tests                                                                                                                                                                                                           |
+| 4.     | Docker                            | <ul><li>[ ] </li></ul> | [dockerfiles](https://github.com/DICO-TEAM/dico-chain/blob/main/scripts/dockerfiles/dico/dico_builder.Dockerfile)                                                |                                                                                                                                                                                                                                                                                               |
+| 5.     | Docker-compose                    | <ul><li>[ ] </li></ul> | []()                                                                                                                                                             |                                                                                                                                                                                                                                                                                               |
+| 6.     | Lending module(research oriented) | <ul><li>[ ] </li></ul> | []()                                                                                                                                                             | Seems to be missing                                                                                                                                                                                                                                                                           |
 
 ## General Notes
 
@@ -25,6 +26,7 @@
 They are working on fixing the warnings: https://github.com/DICO-TEAM/dico-chain/issues/127
 
 For example, here are the warnings for the kyc module:
+
 <pre><font color="#A2734C"><b>warning</b></font><b>: value assigned to `ias_list` is never read</b>
    <font color="#2A7BDE"><b>--&gt; </b></font>pallets/kyc/src/lib.rs:898:12
     <font color="#2A7BDE"><b>|</b></font>
@@ -115,4 +117,4 @@ For example, here are the warnings for the kyc module:
 </pre>
 
 **28.02.22:**
-A lot of warnings by the compiler. Probably the most warnings I ever got.  
+A lot of warnings by the compiler. Probably the most warnings I ever got.

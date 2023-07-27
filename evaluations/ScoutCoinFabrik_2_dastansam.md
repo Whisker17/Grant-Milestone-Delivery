@@ -8,20 +8,19 @@
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------ | ----------- | ---- | ----- |
-| 0a. | License | https://github.com/CoinFabrik/scout/blob/web3-v2/LICENSE | Correct license |
-| 0b. | Documentation | https://coinfabrik.github.io/scout/docs/intro | Extensive documentation |
-| 0c. | Testing | https://github.com/CoinFabrik/scout/tree/web3-v2/apps/cargo-scout-audit/tests | Test cases are passing, but only after I fixed a small typo. Details below. |
-| 0d. | Docker | - | Does not apply at this stage.  |
-| 0e. | Article | https://blog.coinfabrik.com/bigger-better-and-faster-vulnerability-detection-in-ink | Article is posted, explains well what the project does and why there is a need for it. |
-| 1.a | Research and Development | https://coinfabrik.github.io/scout/docs/vulnerabilities | More vulnerability examples are provided, as per the application milestone delivery checklist. |
-| 1.b | Research and Development | https://github.com/CoinFabrik/scout/tree/web3-v2/test-cases | `integer-overflow-underflow` and `unused-return-enum` example vulnerabilities are added to the test cases and documentation. |
-| 2.a | Development | https://github.com/CoinFabrik/scout/tree/web3-v2 | More detectors are added, tool is improved from the previous milestone. |
-| 2.b | Development | https://github.com/CoinFabrik/scout/tree/web3-v2/apps/cargo-scout-audit | CLI tool is deployed and works as expected. Integration tests are run using this CLI tool. Logs attached below. |
-| 2.c | Development | https://marketplace.visualstudio.com/items?itemName=CoinFabrik.scout-audit | VSCode extension is deployed and can be installed. However, using it wasn't possible for me, maybe due to the `rust-analyzer` issue described below? |
-| 3 | Evaluation | https://github.com/CoinFabrik/scout/blob/web3-v2/assets/false-positives-report.md | Prototype validation was performed and evaluation report is provided. |
-
+| Number | Deliverable              | Link                                                                                | Notes                                                                                                                                                |
+| ------ | ------------------------ | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                  | https://github.com/CoinFabrik/scout/blob/web3-v2/LICENSE                            | Correct license                                                                                                                                      |
+| 0b.    | Documentation            | https://coinfabrik.github.io/scout/docs/intro                                       | Extensive documentation                                                                                                                              |
+| 0c.    | Testing                  | https://github.com/CoinFabrik/scout/tree/web3-v2/apps/cargo-scout-audit/tests       | Test cases are passing, but only after I fixed a small typo. Details below.                                                                          |
+| 0d.    | Docker                   | -                                                                                   | Does not apply at this stage.                                                                                                                        |
+| 0e.    | Article                  | https://blog.coinfabrik.com/bigger-better-and-faster-vulnerability-detection-in-ink | Article is posted, explains well what the project does and why there is a need for it.                                                               |
+| 1.a    | Research and Development | https://coinfabrik.github.io/scout/docs/vulnerabilities                             | More vulnerability examples are provided, as per the application milestone delivery checklist.                                                       |
+| 1.b    | Research and Development | https://github.com/CoinFabrik/scout/tree/web3-v2/test-cases                         | `integer-overflow-underflow` and `unused-return-enum` example vulnerabilities are added to the test cases and documentation.                         |
+| 2.a    | Development              | https://github.com/CoinFabrik/scout/tree/web3-v2                                    | More detectors are added, tool is improved from the previous milestone.                                                                              |
+| 2.b    | Development              | https://github.com/CoinFabrik/scout/tree/web3-v2/apps/cargo-scout-audit             | CLI tool is deployed and works as expected. Integration tests are run using this CLI tool. Logs attached below.                                      |
+| 2.c    | Development              | https://marketplace.visualstudio.com/items?itemName=CoinFabrik.scout-audit          | VSCode extension is deployed and can be installed. However, using it wasn't possible for me, maybe due to the `rust-analyzer` issue described below? |
+| 3      | Evaluation               | https://github.com/CoinFabrik/scout/blob/web3-v2/assets/false-positives-report.md   | Prototype validation was performed and evaluation report is provided.                                                                                |
 
 ## General Notes
 
@@ -64,6 +63,7 @@ let percentage_difference = match 100u128.checked_mul(absolute_difference / sum)
 return Err(TradingPairErrors::Overflow);
 // --- snip ---
 ```
+
 I think this directly contradicts to [`panic-error`](https://coinfabrik.github.io/scout/docs/detectors/panic-error) and [`arithmetic-overflow-underflow`](https://coinfabrik.github.io/scout/docs/detectors/integer-overflow-or-underflow) vulnerabilities, since usage of `panic!` and unsafe arithmetic operations should be discouraged in any production environment. I think the remediation should be something like this:
 
 ```rust
@@ -99,7 +99,7 @@ self.env().terminate_contract(self.env().caller());
 
 Result:
 
-```log 
+```log
 warning: Unsafe usage of `expect`
   --> lib.rs:33:33
    |
@@ -126,8 +126,8 @@ warning: Potential for integer arithmetic overflow/underflow in operation '+'. C
    |
    = note: `#[warn(integer_overflow_underflow)]` on by default
 ```
-</details>
 
+</details>
 
 <details>
 

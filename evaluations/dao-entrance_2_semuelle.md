@@ -6,15 +6,14 @@
 - **Kusama Identity:** [ESxS4A7GHMLzve4Mbc9t27RpXtVTnV3LtcMTtcnD26jcUHA](https://polkascan.io/pre/kusama/account/ESxS4A7GHMLzve4Mbc9t27RpXtVTnV3LtcMTtcnD26jcUHA)
 - **Previously successfully merged evaluation:** All by semuelle
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | :------: | ---- |----------------- |
-| **0a.** | License | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/dao-entrance/app/blob/9fa3851aa76fea26cd297bb5afecabb5557b1ce3/LICENSE) | Apache 2.0 |
-| **0b.** | Documentation | <ul><li>[x] </li></ul> | [docs/install_and_run.md](https://github.com/WeteeDAO/app/blob/20cf30512ed8982f70b8b743fff90d40cad27c3f/docs/install_and_run.md) | - |
-| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul> | [/test](https://github.com/WeteeDAO/app/blob/b6f0f36bf4c75dd8e728c3898b76f477c1d252b0/test) | Unit tests provided on request. Run with `flutter test`. |
-| **0d.** | Docker | <ul><li>[x] </li></ul> | - | No Docker necessary. |
-| 1. | DAO desktop and app | <ul><li>[x] </li></ul> | - | see [General Notes](#general-notes) |
-| 2. | Tests | <ul><li>[x] </li></ul> | [install_and_run.md](https://github.com/WeteeDAO/app/blob/20cf30512ed8982f70b8b743fff90d40cad27c3f/docs/install_and_run.md#run-e2e-%E6%B5%8B%E8%AF%95) | Tests fixed on request. |
-
+| Number  | Deliverable               |        Accepted        | Link                                                                                                                                                   | Evaluation Notes                                         |
+| ------- | ------------------------- | :--------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| **0a.** | License                   | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/dao-entrance/app/blob/9fa3851aa76fea26cd297bb5afecabb5557b1ce3/LICENSE)                                                   | Apache 2.0                                               |
+| **0b.** | Documentation             | <ul><li>[x] </li></ul> | [docs/install_and_run.md](https://github.com/WeteeDAO/app/blob/20cf30512ed8982f70b8b743fff90d40cad27c3f/docs/install_and_run.md)                       | -                                                        |
+| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul> | [/test](https://github.com/WeteeDAO/app/blob/b6f0f36bf4c75dd8e728c3898b76f477c1d252b0/test)                                                            | Unit tests provided on request. Run with `flutter test`. |
+| **0d.** | Docker                    | <ul><li>[x] </li></ul> | -                                                                                                                                                      | No Docker necessary.                                     |
+| 1.      | DAO desktop and app       | <ul><li>[x] </li></ul> | -                                                                                                                                                      | see [General Notes](#general-notes)                      |
+| 2.      | Tests                     | <ul><li>[x] </li></ul> | [install_and_run.md](https://github.com/WeteeDAO/app/blob/20cf30512ed8982f70b8b743fff90d40cad27c3f/docs/install_and_run.md#run-e2e-%E6%B5%8B%E8%AF%95) | Tests fixed on request.                                  |
 
 ## General Notes
 

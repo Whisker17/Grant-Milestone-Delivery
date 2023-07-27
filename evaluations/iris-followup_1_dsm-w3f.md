@@ -1,4 +1,3 @@
-
 # Evaluation
 
 - **Status:** Approved.
@@ -7,23 +6,23 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/iris-followup_1_cruikshankss.md
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>| https://github.com/ideal-lab5/iris |   | 
-| 0b.  | Documentation|<ul><li>[x] </li></ul> | https://ideal-lab5.github.io |  | 
-| 0c.  | Testing Guide|<ul><li>[x] </li></ul> | https://docs.google.com/document/d/1GYizRCtMYxfZEdpaB8_VBwSaZdG3kZQAhRJI3OGmZqA/edit?usp=sharing | |
-| 0d.  | Docker|<ul><li>[x] </li></ul> |  Iris node: https://hub.docker.com/repository/docker/ideallabs/iris, Iris UI:  https://hub.docker.com/repository/docker/ideallabs/iris-ui | |
-| 0e.  | Article|<ul><li>[x] </li></ul> | https://medium.com/ideal-labs/iris-update-milestone-2-29dcd8b79134 | |
-| 1.  | Substrate Module: IrisProxy|<ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/tree/main/pallets/iris-proxy |  |
-| 2.  | Substrate Module: IPFS|<ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/tree/main/pallets/ipfs |  |
-| 3.  | Substrate Module: Gateway|<ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/tree/main/pallets/gateway |  |
-| 4.  | Encryption Mechanism|<ul><li>[x] </li></ul> | Key fragment generation starts here: https://github.com/ideal-lab5/iris/blob/73735046ddf1776b912859daeab789a769130e72/pallets/iris-proxy/src/lib.rs#L584, see the whitepaper as well: https://github.com/ideal-lab5/whitepaper/blob/main/IRIS_PROTOCOL_DRAFT_0.0.1.pdf | Needs improvement in further milestone. |
-| 5.  | RPC: Encryption RPC|<ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/blob/ff95f2e811386f6231c441fafe3a1204ed82676b/pallets/iris-proxy/src/lib.rs#L518 |  |
-| 6.  | RPC: Decryption RPC|<ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/blob/ff95f2e811386f6231c441fafe3a1204ed82676b/pallets/iris-proxy/src/lib.rs#L390 |  |
-| 7. | Testnet Setup|<ul><li>[x] </li></ul> | Documentation of hosted node setup: https://ideal-lab5.github.io/developers/nodes/ec2_setup.html | Needs improvement in the next milestone. |
-| 8. | User Interface|<ul><li>[x] </li></ul> | https://github.com/ideal-lab5/ui |  |
+| Number | Deliverable                 | Accepted               | Link                                                                                                                                                                                                                                                                   | Evaluation Notes                         |
+| ------ | --------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| 0a.    | License                     | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris                                                                                                                                                                                                                                     |                                          |
+| 0b.    | Documentation               | <ul><li>[x] </li></ul> | https://ideal-lab5.github.io                                                                                                                                                                                                                                           |                                          |
+| 0c.    | Testing Guide               | <ul><li>[x] </li></ul> | https://docs.google.com/document/d/1GYizRCtMYxfZEdpaB8_VBwSaZdG3kZQAhRJI3OGmZqA/edit?usp=sharing                                                                                                                                                                       |                                          |
+| 0d.    | Docker                      | <ul><li>[x] </li></ul> | Iris node: https://hub.docker.com/repository/docker/ideallabs/iris, Iris UI: https://hub.docker.com/repository/docker/ideallabs/iris-ui                                                                                                                                |                                          |
+| 0e.    | Article                     | <ul><li>[x] </li></ul> | https://medium.com/ideal-labs/iris-update-milestone-2-29dcd8b79134                                                                                                                                                                                                     |                                          |
+| 1.     | Substrate Module: IrisProxy | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/tree/main/pallets/iris-proxy                                                                                                                                                                                                        |                                          |
+| 2.     | Substrate Module: IPFS      | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/tree/main/pallets/ipfs                                                                                                                                                                                                              |                                          |
+| 3.     | Substrate Module: Gateway   | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/tree/main/pallets/gateway                                                                                                                                                                                                           |                                          |
+| 4.     | Encryption Mechanism        | <ul><li>[x] </li></ul> | Key fragment generation starts here: https://github.com/ideal-lab5/iris/blob/73735046ddf1776b912859daeab789a769130e72/pallets/iris-proxy/src/lib.rs#L584, see the whitepaper as well: https://github.com/ideal-lab5/whitepaper/blob/main/IRIS_PROTOCOL_DRAFT_0.0.1.pdf | Needs improvement in further milestone.  |
+| 5.     | RPC: Encryption RPC         | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/blob/ff95f2e811386f6231c441fafe3a1204ed82676b/pallets/iris-proxy/src/lib.rs#L518                                                                                                                                                    |                                          |
+| 6.     | RPC: Decryption RPC         | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/iris/blob/ff95f2e811386f6231c441fafe3a1204ed82676b/pallets/iris-proxy/src/lib.rs#L390                                                                                                                                                    |                                          |
+| 7.     | Testnet Setup               | <ul><li>[x] </li></ul> | Documentation of hosted node setup: https://ideal-lab5.github.io/developers/nodes/ec2_setup.html                                                                                                                                                                       | Needs improvement in the next milestone. |
+| 8.     | User Interface              | <ul><li>[x] </li></ul> | https://github.com/ideal-lab5/ui                                                                                                                                                                                                                                       |                                          |
 
-**General Notes** 
+**General Notes**
 
 ## Evaluation V3
 
@@ -32,8 +31,6 @@ The license problem was fixed, and now GPL3 only.
 Testnet setup was not enough to spin up all nodes and parts of the system. However, a test session was held with the grantee that showed up the network working in AWS instances with a local node connected. In the next milestone delivery, the grantee should present a better way to spin up all parts of the system enabling the evaluation of the system locally.
 
 In the current setup for the threshold encryption (2-out-of-3), the recipient can get all parts of the encryption (3-out-of-3) and reassemble the file private key. This is a vulnerability that should be fixed before the system goes to production.
-
-
 
 ## Evaluation v2
 
@@ -46,7 +43,7 @@ Most of cargo clippy warnings were fixed.
 
 Cargo audit problem remains.
 
-Automated tests in the front end will be handled in other milestones. 
+Automated tests in the front end will be handled in other milestones.
 
 The ESLint warnings were fixed.
 
@@ -54,38 +51,37 @@ Still need better instructions or automation to spin up all services and test th
 
 ## Evaluation v1
 
-### License 
+### License
 
 There are more than one license file. Please specify which one is the valid for the software.
- 
- 
-### Code Quality  
- 
- * Automated tests fail to compile with the following error:
- 
- ```
- Compiling pallet-data-spaces v1.0.0 (/home/diogo/workspace/iris/pallets/data-spaces)
-error[E0433]: failed to resolve: unresolved import
-   --> pallets/data-spaces/src/mock.rs:317:41
-    |
-317 |     type AuthorityId = pallet_data_spaces::crypto::TestAuthId;
-    |                                            ^^^^^^
-    |                                            |
-    |                                            unresolved import
-    |                                            help: a similar path exists: `frame_support::crypto`
 
-   Compiling pallet-authorization v1.0.0 (/home/diogo/workspace/iris/pallets/authorization)
+### Code Quality
+
+- Automated tests fail to compile with the following error:
+
+```
+Compiling pallet-data-spaces v1.0.0 (/home/diogo/workspace/iris/pallets/data-spaces)
+error[E0433]: failed to resolve: unresolved import
+  --> pallets/data-spaces/src/mock.rs:317:41
+   |
+317 |     type AuthorityId = pallet_data_spaces::crypto::TestAuthId;
+   |                                            ^^^^^^
+   |                                            |
+   |                                            unresolved import
+   |                                            help: a similar path exists: `frame_support::crypto`
+
+  Compiling pallet-authorization v1.0.0 (/home/diogo/workspace/iris/pallets/authorization)
 For more information about this error, try `rustc --explain E0433`.
 error: could not compile `pallet-data-spaces` due to previous error
- ```
- 
-cargo clippy returned many warnings. Part of them are listed bellow. 
+```
+
+cargo clippy returned many warnings. Part of them are listed bellow.
 
 ```
 note: this value is dropped without further use
    --> pallets/iris-proxy/src/lib.rs:328:5
     |
-328 |                 consumer.clone(), 
+328 |                 consumer.clone(),
     |                 ^^^^^^^^
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#redundant_clone
 
@@ -245,7 +241,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> pallets/gateway/src/lib.rs:626:34
     |
 626 |         Slot::<T>::insert(who.clone(), primes[num_proxies].clone());
-    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try removing the `clone` call: `primes[num_proxies]`                                                                                                           
+    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try removing the `clone` call: `primes[num_proxies]`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -308,13 +304,13 @@ note: this value is dropped without further use
 warning: redundant clone
    --> pallets/iris-proxy/src/lib.rs:416:12
     |
-416 |                 acct_id.clone(), 
+416 |                 acct_id.clone(),
     |                        ^^^^^^^^ help: remove this
     |
 note: this value is dropped without further use
    --> pallets/iris-proxy/src/lib.rs:416:5
     |
-416 |                 acct_id.clone(), 
+416 |                 acct_id.clone(),
     |                 ^^^^^^^
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#redundant_clone
 
@@ -374,7 +370,7 @@ warning: redundant clone
    --> pallets/iris-proxy/src/lib.rs:481:91
     |
 481 |         let pk = iris_primitives::vec_to_box_public_key(&reencryption_artifact.secret.public_key.clone());
-    |                                                                                                 ^^^^^^^^ help: remove this                                                                                                              
+    |                                                                                                 ^^^^^^^^ help: remove this
     |
 note: cloned value is neither consumed nor mutated
    --> pallets/iris-proxy/src/lib.rs:481:52
@@ -500,7 +496,7 @@ warning: unneeded `return` statement
    --> pallets/iris-proxy/src/lib.rs:585:5
     |
 585 |                 return Bytes::from(ciphertext.to_vec().clone());
-    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Bytes::from(ciphertext.to_vec().clone())`                                                                                                      
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Bytes::from(ciphertext.to_vec().clone())`
     |
     = note: `#[warn(clippy::needless_return)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
@@ -509,7 +505,7 @@ warning: unneeded `return` statement
    --> pallets/iris-proxy/src/lib.rs:589:5
     |
 589 | ...   return Bytes::from(b"An error occurred while submitting the unsigned tx. Please try again. If the issue persists, restart your node and try again.".to_vec());
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Bytes::from(b"An error occurred while submitting the unsigned tx. Please try again. If the issue persists, restart your node and try again.".to_vec())`           
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Bytes::from(b"An error occurred while submitting the unsigned tx. Please try again. If the issue persists, restart your node and try again.".to_vec())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -517,7 +513,7 @@ warning: using `clone` on type `[u8; 32]` which implements the `Copy` trait
    --> pallets/iris-proxy/src/lib.rs:731:51
     |
 731 |                 let kfrag_enc_public_key = BoxPublicKey::from(pk_array.clone());
-    |                                                               ^^^^^^^^^^^^^^^^ help: try dereferencing it: `*pk_array`                                                                                                                  
+    |                                                               ^^^^^^^^^^^^^^^^ help: try dereferencing it: `*pk_array`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -526,7 +522,7 @@ warning: using `clone` on type `[u8; 32]` which implements the `Copy` trait
    --> pallets/iris-proxy/src/lib.rs:769:40
     |
 769 |                 let caller_pk = BoxPublicKey::from(caller_pk_array.clone());
-    |                                                    ^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*caller_pk_array`                                                                                                               
+    |                                                    ^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*caller_pk_array`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -534,7 +530,7 @@ warning: redundant clone
    --> pallets/iris-proxy/src/lib.rs:818:90
     |
 818 |         let proxy = EncryptionArtifacts::<T>::get(data_public_key.clone()).unwrap().proxy.clone();
-    |                                                                                          ^^^^^^^^ help: remove this                                                                                                                     
+    |                                                                                          ^^^^^^^^ help: remove this
     |
 note: this value is dropped without further use
    --> pallets/iris-proxy/src/lib.rs:818:21
@@ -549,14 +545,14 @@ warning: `pallet-iris-proxy` (lib) generated 40 warnings
 warning: redundant clone
    --> pallets/authorization/src/lib.rs:131:54
     |
-131 |                 Self::check_asset_class_ownership(who.clone(), id.clone()), 
+131 |                 Self::check_asset_class_ownership(who.clone(), id.clone()),
     |                                                      ^^^^^^^^ help: remove this
     |
     = note: `#[warn(clippy::redundant_clone)]` on by default
 note: this value is dropped without further use
    --> pallets/authorization/src/lib.rs:131:51
     |
-131 |                 Self::check_asset_class_ownership(who.clone(), id.clone()), 
+131 |                 Self::check_asset_class_ownership(who.clone(), id.clone()),
     |                                                   ^^^
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#redundant_clone
 
@@ -576,8 +572,8 @@ note: this value is dropped without further use
 warning: using `clone` on type `<T as pallet_assets::Config>::AssetId` which implements the `Copy` trait
    --> pallets/authorization/src/lib.rs:131:64
     |
-131 |                 Self::check_asset_class_ownership(who.clone(), id.clone()), 
-    |                                                                ^^^^^^^^^^ help: try removing the `clone` call: `id`                                                                                                                     
+131 |                 Self::check_asset_class_ownership(who.clone(), id.clone()),
+    |                                                                ^^^^^^^^^^ help: try removing the `clone` call: `id`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -606,13 +602,13 @@ note: this value is dropped without further use
 warning: redundant clone
    --> pallets/authorization/src/lib.rs:175:58
     |
-175 | ...                   data_consumer_address.clone(), 
+175 | ...                   data_consumer_address.clone(),
     |                                            ^^^^^^^^ help: remove this
     |
 note: this value is dropped without further use
    --> pallets/authorization/src/lib.rs:175:37
     |
-175 | ...                   data_consumer_address.clone(), 
+175 | ...                   data_consumer_address.clone(),
     |                       ^^^^^^^^^^^^^^^^^^^^^
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#redundant_clone
 
@@ -637,7 +633,7 @@ warning: using `clone` on type `<T as pallet_assets::Config>::AssetId` which imp
    --> pallets/authorization/src/lib.rs:171:76
     |
 171 |                         match <T as pallet::Config>::MetadataProvider::get(asset_id.clone()) {
-    |                                                                            ^^^^^^^^^^^^^^^^ help: try removing the `clone` call: `asset_id`                                                                                             
+    |                                                                            ^^^^^^^^^^^^^^^^ help: try removing the `clone` call: `asset_id`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -738,7 +734,7 @@ warning: calling `push_str()` using a single-character string literal
    --> pallets/ipfs/src/ipfs.rs:267:21
     |
 267 |                     endpoint.push_str("=");
-    |                     ^^^^^^^^^^^^^^^^^^^^^^ help: consider using `push` with a character literal: `endpoint.push('=')`                                                                                                                   
+    |                     ^^^^^^^^^^^^^^^^^^^^^^ help: consider using `push` with a character literal: `endpoint.push('=')`
     |
     = note: `#[warn(clippy::single_char_add_str)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#single_char_add_str
@@ -747,7 +743,7 @@ warning: calling `push_str()` using a single-character string literal
    --> pallets/ipfs/src/ipfs.rs:270:25
     |
 270 |                         endpoint.push_str("&");
-    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: consider using `push` with a character literal: `endpoint.push('&')`                                                                                                               
+    |                         ^^^^^^^^^^^^^^^^^^^^^^ help: consider using `push` with a character literal: `endpoint.push('&')`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#single_char_add_str
 
@@ -855,7 +851,7 @@ warning: unneeded `return` statement
    --> pallets/ipfs/src/lib.rs:354:5
     |
 354 |                 return Err(Error::<T>::IpfsNotAvailable);
-    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Err(Error::<T>::IpfsNotAvailable)`                                                                                                                    
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Err(Error::<T>::IpfsNotAvailable)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -919,15 +915,15 @@ help: try this
 417 ~                             let signer = Signer::<T, <T as pallet::Config>::AuthorityId>::all_accounts();
 418 ~                             if !signer.can_sign() {
 419 ~                                 log::error!(
-420 ~                                     "No local accounts available. Consider adding one via `author_insertKey` RPC.",                                                                                                                     
+420 ~                                     "No local accounts available. Consider adding one via `author_insertKey` RPC.",
 421 ~                                 );
 422 ~                             }
-423 ~                             let results = signer.send_signed_transaction(|_account| { 
+423 ~                             let results = signer.send_signed_transaction(|_account| {
 424 ~                                 Call::submit_config_complete{
 425 ~                                     reported_storage_size: actual_storage.into(),
 426 ~                                 }
 427 ~                             });
-428 + 
+428 +
 429 ~                             for (_, res) in &results {
 430 ~                                 match res {
 431 ~                                     Ok(()) => log::info!("Submitted results successfully"),
@@ -983,7 +979,7 @@ warning: unneeded `return` statement
     --> runtime/src/lib.rs:1087:17
      |
 1087 |                 return Err(DispatchError::Other("Unimplemented func_id"))
-     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Err(DispatchError::Other("Unimplemented func_id"))`                                                                                  
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `Err(DispatchError::Other("Unimplemented func_id"))`
      |
      = note: `#[warn(clippy::needless_return)]` on by default
      = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
@@ -1109,14 +1105,14 @@ warning: `iris-node` (bin "iris-node") generated 7 warnings (3 duplicates)
 
 ```
 
-* cargo audit found some problems, consider to review the dependencies of the project. 
+- cargo audit found some problems, consider to review the dependencies of the project.
 
 ```
 error: 5 vulnerabilities found!
 warning: 5 allowed warnings found
 ```
 
-* frontend
+- frontend
 
 No automated unit tests.
 
@@ -1193,7 +1189,8 @@ Learn more about data fetching with Hooks: https://reactjs.org/link/hooks-data-f
 
 ```
 
------------
+---
+
 ### Running the system:
 
 I could spin up a single node but to configure all nodes I don't have access to AWS EC2 instances to follow the tutorial. The ideal situation is to run all nodes in a single machine to test the system. This is probably possible by configuring ports and connecting the nodes in some way. A docker-compose file that spins up all nodes and services needed to test the system would be very suitable for this task.
@@ -1201,4 +1198,3 @@ I could spin up a single node but to configure all nodes I don't have access to 
 ### cryptographic scheme:
 
 Just one doubt, what is currently preventing a peer collect all parts of the threshold cryptography and reconstructing the key? Is that a problem for your cryptographic scheme?
-

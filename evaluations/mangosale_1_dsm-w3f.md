@@ -6,18 +6,18 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.    | License                  | <ul><li>[x] </li></ul>|             [License](https://github.com/Mangoboxlabs/MangoSale/blob/main/LICENSE)              | Apache 2.0                                                        |
-| 0b.    | Documentation            | <ul><li>[x] </li></ul>|     [Documentation](https://github.com/Mangoboxlabs/MangoSale/blob/main/contract/README.md)     |                                                    |
-| 0c.    | Testing Guide            | <ul><li>[x] </li></ul>| [Testing Guide](https://github.com/Mangoboxlabs/MangoSale/blob/main/contract/README.md#testing) |  |
-| 0d.    | Docker         | <ul><li>[x] </li></ul>|              [Docker](https://github.com/Mangoboxlabs/MangoSale/tree/main/docker)               |                                                     |
-| 0e.    | Article         | <ul><li>[x] </li></ul>|              [Article](https://medium.com/@mangoboxlabs/encryption-project-based-on-polkadot-ecology-mangosale-503fcb5d7913)               | |
-| 1.     | Ink! Contract 1           | <ul><li>[x] </li></ul>|   [mango_airdrop](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract/mango_airdrop)   |  |
-| 2.     | Ink! Contract 2           | <ul><li>[x] </li></ul>|      [mango_lock](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract/mango_lock)      |  |
-| 3.     | Ink! Contract 3           | <ul><li>[x] </li></ul>|   [token_factory](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract/token_factory)   |  |
-| 4.     | Front-end UI	         | <ul><li>[x] </li></ul>|          [Front-end UI](https://github.com/Mangoboxlabs/MangoSale/tree/main/frontend)           |                      |
-| 5.     | Front-end integration (e2e) test	         | <ul><li>[x] </li></ul>|      [e2e](https://github.com/Mangoboxlabs/MangoSale/tree/main/frontend#cypress-e2e-test)       |                       |
+| Number | Deliverable                      | Accepted               | Link                                                                                                            | Evaluation Notes |
+| ------ | -------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                          | <ul><li>[x] </li></ul> | [License](https://github.com/Mangoboxlabs/MangoSale/blob/main/LICENSE)                                          | Apache 2.0       |
+| 0b.    | Documentation                    | <ul><li>[x] </li></ul> | [Documentation](https://github.com/Mangoboxlabs/MangoSale/blob/main/contract/README.md)                         |                  |
+| 0c.    | Testing Guide                    | <ul><li>[x] </li></ul> | [Testing Guide](https://github.com/Mangoboxlabs/MangoSale/blob/main/contract/README.md#testing)                 |                  |
+| 0d.    | Docker                           | <ul><li>[x] </li></ul> | [Docker](https://github.com/Mangoboxlabs/MangoSale/tree/main/docker)                                            |                  |
+| 0e.    | Article                          | <ul><li>[x] </li></ul> | [Article](https://medium.com/@mangoboxlabs/encryption-project-based-on-polkadot-ecology-mangosale-503fcb5d7913) |                  |
+| 1.     | Ink! Contract 1                  | <ul><li>[x] </li></ul> | [mango_airdrop](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract/mango_airdrop)                     |                  |
+| 2.     | Ink! Contract 2                  | <ul><li>[x] </li></ul> | [mango_lock](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract/mango_lock)                           |                  |
+| 3.     | Ink! Contract 3                  | <ul><li>[x] </li></ul> | [token_factory](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract/token_factory)                     |                  |
+| 4.     | Front-end UI                     | <ul><li>[x] </li></ul> | [Front-end UI](https://github.com/Mangoboxlabs/MangoSale/tree/main/frontend)                                    |                  |
+| 5.     | Front-end integration (e2e) test | <ul><li>[x] </li></ul> | [e2e](https://github.com/Mangoboxlabs/MangoSale/tree/main/frontend#cypress-e2e-test)                            |                  |
 
 ## Evaluation V4
 
@@ -27,13 +27,13 @@ The remainder improvements and fixes in the documentation were performed.
 
 ### Documentation
 
-The documentation can be improved. 
+The documentation can be improved.
 
-In the [building](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract#building) part, you can have a troubleshooting part to indicate the use of `--optimization-passes=0` parameter when building to fix the error CodeRejected from deploying the contracts. 
+In the [building](https://github.com/Mangoboxlabs/MangoSale/tree/main/contract#building) part, you can have a troubleshooting part to indicate the use of `--optimization-passes=0` parameter when building to fix the error CodeRejected from deploying the contracts.
 
 In the [Frontend instructions to set up the Local Node Test](https://github.com/Mangoboxlabs/MangoSale/tree/main/frontend#way-2-local-node-test) needs to explain to copy the abi of the compiled contracts to frontend/src/abi since they are not updated in the frontend repository.
 
-In the [application document](https://github.com/w3f/Grants-Program/blob/master/applications/MangoSale_Protocol.md), there are some prototype images missing. Please restore them since they are under your github account and are part of the software specification. 
+In the [application document](https://github.com/w3f/Grants-Program/blob/master/applications/MangoSale_Protocol.md), there are some prototype images missing. Please restore them since they are under your github account and are part of the software specification.
 
 ### Test
 
@@ -41,13 +41,12 @@ All tests from e2e passed, but sometimes the CreatToken fails with this error:
 
 ![image (10)](https://user-images.githubusercontent.com/112647953/225697207-ba522564-0def-45bd-b6ea-e3dc78e9c43e.png)
 
-
-
 ### Code Quality
 
 The warnings from Eslint have been fixed and the test coverage in ERC20 was improved but wasn't improved in the other tests.
 
 from ERC20
+
 ```
 running 7 tests
 test erc20::tests::allowance_must_not_change_on_failed_transfer ... ok
@@ -65,9 +64,10 @@ Mar 16 10:38:45.202  INFO cargo_tarpaulin::report: Coverage Results:
 || lib.rs: 156, 158-162, 167, 175-179, 184-185, 290, 293-296, 299-302, 308, 346-354, 356, 367-372, 374-379, 385-389, 391-392, 394-395
 || Tested/Total Lines:
 || lib.rs: 78/133 +0.00%
-|| 
+||
 58.65% coverage, 78/133 lines covered, +0.00% change in coverage
 ```
+
 These tests still have low coverage, but it is something that isn't mandatory to be improved.
 
 ## Evaluation V2
@@ -81,7 +81,7 @@ The erc20 contract has been fixed.
 When I use `cargo +nightly contract build` I got the same error, and in the terminal running the node this line:
 
 ```
-2023-03-08 10:35:44.975 DEBUG tokio-runtime-worker runtime::contracts: CodeRejected: Can't decode wasm code    
+2023-03-08 10:35:44.975 DEBUG tokio-runtime-worker runtime::contracts: CodeRejected: Can't decode wasm code
 ```
 
 If I use ` cargo +nightly contract build --optimization-passes=0` The compilation succeeds and the deployment works fine. If this is a good solution for this problem, please improve the documentation to inform that.
@@ -94,13 +94,11 @@ I tried to create a token using the web application and local node and got this 
 
 ![pasted image 0 (2)](https://user-images.githubusercontent.com/112647953/224019556-16353b11-8d1a-461b-bb44-9a5eea2c34be.png)
 
-
 And I tried again, this time using the Mangobox node, and got this error:
 
 ![unnamed](https://user-images.githubusercontent.com/112647953/224019750-b3dd8b9f-b88f-4577-8f2e-2f24bf261273.png)
 
-
-Please explains how to get the APIKey, APISecret, and JWT for the `src/utils/ipfsApi.js` `pinataConfig`. I was able to do it but there is no explanation at all for the user. 
+Please explains how to get the APIKey, APISecret, and JWT for the `src/utils/ipfsApi.js` `pinataConfig`. I was able to do it but there is no explanation at all for the user.
 
 I'm still getting the same warnings using `npm install`.
 
@@ -167,6 +165,7 @@ Some errors have detailed explanations: E0061, E0599.
 For more information about an error, try `rustc --explain E0061`.
 error: could not compile `erc20` due to 8 previous errors
 ```
+
 All other tests in other contracts passed.
 
 ### Contract Deploy
@@ -195,6 +194,7 @@ To address all issues (including breaking changes), run:
   npm audit fix --force
 Run `npm audit` for details.
 ```
+
 pnpm is a requirement to run the frontend and should be included a instructions to install that for running this part of the software.
 
 Docker and run server work fine. For the cypress e2e Test, I need a better explanation of how to import the plug-in into the test browser.
@@ -253,9 +253,10 @@ warning: `token_factory` (lib) generated 3 warnings (run `cargo clippy --fix --l
 	Finished dev [unoptimized + debuginfo] target(s) in 0.11s
 ```
 
-And I ran `cargo tarpaulin` too, except in erc20 because of the error in the test. 
+And I ran `cargo tarpaulin` too, except in erc20 because of the error in the test.
 
 mango_airdrop
+
 ```
 	Finished test [unoptimized + debuginfo] target(s) in 28.24s
 Mar 06 10:58:54.932  INFO cargo_tarpaulin::process_handling::linux: Launching test

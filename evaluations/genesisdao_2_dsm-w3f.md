@@ -6,16 +6,16 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | Licence |<ul><li>[x] </li></ul>| n/a |  | 
-| 0b. | Documentation |<ul><li>[x] </li></ul>| n/a |  | 
-| 0c. | Testing and Testing Guide |<ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/docs/testing.md |  |
-| 0d. | Docker |<ul><li>[x] </li></ul>| [node Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/Dockerfile), [frontend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/Dockerfile), [backend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-service/blob/main/Dockerfile) |  |
-| 1. | Substrate module: pallet_dao_asset |<ul><li>[x] </li></ul>| [pallet](https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-assets) with [checkpoint functionality](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/pallets/dao-assets/src/functions.rs#L56-L130) |  |
-| 2. | Substrate module: pallet_dao_vote	|<ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-votes |  | 
-| 3. | Frontend Implementation	 |<ul><li>[x] </li></ul>| https://genesis-dao.org |  |
-| 4. | Design and Product Flow |<ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/design/Proposal.pdf |  |
+| Number | Deliverable                        | Accepted               | Link                                                                                                                                                                                                                                                                                                      | Evaluation Notes |
+| ------ | ---------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | Licence                            | <ul><li>[x] </li></ul> | n/a                                                                                                                                                                                                                                                                                                       |                  |
+| 0b.    | Documentation                      | <ul><li>[x] </li></ul> | n/a                                                                                                                                                                                                                                                                                                       |                  |
+| 0c.    | Testing and Testing Guide          | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/docs/testing.md                                                                                                                                                                                                                           |                  |
+| 0d.    | Docker                             | <ul><li>[x] </li></ul> | [node Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/Dockerfile), [frontend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/Dockerfile), [backend Dockerfile](https://github.com/deep-ink-ventures/genesis-dao-service/blob/main/Dockerfile) |                  |
+| 1.     | Substrate module: pallet_dao_asset | <ul><li>[x] </li></ul> | [pallet](https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-assets) with [checkpoint functionality](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/pallets/dao-assets/src/functions.rs#L56-L130)                                                                |                  |
+| 2.     | Substrate module: pallet_dao_vote  | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-votes                                                                                                                                                                                                                         |                  |
+| 3.     | Frontend Implementation            | <ul><li>[x] </li></ul> | https://genesis-dao.org                                                                                                                                                                                                                                                                                   |                  |
+| 4.     | Design and Product Flow            | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/design/Proposal.pdf                                                                                                                                                                                                                   |                  |
 
 ## Evaluation V5
 
@@ -34,14 +34,16 @@ I have tested pallet_dao_asset and pallet_dao_vote before, and they worked fine.
 I tested the docker and got again the same error, but I was able to solve this by modifying the files:
 
 Dockerfile
+
 ```
-RUN rustup install nightly-2023-03-13-x86_64-unknown-linux-gnu 
-RUN rustup default nightly-2023-03-13-x86_64-unknown-linux-gnu 
+RUN rustup install nightly-2023-03-13-x86_64-unknown-linux-gnu
+RUN rustup default nightly-2023-03-13-x86_64-unknown-linux-gnu
 RUN rustup target add wasm32-unknown-unknown
 RUN cargo build --release --features local-node
 ```
 
 docker-compose.yml
+
 ```
 services:
   chain:
@@ -55,6 +57,7 @@ services:
 And with this, Docker started the node, service, and front end. But it doesn't seem to be connected. I tried to connect my wallet and received the error "n.balance is undefined", seems to be the same error I received trying without docker "account.balance is undefined".
 
 I checked the containers and genesis-dao-node-listener-1 has some problems.
+
 ```
 user@localhost:~/Documents/genesisdao/genesis-dao-node$ docker ps
 CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                       NAMES
@@ -65,6 +68,7 @@ CONTAINER ID   IMAGE                     COMMAND                  CREATED       
 1ee29e7ce2c4   genesis-dao-node-chain    "./target/release/ge…"   22 seconds ago   Up 21 seconds   0.0.0.0:9944->9944/tcp, :::9944->9944/tcp   genesis-dao-node-chain-1
 d99b68c5bf16   redis:5-alpine            "docker-entrypoint.s…"   22 seconds ago   Up 21 seconds   0.0.0.0:6379->6379/tcp, :::6379->6379/tcp   genesis-dao-node-cache-1
 ```
+
 ```
 user@localhost:~/Documents/genesisdao/genesis-dao-node$ docker ps -a
 CONTAINER ID   IMAGE                       COMMAND                  CREATED          STATUS                      PORTS                                       NAMES
@@ -76,8 +80,9 @@ CONTAINER ID   IMAGE                       COMMAND                  CREATED     
 1ee29e7ce2c4   genesis-dao-node-chain      "./target/release/ge…"   25 seconds ago   Up 24 seconds               0.0.0.0:9944->9944/tcp, :::9944->9944/tcp   genesis-dao-node-chain-1
 d99b68c5bf16   redis:5-alpine              "docker-entrypoint.s…"   25 seconds ago   Up 24 seconds               0.0.0.0:6379->6379/tcp, :::6379->6379/tcp   genesis-dao-node-cache-1
 ```
+
 ```
-user@localhost:~/Documents/genesisdao/genesis-dao-node$ docker logs genesis-dao-node-listener-1 
+user@localhost:~/Documents/genesisdao/genesis-dao-node$ docker logs genesis-dao-node-listener-1
 Syncing initial accounts...
 Traceback (most recent call last):
   File "/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
@@ -137,6 +142,7 @@ LINE 1: INSERT INTO "core_account" ("created_at", "updated_at", "add...
 ```
 
 The logs from genesis-dao-node-db-1 seem to have some problem with Alice's address
+
 ```
 user@localhost:~/Documents/genesisdao/genesis-dao-node$ docker logs genesis-dao-node-db-1
 The files belonging to this database system will be owned by user "postgres".
@@ -210,9 +216,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named '_sqlite3'
 ```
 
-
 ## Evaluation V3
-
 
 I still with the same problem for running the node using docker:
 
@@ -281,7 +285,6 @@ make: *** [Makefile:11: build] Error 1
 ```
 
 This error seems to be a dependency one. Instructions are saying that Python 3.11 is required with some dependencies but there is no script for doing the installation or at least links for where the user can find how to install them. I thought that was trivial for installing this, however after getting this problem for a while I think would be better to have instructions to install the dependencies for the project, including Python 3.11 and the libs required, such as sqlite3.
-
 
 I could start the service, but it doesn't seams to be connected with the node. When I tried to connect my wallet in the frontend these logs appeared in the service, including the 404 code for some requests:
 
@@ -406,10 +409,9 @@ make: *** [Makefile:17: run-migration] Error 1
 
 ### Frontend
 
-I was able to test the front end using the external node and service. The functions are working fine, I was able to create a DAO, Edit its metadata, and transfer some tokens. But I noticed the page with Review Details is missing. After the creation, the message "Congratulations!" was presented, and another message as well "Sorry, you are not the admin of [Dao Name]". This this last one I think should't be presented. 
+I was able to test the front end using the external node and service. The functions are working fine, I was able to create a DAO, Edit its metadata, and transfer some tokens. But I noticed the page with Review Details is missing. After the creation, the message "Congratulations!" was presented, and another message as well "Sorry, you are not the admin of [Dao Name]". This this last one I think should't be presented.
 
 ## Evaluation V1
-
 
 ### License
 
@@ -417,7 +419,7 @@ The License in the genesis-dao-service repository is missing.
 
 ### Documentation
 
-The readme in the root of the repositories needs instructions on how to run the system using docker. 
+The readme in the root of the repositories needs instructions on how to run the system using docker.
 
 Please provide a `.env.example` and a testing guide with examples and expected results for the frontend.
 
@@ -426,6 +428,7 @@ Please provide a `.env.example` and a testing guide with examples and expected r
 The docker is working for the frontend but has some problems with the node and service.
 
 Node Logs:
+
 ```
 genesis-dao  | error: failed to run custom build command for `local-runtime v4.0.0-dev (/var/www/genesis-dao/runtime/local)`
 genesis-dao  |
@@ -460,6 +463,7 @@ genesis-dao exited with code 101
 ```
 
 Service Logs:
+
 ```
 user@localhost:~/Documents/genesisdao/genesis-dao-service$ docker compose up
 [+] Running 4/0
@@ -532,9 +536,10 @@ worker exited with code 1
 
 ### Automate Testing
 
-The Unit tests and the integration tests passed, some with good coverage and other could be improved. 
+The Unit tests and the integration tests passed, some with good coverage and other could be improved.
 
 Dao-Core
+
 ```
 test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.80s
 Apr 14 08:18:37.661  INFO cargo_tarpaulin::report: Coverage Results:
@@ -559,6 +564,7 @@ Apr 14 08:18:37.661  INFO cargo_tarpaulin::report: Coverage Results:
 ```
 
 Dao-Assets
+
 ```
 test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
 Apr 14 08:22:21.111  INFO cargo_tarpaulin::report: Coverage Results:
@@ -583,6 +589,7 @@ Apr 14 08:22:21.111  INFO cargo_tarpaulin::report: Coverage Results:
 ```
 
 Dao-Vote
+
 ```
 test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
 Apr 14 08:25:51.107  INFO cargo_tarpaulin::report: Coverage Results:
@@ -607,6 +614,7 @@ Apr 14 08:25:51.107  INFO cargo_tarpaulin::report: Coverage Results:
 ```
 
 Integration Test
+
 ```
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 230.26s
 Apr 14 08:41:06.845  INFO cargo_tarpaulin::report: Coverage Results:
@@ -632,13 +640,14 @@ Apr 14 08:41:06.845  INFO cargo_tarpaulin::report: Coverage Results:
 
 I ran `yarn test` in the frontend, and all tests passed too.
 
-### Manual Testing 
+### Manual Testing
 
 I tested following [this guide](https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/docs/testing.md#manual-voting), and all these functions are working fine.
 
 I ran the frontend without problems, but when I tried to create a dao got this message "Sorry you need at least 10 DOT tokens to create a DAO. You will get them back if you destroy the DAO.". Even that I get more balance for the connected account, the error msg remains.
 
 I tried to run the services using docker and got the error mentioned above. So I tried to run without docker and got this error:
+
 ```
 (venv) user@localhost:~/Documents/genesisdao/genesis-dao-service$ make start-dev
 Operations to perform:

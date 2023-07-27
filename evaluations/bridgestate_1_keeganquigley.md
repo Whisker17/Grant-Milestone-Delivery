@@ -5,17 +5,17 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes
-| -----: | ----------- | ------------- | ------------- | ------------- |
-| **0a.** | License | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/LICENSE) | Apache 2.0 license |
-| **0b.** | Documentation | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw#readme) | Ok. |
-| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/src/tests.rs) | Ok. |
-| **0d.** | Docker | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw#using-docker) |  |
-| 0e. | Article | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/Article.md) | Ok. |
-| 1. | Attestation oracle core: Off-chain worker | <ul><li>[x] </li></ul> |  | Ok. |
-| 2. | Attestation oracle core: Pallet | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/tree/main#add-the-collateral-reader-pallet-to-your-runtime) | Ok. |
-| 3. | Attestation oracle core: RPCs | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/src/impls.rs) | Ok. |
-| 4. | Attestation oracle core: Collateral ratio calculation | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/tree/main#about-the-collateral-reader-pallet) | Ok. |
+|  Number | Deliverable                                           | Accepted               | Link                                                                                                              | Notes              |
+| ------: | ----------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------ |
+| **0a.** | License                                               | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/LICENSE)                                          | Apache 2.0 license |
+| **0b.** | Documentation                                         | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw#readme)                                                     | Ok.                |
+| **0c.** | Testing and Testing Guide                             | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/src/tests.rs)                                     | Ok.                |
+| **0d.** | Docker                                                | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw#using-docker)                                               |                    |
+|     0e. | Article                                               | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/Article.md)                                       | Ok.                |
+|      1. | Attestation oracle core: Off-chain worker             | <ul><li>[x] </li></ul> |                                                                                                                   | Ok.                |
+|      2. | Attestation oracle core: Pallet                       | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/tree/main#add-the-collateral-reader-pallet-to-your-runtime) | Ok.                |
+|      3. | Attestation oracle core: RPCs                         | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/blob/main/src/impls.rs)                                     | Ok.                |
+|      4. | Attestation oracle core: Collateral ratio calculation | <ul><li>[x] </li></ul> | [Link](https://github.com/diadata-org/bridgestate-ocw/tree/main#about-the-collateral-reader-pallet)               | Ok.                |
 
 # General Notes
 
@@ -26,9 +26,11 @@ error: linking with `cc` failed: exit status: 1
   |
   = note: LC_ALL="C" PATH="/home/ubuntu/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin:/home/ubuntu/.nvm/versions/node/v18.13.0/bin:/home/ubuntu/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" VSLANG="1033" "cc" "-m64" "/tmp/rustcmlVVmV/symbols.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.106ynm17pgxcmi50.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.12784fs9hcon45ow.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.1kqejazt585xn42r.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.1yv6nwvxww7h97zp.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.218h7vafws7v7h7d.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.26mqtk4b6jgeh3un.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.28j15a6tkxwymlqc.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.2fg5zrsz70ae0k90.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.2pawq2utohb9bxdm.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.35pcqi7b5vh2z074.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.3atpb6avwn5vx1e1.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.3wq5rkjngfnks6kc.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.44d62mtspvfy4xxa.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.49x7shyjqqnt56ff.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.4rpps648edmcubdt.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.5am2rn332to1iw9c.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.5c57v5c6gvcji9is.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.5f5m179vbnefo777.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_script_build-6276b39b01213466.dqhd3q29xgel6sp.rcgu.o" "/home/ubuntu/substrate-node/target/debug/build/node-cli-6276b39b01213466/build_sc
 ```
+
 This is supposedly a Mac problem but it happens on Linux too.
 
 Switched toolchains but still getting this:
+
 ```rust
 error: failed to run custom build command for `node-template-runtime v4.0.0-dev (/Users/keeganquigley/substrate-node/bin/node-template/runtime)`
 
@@ -57,14 +59,16 @@ Caused by:
   For more information about this error, try `rustc --explain E0463`.
   error: could not compile `wasm-test` (bin "wasm-test") due to 3 previous errors
   ------------------------------------------------------------
-  ```
-**UPDATE:** This error is happening on regular `substrate-node-template` and is not the fault of the team. 
+```
+
+**UPDATE:** This error is happening on regular `substrate-node-template` and is not the fault of the team.
 
 Some pallet functions don't have comments. Consider improving them for next milestone.
 
 ## Tests
 
 Docker fails with the following:
+
 ```rust
 sh ./docker/build.sh
 ~/substrate-node ~/substrate-node
@@ -99,6 +103,7 @@ Building parity/substrate:latest docker image, hang on!
 ------
 process "/bin/sh -c cargo build --locked --release" did not complete successfully: exit code: 137
 ```
+
 Disk space doesn't seem to be an issue, please fix this for the next milestone.
 
 Unit tests all pass, however there are some warnings about unused variables:
@@ -147,6 +152,7 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
+
 ## Cargo Clippy
 
 Comes back clean.

@@ -6,18 +6,17 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** All by takahser
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>| [Apache License](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/LICENSE) | - |
-| 0b. | Documentation |<ul><li>[x] </li></ul>| [polk-auction-ui README](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/README.md) | - |
-| 0c. | Testing Guide |<ul><li>[x] </li></ul>| [polk-auction-ui README](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/README.md#test) | See [Test Feedback](#test-feedback) |
-| 0d. | Docker |<ul><li>[x] </li></ul>| [Dockerfile](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/Dockerfile) | - |
-| 1. | Current-Auction page |<ul><li>[x] </li></ul>| [Auction Page](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/auction) | See [Current Auction/Parachain/Crowdloan Pages Feedback](#current-auctionparachaincrowdloan-pages-feedback) |
-| 2. | Current-Parachains page |<ul><li>[x] </li></ul>| [Parachain Page](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/parachain) | See [Current Auction/Parachain/Crowdloan Pages Feedback](#parachain-page-feedback) |
-| 3. | Current-Crowdloan page |<ul><li>[x] </li></ul>| [Crowdloan Page](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/crowdloan) | See [Current Auction/Parachain/Crowdloan Pages Feedback](#crowdloan-page-feedback) |
-| 4. | Others pages |<ul><li>[x] </li></ul>| [About Page](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/about/AboutPage.tsx) | About page with basic information and FAQ section is present, although there is only 1 entry. |
-| 4. | Header |<ul><li>[x] </li></ul>| [Header Component](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/header) | Header indicates active network (Kusama or Polkadot) and contains link to about page |
-
+| Number | Deliverable             | Accepted               | Link                                                                                                                                          | Evaluation Notes                                                                                            |
+| ------ | ----------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                 | <ul><li>[x] </li></ul> | [Apache License](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/LICENSE)                        | -                                                                                                           |
+| 0b.    | Documentation           | <ul><li>[x] </li></ul> | [polk-auction-ui README](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/README.md)              | -                                                                                                           |
+| 0c.    | Testing Guide           | <ul><li>[x] </li></ul> | [polk-auction-ui README](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/README.md#test)         | See [Test Feedback](#test-feedback)                                                                         |
+| 0d.    | Docker                  | <ul><li>[x] </li></ul> | [Dockerfile](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/Dockerfile)                         | -                                                                                                           |
+| 1.     | Current-Auction page    | <ul><li>[x] </li></ul> | [Auction Page](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/auction)           | See [Current Auction/Parachain/Crowdloan Pages Feedback](#current-auctionparachaincrowdloan-pages-feedback) |
+| 2.     | Current-Parachains page | <ul><li>[x] </li></ul> | [Parachain Page](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/parachain)       | See [Current Auction/Parachain/Crowdloan Pages Feedback](#parachain-page-feedback)                          |
+| 3.     | Current-Crowdloan page  | <ul><li>[x] </li></ul> | [Crowdloan Page](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/crowdloan)       | See [Current Auction/Parachain/Crowdloan Pages Feedback](#crowdloan-page-feedback)                          |
+| 4.     | Others pages            | <ul><li>[x] </li></ul> | [About Page](https://github.com/CrommVardek/polk-auction-ui/blob/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/about/AboutPage.tsx) | About page with basic information and FAQ section is present, although there is only 1 entry.               |
+| 4.     | Header                  | <ul><li>[x] </li></ul> | [Header Component](https://github.com/CrommVardek/polk-auction-ui/tree/3286f5de70e87bd14e86fe43999897059d65aebb/src/components/header)        | Header indicates active network (Kusama or Polkadot) and contains link to about page                        |
 
 Ideally all links inside the above table should include the commit hash,
 which was used for testing the delivery. It should also be checked if the software is published under the correct open-source license.
@@ -25,6 +24,7 @@ which was used for testing the delivery. It should also be checked if the softwa
 ## General Notes
 
 In general, I was initially confused why the team uses the following IPs instead of 127.0.0.1 (localhost) in the docker configs located in your [polk-auction-core repo](https://github.com/CrommVardek/polk-auction-core):
+
 - 127.0.33.1 for the DB container
 - 127.0.0.10 for the sidecar container
 
@@ -89,11 +89,11 @@ polk-auction-core$ mvn test
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in polkauction.core.model.RuntimeSpecificationPropertiesTest
 [INFO] Running polkauction.core.model.mapper.SidecarDtoMapperTest
 [INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in polkauction.core.model.mapper.SidecarDtoMapperTest
-[INFO] 
+[INFO]
 [INFO] Results:
-[INFO] 
+[INFO]
 [INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
-[INFO] 
+[INFO]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------

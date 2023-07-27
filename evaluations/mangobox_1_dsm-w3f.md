@@ -6,17 +6,17 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.    | License                  |<ul><li>[x] </li></ul>|[License](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/LICENSE) | Apache 2.0 |
-| 0b.    | Documentation            |<ul><li>[x] </li></ul>|[Documentation](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md)|  |
-| 0c.    | Testing Guide            |<ul><li>[x] </li></ul>|[Testing Guide](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md#testing)|  |
-| 0d.    | Docker         |<ul><li>[x] </li></ul>| [Docker](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/docker) |  |
-| 1.     | Ink! Contract 1           |<ul><li>[x] </li></ul>|[MBProjects](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBProjects) |  |
-| 2.     | Ink! Contract 2           |<ul><li>[x] </li></ul>|[MBFundingCycleStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBFundingCycleStore) |  |
-| 3.     | Ink! Contract 3           |<ul><li>[x] </li></ul>|[MBToken](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBToken) |  |
-| 4.     | Ink! Contract 4           |<ul><li>[x] </li></ul>| [MBTokenStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBTokenStore) |  |
-| 5.     | Ink! Contract 5           |<ul><li>[x] </li></ul>|[MBERC20PaymentTerminal](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBERC20PaymentTerminal) |  |
+| Number | Deliverable     | Accepted               | Link                                                                                                            | Evaluation Notes |
+| ------ | --------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License         | <ul><li>[x] </li></ul> | [License](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/LICENSE)                                        | Apache 2.0       |
+| 0b.    | Documentation   | <ul><li>[x] </li></ul> | [Documentation](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md)                       |                  |
+| 0c.    | Testing Guide   | <ul><li>[x] </li></ul> | [Testing Guide](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md#testing)               |                  |
+| 0d.    | Docker          | <ul><li>[x] </li></ul> | [Docker](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/docker)                                          |                  |
+| 1.     | Ink! Contract 1 | <ul><li>[x] </li></ul> | [MBProjects](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBProjects)                         |                  |
+| 2.     | Ink! Contract 2 | <ul><li>[x] </li></ul> | [MBFundingCycleStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBFundingCycleStore)       |                  |
+| 3.     | Ink! Contract 3 | <ul><li>[x] </li></ul> | [MBToken](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBToken)                               |                  |
+| 4.     | Ink! Contract 4 | <ul><li>[x] </li></ul> | [MBTokenStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBTokenStore)                     |                  |
+| 5.     | Ink! Contract 5 | <ul><li>[x] </li></ul> | [MBERC20PaymentTerminal](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBERC20PaymentTerminal) |                  |
 
 ## General Notes
 
@@ -48,21 +48,19 @@ All static analysis alerts were fixed.
 
 All static analysis alerts were fixed.
 
+---
 
-----
 ## Evaluation V2
 
 ### Testing guide
 
-Is still missing examples in the testing guide to support exploratory testing of the software to check the system behavior. Could you please provide a sequence of steps to verify the system using the GUI? 
-
+Is still missing examples in the testing guide to support exploratory testing of the software to check the system behavior. Could you please provide a sequence of steps to verify the system using the GUI?
 
 ### Docker
 
-Worked well. 
+Worked well.
 
 ### Code Quality
-
 
 #### MBProjects:
 
@@ -103,7 +101,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:292:31
     |
 292 |             let mut balance = self.owned_tokens_count.get(&caller).unwrap_or(&0).clone();
-    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.owned_tokens_count.get(&caller).unwrap_or(&0)`                                                                    
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.owned_tokens_count.get(&caller).unwrap_or(&0)`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -121,7 +119,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:344:31
     |
 344 |             let mut balance = self.owned_tokens_count.get(&_from).unwrap_or(&0).clone();
-    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.owned_tokens_count.get(&_from).unwrap_or(&0)`                                                                      
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.owned_tokens_count.get(&_from).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -146,7 +144,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:364:31
     |
 364 |             let mut balance = self.owned_tokens_count.get(&to).unwrap_or(&0).clone();
-    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.owned_tokens_count.get(&to).unwrap_or(&0)`                                                                            
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.owned_tokens_count.get(&to).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -203,7 +201,7 @@ help: try adding this
 88 +             Self::new()
 89 +         }
 90 +     }
-91 + 
+91 +
 92 ~     impl MBFundingCycleStore {
    |
 
@@ -211,7 +209,7 @@ warning: unneeded `return` statement
    --> lib.rs:113:13
     |
 113 |             return self._getStructFor(_projectId, _configuration);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._getStructFor(_projectId, _configuration)`                                                                                                    
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._getStructFor(_projectId, _configuration)`
     |
     = note: `#[warn(clippy::needless_return)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
@@ -228,7 +226,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:129:46
     |
 129 |             let _fundingCycleConfiguration = self.latestConfigurationOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`                                       
+    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -245,7 +243,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:155:46
     |
 155 |             let _fundingCycleConfiguration = self.latestConfigurationOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`                                       
+    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -269,7 +267,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:197:50
     |
 197 |             let mut _fundingCycleConfiguration = self.latestConfigurationOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`                                   
+    |                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -277,7 +275,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:231:13
     |
 231 |             self.projectsWeight.get(&_projectId).unwrap_or(&0).clone()
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.projectsWeight.get(&_projectId).unwrap_or(&0)`                                                                                      
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.projectsWeight.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -285,7 +283,7 @@ warning: unneeded `return` statement
    --> lib.rs:244:13
     |
 244 |             return self.getProjectsWeight(_projectId) / 1000000000000000000
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self.getProjectsWeight(_projectId) / 1000000000000000000`                                                                                 
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self.getProjectsWeight(_projectId) / 1000000000000000000`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -316,7 +314,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:259:46
     |
 259 |             let _fundingCycleConfiguration = self.latestConfigurationOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`                                       
+    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -324,7 +322,7 @@ warning: unneeded `return` statement
    --> lib.rs:295:13
     |
 295 |             return self._getStructFor(_projectId, _configuration);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._getStructFor(_projectId, _configuration)`                                                                                                    
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._getStructFor(_projectId, _configuration)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -332,7 +330,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:305:46
     |
 305 |             let _fundingCycleConfiguration = self.latestConfigurationOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`                                       
+    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -370,7 +368,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:358:33
     |
 358 |             let configuration = self.latestConfigurationOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`                                                    
+    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.latestConfigurationOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -394,7 +392,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:409:46
     |
 409 |             let _packedIntrinsicProperties = self._packedIntrinsicPropertiesOf.get(&(_projectId,_configuration)).unwrap_or(&0).clone();
-    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedIntrinsicPropertiesOf.get(&(_projectId,_configuration)).unwrap_or(&0)`                                                                                                                 
+    |                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedIntrinsicPropertiesOf.get(&(_projectId,_configuration)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -402,7 +400,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:410:43
     |
 410 |             let _packedUserPropertiesOf = self._packedUserPropertiesOf.get(&(_projectId,_configuration)).unwrap_or(&0).clone();
-    |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedUserPropertiesOf.get(&(_projectId,_configuration)).unwrap_or(&0)`    
+    |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedUserPropertiesOf.get(&(_projectId,_configuration)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -410,7 +408,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:418:37
     |
 418 |             fundingCycle.metadata = self._metadataOf.get(&(_projectId,_configuration)).unwrap_or(&0).clone();
-    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._metadataOf.get(&(_projectId,_configuration)).unwrap_or(&0)`                                  
+    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._metadataOf.get(&(_projectId,_configuration)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -418,7 +416,6 @@ warning: `mb_fundingcyclestore` (lib) generated 23 warnings
     Finished dev [unoptimized + debuginfo] target(s) in 14.93s
 
 ```
-
 
 #### MBToken
 
@@ -447,7 +444,7 @@ warning: returning the result of a `let` binding from a block
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
 help: return the expression directly
     |
-128 ~             
+128 ~
 129 ~             Self {
 130 +                 total_supply: 0,
 131 +                 balances:StorageHashMap::new(),
@@ -484,7 +481,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:325:33
     |
 325 |             let n_checkpoints = self.num_check_points.get(&user).unwrap_or(&0).clone();
-    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&user).unwrap_or(&0)`                                                                          
+    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&user).unwrap_or(&0)`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -502,7 +499,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:336:33
     |
 336 |             let n_checkpoints = self.num_check_points.get(&account).unwrap_or(&0).clone();
-    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&account).unwrap_or(&0)`                                                                    
+    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&account).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -526,7 +523,7 @@ warning: use of `unwrap_or` followed by a call to `default`
    --> lib.rs:371:77
     |
 371 |             let current_delegate =  self.delegates.get(&delegator).copied().unwrap_or(AccountId::default());
-    |                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try this: `unwrap_or_default()`                                                                                             
+    |                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try this: `unwrap_or_default()`
     |
     = note: `#[warn(clippy::or_fun_call)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#or_fun_call
@@ -535,7 +532,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
    --> lib.rs:388:13
     |
 388 |             self.delegates.get(&delegator).unwrap_or(&AccountId::default()).clone()
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.delegates.get(&delegator).unwrap_or(&AccountId::default())`                                                            
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.delegates.get(&delegator).unwrap_or(&AccountId::default())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -543,7 +540,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:395:13
     |
 395 |             self.num_check_points.get(&user).unwrap_or(&0).clone()
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&user).unwrap_or(&0)`                                                                                              
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&user).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -575,7 +572,7 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
    --> lib.rs:410:40
     |
 410 |                     let src_rep_num =  self.num_check_points.get(&src_rep).unwrap_or(&0).clone();
-    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&src_rep).unwrap_or(&0)`                                                             
+    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.num_check_points.get(&src_rep).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -595,7 +592,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
   --> lib.rs:72:35
    |
 72 |             let mut totalSupply = self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0).clone();
-   |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`                                                 
+   |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`
    |
    = note: `#[warn(clippy::clone_on_copy)]` on by default
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -604,7 +601,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
   --> lib.rs:73:26
    |
 73 |             let _token = self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone();
-   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                  
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
    |
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -612,7 +609,7 @@ warning: manual implementation of an assign operation
   --> lib.rs:76:17
    |
 76 |                 totalSupply = totalSupply +  token_instance.total_supply();
-   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `totalSupply += token_instance.total_supply()`                                                                                               
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `totalSupply += token_instance.total_supply()`
    |
    = note: `#[warn(clippy::assign_op_pattern)]` on by default
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#assign_op_pattern
@@ -621,7 +618,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
   --> lib.rs:95:31
    |
 95 |             let mut balance = self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0).clone();
-   |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`                                         
+   |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`
    |
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -629,7 +626,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
   --> lib.rs:96:26
    |
 96 |             let _token = self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone();
-   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                  
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
    |
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -637,7 +634,7 @@ warning: manual implementation of an assign operation
   --> lib.rs:99:17
    |
 99 |                 balance = balance +  token_instance.balance_of(_holder);
-   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `balance += token_instance.balance_of(_holder)`                                                                                                 
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `balance += token_instance.balance_of(_holder)`
    |
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#assign_op_pattern
 
@@ -645,7 +642,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
    --> lib.rs:123:26
     |
 123 |             let _token = self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                 
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -653,7 +650,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
    --> lib.rs:148:13
     |
 148 |             self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone()
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                              
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -661,7 +658,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
    --> lib.rs:170:26
     |
 170 |             let _token = self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                 
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -669,7 +666,7 @@ warning: using `clone` on type `bool` which implements the `Copy` trait
    --> lib.rs:174:35
     |
 174 |             let requireClaimFor = self.requireClaimFor.get(&_projectId).unwrap_or(&false).clone();
-    |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.requireClaimFor.get(&_projectId).unwrap_or(&false)`                                                      
+    |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.requireClaimFor.get(&_projectId).unwrap_or(&false)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -677,7 +674,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:181:30
     |
 181 |                let balance = self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0).clone();
-    |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`                                         
+    |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -685,7 +682,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:182:34
     |
 182 |                let totalSupply = self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`                                                 
+    |                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -693,7 +690,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
    --> lib.rs:206:26
     |
 206 |             let _token = self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                 
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -701,7 +698,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:211:37
     |
 211 |             let _unclaimedBalance = self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0).clone();
-    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`                                  
+    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -709,7 +706,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:212:31
     |
 212 |             let totalSupply = self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0).clone();
-    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`                                                    
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -717,7 +714,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
    --> lib.rs:237:26
     |
 237 |             let _token = self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default()).clone();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`                                                 
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.tokenOf.get(&_projectId).unwrap_or(&AccountId::default())`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -725,7 +722,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:242:41
     |
 242 |             let mut _unclaimedBalance = self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0).clone();
-    |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`                              
+    |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedBalanceOf.get(&(_holder,_projectId)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -733,7 +730,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:243:49
     |
 243 |             let mut _unclaimedTotalSupplyOf =   self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`                                  
+    |                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.unclaimedTotalSupplyOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -754,7 +751,7 @@ warning: unneeded `return` statement
    --> lib.rs:145:13
     |
 145 |             return _adjustedOverflow * 10000000000000000000 / (prices_instance.priceFor(self.currency, 18, self.decimals));
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `_adjustedOverflow * 10000000000000000000 / (prices_instance.priceFor(self.currency, 18, self.decimals))`                                                                                                            
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `_adjustedOverflow * 10000000000000000000 / (prices_instance.priceFor(self.currency, 18, self.decimals))`
     |
     = note: `#[warn(clippy::needless_return)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
@@ -817,7 +814,7 @@ warning: unneeded `return` statement
    --> lib.rs:261:13
     |
 261 |             return self._distributePayoutsOf(_projectId, _amount, _currency, _minReturnedTokens, _memo);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._distributePayoutsOf(_projectId, _amount, _currency, _minReturnedTokens, _memo)`                        
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._distributePayoutsOf(_projectId, _amount, _currency, _minReturnedTokens, _memo)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -839,7 +836,7 @@ warning: unneeded `return` statement
    --> lib.rs:288:13
     |
 288 |             return self._useAllowanceOf(_projectId, _amount, _currency, _minReturnedTokens, _beneficiary, _memo);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._useAllowanceOf(_projectId, _amount, _currency, _minReturnedTokens, _beneficiary, _memo)`      
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._useAllowanceOf(_projectId, _amount, _currency, _minReturnedTokens, _beneficiary, _memo)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -847,7 +844,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:329:52
     |
 329 |             return self.getPayAmount(_projectId) - self.claimAmount.get(&_projectId).unwrap_or(&0).clone()
-    |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.claimAmount.get(&_projectId).unwrap_or(&0)`                                                     
+    |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.claimAmount.get(&_projectId).unwrap_or(&0)`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -856,7 +853,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:338:30
     |
 338 |             let mut amount = self.claimAmount.get(&_projectId).unwrap_or(&0).clone();
-    |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.claimAmount.get(&_projectId).unwrap_or(&0)`                                                                           
+    |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.claimAmount.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -864,7 +861,7 @@ warning: using `clone` on type `bool` which implements the `Copy` trait
    --> lib.rs:368:24
     |
 368 |             let feed = self.isFeelessAddress.get(&Self::env().caller()).unwrap_or(&false).clone();
-    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.isFeelessAddress.get(&Self::env().caller()).unwrap_or(&false)`                                           
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.isFeelessAddress.get(&Self::env().caller()).unwrap_or(&false)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -931,17 +928,14 @@ See 'docker run --help'.
 
 Please provide a complete example to support the testing of the application behavior. This example can be performed using the front-end integrated with the back-end of the application.
 
-
 ### Automated Tests
-
 
 First, let's make all tests pass then I'll check the coverage of the tests.
 
-
 #### MBProjects:
 
-
 Some tests are failing:
+
 ```
 diogo@testbox:~/workspace/mangobox/Mangoboxink/contract/MBProjects$ cargo +nightly test
     Finished test [unoptimized + debuginfo] target(s) in 0.05s
@@ -1018,7 +1012,6 @@ test result: FAILED. 2 passed; 8 failed; 0 ignored; 0 measured; 0 filtered out; 
 error: test failed, to rerun pass `--lib`
 ```
 
-
 #### MBFundingCycleStore
 
 Testing passing:
@@ -1041,7 +1034,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
 
-
 #### MBToken
 
 I had some compilation errors:
@@ -1051,7 +1043,7 @@ error[E0061]: this function takes 2 arguments but 5 arguments were supplied
    --> lib.rs:487:26
     |
 487 |             let _erc20 = MBToken::new(100,String::from("test"),String::from("test"),8,AccountId::from([0x01; 32]));
-    |                          ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected                                                                                                      
+    |                          ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected
     |                                       |                                             |
     |                                       argument of type `{integer}` unexpected       argument of type `{integer}` unexpected
     |
@@ -1092,7 +1084,7 @@ error[E0061]: this function takes 2 arguments but 5 arguments were supplied
    --> lib.rs:532:29
     |
 532 |             let mut erc20 = MBToken::new(100,String::from("test"),String::from("test"),8,AccountId::from([0x01; 32]));
-    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected                                                                                                   
+    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected
     |                                          |                                             |
     |                                          argument of type `{integer}` unexpected       argument of type `{integer}` unexpected
     |
@@ -1110,7 +1102,7 @@ error[E0061]: this function takes 2 arguments but 5 arguments were supplied
    --> lib.rs:565:29
     |
 565 |             let mut erc20 = MBToken::new(100,String::from("test"),String::from("test"),8,AccountId::from([0x01; 32]));
-    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected                                                                                                   
+    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected
     |                                          |                                             |
     |                                          argument of type `{integer}` unexpected       argument of type `{integer}` unexpected
     |
@@ -1128,7 +1120,7 @@ error[E0061]: this function takes 2 arguments but 5 arguments were supplied
    --> lib.rs:611:29
     |
 611 |             let mut erc20 = MBToken::new(100,String::from("test"),String::from("test"),8,AccountId::from([0x01; 32]));
-    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected                                                                                                   
+    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected
     |                                          |                                             |
     |                                          argument of type `{integer}` unexpected       argument of type `{integer}` unexpected
     |
@@ -1146,7 +1138,7 @@ error[E0061]: this function takes 2 arguments but 5 arguments were supplied
    --> lib.rs:672:29
     |
 672 |             let mut erc20 = MBToken::new(100,String::from("test"),String::from("test"),8,AccountId::from([0x01; 32]));
-    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected                                                                                                   
+    |                             ^^^^^^^^^^^^ ---                                           - --------------------------- argument of type `ink_env::AccountId` unexpected
     |                                          |                                             |
     |                                          argument of type `{integer}` unexpected       argument of type `{integer}` unexpected
     |
@@ -1273,7 +1265,6 @@ For more information about this error, try `rustc --explain E0061`.
 
 ```
 
-
 #### MBERC20PaymentTerminal
 
 Some compilation problems:
@@ -1306,8 +1297,8 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-578 |             let  MT= MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                 
-    |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                  
+578 |             let  MT= MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 7 arguments but 0 arguments were supplied
    --> lib.rs:583:22
@@ -1336,8 +1327,8 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-583 |             let MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                 
-    |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                  
+583 |             let MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 7 arguments but 0 arguments were supplied
    --> lib.rs:589:26
@@ -1366,8 +1357,8 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-589 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                             
-    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                              
+589 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 7 arguments but 0 arguments were supplied
    --> lib.rs:595:25
@@ -1396,8 +1387,8 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-595 |            let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                              
-    |                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                               
+595 |            let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 7 arguments but 0 arguments were supplied
    --> lib.rs:601:26
@@ -1426,8 +1417,8 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-601 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                             
-    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                              
+601 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 7 arguments but 0 arguments were supplied
    --> lib.rs:607:26
@@ -1456,8 +1447,8 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-607 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                             
-    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                              
+607 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 7 arguments but 0 arguments were supplied
    --> lib.rs:613:26
@@ -1486,12 +1477,11 @@ note: associated function defined here
     |             ---------------------
 help: provide the arguments
     |
-613 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                             
-    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                              
+613 |             let mut MT = MBERC20PaymentTerminal::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For more information about this error, try `rustc --explain E0061`.
 error: could not compile `mberc20_paymentterminal` due to 7 previous errors
 warning: build failed, waiting for other jobs to finish...
 
 ```
-

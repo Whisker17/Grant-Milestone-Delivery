@@ -6,19 +6,19 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.    | License           |<ul><li>[x] </li></ul>| [LICENSE](https://github.com/daos-org/daos#license)                                                                                                                              | ok | 
-| 0b.    | Documentation        |<ul><li>[x] </li></ul>| [document](https://github.com/daos-org/daos/tree/main/document)                                                                                                                  | ok | 
-|0c.| Testing |<ul><li>[x] </li></ul>| tests.rs file under each module                                                                                                                                                  | ok |
-|0d. | Example |<ul><li>[x] </li></ul>| [VC DAO template](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/vc), [use daos for VC DAO](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/tico/src/vc.rs) |  |
-|0e. | Comment |<ul><li>[x] </li></ul>|                                                                                                                                                                                  | Code Documentation ok. |
-|0f.| Benchmarking |<ul><li>[x] </li></ul>| benchmarking.rs.rs file under each module                                                                                                                                        |  |
-|1. | create-dao pallet |<ul><li>[x] </li></ul>| [crate dao](https://github.com/daos-org/daos/tree/main/create-dao)                                                                                                               |  |
-|2. | agency pallet |<ul><li>[x] </li></ul>| [agency](https://github.com/daos-org/daos/tree/main/agency)                                                                                                                      |  |
-|3. | doas pallet |<ul><li>[x] </li></ul>| [doas](https://github.com/daos-org/daos/tree/main/doas)                                                                                                                          |  |
-|4. | square pallet |<ul><li>[x] </li></ul>| [square](https://github.com/daos-org/daos/tree/main/square)                                                                                                                      |  |
-|5. | sudo pallet |<ul><li>[x] </li></ul>| [sudo](https://github.com/daos-org/daos/tree/main/sudo)                                                                                                                          |  |
+| Number | Deliverable       | Accepted               | Link                                                                                                                                                                             | Evaluation Notes       |
+| ------ | ----------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| 0a.    | License           | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/daos-org/daos#license)                                                                                                                              | ok                     |
+| 0b.    | Documentation     | <ul><li>[x] </li></ul> | [document](https://github.com/daos-org/daos/tree/main/document)                                                                                                                  | ok                     |
+| 0c.    | Testing           | <ul><li>[x] </li></ul> | tests.rs file under each module                                                                                                                                                  | ok                     |
+| 0d.    | Example           | <ul><li>[x] </li></ul> | [VC DAO template](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/vc), [use daos for VC DAO](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/tico/src/vc.rs) |                        |
+| 0e.    | Comment           | <ul><li>[x] </li></ul> |                                                                                                                                                                                  | Code Documentation ok. |
+| 0f.    | Benchmarking      | <ul><li>[x] </li></ul> | benchmarking.rs.rs file under each module                                                                                                                                        |                        |
+| 1.     | create-dao pallet | <ul><li>[x] </li></ul> | [crate dao](https://github.com/daos-org/daos/tree/main/create-dao)                                                                                                               |                        |
+| 2.     | agency pallet     | <ul><li>[x] </li></ul> | [agency](https://github.com/daos-org/daos/tree/main/agency)                                                                                                                      |                        |
+| 3.     | doas pallet       | <ul><li>[x] </li></ul> | [doas](https://github.com/daos-org/daos/tree/main/doas)                                                                                                                          |                        |
+| 4.     | square pallet     | <ul><li>[x] </li></ul> | [square](https://github.com/daos-org/daos/tree/main/square)                                                                                                                      |                        |
+| 5.     | sudo pallet       | <ul><li>[x] </li></ul> | [sudo](https://github.com/daos-org/daos/tree/main/sudo)                                                                                                                          |                        |
 
 ## General Notes
 
@@ -41,24 +41,23 @@ Please, refer to our deliverable [Milestone Deliverable Guideline](https://githu
 All pallets has good coverage.
 
 Agency pallet
-lib.rs	194 / 262 (74.05%) (+29.23%)
+lib.rs 194 / 262 (74.05%) (+29.23%)
 
 Create Dao
-lib.rs	40 / 45 (88.89%) (+8.45%)
+lib.rs 40 / 45 (88.89%) (+8.45%)
 
 Doas
-lib.rs	14 / 17 (82.35%) (+5.88%)
+lib.rs 14 / 17 (82.35%) (+5.88%)
 
 Square
-lib.rs	232 / 271 (85.61%) (+17.38%)
+lib.rs 232 / 271 (85.61%) (+17.38%)
 
 Sudo
-lib.rs	30 / 34 (88.24%) (+0.74%)
+lib.rs 30 / 34 (88.24%) (+0.74%)
 
 #### Static Analysis
 
 All warnings were fixed.
-
 
 ### Evaluation V1
 
@@ -66,37 +65,35 @@ All warnings were fixed.
 
 There are two licence files in the repository, one APACHE 2.0 and other MIT. Which is the licence of the software? Why two licenses? Usually we distribute software under just one license.
 
-
 #### Testing Guides
 
-We need a tutorial for performing system tests on the software. Something like [this one](https://github.com/Popular-Coding/ventur/blob/main/pallets/escrow/README.md). 
+We need a tutorial for performing system tests on the software. Something like [this one](https://github.com/Popular-Coding/ventur/blob/main/pallets/escrow/README.md).
 
-We also need instructions for running the benchmarks mentioned. 
+We also need instructions for running the benchmarks mentioned.
 
-The lack of these tutorials prevented me to test the pallets delivered. 
+The lack of these tutorials prevented me to test the pallets delivered.
 
 #### Tests Coverage
 
 Agency pallet
-lib.rs	- 121 / 270 (44.81%)
+lib.rs - 121 / 270 (44.81%)
 some paths and full methdos do not covered.
 
 Create Dao
-lib.rs	- 37 / 46 (80.43%)
+lib.rs - 37 / 46 (80.43%)
 some paths does not covered.
 
 Doas
-lib.rs	13 / 17 (76.47%)
+lib.rs 13 / 17 (76.47%)
 some error paths does not covered.
 
 Square
-lib.rs	189 / 277 (68.23%)
+lib.rs 189 / 277 (68.23%)
 some paths and full methdos do not covered.
 
 Sudo
-lib.rs	28 / 32 (87.50%)
+lib.rs 28 / 32 (87.50%)
 Good coverage.
-
 
 #### Static Analysis
 
@@ -354,7 +351,6 @@ warning: `daos-agency` (lib) generated 4 warnings
 error: could not compile `daos-agency` due to previous error; 4 warnings emitted
 ```
 
-
 #### Code documentation
 
 The folowing warning was presented while generating the html documentation from the source code:
@@ -374,4 +370,3 @@ warning: `daos-primitives` (lib doc) generated 1 warning
 ```
 
 Good code documentation.
-

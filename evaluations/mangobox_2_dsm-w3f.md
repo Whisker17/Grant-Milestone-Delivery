@@ -6,24 +6,23 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.    |        License         |<ul><li>[x] </li></ul>|[License](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/LICENSE) | Apache 2.0                  |
-| 0b-01.    |     Documentation01      |<ul><li>[x] </li></ul>|[Documentation01](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md) |  |
-| 0b-02.    |     Documentation02      |<ul><li>[x] </li></ul>|[Documentation02](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/Frontend/README.md) |  |
-| 0c.    |     Testing Guide      |<ul><li>[x] </li></ul>|[ Testing Guide ](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md#testing) |  |
-| 0d.    |         Docker         |<ul><li>[x] </li></ul>| [Docker](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/docker) |  |
-| 0e.    |        Article         |<ul><li>[x] </li></ul>| [Article](https://medium.com/@mangoboxlabs/introduction-to-mongobox-5fab08bd1b57) |  |
-| 1.     |     Front-end File     |<ul><li>[x] </li></ul>| [Front-end File](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/Frontend) |  |
-| 2.     |           UI           |<ul><li>[x] </li></ul>|  [UI](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/UIs)   |  |
-| 3.     | Functional Testnet URL |<ul><li>[x] </li></ul>|                  https://app.mangobox.xyz/                   |  |
-| 4.     |     Ink! Contract 6     |<ul><li>[x] </li></ul>| [MBSplitsStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBSplitsStore) |  |
-| 5.     |     Ink! Contract 7     |<ul><li>[x] </li></ul>| [MBOperatorStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBOperatorStore) |  |
-| 6.     |     Ink! Contract 8    |<ul><li>[x] </li></ul>| [MBDirectory](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBDirectory) |  |
-| 7.     |     Ink! Contract 9     |<ul><li>[x] </li></ul>|[MBController](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBController) | |
-| 8.     |     Ink! Contract 10     |<ul><li>[x] </li></ul>| [MBSingleTokenPaymentTerminalStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBSingleTokenPaymentTerminalStore)  |
-| 9.     |     Ink! Contract 11    |<ul><li>[x] </li></ul>| [MBPrices](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBPrices) | |
-
+| Number | Deliverable            | Accepted               | Link                                                                                                                                  | Evaluation Notes |
+| ------ | ---------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                | <ul><li>[x] </li></ul> | [License](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/LICENSE)                                                              | Apache 2.0       |
+| 0b-01. | Documentation01        | <ul><li>[x] </li></ul> | [Documentation01](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md)                                           |                  |
+| 0b-02. | Documentation02        | <ul><li>[x] </li></ul> | [Documentation02](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/Frontend/README.md)                                           |                  |
+| 0c.    | Testing Guide          | <ul><li>[x] </li></ul> | [ Testing Guide ](https://github.com/Mangoboxlabs/Mangoboxink/blob/main/contract/README.md#testing)                                   |                  |
+| 0d.    | Docker                 | <ul><li>[x] </li></ul> | [Docker](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/docker)                                                                |                  |
+| 0e.    | Article                | <ul><li>[x] </li></ul> | [Article](https://medium.com/@mangoboxlabs/introduction-to-mongobox-5fab08bd1b57)                                                     |                  |
+| 1.     | Front-end File         | <ul><li>[x] </li></ul> | [Front-end File](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/Frontend)                                                      |                  |
+| 2.     | UI                     | <ul><li>[x] </li></ul> | [UI](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/UIs)                                                                       |                  |
+| 3.     | Functional Testnet URL | <ul><li>[x] </li></ul> | https://app.mangobox.xyz/                                                                                                             |                  |
+| 4.     | Ink! Contract 6        | <ul><li>[x] </li></ul> | [MBSplitsStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBSplitsStore)                                         |                  |
+| 5.     | Ink! Contract 7        | <ul><li>[x] </li></ul> | [MBOperatorStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBOperatorStore)                                     |                  |
+| 6.     | Ink! Contract 8        | <ul><li>[x] </li></ul> | [MBDirectory](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBDirectory)                                             |                  |
+| 7.     | Ink! Contract 9        | <ul><li>[x] </li></ul> | [MBController](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBController)                                           |                  |
+| 8.     | Ink! Contract 10       | <ul><li>[x] </li></ul> | [MBSingleTokenPaymentTerminalStore](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBSingleTokenPaymentTerminalStore) |
+| 9.     | Ink! Contract 11       | <ul><li>[x] </li></ul> | [MBPrices](https://github.com/Mangoboxlabs/Mangoboxink/tree/main/contract/MBPrices)                                                   |                  |
 
 ## General Notes
 
@@ -35,7 +34,7 @@ Now we have examples and they worked well.
 
 #### Front-end File
 
-Comments were improved. 
+Comments were improved.
 
 #### MBSplitsStore
 
@@ -61,14 +60,13 @@ All static analysis alerts were fixed.
 
 All static analysis alerts were fixed.
 
-
 ## Evaluation V2
 
 ### Testing guide
 
 The deployment process for the contracts is complicated. The parameters in the constructors should be clarified to be possible to deploy the application locally. Ideally, we need the order of contract deployment and an example or script for doing the contract deployments.
 
-Is still missing examples in the testing guide to support exploratory testing of the software to check the system behavior. Could you please provide a sequence of steps to verify the system using the GUI? 
+Is still missing examples in the testing guide to support exploratory testing of the software to check the system behavior. Could you please provide a sequence of steps to verify the system using the GUI?
 
 ### Docker
 
@@ -107,7 +105,7 @@ warning: unneeded `return` statement
    --> lib.rs:100:13
     |
 100 |             return self._getStructsFor(_projectId, _group);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._getStructsFor(_projectId, _group)`                                                                                                      
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._getStructsFor(_projectId, _group)`
     |
     = note: `#[warn(clippy::needless_return)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
@@ -129,7 +127,7 @@ warning: the variable `_i` is used as a loop counter
    --> lib.rs:142:13
     |
 142 |             for _split in _splits.iter() {
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `for (_i, _split) in _splits.iter().enumerate()`                                                                                                                   
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `for (_i, _split) in _splits.iter().enumerate()`
     |
     = note: `#[warn(clippy::explicit_counter_loop)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#explicit_counter_loop
@@ -138,7 +136,7 @@ warning: manual implementation of an assign operation
    --> lib.rs:144:17
     |
 144 |                 _percentTotal = _percentTotal + _split.percent;
-    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `_percentTotal += _split.percent`                                                                                                           
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: replace it with: `_percentTotal += _split.percent`
     |
     = note: `#[warn(clippy::assign_op_pattern)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#assign_op_pattern
@@ -147,7 +145,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:159:32
     |
 159 |              let _splitCount = self._splitCountOf.get(&(_projectId,_group)).unwrap_or(&0).clone();
-    |                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._splitCountOf.get(&(_projectId,_group)).unwrap_or(&0)`                                       
+    |                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._splitCountOf.get(&(_projectId,_group)).unwrap_or(&0)`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -156,7 +154,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:162:41
     |
 162 |                 let _packedSplitPart1 = self._packedSplitParts1Of.get(&(_projectId,_group,i)).unwrap_or(&0).clone();
-    |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedSplitParts1Of.get(&(_projectId,_group,i)).unwrap_or(&0)`            
+    |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedSplitParts1Of.get(&(_projectId,_group,i)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -164,7 +162,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
    --> lib.rs:177:43
     |
 177 |                  let _packedSplitPart2 =  self._packedSplitParts2Of.get(&(_projectId,_group,i)).unwrap_or(&0).clone();
-    |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedSplitParts2Of.get(&(_projectId,_group,i)).unwrap_or(&0)`          
+    |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._packedSplitParts2Of.get(&(_projectId,_group,i)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -205,7 +203,7 @@ help: try adding this
 33 +             Self::new()
 34 +         }
 35 +     }
-36 + 
+36 +
 37 ~     impl MBOperatorStore {
    |
 
@@ -213,7 +211,7 @@ warning: unneeded `return` statement
   --> lib.rs:56:13
    |
 56 |             return ((permission >> _permissionIndex) & 1) == 1;
-   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `((permission >> _permissionIndex) & 1) == 1`                                                                                               
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `((permission >> _permissionIndex) & 1) == 1`
    |
    = note: `#[warn(clippy::needless_return)]` on by default
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
@@ -222,7 +220,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
   --> lib.rs:55:30
    |
 55 |             let permission = self.permissionsOf.get(&(_operator,_account)).unwrap_or(&0).clone();
-   |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.permissionsOf.get(&(_operator,_account)).unwrap_or(&0)`                                        
+   |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.permissionsOf.get(&(_operator,_account)).unwrap_or(&0)`
    |
    = note: `#[warn(clippy::clone_on_copy)]` on by default
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -230,7 +228,7 @@ warning: using `clone` on type `u64` which implements the `Copy` trait
 warning: `mb_operatorstore` (lib) generated 4 warnings
 ```
 
------
+---
 
 #### MBDirectory
 
@@ -264,7 +262,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
   --> lib.rs:88:28
    |
 88 |             let terminal = self._primaryTerminalOf.get(&(_projectId, _token)).unwrap_or(&AccountId::default()).clone();
-   |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._primaryTerminalOf.get(&(_projectId, _token)).unwrap_or(&AccountId::default())`                                                                                                              
+   |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._primaryTerminalOf.get(&(_projectId, _token)).unwrap_or(&AccountId::default())`
    |
    = note: `#[warn(clippy::clone_on_copy)]` on by default
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -327,7 +325,7 @@ warning: length comparison to zero
    --> lib.rs:249:16
     |
 249 |             if _terminals.len() > 0 { let _ret = directory.setTerminalsOf(projectId, _terminals); }
-    |                ^^^^^^^^^^^^^^^^^^^^ help: using `!is_empty` is clearer and more explicit: `!_terminals.is_empty()`                                                                                                                
+    |                ^^^^^^^^^^^^^^^^^^^^ help: using `!is_empty` is clearer and more explicit: `!_terminals.is_empty()`
     |
     = note: `#[warn(clippy::len_zero)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#len_zero
@@ -336,7 +334,7 @@ warning: unneeded `return` statement
    --> lib.rs:285:13
     |
 285 |             return tokenStore.issueFor(_projectId, _name, _symbol);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `tokenStore.issueFor(_projectId, _name, _symbol)`                                                                                      
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `tokenStore.issueFor(_projectId, _name, _symbol)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -352,7 +350,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:314:47
     |
 314 |             let mut processedTokenTrackerOf = self._processedTokenTrackerOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._processedTokenTrackerOf.get(&_projectId).unwrap_or(&0)`                    
+    |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._processedTokenTrackerOf.get(&_projectId).unwrap_or(&0)`
     |
     = note: `#[warn(clippy::clone_on_copy)]` on by default
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -361,7 +359,7 @@ warning: returning the result of a `let` binding from a block
    --> lib.rs:347:13
     |
 346 |             let ret = tokenStore.burnFrom(_holder, _projectId, _tokenCount, _preferClaimedTokens);
-    |             -------------------------------------------------------------------------------------- unnecessary `let` binding                                                                                                      
+    |             -------------------------------------------------------------------------------------- unnecessary `let` binding
 347 |             ret
     |             ^^^
     |
@@ -369,7 +367,7 @@ warning: returning the result of a `let` binding from a block
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#let_and_return
 help: return the expression directly
     |
-346 ~             
+346 ~
 347 ~             tokenStore.burnFrom(_holder, _projectId, _tokenCount, _preferClaimedTokens)
     |
 
@@ -377,7 +375,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:342:47
     |
 342 |             let mut processedTokenTrackerOf = self._processedTokenTrackerOf.get(&_projectId).unwrap_or(&0).clone();
-    |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._processedTokenTrackerOf.get(&_projectId).unwrap_or(&0)`                    
+    |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self._processedTokenTrackerOf.get(&_projectId).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -385,7 +383,7 @@ warning: unneeded `return` statement
    --> lib.rs:363:13
     |
 363 |             return self._distributeReservedTokensOf(_projectId, _memo);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._distributeReservedTokensOf(_projectId, _memo)`                                                                              
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._distributeReservedTokensOf(_projectId, _memo)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -437,7 +435,7 @@ warning: unneeded `return` statement
    --> lib.rs:143:13
     |
 143 |             return self._currentTotalOverflowOf(_projectId, _decimals, _currency);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._currentTotalOverflowOf(_projectId, _decimals, _currency)`                                                        
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `self._currentTotalOverflowOf(_projectId, _decimals, _currency)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -460,7 +458,7 @@ warning: unneeded `return` statement
    --> lib.rs:191:13
     |
 191 |             return (fundingCycle, _amount * _weight  / 1000000000000000000, AccountId::default(), _memo);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(fundingCycle, _amount * _weight  / 1000000000000000000, AccountId::default(), _memo)`          
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(fundingCycle, _amount * _weight  / 1000000000000000000, AccountId::default(), _memo)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -486,7 +484,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:201:13
     |
 201 |             self.balanceOf.get(&(_account, _projectId)).unwrap_or(&0).clone()
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.balanceOf.get(&(_account, _projectId)).unwrap_or(&0)`                                                            
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.balanceOf.get(&(_account, _projectId)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -494,7 +492,7 @@ warning: unneeded `return` statement
    --> lib.rs:239:13
     |
 239 |             return (fundingCycle, 100, AccountId::default(), _memo);
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(fundingCycle, 100, AccountId::default(), _memo)`                                                                                    
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `(fundingCycle, 100, AccountId::default(), _memo)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -518,7 +516,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:273:51
     |
 273 | ...imitOf = self.usedDistributionLimitOf.get(&(Self::env().caller(), _projectId, fundingCycle.number)).unwrap_or(&0).clone();
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.usedDistributionLimitOf.get(&(Self::env().caller(), _projectId, fundingCycle.number)).unwrap_or(&0)`                                                                                  
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.usedDistributionLimitOf.get(&(Self::env().caller(), _projectId, fundingCycle.number)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -542,7 +540,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:312:51
     |
 312 | ...Of = self.usedOverflowAllowanceOf.get(&(Self::env().caller(), _projectId, fundingCycle.configuration)).unwrap_or(&0).clone();
-    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.usedOverflowAllowanceOf.get(&(Self::env().caller(), _projectId, fundingCycle.configuration)).unwrap_or(&0)`                                                                        
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.usedOverflowAllowanceOf.get(&(Self::env().caller(), _projectId, fundingCycle.configuration)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -590,7 +588,7 @@ warning: unneeded `return` statement
    --> lib.rs:367:59
     |
 367 |             if _balanceOf > _distributionLimitRemaining { return _balanceOf - _distributionLimitRemaining; } else { return 0; };
-    |                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `_balanceOf - _distributionLimitRemaining`                                                      
+    |                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove `return`: `_balanceOf - _distributionLimitRemaining`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return
 
@@ -606,7 +604,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:354:30
     |
 354 |             let _balanceOf = self.balanceOf.get(&(_terminal, _projectId)).unwrap_or(&0).clone();
-    |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.balanceOf.get(&(_terminal, _projectId)).unwrap_or(&0)`                                         
+    |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.balanceOf.get(&(_terminal, _projectId)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -614,7 +612,7 @@ warning: using `clone` on type `u128` which implements the `Copy` trait
    --> lib.rs:362:44
     |
 362 |             let _usedDistributionLimitOf = self.usedDistributionLimitOf.get(&(_terminal, _projectId, 1)).unwrap_or(&0).clone();
-    |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.usedDistributionLimitOf.get(&(_terminal, _projectId, 1)).unwrap_or(&0)`                                                                                                             
+    |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.usedDistributionLimitOf.get(&(_terminal, _projectId, 1)).unwrap_or(&0)`
     |
     = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
 
@@ -675,7 +673,7 @@ help: try adding this
 33 +             Self::new()
 34 +         }
 35 +     }
-36 + 
+36 +
 37 ~     impl MBPrices {
    |
 
@@ -692,7 +690,7 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
   --> lib.rs:80:24
    |
 80 |             let feed = self.feedFor.get(&(_currency,_base)).unwrap_or(&AccountId::default()).clone();
-   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.feedFor.get(&(_currency,_base)).unwrap_or(&AccountId::default())`                          
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try dereferencing it: `*self.feedFor.get(&(_currency,_base)).unwrap_or(&AccountId::default())`
    |
    = note: `#[warn(clippy::clone_on_copy)]` on by default
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#clone_on_copy
@@ -700,15 +698,13 @@ warning: using `clone` on type `ink_env::AccountId` which implements the `Copy` 
 warning: `mb_prices` (lib) generated 6 warnings
 ```
 
-
-----
+---
 
 ## Evaluation V1
 
 ### Testing guide
 
 Please provide a complete example for testing the application behavior. This example can be performed using the front-end integrated with the back-end of the application.
-
 
 ### Docker
 
@@ -721,12 +717,11 @@ docker: Error response from daemon: pull access denied for mangobox/ui1, reposit
 See 'docker run --help'.
 ```
 
-
 ### UI
 
-As some contracts are with compilation errors I cannot continue testing the UI integrated with the contracts. 
+As some contracts are with compilation errors I cannot continue testing the UI integrated with the contracts.
 
-When I tried to build the project I got some errors related to ABI missing. If there are some manual steps to move those ABI in order to the project work, please add those steps to the manual of the software. 
+When I tried to build the project I got some errors related to ABI missing. If there are some manual steps to move those ABI in order to the project work, please add those steps to the manual of the software.
 
 ```
  ERROR  Failed to compile with 2 errors                                                                                      7:04:55 PM
@@ -746,12 +741,9 @@ Module not found: Error: Can't resolve '../abi/MBController.json' in '/home/diog
 
 First, lets make all tests pass then I'll check the coverage of the tests.
 
-
 #### MBSplitsStore
 
-
 Some compilation problems.
-
 
 ```
 error[E0061]: this function takes 1 argument but 0 arguments were supplied
@@ -796,7 +788,6 @@ For more information about this error, try `rustc --explain E0061`.
 
 #### MBOperatorStore
 
-
 Some compilation problems:
 
 ```
@@ -820,7 +811,7 @@ error[E0061]: this function takes 2 arguments but 0 arguments were supplied
    --> lib.rs:193:33
     |
 193 |             let mut directory = MBDirectory::new();
-    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing                                                                                                                                      
+    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:41:16
@@ -840,7 +831,7 @@ error[E0061]: this function takes 2 arguments but 0 arguments were supplied
    --> lib.rs:200:33
     |
 200 |             let mut directory = MBDirectory::new();
-    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing                                                                                                                                      
+    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:41:16
@@ -860,7 +851,7 @@ error[E0061]: this function takes 2 arguments but 0 arguments were supplied
    --> lib.rs:205:33
     |
 205 |             let mut directory = MBDirectory::new();
-    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing                                                                                                                                      
+    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:41:16
@@ -920,7 +911,7 @@ error[E0061]: this function takes 2 arguments but 0 arguments were supplied
    --> lib.rs:220:33
     |
 220 |             let mut directory = MBDirectory::new();
-    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing                                                                                                                                      
+    |                                 ^^^^^^^^^^^^^^^^-- two arguments of type `ink_env::AccountId` and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:41:16
@@ -940,11 +931,9 @@ For more information about this error, try `rustc --explain E0061`.
 
 ```
 
-
 #### MBController
 
-
-Compilation failed. 
+Compilation failed.
 
 ```
 diogo@testbox:~/workspace/mangobox/Mangoboxink/contract/MBController$ cargo +nightly test
@@ -963,17 +952,14 @@ Caused by:
   No such file or directory (os error 2)
 ```
 
-
-
 #### MBSingleTokenPaymentTerminalStore
-
 
 ```
 error[E0061]: this function takes 3 arguments but 0 arguments were supplied
    --> lib.rs:379:22
     |
 379 |             let mp = MBSingleTokenPaymentTerminalStore::new();
-    |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing                                                                                                  
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:91:16
@@ -988,14 +974,14 @@ note: associated function defined here
     |             ----------------------------
 help: provide the arguments
     |
-379 |             let mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                                                                                                              
-    |                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                               
+379 |             let mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 3 arguments but 0 arguments were supplied
    --> lib.rs:384:26
     |
 384 |             let mut mp = MBSingleTokenPaymentTerminalStore::new();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing                                                                                              
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:91:16
@@ -1010,14 +996,14 @@ note: associated function defined here
     |             ----------------------------
 help: provide the arguments
     |
-384 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                                                                                                          
-    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                           
+384 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 3 arguments but 0 arguments were supplied
    --> lib.rs:390:26
     |
 390 |             let mut mp = MBSingleTokenPaymentTerminalStore::new();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing                                                                                              
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:91:16
@@ -1032,14 +1018,14 @@ note: associated function defined here
     |             ----------------------------
 help: provide the arguments
     |
-390 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                                                                                                          
-    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                           
+390 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0061]: this function takes 3 arguments but 0 arguments were supplied
    --> lib.rs:396:26
     |
 396 |             let mut mp = MBSingleTokenPaymentTerminalStore::new();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing                                                                                              
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:91:16
@@ -1054,8 +1040,8 @@ note: associated function defined here
     |             ----------------------------
 help: provide the arguments
     |
-396 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                                                                                                          
-    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                           
+396 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0308]: mismatched types
    --> lib.rs:397:56
@@ -1067,7 +1053,7 @@ error[E0061]: this function takes 3 arguments but 0 arguments were supplied
    --> lib.rs:401:26
     |
 401 |             let mut mp = MBSingleTokenPaymentTerminalStore::new();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing                                                                                              
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:91:16
@@ -1082,8 +1068,8 @@ note: associated function defined here
     |             ----------------------------
 help: provide the arguments
     |
-401 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                                                                                                          
-    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                           
+401 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 error[E0308]: mismatched types
    --> lib.rs:402:56
@@ -1095,7 +1081,7 @@ error[E0061]: this function takes 3 arguments but 0 arguments were supplied
    --> lib.rs:406:26
     |
 406 |             let mut mp = MBSingleTokenPaymentTerminalStore::new();
-    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing                                                                                              
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-- three arguments of type `ink_env::AccountId`, `ink_env::AccountId`, and `ink_env::AccountId` are missing
     |
 note: associated function defined here
    --> lib.rs:91:16
@@ -1110,13 +1096,11 @@ note: associated function defined here
     |             ----------------------------
 help: provide the arguments
     |
-406 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);                                                                                                                          
-    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+406 |             let mut mp = MBSingleTokenPaymentTerminalStore::new(/* ink_env::AccountId */, /* ink_env::AccountId */, /* ink_env::AccountId */);
+    |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
-
 #### MBPrices
-
 
 Testing passing:
 
@@ -1135,4 +1119,3 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 
 ```
-

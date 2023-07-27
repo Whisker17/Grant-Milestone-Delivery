@@ -6,16 +6,17 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.    | License            | <ul><li>[x] </li></ul>| https://github.com/InkWhale-net/contracts/blob/main/LICENSE  | |
-| 0b.    | Documentation      | <ul><li>[X] </li></ul>| Official document is at https://docs.artzero.io/ Technical documents are at https://docs.google.com/document/d/1QWJW2YAFXcD_X-xvwcTee_W9Gfn2GXNdKYdoe0m7iv8/edit# and https://docs.google.com/document/d/1bPq9aFMaaVgKgsYWG3K4APubRK33OloY4_gHM3c8wo0/edit |  |
-| 0c.    | Testing      | <ul><li>[x] </li></ul>| Tests can be found at https://github.com/ArtZero-io/Contracts/tree/feature/ink-4-version/Azero_Contracts/tests |  |
-| 0d.    | Article/Tutorial   | <ul><li>[X] </li></ul>| Several articles are published at https://medium.com/@artzero_io |  |
-| 1. | Smart contract Development | <ul><li>[x] </li></ul>| Code can be found in https://github.com/ArtZero-io/Contracts branch feature/ink-4-version |   |
-| 2. | Backend | <ul><li>[x] </li></ul>| Backend code is at https://github.com/ArtZero-io/backend and handles the following tasks: Monitor NFT bids in the queue and update Bid table in the database; Cache Images from IPFS to CloudFlare Image; Cache NFT Metadata to local database; Monitor NFT Collection changes and update the database; Monitor NFT Information and update the database; Telegram bot to alert system operators: queue length and access attempt and work load. |  |
-| 3. | Frontend | <ul><li>[x] </li></ul>| Our front-end demo can be seen at https://alephzero.artzero.io/ for AlephZero network. The git repo is at https://github.com/ArtZero-io/frontend-react branch ink4-upgrade |  |
-| 4. | Testing | <ul><li>[X] </li></ul>| We will provide unit test for smart contracts. For Frontend and Backend testing we will provide Test Document with Plan and Test Cases for operating and using the NFT Marketplace | 
+| Number | Deliverable                | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                                                            | Evaluation Notes |
+| ------ | -------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                    | <ul><li>[x] </li></ul> | https://github.com/InkWhale-net/contracts/blob/main/LICENSE                                                                                                                                                                                                                                                                                                                                                                                     |                  |
+| 0b.    | Documentation              | <ul><li>[X] </li></ul> | Official document is at https://docs.artzero.io/ Technical documents are at https://docs.google.com/document/d/1QWJW2YAFXcD_X-xvwcTee_W9Gfn2GXNdKYdoe0m7iv8/edit# and https://docs.google.com/document/d/1bPq9aFMaaVgKgsYWG3K4APubRK33OloY4_gHM3c8wo0/edit                                                                                                                                                                                      |                  |
+| 0c.    | Testing                    | <ul><li>[x] </li></ul> | Tests can be found at https://github.com/ArtZero-io/Contracts/tree/feature/ink-4-version/Azero_Contracts/tests                                                                                                                                                                                                                                                                                                                                  |                  |
+| 0d.    | Article/Tutorial           | <ul><li>[X] </li></ul> | Several articles are published at https://medium.com/@artzero_io                                                                                                                                                                                                                                                                                                                                                                                |                  |
+| 1.     | Smart contract Development | <ul><li>[x] </li></ul> | Code can be found in https://github.com/ArtZero-io/Contracts branch feature/ink-4-version                                                                                                                                                                                                                                                                                                                                                       |                  |
+| 2.     | Backend                    | <ul><li>[x] </li></ul> | Backend code is at https://github.com/ArtZero-io/backend and handles the following tasks: Monitor NFT bids in the queue and update Bid table in the database; Cache Images from IPFS to CloudFlare Image; Cache NFT Metadata to local database; Monitor NFT Collection changes and update the database; Monitor NFT Information and update the database; Telegram bot to alert system operators: queue length and access attempt and work load. |                  |
+| 3.     | Frontend                   | <ul><li>[x] </li></ul> | Our front-end demo can be seen at https://alephzero.artzero.io/ for AlephZero network. The git repo is at https://github.com/ArtZero-io/frontend-react branch ink4-upgrade                                                                                                                                                                                                                                                                      |                  |
+| 4.     | Testing                    | <ul><li>[X] </li></ul> | We will provide unit test for smart contracts. For Frontend and Backend testing we will provide Test Document with Plan and Test Cases for operating and using the NFT Marketplace                                                                                                                                                                                                                                                              |
+
 ## Evaluation V5
 
 ### Frontend
@@ -28,14 +29,13 @@ I tested the automated tests again, and this time all passed.
 
 ## Evaluation V4
 
-
 ### Documentation
 
 [In this part of the deploying guide](https://docs.alephzero.org/aleph-zero/build/deploying-your-contract-to-aleph-zero-testnet), the instructions recommend using the Polkadot.js to deploy the contracts, but now it seems not to be working because the Polkadot.js doesn't support WeightV2 yet.
 
 ### Frontend
 
-I followed [this tesing guide](https://github.com/ArtZero-io/Contracts/blob/feature/ink-4-version/contract_deployment_and_update_addresses_abis.md#cache-data-for-pmp-nft) to get the admin function, this guide is complex, but it works. 
+I followed [this tesing guide](https://github.com/ArtZero-io/Contracts/blob/feature/ink-4-version/contract_deployment_and_update_addresses_abis.md#cache-data-for-pmp-nft) to get the admin function, this guide is complex, but it works.
 
 In the frontend, I tested all the features I couldn't test before, but I have some problems, for example, when I tried to activate the collections, I received this error:
 
@@ -43,8 +43,7 @@ In the frontend, I tested all the features I couldn't test before, but I have so
 
 After a minute the collection became active. When I tried to create a Collection in simple mode the same error appeared but this time no collection was created. Because of that, I couldn't create a simple NFT and lock the metadata. When I tested this function with the previously deployed contracts it was working.
 
-In My Collections, I couldn't find how to edit the royalty percentage. In MY NFT and MY Stakes test are mentioned a page with All NFT and Stakes, but I in the page there is no "All" filter. Are these features still in the project? 
-
+In My Collections, I couldn't find how to edit the royalty percentage. In MY NFT and MY Stakes test are mentioned a page with All NFT and Stakes, but I in the page there is no "All" filter. Are these features still in the project?
 
 All other features are working fine.
 
@@ -109,7 +108,7 @@ I tried to run the automated tests again and now all of them are failing. Could 
 
 ## Evaluation V3
 
-I evaluated both frontend and backend using the testnet provided. I still need to test both using a local substrate node. Please provide more detailed instructions for contract deployment and update the contract addresses and abi in the frontend application. Also, provide any config update instructions to point the backend and frontend to a local substrate node instead of the testnet provided. 
+I evaluated both frontend and backend using the testnet provided. I still need to test both using a local substrate node. Please provide more detailed instructions for contract deployment and update the contract addresses and abi in the frontend application. Also, provide any config update instructions to point the backend and frontend to a local substrate node instead of the testnet provided.
 
 I also notice that there are no instructions on how to set the admin profile for testing.
 
@@ -118,7 +117,7 @@ I also notice that there are no instructions on how to set the admin profile for
 In Run Backend Job, needs to change `node az_bids_monitors` to `node az_bids_monitor` to match the name of the file.
 The error in Az_events_collector seems to be fixed.
 
-### API 
+### API
 
 Some requests returned with success, but with an empty return. Here is a list of the requests:
 
@@ -208,9 +207,9 @@ CastError: Cast to Number failed for value "Psp34Manual" (type string) at path "
   value: 'Psp34Manual',
   path: 'contractType',
   reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
- 
+
 	assert.ok(!isNaN(val))
- 
+
   	at castNumber (/home/user/Documents/ArtZero/backend/node_modules/mongoose/lib/cast/number.js:27:10)
   	at SchemaNumber.cast (/home/user/Documents/ArtZero/backend/node_modules/mongoose/lib/schema/number.js:376:12)
   	at SchemaType.applySetters (/home/user/Documents/ArtZero/backend/node_modules/mongoose/lib/schematype.js:1201:12)
@@ -237,6 +236,7 @@ Node.js v18.14.0
 API starts, but I only tested the first 5 tests in the testing guide, because 4 of them failed. I used the same inputs in the guide.
 
 UpdateCollection
+
 ```
 {
     "status": "FAILED",
@@ -245,6 +245,7 @@ UpdateCollection
 ```
 
 UpdateAdress
+
 ```
 {
     "status": "FAILED",
@@ -253,6 +254,7 @@ UpdateAdress
 ```
 
 newMintingEvent
+
 ```
 {
     "status": "OK",
@@ -261,6 +263,7 @@ newMintingEvent
 ```
 
 UpdateNFT
+
 ```
 {
     "status": "FAILED",
@@ -269,6 +272,7 @@ UpdateNFT
 ```
 
 UpdateBids
+
 ```
 {
     "status": "FAILED",
@@ -290,27 +294,21 @@ The EsLint in the frontend now returns no problems.
 
 ## Evaluation V1
 
-
 ### Backend
 
 Https://github.com/ArtZero-io/backend only have the LICENSE and README.MD, the source code is missing. We need the source code to test the application locally. Furthermore, the source code is a deliverable reported in the grant application.
-
 
 ### Frontend
 
 The frontend ran but it needs the backend to work properly.
 
-
 ### System test
 
 The ideal situation is to run all parts of the system locally for testing. I need a local server (backend) to do the System test of the application.
 
-
 ### Contracts Building and Testing
 
 I built all contracts, however, the proxy contract presented an error.
-
-
 
 ```
 user@localhost:~/Documents/Contracts/Azero_Contracts/contracts/proxy$ cargo +nightly contract build --release
@@ -331,14 +329,13 @@ To find dependencies that require specific target platforms, try to use option `
 ERROR: ink dependency not found
 ```
 
-The contract tests seem to be system tests and not unit ones as declared in the grant application. Furthermore, all test scripts fail. Please provide proper configuration or instructions to run these tests. 
-
+The contract tests seem to be system tests and not unit ones as declared in the grant application. Furthermore, all test scripts fail. Please provide proper configuration or instructions to run these tests.
 
 The collection_manager_test.ts returned some problems. For example:
 
 ```
 ...
-ts-node collection_manager_test.ts 
+ts-node collection_manager_test.ts
 @polkadot/util has multiple versions, ensure that there is only one installed.
 Either remove and explicitly install matching versions or dedupe using your package manager.
 The following conflicting packages were found:
@@ -366,10 +363,10 @@ Account 2 has address: 5C4sQWd8SEu8JB1hSHy9rsnU229bH57tr9NAHDAMj2FtLX8v and bala
 }
 ```
 
-The launchpad_ts.ts returned few problems. 
+The launchpad_ts.ts returned few problems.
 
 ```
-ts-node launchpad_test.ts 
+ts-node launchpad_test.ts
 @polkadot/util has multiple versions, ensure that there is only one installed.
 Either remove and explicitly install matching versions or dedupe using your package manager.
 The following conflicting packages were found:
@@ -401,7 +398,7 @@ And the psp34_standard_test.ts returned some problems too. For example:
 
 ```
 ...
-ts-node psp34_standard_test.ts 
+ts-node psp34_standard_test.ts
 @polkadot/util has multiple versions, ensure that there is only one installed.
 Either remove and explicitly install matching versions or dedupe using your package manager.
 The following conflicting packages were found:

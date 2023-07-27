@@ -1,19 +1,19 @@
 # Evaluation
 
-* **Status:** Accepted
-* **PR Link:** https://github.com/w3f/Open-Grants-Program/pull/12
-* **Milestone:** 1
-* **Kusama Identity:** [None yet](https://polkascan.io/pre/kusama/account/<ID>)
-* **Previously successfully merged evaluation:** None yet
+- **Status:** Accepted
+- **PR Link:** https://github.com/w3f/Open-Grants-Program/pull/12
+- **Milestone:** 1
+- **Kusama Identity:** [None yet](https://polkascan.io/pre/kusama/account/<ID>)
+- **Previously successfully merged evaluation:** None yet
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 0. | Apache License 2.0 | <ul><li>[x] </li></ul>|[License](https://github.com/emeraldpay/polkaj/blob/master/LICENSE)| - |
-| 1. | SS58 encoding |<ul><li>[x] </li></ul>|[SS58](https://github.com/emeraldpay/polkaj/tree/master/polkaj-ss58)| ...| 
-| 2. | SCALE codec |<ul><li>[x] </li></ul>|[SCALE](https://github.com/emeraldpay/polkaj/tree/master/polkaj-scale)| Proposed a PR: https://github.com/emeraldpay/polkaj/pull/2| 
-| 3. | Base types |<ul><li>[x] </li></ul>|[Base types](https://github.com/emeraldpay/polkaj/tree/master/polkaj-types)| ...| 
-| 4. | Unit Tests |<ul><li>[x] </li></ul>|[Unit Tests](https://codecov.io/gh/emeraldpay/polkaj)| ...| 
-| 5. | Documentation |<ul><li>[x] </li></ul>|[Docs](https://github.com/emeraldpay/polkaj/tree/master/docs)| ...| 
+| Number | Deliverable        | Accepted               | Link                                                                        | Evaluation Notes                                           |
+| ------ | ------------------ | ---------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| 0.     | Apache License 2.0 | <ul><li>[x] </li></ul> | [License](https://github.com/emeraldpay/polkaj/blob/master/LICENSE)         | -                                                          |
+| 1.     | SS58 encoding      | <ul><li>[x] </li></ul> | [SS58](https://github.com/emeraldpay/polkaj/tree/master/polkaj-ss58)        | ...                                                        |
+| 2.     | SCALE codec        | <ul><li>[x] </li></ul> | [SCALE](https://github.com/emeraldpay/polkaj/tree/master/polkaj-scale)      | Proposed a PR: https://github.com/emeraldpay/polkaj/pull/2 |
+| 3.     | Base types         | <ul><li>[x] </li></ul> | [Base types](https://github.com/emeraldpay/polkaj/tree/master/polkaj-types) | ...                                                        |
+| 4.     | Unit Tests         | <ul><li>[x] </li></ul> | [Unit Tests](https://codecov.io/gh/emeraldpay/polkaj)                       | ...                                                        |
+| 5.     | Documentation      | <ul><li>[x] </li></ul> | [Docs](https://github.com/emeraldpay/polkaj/tree/master/docs)               | ...                                                        |
 
 ## General Notes
 
@@ -39,7 +39,6 @@ DotAmountFormatterSpec > With group separator FAILED
         at io.emeraldpay.pjc.types.DotAmountFormatterSpec.With group separator(DotAmountFormatterSpec.groovy:70)
 ```
 
-
 I then switched up to 14, and got 2 _different_ errors - also concerning formatting, but the rather than dot/comma problem,
 it is a comma/apostrophe problem:
 
@@ -61,16 +60,17 @@ AddressSpec > Sorted by encoded value in alphanumeric order (random data) STANDA
 ```
 
 To verify this, I've prepared a small script:
+
 ```java
 import java.text.DecimalFormat;
- 
+
 public class main {
- 
+
     private static final String TEST = "#,##0.00";
         private static double number = 5.123456789;
- 
+
     public static void main(String[] args) {
- 
+
         DecimalFormat decimalFormat = new DecimalFormat(TEST);
         System.out.println(decimalFormat.format(number));
     }
@@ -80,12 +80,13 @@ public class main {
 Running this on Java 11 (both openjdk & oracle) returns 5,12, whereas for Java 14 returns 5.12
 
 I was using:
+
 ```
 openjdk version "14.0.1" 2020-04-14
 OpenJDK Runtime Environment AdoptOpenJDK (build 14.0.1+7)
 ```
 
-and 
+and
 
 ```
 openjdk version "11.0.7" 2020-04-14
@@ -96,10 +97,12 @@ Java(TM) SE Runtime Environment 18.9 (build 11.0.7+8-LTS)
 ```
 
 ### Additional unit tests
+
 I've opened a PR with a few proposed tests:
 https://github.com/emeraldpay/polkaj/pull/2
 
 ### More complex tests
-In the `02-encoding.adoc` README there's a nice example of serializing a class `StatusReader` using the proposed 
-`ScaleReader`. Would it be possible to have a complete test showing this capability? I would argue it's still a unit 
-test, as it could well be self-contained. 
+
+In the `02-encoding.adoc` README there's a nice example of serializing a class `StatusReader` using the proposed
+`ScaleReader`. Would it be possible to have a complete test showing this capability? I would argue it's still a unit
+test, as it could well be self-contained.

@@ -6,16 +6,15 @@
 - **Kusama Identity:** Eexv1mKLiCidz2gGh6vfowtXgSSc7mvD4xEb2ji998W4DPs
 - **Previously successfully merged evaluation:** All evaluations by ali-usama
 
-| Number | Deliverable                     | Accepted               | Link                                                                                                                                                                                     | Evaluation Notes                                                          |
-|--------|---------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| 0a.    | Licence                         | <ul><li>[x] </li></ul> | [Unlicense](https://github.com/bright/substrate-raft-setup/blob/milestone-3/LICENSE)                                                                                                     | Correct Licence                                                           |
-| 0b.    | Documentation                   | <ul><li>[x] </li></ul> | [ReadMe](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md) | Minimal inline docs and documentation |
-| 0c.    | Testing Guide                   | <ul><li>[x] </li></ul> | `cargo test`                                                                                                                                                                             | --                             |
-| 0d.    | Docker                          | <ul><li>[x] </li></ul> | [Running locally](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md#running-locally-1)                                                                           | Builds and runs successfully.                                             |
-| 1.     | Run necessary Raft services     | <ul><li>[x] </li></ul> | [Running docker-compose](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md#running-docker-compose-1)                                                             | Working as per the application                                            |
-| 2.     | Integrate Raft client into Node | <ul><li>[x] </li></ul> | [Running docker-compose](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md#running-docker-compose-1)                                                             | Working as per the application                                            |
-| 3.     | Integration test                | <ul><li>[x] </li></ul> | `docker-compose up`                                                                                                                                                                      | Builds and runs successfully.                                             |
-
+| Number | Deliverable                     | Accepted               | Link                                                                                                                         | Evaluation Notes                      |
+| ------ | ------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| 0a.    | Licence                         | <ul><li>[x] </li></ul> | [Unlicense](https://github.com/bright/substrate-raft-setup/blob/milestone-3/LICENSE)                                         | Correct Licence                       |
+| 0b.    | Documentation                   | <ul><li>[x] </li></ul> | [ReadMe](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md)                                          | Minimal inline docs and documentation |
+| 0c.    | Testing Guide                   | <ul><li>[x] </li></ul> | `cargo test`                                                                                                                 | --                                    |
+| 0d.    | Docker                          | <ul><li>[x] </li></ul> | [Running locally](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md#running-locally-1)               | Builds and runs successfully.         |
+| 1.     | Run necessary Raft services     | <ul><li>[x] </li></ul> | [Running docker-compose](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md#running-docker-compose-1) | Working as per the application        |
+| 2.     | Integrate Raft client into Node | <ul><li>[x] </li></ul> | [Running docker-compose](https://github.com/bright/substrate-raft-setup/blob/milestone-3/README.md#running-docker-compose-1) | Working as per the application        |
+| 3.     | Integration test                | <ul><li>[x] </li></ul> | `docker-compose up`                                                                                                          | Builds and runs successfully.         |
 
 ## General Notes
 
@@ -70,7 +69,7 @@ CMake Warning:
 
 ```
 Building bright/substrate-raft-setup:latest docker image, hang on!
-[+] Building 2676.3s (15/15) FINISHED                                                                                                                                                 
+[+] Building 2676.3s (15/15) FINISHED
  => [internal] load .dockerignore                                                                                                                                                0.0s
  => => transferring context: 2B                                                                                                                                                  0.0s
  => [internal] load build definition from Dockerfile                                                                                                                             0.0s
@@ -84,12 +83,12 @@ Building bright/substrate-raft-setup:latest docker image, hang on!
  => CACHED [builder 2/4] WORKDIR /node-template                                                                                                                                  0.0s
  => [builder 3/4] COPY . .                                                                                                                                                      35.0s
  => [builder 4/4] RUN cargo build --locked --release                                                                                                                          2454.9s
- => CACHED [stage-1 2/5] RUN apt-get update                                                                                                                                      0.0s 
- => CACHED [stage-1 3/5] RUN apt-get install -y openssl                                                                                                                          0.0s 
- => [stage-1 4/5] COPY --from=builder /node-template/target/release/node-template /usr/local/bin                                                                                 0.2s 
- => [stage-1 5/5] RUN useradd -m -u 1000 -U -s /bin/sh -d /node-dev node-dev &&   mkdir -p /chain-data /node-dev/.local/share &&   chown -R node-dev:node-dev /chain-data &&     0.4s 
- => exporting to image                                                                                                                                                           0.4s 
- => => exporting layers                                                                                                                                                          0.4s 
+ => CACHED [stage-1 2/5] RUN apt-get update                                                                                                                                      0.0s
+ => CACHED [stage-1 3/5] RUN apt-get install -y openssl                                                                                                                          0.0s
+ => [stage-1 4/5] COPY --from=builder /node-template/target/release/node-template /usr/local/bin                                                                                 0.2s
+ => [stage-1 5/5] RUN useradd -m -u 1000 -U -s /bin/sh -d /node-dev node-dev &&   mkdir -p /chain-data /node-dev/.local/share &&   chown -R node-dev:node-dev /chain-data &&     0.4s
+ => exporting to image                                                                                                                                                           0.4s
+ => => exporting layers                                                                                                                                                          0.4s
  => => writing image sha256:2e766c6e9b34a20c4f749762e5bbe9befda7ca6afa96f0ea05cf510448ab24ac                                                                                     0.0s
  => => naming to docker.io/bright/substrate-raft-setup:latest                                                                                                                    0.0s
 

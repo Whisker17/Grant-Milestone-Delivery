@@ -1,13 +1,13 @@
 # Evaluation
 
-* **Status:** Accepted
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md
-* **Milestone:** 2
-* **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
-* **Previously successfully merged evaluation:** All by mmagician
+- **Status:** Accepted
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md
+- **Milestone:** 2
+- **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
+- **Previously successfully merged evaluation:** All by mmagician
 
 | Number | Deliverable                                 | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                           | Evaluation Notes                                                                                                                          |
-|--------|---------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| ------ | ------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | 0a.    | License                                     | <ul><li>[x] </li></ul> | [main repo](https://github.com/HugoByte/aurras/blob/next/LICENSE), [docker setup](https://github.com/HugoByte/aurras-deployment-docker-compose/blob/master/LICENSE)                                                                                                                                                                                                                            |                                                                                                                                           |
 | 0b.    | Documentation                               | <ul><li>[x] </li></ul> | [README](https://github.com/HugoByte/aurras/blob/next/README.md)                                                                                                                                                                                                                                                                                                                               |                                                                                                                                           |
 | 0c.    | Testing Guide                               | <ul><li>[x] </li></ul> | [aurras-event-feed-substrate](https://github.com/HugoByte/aurras-event-feed-substrate-js/tree/master#testing)<br/>[aurras](https://github.com/HugoByte/aurras#testing) <br/> [Integration Test](https://github.com/HugoByte/aurras-event-manager/blob/next/docs/integration-testing.md)                                                                                                        | Integration test could be automated, but otherwise is good.                                                                               |
@@ -33,7 +33,7 @@ Update: extra options added.
 
 ## Integration test
 
-The example fork of substrate frontend doesn't seem to work properly. The dropdown list for Event Source won't expand and also the Push Notification Token field is not clickable and I can't enter anything there. 
+The example fork of substrate frontend doesn't seem to work properly. The dropdown list for Event Source won't expand and also the Push Notification Token field is not clickable and I can't enter anything there.
 
 The push notification example could be slightly better explained - how does the integration work, what are the interactions between different components, where are the users actually supposed to receive the notifications?
 

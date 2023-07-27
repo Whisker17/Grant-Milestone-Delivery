@@ -1,18 +1,17 @@
 # Evaluation
 
+- **Status:** Accepted
+- **PR Link:** [https://github.com/w3f/Open-Grants-Program/pull/64](https://github.com/w3f/Open-Grants-Program/pull/64)
+- **Milestone:** 2
+- **Kusama Identity:** [EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw](https://polkascan.io/kusama/account/EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw)
+- **Previously successfully merged evaluation:** none
 
-* **Status:** Accepted
-* **PR Link:** [https://github.com/w3f/Open-Grants-Program/pull/64](https://github.com/w3f/Open-Grants-Program/pull/64)
-* **Milestone:** 2
-* **Kusama Identity:** [EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw](https://polkascan.io/kusama/account/EdAnXzJGJcfNATWahgMgewkSA84nGHZwANpVzGVXtDYetsw)
-* **Previously successfully merged evaluation:** none
-
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 1. | Propose tip |<ul><li>[x] </li></ul>|[GitHub](https://github.com/Shard-Labs/kusama-tips-widget/tree/e2e1629ba77449c4141d5a7c1374cbd3874ba623)| Size of bond should be displayed to users |
-| 2. | Donate directly |<ul><li>[x] </li></ul>|[GitHub](https://github.com/Shard-Labs/kusama-tips-widget/tree/e2e1629ba77449c4141d5a7c1374cbd3874ba623)| |
-| 3. | Testing |<ul><li>[x] </li></ul>|- | | 
-| 4. | Article on Medium |<ul><li>[x] </li></ul>|[Article](https://medium.com/shard-labs/tipping-websites-in-kusama-tokens-ksm-kusama-tipping-widget-c13360b42111)| Please remember to update article if changes suggested in milestone 1 evaluation are implemented |
+| Number | Deliverable       | Accepted               | Link                                                                                                              | Evaluation Notes                                                                                 |
+| ------ | ----------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 1.     | Propose tip       | <ul><li>[x] </li></ul> | [GitHub](https://github.com/Shard-Labs/kusama-tips-widget/tree/e2e1629ba77449c4141d5a7c1374cbd3874ba623)          | Size of bond should be displayed to users                                                        |
+| 2.     | Donate directly   | <ul><li>[x] </li></ul> | [GitHub](https://github.com/Shard-Labs/kusama-tips-widget/tree/e2e1629ba77449c4141d5a7c1374cbd3874ba623)          |                                                                                                  |
+| 3.     | Testing           | <ul><li>[x] </li></ul> | -                                                                                                                 |                                                                                                  |
+| 4.     | Article on Medium | <ul><li>[x] </li></ul> | [Article](https://medium.com/shard-labs/tipping-websites-in-kusama-tokens-ksm-kusama-tipping-widget-c13360b42111) | Please remember to update article if changes suggested in milestone 1 evaluation are implemented |
 
 ## General Notes
 

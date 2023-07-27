@@ -1,7 +1,7 @@
 # Milestone Delivery
 
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_phase_2.md
-* **Milestone Number:** 2
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_phase_2.md
+- **Milestone Number:** 2
 
 **Context**
 
@@ -14,9 +14,9 @@ To test out the feature, you will need to have either verified source code or up
 **Deliverables**
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 0a. | License | https://github.com/web3labs/epirus-substrate/blob/main/LICENSE | Apache 2.0 | 
-| 0b. | Documentation | Tutorial for verifying source code or uploading metadata: https://github.com/web3labs/ink-verifier-server/blob/main/docs/TUTORIAL.md <br /> Project README: https://github.com/web3labs/epirus-substrate/blob/main/README.md <br/> Video demo: https://www.loom.com/share/bdf245a8bc56409dafff1342e920927d | The project READMEs + tutorial contains or points to all the information needed for development, deployment and testing. <br /> There is also inline documentation in the [AbiDecoder](https://github.com/web3labs/epirus-substrate/blob/main/squid-ink/src/abi/decoder.ts) to explain how data is decoded.  |
-| 0c. | Testing Guide | Processor unit tests: https://github.com/web3labs/epirus-substrate/tree/main/squid-ink#testing <br /> UI unit tests: https://github.com/web3labs/epirus-substrate/blob/main/explorer-ui/README.md#testing |  | 
+| 0a. | License | https://github.com/web3labs/epirus-substrate/blob/main/LICENSE | Apache 2.0 |
+| 0b. | Documentation | Tutorial for verifying source code or uploading metadata: https://github.com/web3labs/ink-verifier-server/blob/main/docs/TUTORIAL.md <br /> Project README: https://github.com/web3labs/epirus-substrate/blob/main/README.md <br/> Video demo: https://www.loom.com/share/bdf245a8bc56409dafff1342e920927d | The project READMEs + tutorial contains or points to all the information needed for development, deployment and testing. <br /> There is also inline documentation in the [AbiDecoder](https://github.com/web3labs/epirus-substrate/blob/main/squid-ink/src/abi/decoder.ts) to explain how data is decoded. |
+| 0c. | Testing Guide | Processor unit tests: https://github.com/web3labs/epirus-substrate/tree/main/squid-ink#testing <br /> UI unit tests: https://github.com/web3labs/epirus-substrate/blob/main/explorer-ui/README.md#testing | |
 | 0d. | Docker | Processor Docker image: [ghcr.io/web3labs/squid-ink-epirus:latest](https://github.com/web3labs/epirus-substrate/pkgs/container/squid-ink-epirus) <br /> UI Docker image: [ghcr.io/web3labs/epirus-substrate-ui:latest](https://github.com/web3labs/epirus-substrate/pkgs/container/epirus-substrate-ui) <br /> Docker compose for running all explorer components locally: https://github.com/web3labs/epirus-substrate/tree/main/local-testnet | |
 | 1. | Updated Squid Ink processor | https://github.com/web3labs/epirus-substrate/tree/main/squid-ink | Source code for ABI decoding are mainly found in `./src/abi/*` with some helper functions in `./src/handlers/contracts/metadata.ts`. <br /> Usages of the ABI decoder are found in the contract event and extrinsic handlers and are marked with a comment `// Decode data with ABI` |
 | 2. | Updated Explorer UI | https://github.com/web3labs/epirus-substrate/tree/main/explorer-ui | Source code for the decoded data component can be found in `./src/components/contracts/DataView.tsx` |

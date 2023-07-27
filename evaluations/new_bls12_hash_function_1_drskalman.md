@@ -6,21 +6,22 @@
 - **Kusama Identity:** N/A
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li> [x] </li></ul> | [GPL 3](https://github.com/w3f-community/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation/blob/main/LICENSE)|
-| 0b. | Documentation |  <ul><li> [x] </li></ul> | In line | More inline comments. Functions have description. | 
-| 0c. | Testing Guide | <ul><li> [x] </li></ul> | | Unit test delivery moved to milestone 2 for rust code and [tests](https://github.com/w3f-grants-archive/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation/blob/main/Indifferentiable%20hashing%20with%20the%20cost%20of%20one%20exponentiation.sage#L328) for the sage code was added by W3F  | 
-| 0e. | Article | <ul><li> [x] </li></ul>|  [Section 1.1](https://eprint.iacr.org/2021/1082) | W3F Grant is acknowledged in the paper.   |
-| 1 |  Implementation | <ul><li> [x] </li></ul> | [Implementation](https://github.com/w3f-community/dishport/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation) | unified implementation passes tests and hashes to four different curves |
+| Number | Deliverable    | Accepted                | Link                                                                                                                                                        | Evaluation Notes                                                                                                                                                                                                                                                                                                                           |
+| ------ | -------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0a.    | License        | <ul><li> [x] </li></ul> | [GPL 3](https://github.com/w3f-community/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation/blob/main/LICENSE) |
+| 0b.    | Documentation  | <ul><li> [x] </li></ul> | In line                                                                                                                                                     | More inline comments. Functions have description.                                                                                                                                                                                                                                                                                          |
+| 0c.    | Testing Guide  | <ul><li> [x] </li></ul> |                                                                                                                                                             | Unit test delivery moved to milestone 2 for rust code and [tests](https://github.com/w3f-grants-archive/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation/blob/main/Indifferentiable%20hashing%20with%20the%20cost%20of%20one%20exponentiation.sage#L328) for the sage code was added by W3F |
+| 0e.    | Article        | <ul><li> [x] </li></ul> | [Section 1.1](https://eprint.iacr.org/2021/1082)                                                                                                            | W3F Grant is acknowledged in the paper.                                                                                                                                                                                                                                                                                                    |
+| 1      | Implementation | <ul><li> [x] </li></ul> | [Implementation](https://github.com/w3f-community/dishport/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation) | unified implementation passes tests and hashes to four different curves                                                                                                                                                                                                                                                                    |
 
 ## General Notes
 
-Thank you very much for considering our comments on the deliverables. Considering the amendment to the grant and the revision to the deliveries, I would consider milestone 1 to be successfully completed. 
+Thank you very much for considering our comments on the deliverables. Considering the amendment to the grant and the revision to the deliveries, I would consider milestone 1 to be successfully completed.
 
 The unified implementation of the hash function [here](https://github.com/w3f-grants-archive/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation) successfully passes all the unit tests and hashes to the four sample curves provided in the code (see [Test Results](#test-results)).
 
 # Test Results
+
 ```
 sage '~/code/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation/Indifferentiable hashing with the cost of one exponentiation.sage'
 testing hashing to Elliptic Curve defined by y^2 = x^3 + 1 over Finite Field of size 258664426012969094010652733694893533536393512754914660539884262666720468348340822774968888139573360124440321458177

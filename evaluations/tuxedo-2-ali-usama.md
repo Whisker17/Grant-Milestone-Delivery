@@ -7,7 +7,7 @@
 - **Previously successfully merged evaluation:** [Polkadot Contract Wizard](https://github.com/w3f/Grant-Milestone-Delivery/pull/823)
 
 | Number | Deliverable   | Accepted               | Link                                                                                                                                                                          | Evaluation Notes                                                                                    |
-|--------|---------------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| ------ | ------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | 0a.    | Licence       | <ul><li>[x] </li></ul> | [Apache 2.0](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-1/LICENSE)                                                                                           | Correct Licence                                                                                     |
 | 0b.    | Documentation | <ul><li>[x] </li></ul> | [Rustdocs](https://off-narrative-labs.github.io/Tuxedo),<br/>[ReadMe](https://github.com/Off-Narrative-Labs/Tuxedo/tree/milestone-1#readme)                                   | Documentation is well-written and structured. Includes inline comments too which are quite helpful. |
 | 0c.    | Testing       | <ul><li>[x] </li></ul> | [ReadMe](https://github.com/Off-Narrative-Labs/Tuxedo#testing-and-code-quality)                                                                                               | All test cases passed                                                                               |
@@ -17,8 +17,8 @@
 
 ## General Notes
 
-
 ## `cargo test` output
+
 ```
    Compiling node-template v4.0.0-dev (/home/rustacean/Desktop/Workspace/web3/Tuxedo-milestone-2/node)
     Finished test [unoptimized + debuginfo] target(s) in 1m 20s
@@ -172,6 +172,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 ```
 
 ## Docker testing output
+
 ```console
 $ docker run --network host ghcr.io/off-narrative-labs/tuxedo-wallet show-balance
 [2023-04-17T00:57:10Z INFO  tuxedo_template_wallet::sync] Initializing fresh sync from genesis 0x7aa31a26289c25cbb251ea3b9667d5fcfc0e30cb554713da397ebdfae8d7bbb7
@@ -184,8 +185,9 @@ total      : 100
 ```
 
 ## Wallet testing output
+
 ```console
-$ ./target/release/tuxedo-template-wallet 
+$ ./target/release/tuxedo-template-wallet
 [2023-04-17T01:00:40Z INFO  tuxedo_template_wallet] Number of blocks in the db: 3
 [2023-04-17T01:00:40Z INFO  tuxedo_template_wallet] Wallet database synchronized with node to height 5
 [2023-04-17T01:00:40Z INFO  tuxedo_template_wallet] No Wallet Command invoked. Exiting.

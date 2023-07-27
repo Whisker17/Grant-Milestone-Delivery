@@ -6,20 +6,20 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | Licence | <ul><li>[x] </li></ul>| All repositories have a LICENSE.md file at their repo root. | Both Apache 2.0 | 
-| 0b. | Documentation | <ul><li>[x] </li></ul>| All repositories have a README.md file at their repo root, that is the entry point to the documentation. |  | 
-| 0c. | Testing and Testing Guide | <ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/docs/testing.md |  |
-| 0d. | Docker | <ul><li>[x] </li></ul>| All repositories are dockerized. Enter the repo via command-line and run docker compose up -d |  | 
-| 1. | Parachain setup | <ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-node |  |
-| 2. | pallet_dao_core | <ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-core | | 
-| 3. | Frontend Infrastructure | <ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-frontend |  |
-| 4. | Design and Product Flow | <ul><li>[x] </li></ul>| https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/design/design.pdf |  |
+| Number | Deliverable               | Accepted               | Link                                                                                                     | Evaluation Notes |
+| ------ | ------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | Licence                   | <ul><li>[x] </li></ul> | All repositories have a LICENSE.md file at their repo root.                                              | Both Apache 2.0  |
+| 0b.    | Documentation             | <ul><li>[x] </li></ul> | All repositories have a README.md file at their repo root, that is the entry point to the documentation. |                  |
+| 0c.    | Testing and Testing Guide | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-node/blob/main/docs/testing.md                          |                  |
+| 0d.    | Docker                    | <ul><li>[x] </li></ul> | All repositories are dockerized. Enter the repo via command-line and run docker compose up -d            |                  |
+| 1.     | Parachain setup           | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-node                                                    |                  |
+| 2.     | pallet_dao_core           | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-node/tree/main/pallets/dao-core                         |                  |
+| 3.     | Frontend Infrastructure   | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-frontend                                                |                  |
+| 4.     | Design and Product Flow   | <ul><li>[x] </li></ul> | https://github.com/deep-ink-ventures/genesis-dao-frontend/blob/main/design/design.pdf                    |                  |
 
 ## Evaluation V4
 
-### Docker 
+### Docker
 
 Docker works fine. Would be nice if you provide an example of the `.env` needed to run the system in the repository and mention how to use it in the Testing Guide.
 
@@ -38,7 +38,7 @@ genesis-dao-frontend  | info  - Loaded env from /usr/src/app/.env
 
 ### Docker
 
-The error in Evaluation V2 was fixed but now there is a new problem. I think it is the IP address in `.env`. Please explain how to setup the .env file properly.  
+The error in Evaluation V2 was fixed but now there is a new problem. I think it is the IP address in `.env`. Please explain how to setup the .env file properly.
 
 ```
 user@localhost:~/Documents/GenesisDao/genesis-dao-frontend$ docker compose up
@@ -96,41 +96,41 @@ info  - Loaded env from /home/user/Documents/Genesis Dao/genesis-dao-frontend/.e
  PASS  __test__/manage.test.tsx
  PASS  __test__/index.test.tsx
 ------------------------|---------|----------|---------|---------|----------------------
-File                	| % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
+File                	| % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ------------------------|---------|----------|---------|---------|----------------------
-All files           	|   56.91 |	31.77 |   51.97 |	56.8 |                 	 
- components         	|   45.33 |	21.21 |	39.8 |   45.84 |                 	 
-  CreateDaoForm.tsx 	|   	0 |    	0 |   	0 |   	0 | 1-122           	 
+All files           	|   56.91 |	31.77 |   51.97 |	56.8 |
+ components         	|   45.33 |	21.21 |	39.8 |   45.84 |
+  CreateDaoForm.tsx 	|   	0 |    	0 |   	0 |   	0 | 1-122
   CreateDaoModal.tsx	|   66.66 |    	0 |   55.55 |  	64 | 22,27-28,33-36,41-42
-  DaoCard.tsx       	| 	100 |  	100 | 	100 | 	100 |                 	 
-  DaoCards.tsx      	|	62.5 |    	0 |   	0 |   71.42 | 8-12            	 
-  DestroyDao.tsx    	|   23.52 |    	0 |   	0 |   30.76 | 5-15            	 
-  ExploreDaos.tsx   	| 	100 |   	50 | 	100 | 	100 | 39              	 
-  IssueTokensForm.tsx   |   71.79 |	28.57 |	90.9 |   66.66 | 23-28,45-54,63  	 
-  LoadingModal.tsx  	|   	0 |    	0 |   	0 |   	0 | 1-34            	 
-  LogoForm.tsx      	|  	75 |    	0 |  	75 |   72.72 | 13,18-19        	 
-  Meta.tsx          	| 	100 |   	50 | 	100 | 	100 | 30              	 
-  Notification.tsx  	|   	0 |  	100 |   	0 |   	0 | 1-30            	 
-  NotificationToast.tsx |   77.27 |   	20 |	62.5 |   76.19 | 73,78-79,85,95  	 
-  Spinner.tsx       	|   66.66 |  	100 |   	0 | 	100 |                 	 
-  TopNavBar.tsx     	|   	0 |  	100 |   	0 |   	0 | 1-30            	 
-  TransferForm.tsx  	|   	0 |    	0 |   	0 |   	0 | 4-140           	 
-  WalletConnect.tsx 	|   71.05 |	38.88 |  	60 |   66.66 | 28-29,33,37-103,108  
- config             	| 	100 |  	100 | 	100 | 	100 |                 	 
-  index.ts          	| 	100 |  	100 | 	100 | 	100 |                 	 
- pages              	|   87.77 |	35.71 |   84.84 |	86.3 |                 	 
-  create.tsx        	|   	0 |  	100 |   	0 |   	0 | 1-22            	 
-  explore.tsx       	|   89.28 | 	12.5 |   81.81 |   86.95 | 19,23,33        	 
-  index.tsx         	|   96.66 |  	100 |  	90 |  	96 | 24              	 
-  manage.tsx        	|	90.9 |   	60 | 	100 |   88.23 | 16,35           	 
-  start.tsx         	| 	100 |  	100 | 	100 | 	100 |                 	 
- pages/dao/[daoId]  	|   54.83 |	36.36 |   57.14 |   53.84 |                 	 
-  index.tsx         	| 	100 |	44.44 | 	100 | 	100 | 16-63           	 
-  tokens.tsx        	|   	0 |    	0 |   	0 |   	0 | 1-56            	 
- templates          	| 	100 |   	50 | 	100 | 	100 |                 	 
-  MainLayout.tsx    	| 	100 |   	50 | 	100 | 	100 | 28-29           	 
- utils              	|   77.77 |   	70 |   57.14 |  	80 |                 	 
-  index.ts          	|   77.77 |   	70 |   57.14 |  	80 | 7,17-18         	 
+  DaoCard.tsx       	| 	100 |  	100 | 	100 | 	100 |
+  DaoCards.tsx      	|	62.5 |    	0 |   	0 |   71.42 | 8-12
+  DestroyDao.tsx    	|   23.52 |    	0 |   	0 |   30.76 | 5-15
+  ExploreDaos.tsx   	| 	100 |   	50 | 	100 | 	100 | 39
+  IssueTokensForm.tsx   |   71.79 |	28.57 |	90.9 |   66.66 | 23-28,45-54,63
+  LoadingModal.tsx  	|   	0 |    	0 |   	0 |   	0 | 1-34
+  LogoForm.tsx      	|  	75 |    	0 |  	75 |   72.72 | 13,18-19
+  Meta.tsx          	| 	100 |   	50 | 	100 | 	100 | 30
+  Notification.tsx  	|   	0 |  	100 |   	0 |   	0 | 1-30
+  NotificationToast.tsx |   77.27 |   	20 |	62.5 |   76.19 | 73,78-79,85,95
+  Spinner.tsx       	|   66.66 |  	100 |   	0 | 	100 |
+  TopNavBar.tsx     	|   	0 |  	100 |   	0 |   	0 | 1-30
+  TransferForm.tsx  	|   	0 |    	0 |   	0 |   	0 | 4-140
+  WalletConnect.tsx 	|   71.05 |	38.88 |  	60 |   66.66 | 28-29,33,37-103,108
+ config             	| 	100 |  	100 | 	100 | 	100 |
+  index.ts          	| 	100 |  	100 | 	100 | 	100 |
+ pages              	|   87.77 |	35.71 |   84.84 |	86.3 |
+  create.tsx        	|   	0 |  	100 |   	0 |   	0 | 1-22
+  explore.tsx       	|   89.28 | 	12.5 |   81.81 |   86.95 | 19,23,33
+  index.tsx         	|   96.66 |  	100 |  	90 |  	96 | 24
+  manage.tsx        	|	90.9 |   	60 | 	100 |   88.23 | 16,35
+  start.tsx         	| 	100 |  	100 | 	100 | 	100 |
+ pages/dao/[daoId]  	|   54.83 |	36.36 |   57.14 |   53.84 |
+  index.tsx         	| 	100 |	44.44 | 	100 | 	100 | 16-63
+  tokens.tsx        	|   	0 |    	0 |   	0 |   	0 | 1-56
+ templates          	| 	100 |   	50 | 	100 | 	100 |
+  MainLayout.tsx    	| 	100 |   	50 | 	100 | 	100 | 28-29
+ utils              	|   77.77 |   	70 |   57.14 |  	80 |
+  index.ts          	|   77.77 |   	70 |   57.14 |  	80 | 7,17-18
 ------------------------|---------|----------|---------|---------|----------------------
 Test Suites: 10 passed, 10 total
 Tests:   	12 passed, 12 total
@@ -139,9 +139,9 @@ Time:    	5.349 s
 Ran all test suites.
 ```
 
-We notice that the coverage in the lib.rs and not automated generate files on the pallets are good. 
+We notice that the coverage in the lib.rs and not automated generate files on the pallets are good.
 
-Most of cargo clippy warnings were fixed. 
+Most of cargo clippy warnings were fixed.
 
 ### Docker
 
@@ -162,10 +162,9 @@ genesis-dao-frontend exited with code 1
 
 I tested pallet_dao_core with Polkadot.js following the guide it works fine.
 
-The testing guide is missing examples using the frontend, but when I tried to test the frontend it seems to haven't been connected to Genesis DAO Node. 
+The testing guide is missing examples using the frontend, but when I tried to test the frontend it seems to haven't been connected to Genesis DAO Node.
 
-We notice that you still committing code to the main branch of the repository. Would be nice to freeze a version in a branch for us to complete this evaluation. 
-
+We notice that you still committing code to the main branch of the repository. Would be nice to freeze a version in a branch for us to complete this evaluation.
 
 ## Evaluation V1
 
@@ -264,7 +263,7 @@ User@localhost:~/Documents/Genesis Dao/genesis-dao-frontend$ npm run lint
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
 ```
 
-I ran `npm test` and got low testing coverage. 
+I ran `npm test` and got low testing coverage.
 
 ```
 User@localhost:~/Documents/Genesis Dao/genesis-dao-frontend$ npm test
@@ -276,43 +275,43 @@ npm test
 	Render method
   	✓ should have Genesis Dao text (48 ms)
 ------------------------|---------|----------|---------|---------|---------------------
-File                	| % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s   
+File                	| % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ------------------------|---------|----------|---------|---------|---------------------
-All files           	|   13.25 |	10.27 |   12.22 |   12.05 |                	 
- components         	|   15.38 |	12.12 |	15.9 |   15.12 |                	 
-  CreateDaoForm.tsx 	|   	0 |    	0 |   	0 |   	0 | 1-122          	 
-  DaoCard.tsx       	|   	0 |    	0 |   	0 |   	0 | 1-29           	 
-  DaoCards.tsx      	|   	0 |    	0 |   	0 |   	0 | 1-34           	 
-  DaosTableRow.tsx  	|   	0 |  	100 |   	0 |   	0 | 6-24           	 
-  DestroyDao.tsx    	|   	0 |    	0 |   	0 |   	0 | 1-29           	 
-  IssueTokensForm.tsx   |   	0 |    	0 |   	0 |   	0 | 1-121          	 
-  LoadingModal.tsx  	|   	0 |    	0 |   	0 |   	0 | 1-34           	 
-  Meta.tsx          	| 	100 |   	50 | 	100 | 	100 | 30             	 
-  Notification.tsx  	|   	0 |  	100 |   	0 |   	0 | 1-30           	 
-  NotificationToast.tsx |   	0 |    	0 |   	0 |   	0 | 1-143          	 
-  Spinner.tsx       	|   	0 |  	100 |   	0 |   	0 | 1-24           	 
-  TopNavBar.tsx     	|   85.71 |  	100 |  	75 | 	100 |                	 
-  TransferForm.tsx  	|   	0 |    	0 |   	0 |   	0 | 4-140          	 
+All files           	|   13.25 |	10.27 |   12.22 |   12.05 |
+ components         	|   15.38 |	12.12 |	15.9 |   15.12 |
+  CreateDaoForm.tsx 	|   	0 |    	0 |   	0 |   	0 | 1-122
+  DaoCard.tsx       	|   	0 |    	0 |   	0 |   	0 | 1-29
+  DaoCards.tsx      	|   	0 |    	0 |   	0 |   	0 | 1-34
+  DaosTableRow.tsx  	|   	0 |  	100 |   	0 |   	0 | 6-24
+  DestroyDao.tsx    	|   	0 |    	0 |   	0 |   	0 | 1-29
+  IssueTokensForm.tsx   |   	0 |    	0 |   	0 |   	0 | 1-121
+  LoadingModal.tsx  	|   	0 |    	0 |   	0 |   	0 | 1-34
+  Meta.tsx          	| 	100 |   	50 | 	100 | 	100 | 30
+  Notification.tsx  	|   	0 |  	100 |   	0 |   	0 | 1-30
+  NotificationToast.tsx |   	0 |    	0 |   	0 |   	0 | 1-143
+  Spinner.tsx       	|   	0 |  	100 |   	0 |   	0 | 1-24
+  TopNavBar.tsx     	|   85.71 |  	100 |  	75 | 	100 |
+  TransferForm.tsx  	|   	0 |    	0 |   	0 |   	0 | 4-140
   WalletConnect.tsx 	|   71.05 |	38.88 |  	60 |   66.66 | 28-29,33,37-106,110
- config             	| 	100 |  	100 | 	100 | 	100 |                	 
-  index.ts          	| 	100 |  	100 | 	100 | 	100 |                	 
- hooks              	|   	0 |    	0 |   	0 |   	0 |                	 
-  useApiPromise.ts  	|   	0 |  	100 |   	0 |   	0 | 1-24           	 
-  useGenesisDao.ts  	|   	0 |    	0 |   	0 |   	0 | 9-452          	 
- pages              	|  	24 | 	5.88 |   26.66 |   22.03 |                	 
-  create.tsx        	|   	0 |  	100 |   	0 |   	0 | 1-22           	 
-  explore.tsx       	|   	0 |    	0 |   	0 |   	0 | 1-79           	 
-  index.tsx         	| 	100 |  	100 | 	100 | 	100 |                	 
-  manage.tsx        	|   	0 |    	0 |   	0 |   	0 | 1-80           	 
- pages/dao/[daoId]  	|   	0 |    	0 |   	0 |   	0 |                	 
-  index.tsx         	|   	0 |    	0 |   	0 |   	0 | 1-74           	 
-  tokens.tsx        	|   	0 |    	0 |   	0 |   	0 | 1-56           	 
- stores             	|   16.27 |   	25 | 	9.3 |   11.76 |                	 
-  genesisStore.ts   	|   16.27 |   	25 | 	9.3 |   11.76 | 152-187,196-277	 
- templates          	| 	100 |   	50 | 	100 | 	100 |                	 
-  MainLayout.tsx    	| 	100 |   	50 | 	100 | 	100 | 29-30          	 
- utils              	|   22.22 |    	0 |   	0 |   26.66 |                	 
-  index.ts          	|   22.22 |    	0 |   	0 |   26.66 | 5-18,22-26     	 
+ config             	| 	100 |  	100 | 	100 | 	100 |
+  index.ts          	| 	100 |  	100 | 	100 | 	100 |
+ hooks              	|   	0 |    	0 |   	0 |   	0 |
+  useApiPromise.ts  	|   	0 |  	100 |   	0 |   	0 | 1-24
+  useGenesisDao.ts  	|   	0 |    	0 |   	0 |   	0 | 9-452
+ pages              	|  	24 | 	5.88 |   26.66 |   22.03 |
+  create.tsx        	|   	0 |  	100 |   	0 |   	0 | 1-22
+  explore.tsx       	|   	0 |    	0 |   	0 |   	0 | 1-79
+  index.tsx         	| 	100 |  	100 | 	100 | 	100 |
+  manage.tsx        	|   	0 |    	0 |   	0 |   	0 | 1-80
+ pages/dao/[daoId]  	|   	0 |    	0 |   	0 |   	0 |
+  index.tsx         	|   	0 |    	0 |   	0 |   	0 | 1-74
+  tokens.tsx        	|   	0 |    	0 |   	0 |   	0 | 1-56
+ stores             	|   16.27 |   	25 | 	9.3 |   11.76 |
+  genesisStore.ts   	|   16.27 |   	25 | 	9.3 |   11.76 | 152-187,196-277
+ templates          	| 	100 |   	50 | 	100 | 	100 |
+  MainLayout.tsx    	| 	100 |   	50 | 	100 | 	100 | 29-30
+ utils              	|   22.22 |    	0 |   	0 |   26.66 |
+  index.ts          	|   22.22 |    	0 |   	0 |   26.66 | 5-18,22-26
 ------------------------|---------|----------|---------|---------|---------------------
 Test Suites: 1 passed, 1 total
 Tests:   	1 passed, 1 total
@@ -443,7 +442,7 @@ warning: `genesis-dao` (bin "genesis-dao") generated 7 warnings (2 duplicates)
 
 The test coverage on the pallets, measured using `cargo tarpaulin`.
 
-* dao-core, low coverage:
+- dao-core, low coverage:
 
 ```
 || Tested/Total Lines:
@@ -464,11 +463,11 @@ The test coverage on the pallets, measured using `cargo tarpaulin`.
 || src/tests.rs: 101/101
 || src/weights.rs: 0/32
 || ../dao-votes/src/lib.rs: 0/38
-|| 
+||
 27.44% coverage, 352/1283 lines covered
 ```
 
-* dao-assets, good coverage:
+- dao-assets, good coverage:
 
 ```
 || Tested/Total Lines:
@@ -489,11 +488,11 @@ The test coverage on the pallets, measured using `cargo tarpaulin`.
 || ../dao-core/src/lib.rs: 0/74
 || ../dao-core/src/weights.rs: 0/16
 || ../dao-votes/src/lib.rs: 0/38
-|| 
+||
 63.55% coverage, 1062/1671 lines covered
 ```
 
-* dao-votes, low coverage:
+- dao-votes, low coverage:
 
 ```
 || Tested/Total Lines:
@@ -514,6 +513,6 @@ The test coverage on the pallets, measured using `cargo tarpaulin`.
 || src/lib.rs: 34/45
 || src/mock.rs: 6/6
 || src/tests.rs: 45/45
-|| 
+||
 22.17% coverage, 274/1236 lines covered
 ```

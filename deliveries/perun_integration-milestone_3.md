@@ -1,9 +1,9 @@
 # Milestone Delivery :mailbox:
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** [Perun Channels - Integration with go-perun](https://github.com/w3f/Grants-Program/blob/master/applications/perun_channels-integration.md)
-* **Milestone Number:** 3 (End-to-end tests)
+- **Application Document:** [Perun Channels - Integration with go-perun](https://github.com/w3f/Grants-Program/blob/master/applications/perun_channels-integration.md)
+- **Milestone Number:** 3 (End-to-end tests)
 
 **Context**
 
@@ -13,13 +13,13 @@ In the focus of the milestone delivered here are end-to-end tests of the [Perun 
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License | [LICENSE] | Apache License, Version 2.0
-| 0b. | Documentation | [README](https://github.com/perun-network/perun-polkadot-backend/tree/main/README.md) | The [README] introduces the repository and its functionality. The source code is documented.
-| 0c. | Testing Guide | [README] | All code is unit-tested. The [README] describes how to execute the tests.
-| 0d. | Docker | [docker-compose.yaml] |
-| 1. | End-to-end tests | [client/](https://github.com/perun-network/perun-polkadot-backend/tree/main/client) |
+| Number | Deliverable      | Link                                                                                  | Notes                                                                                        |
+| ------ | ---------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 0a.    | License          | [LICENSE]                                                                             | Apache License, Version 2.0                                                                  |
+| 0b.    | Documentation    | [README](https://github.com/perun-network/perun-polkadot-backend/tree/main/README.md) | The [README] introduces the repository and its functionality. The source code is documented. |
+| 0c.    | Testing Guide    | [README]                                                                              | All code is unit-tested. The [README] describes how to execute the tests.                    |
+| 0d.    | Docker           | [docker-compose.yaml]                                                                 |
+| 1.     | End-to-end tests | [client/](https://github.com/perun-network/perun-polkadot-backend/tree/main/client)   |
 
 [README]: https://github.com/perun-network/perun-polkadot-backend/tree/main/README.md
 [LICENSE]: https://github.com/perun-network/perun-polkadot-backend/blob/main/LICENSE

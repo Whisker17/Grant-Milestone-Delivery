@@ -1,10 +1,9 @@
 # Milestone Delivery :mailbox:
 
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
-
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/DistributedKeyManagement.md
-* **Milestone Number:** 1
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/DistributedKeyManagement.md
+- **Milestone Number:** 1
 
 **Context**
 
@@ -12,13 +11,12 @@ This milestone was focused on distributed key management research. Throughout th
 
 **Deliverables**
 
-
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 1. | Documentation |https://www.kryptik.app/blog| Same as the third deliverable.| 
-| 2.  | Article | https://www.kryptik.app/developer/recovery | A brief overview of distributed key management with a focus on account recovery. Developers are the target audience.| 
-| 3. | Formal Investigation |https://www.kryptik.app/blog| A series of blogs created during the research period (shared via Twitter, HN, etc).| 
-| 1. | Research Paper |https://github.com/KryptikApp/sword/blob/main/research/SWORD.md| An open source research paper on distributed key management.| 
+| Number | Deliverable          | Link                                                            | Notes                                                                                                                |
+| ------ | -------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| 1.     | Documentation        | https://www.kryptik.app/blog                                    | Same as the third deliverable.                                                                                       |
+| 2.     | Article              | https://www.kryptik.app/developer/recovery                      | A brief overview of distributed key management with a focus on account recovery. Developers are the target audience. |
+| 3.     | Formal Investigation | https://www.kryptik.app/blog                                    | A series of blogs created during the research period (shared via Twitter, HN, etc).                                  |
+| 1.     | Research Paper       | https://github.com/KryptikApp/sword/blob/main/research/SWORD.md | An open source research paper on distributed key management.                                                         |
 
 **Additional Information**
 

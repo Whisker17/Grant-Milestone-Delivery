@@ -1,4 +1,3 @@
-
 # Evaluation
 
 - **Status:** Accepted
@@ -6,13 +5,12 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-
-| Number | Deliverable   | Accepted | Link                                                                                 | Notes |
-|--------|---------------|----------|----------------------------------------------------------------------------|-------|
-| 0a.     | License   | <ul><li>[x] </li></ul> | MIT License                            |       |
-| 0b.     | Documentation       | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator                                                                        | Documentation is minimal, but a description was added upon request.   |
-| 1.     | Tests         | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator#how-to-test                 | Successful      |
-| 2.     | Github action | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator/tree/main/.github/workflows | Successful      |
+| Number | Deliverable   | Accepted               | Link                                                                                 | Notes                                                               |
+| ------ | ------------- | ---------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| 0a.    | License       | <ul><li>[x] </li></ul> | MIT License                                                                          |                                                                     |
+| 0b.    | Documentation | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator                             | Documentation is minimal, but a description was added upon request. |
+| 1.     | Tests         | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator#how-to-test                 | Successful                                                          |
+| 2.     | Github action | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator/tree/main/.github/workflows | Successful                                                          |
 
 # General Notes
 

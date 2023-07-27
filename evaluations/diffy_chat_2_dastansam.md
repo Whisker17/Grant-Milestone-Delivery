@@ -8,16 +8,17 @@
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License | [LICENSE](https://github.com/Belsoft-rs/diffychat-pallet/blob/main/LICENSE) | Correct license |
-| 0b. | Documentation | [Readme.md](https://github.com/Belsoft-rs/diffychat-client/blob/master/README.md) | Well-covered documentation |
-| 0c. | Testing Guide | [Diffy chat pallet](https://github.com/Belsoft-rs/diffychat-pallet#getting-started) | Tests are passing, logs below. |
-| 0d. | Article | [BelSoft Dev on Medium](https://medium.com/@belsoft/diffy-chat-a-secured-decentralized-messenger-194ad74d6669) | Article is posted, it explains well the need for this messenger and has an extensive coverage. |
-| 1. | Contacts list feature | [See here](https://github.com/Belsoft-rs/diffychat-client/blob/master/src/components/messenger/contacts/contacts.js) | Feature is delivered completely, and is deployed [here](https://belsoft-rs.github.io/diffychat/). Users are able to add others into their contact list. | 
-| 2. | Web messenger dapp MVP | [See here](https://belsoft-rs.github.io/diffychat/index.html) | I wasn't able to complete instructions for testing the web messenger. I followed the tutorial video that was provided but it just hangs and lags for me. I attached some screenshots of the failure. | 
+| Number | Deliverable            | Link                                                                                                                 | Notes                                                                                                                                                                                                |
+| ------ | ---------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                | [LICENSE](https://github.com/Belsoft-rs/diffychat-pallet/blob/main/LICENSE)                                          | Correct license                                                                                                                                                                                      |
+| 0b.    | Documentation          | [Readme.md](https://github.com/Belsoft-rs/diffychat-client/blob/master/README.md)                                    | Well-covered documentation                                                                                                                                                                           |
+| 0c.    | Testing Guide          | [Diffy chat pallet](https://github.com/Belsoft-rs/diffychat-pallet#getting-started)                                  | Tests are passing, logs below.                                                                                                                                                                       |
+| 0d.    | Article                | [BelSoft Dev on Medium](https://medium.com/@belsoft/diffy-chat-a-secured-decentralized-messenger-194ad74d6669)       | Article is posted, it explains well the need for this messenger and has an extensive coverage.                                                                                                       |
+| 1.     | Contacts list feature  | [See here](https://github.com/Belsoft-rs/diffychat-client/blob/master/src/components/messenger/contacts/contacts.js) | Feature is delivered completely, and is deployed [here](https://belsoft-rs.github.io/diffychat/). Users are able to add others into their contact list.                                              |
+| 2.     | Web messenger dapp MVP | [See here](https://belsoft-rs.github.io/diffychat/index.html)                                                        | I wasn't able to complete instructions for testing the web messenger. I followed the tutorial video that was provided but it just hangs and lags for me. I attached some screenshots of the failure. |
 
 # Evaluation v1
+
 ## General Notes
 
 Contact list feature works both locally and on production. However, main web messenger has different behaviour than expected. I followed the tutorial [video](https://media.belsoft.rs/diffychat/diffychat.mp4) that was provided but chat windows just hang and lag for me. I attached screenshot of the failure.

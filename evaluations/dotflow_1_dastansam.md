@@ -8,14 +8,14 @@
 
 **Deliverables**
 
-| Number | Deliverable | Link | Evaluation Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License | [Contract](https://github.com/TheDotflow/dotflow-ink/blob/main/LICENSE) [Frontend](https://github.com/TheDotflow/dotflow-ui/blob/main/LICENSE) | Correct licenses | 
-| 0b.  | Documentation | [Link](https://github.com/TheDotflow/dotflow-ink/blob/main/README.md) | Well documented and easy to follow. There are only some minor improvements that I suggest below | 
-| 0c.  | Testing and Testing Guide | [Contract](https://github.com/TheDotflow/dotflow-ink/blob/main/contracts/identity/tests.rs) [Guide](https://github.com/TheDotflow/dotflow-ink#build--test-locally) [Identity Key](https://github.com/TheDotflow/dotflow-ui/blob/main/__tests__/identityKey.test.ts) [Guide](https://github.com/TheDotflow/dotflow-ui#set-up-development-environment) | All unit tests are passing and there is a minor issue with `e2e-tests`. Output and additional notes below |
-| 0d.  | Docker | [Contract]() [Frontend](https://github.com/TheDotflow/dotflow-ui#run-with-docker) | Was able to build the image and run it successfully. Output attached below |
-| 1.  | Identity Contract | [Link](https://github.com/TheDotflow/dotflow-ink/blob/main/contracts/identity/lib.rs) | Well structured code. Contract compiles fine. I only have some non-critical code suggestions below. |
-| 2.  | My Identity page | [Frontend code](https://github.com/TheDotflow/dotflow-ui/tree/main/src) [Identity Key](https://github.com/TheDotflow/dotflow-ui/pull/15) [Address Encryption](https://github.com/TheDotflow/dotflow-ui/pull/21) | Was able to build and run both Docker and native version of the frontend. Everything looks smooth, intuitive and user-friendly. |
+| Number | Deliverable               | Link                                                                                                                                                                                                                                                                                                                                                 | Evaluation Notes                                                                                                                |
+| ------ | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                   | [Contract](https://github.com/TheDotflow/dotflow-ink/blob/main/LICENSE) [Frontend](https://github.com/TheDotflow/dotflow-ui/blob/main/LICENSE)                                                                                                                                                                                                       | Correct licenses                                                                                                                |
+| 0b.    | Documentation             | [Link](https://github.com/TheDotflow/dotflow-ink/blob/main/README.md)                                                                                                                                                                                                                                                                                | Well documented and easy to follow. There are only some minor improvements that I suggest below                                 |
+| 0c.    | Testing and Testing Guide | [Contract](https://github.com/TheDotflow/dotflow-ink/blob/main/contracts/identity/tests.rs) [Guide](https://github.com/TheDotflow/dotflow-ink#build--test-locally) [Identity Key](https://github.com/TheDotflow/dotflow-ui/blob/main/__tests__/identityKey.test.ts) [Guide](https://github.com/TheDotflow/dotflow-ui#set-up-development-environment) | All unit tests are passing and there is a minor issue with `e2e-tests`. Output and additional notes below                       |
+| 0d.    | Docker                    | [Contract]() [Frontend](https://github.com/TheDotflow/dotflow-ui#run-with-docker)                                                                                                                                                                                                                                                                    | Was able to build the image and run it successfully. Output attached below                                                      |
+| 1.     | Identity Contract         | [Link](https://github.com/TheDotflow/dotflow-ink/blob/main/contracts/identity/lib.rs)                                                                                                                                                                                                                                                                | Well structured code. Contract compiles fine. I only have some non-critical code suggestions below.                             |
+| 2.     | My Identity page          | [Frontend code](https://github.com/TheDotflow/dotflow-ui/tree/main/src) [Identity Key](https://github.com/TheDotflow/dotflow-ui/pull/15) [Address Encryption](https://github.com/TheDotflow/dotflow-ui/pull/21)                                                                                                                                      | Was able to build and run both Docker and native version of the frontend. Everything looks smooth, intuitive and user-friendly. |
 
 ## General Notes
 
@@ -37,7 +37,7 @@ I assume, you are going to be adding end-to-end tests when you complete the seco
 
 #### Avoid `unwrap` and `assert`:
 
-Try to avoid using `unwrap` and `assert` in the non-test environment, although it is not that critical in the contract execution environment, it still makes it easier to debug and find out more about the error when the contract execution panics. 
+Try to avoid using `unwrap` and `assert` in the non-test environment, although it is not that critical in the contract execution environment, it still makes it easier to debug and find out more about the error when the contract execution panics.
 
 Opt for using `unwrap_err`, `unwrap_or_default`, `map_err`, etc. methods which softly handle the case when `unwrap` panics. You can define `Error` variants for each possible panic case and propogate it from the top level (you already have most of them covered). And in a similar fashion, use `ensure!` instead of `assert!` when validating something in the non-test environment. You are already using it in most of the places, so it just needs to be consistent.
 
@@ -61,14 +61,15 @@ warning: using `clone` on type `u32` which implements the `Copy` trait
 
   <summary>Docker outputs</summary>
 
-  ```sh
- => [2/3] WORKDIR /app                                                                                                                                                               0.3s
- => [3/3] COPY . .                                                                                                                                                                  12.6s
- => exporting to image                                                                                                                                                               9.8s
- => => exporting layers                                                                                                                                                              9.8s
- => => writing image sha256:af791be5603993712f6d271193d4124e150d121b6528f1f53fa56374200810fc                                                                                         0.0s
- => => naming to docker.io/library/dotflow-ink   
-  ```
+```sh
+=> [2/3] WORKDIR /app                                                                                                                                                               0.3s
+=> [3/3] COPY . .                                                                                                                                                                  12.6s
+=> exporting to image                                                                                                                                                               9.8s
+=> => exporting layers                                                                                                                                                              9.8s
+=> => writing image sha256:af791be5603993712f6d271193d4124e150d121b6528f1f53fa56374200810fc                                                                                         0.0s
+=> => naming to docker.io/library/dotflow-ink
+```
+
 </details>
 
 <details>
@@ -108,12 +109,13 @@ test tests::update_address_works ... ok
 
 test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
-   Doc-tests identity
+Doc-tests identity
 
 running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-```
+
+````
 </details>
 
 <details>
@@ -126,7 +128,8 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 || Tested/Total Lines:
 || lib.rs: 162/175
 || types.rs: 21/21
-|| 
+||
 93.37% coverage, 183/196 lines covered
-```
+````
+
 </details>

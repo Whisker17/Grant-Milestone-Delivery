@@ -1,31 +1,31 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:**  https://github.com/w3f/Open-Grants-Program/blob/master/applications/delmonicos.md
+- **Application Document:** https://github.com/w3f/Open-Grants-Program/blob/master/applications/delmonicos.md
+
 * **Milestone:** 3
 * **Kusama Identity:** [HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve](https://polkascan.io/pre/kusama/account/HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve)
 * **Previously successfully merged evaluation:** All evaluations by Noc2
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | :------: | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [charger-node](https://github.com/Delmonicos/charger-node/blob/milestone-2/LICENSE), [charging-management-platform](https://github.com/Delmonicos/charging-management-platform/blob/main/LICENSE.md), [frontend](https://github.com/Delmonicos/user-frontend/blob/master/LICENSE) | The front-end has no license file **Update 29.03.22:** Front-end now also has a license file |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [testing-guide.md](https://github.com/Delmonicos/charger-node/blob/milestone-3/Web3-Grant/milestone3/testing-guide.md) | Documentation only for the previous milestones **31.03.22:** It general at least the readme files of the repos, should have some basic documentation **09.05.22:** Improved readmes but far from perfect.  |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [testing-guide.md](https://github.com/Delmonicos/charger-node/blob/milestone-3/Web3-Grant/milestone3/testing-guide.md) | No testing guide for milestone 3 **31.03.22:** They added a basic testing guide, but it doesn't explain how to run the node. No unit-test coverage, see contract (min. 70%)  |
-| 0d. | Article/Tutorial |<ul><li>[x] </li></ul> | [Article](https://github.com/Delmonicos/charger-node/blob/main/Web3-Grant/milestone2/Article.md), [Updated article](https://medium.com/@Delmonicos/how-blockchain-can-ease-electromobility-955bb0d92fbf) | Same article as for milestone 2 but they changed it a little bit **09.05.22:** Updated |
-| 1. | Substrate chain | <ul><li>[x] </li></ul> | [charger-node](https://github.com/Delmonicos/charger-node) | No documentation on how to run it. Hasn't been updated in a long time **09.05.22:** Updated and it works now |
-| 2. | Admin Front-End | <ul><li>[x] </li></ul> | [charging-management-platform](https://github.com/Delmonicos/charging-management-platform) | Wasn't updated in the last 7 month. No documentation on how to run it. See error below **09.05.22:** Updated and it works now |
-| 3. | User Front-End | <ul><li>[x] </li></ul> | [user-frontend](https://github.com/Delmonicos/user-frontend) | Barely any documentation **09.05.22:** Updated and it works now |
-| 4. | Docker | <ul><li>[x] </li></ul> | [Dockerfile](https://github.com/Delmonicos/charger-node/blob/milestone-1/Dockerfile) | Works  |
-| 5. | Demo | <ul><li>[x] </li></ul> | [Video](https://www.youtube.com/watch?v=AlJrFuhhVN4) | According to the contract |
-
+| Number | Deliverable      |        Accepted        | Link                                                                                                                                                                                                                                                                              | Evaluation Notes                                                                                                                                                                                          |
+| ------ | ---------------- | :--------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License          | <ul><li>[x] </li></ul> | [charger-node](https://github.com/Delmonicos/charger-node/blob/milestone-2/LICENSE), [charging-management-platform](https://github.com/Delmonicos/charging-management-platform/blob/main/LICENSE.md), [frontend](https://github.com/Delmonicos/user-frontend/blob/master/LICENSE) | The front-end has no license file **Update 29.03.22:** Front-end now also has a license file                                                                                                              |
+| 0b.    | Documentation    | <ul><li>[x] </li></ul> | [testing-guide.md](https://github.com/Delmonicos/charger-node/blob/milestone-3/Web3-Grant/milestone3/testing-guide.md)                                                                                                                                                            | Documentation only for the previous milestones **31.03.22:** It general at least the readme files of the repos, should have some basic documentation **09.05.22:** Improved readmes but far from perfect. |
+| 0c.    | Testing Guide    | <ul><li>[x] </li></ul> | [testing-guide.md](https://github.com/Delmonicos/charger-node/blob/milestone-3/Web3-Grant/milestone3/testing-guide.md)                                                                                                                                                            | No testing guide for milestone 3 **31.03.22:** They added a basic testing guide, but it doesn't explain how to run the node. No unit-test coverage, see contract (min. 70%)                               |
+| 0d.    | Article/Tutorial | <ul><li>[x] </li></ul> | [Article](https://github.com/Delmonicos/charger-node/blob/main/Web3-Grant/milestone2/Article.md), [Updated article](https://medium.com/@Delmonicos/how-blockchain-can-ease-electromobility-955bb0d92fbf)                                                                          | Same article as for milestone 2 but they changed it a little bit **09.05.22:** Updated                                                                                                                    |
+| 1.     | Substrate chain  | <ul><li>[x] </li></ul> | [charger-node](https://github.com/Delmonicos/charger-node)                                                                                                                                                                                                                        | No documentation on how to run it. Hasn't been updated in a long time **09.05.22:** Updated and it works now                                                                                              |
+| 2.     | Admin Front-End  | <ul><li>[x] </li></ul> | [charging-management-platform](https://github.com/Delmonicos/charging-management-platform)                                                                                                                                                                                        | Wasn't updated in the last 7 month. No documentation on how to run it. See error below **09.05.22:** Updated and it works now                                                                             |
+| 3.     | User Front-End   | <ul><li>[x] </li></ul> | [user-frontend](https://github.com/Delmonicos/user-frontend)                                                                                                                                                                                                                      | Barely any documentation **09.05.22:** Updated and it works now                                                                                                                                           |
+| 4.     | Docker           | <ul><li>[x] </li></ul> | [Dockerfile](https://github.com/Delmonicos/charger-node/blob/milestone-1/Dockerfile)                                                                                                                                                                                              | Works                                                                                                                                                                                                     |
+| 5.     | Demo             | <ul><li>[x] </li></ul> | [Video](https://www.youtube.com/watch?v=AlJrFuhhVN4)                                                                                                                                                                                                                              | According to the contract                                                                                                                                                                                 |
 
 ## General Notes
 
-Initially the project wasn’t publicly updated since october 2021! Documentation, Testing Guide and Article initially only for milestone 1 and 2. It took them quite a while to fix everything. But now it’s working again and according to the contract. 
+Initially the project wasn’t publicly updated since october 2021! Documentation, Testing Guide and Article initially only for milestone 1 and 2. It took them quite a while to fix everything. But now it’s working again and according to the contract.
 
 **09.05.22:**
 
-Small issue with the [devDependencies in package.json](https://github.com/Delmonicos/user-frontend/pull/2/files), but the user front-end compiles now.  
+Small issue with the [devDependencies in package.json](https://github.com/Delmonicos/user-frontend/pull/2/files), but the user front-end compiles now.
 
 **31.03.22:** They added a new testing guide
 
@@ -59,7 +59,8 @@ error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
 
-**Snyk Test** 
+**Snyk Test**
+
 ```
 Testing /Users/davidhawig/source/evaluations/delmonicos/user-frontend...
 
@@ -208,4 +209,4 @@ Issues with no direct upgrade or patch:
   ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://snyk.io/vuln/SNYK-JS-WS-1296835] in ws@6.2.1
     introduced by react-scripts@4.0.3 > jest@26.6.0 > @jest/core@26.6.3 > jest-config@26.6.3 > jest-environment-jsdom@26.6.2 > jsdom@16.4.0 > ws@7.4.3 and 1 other path(s)
   This issue was fixed in versions: 7.4.6, 6.2.2, 5.2.3
-  ```
+```

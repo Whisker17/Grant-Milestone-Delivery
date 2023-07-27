@@ -5,27 +5,27 @@
 - **Milestone:** 2
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- |------------- | ------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/LICENSE | MIT |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/README.md, https://github.com/blockcoders/kuma-wallet/blob/main/README-es.md | Looks good. |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet#running-locally | Looks good. |
-| 1. | Custom tokens | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/pages/manageAssets/ManageAssets.tsx | Looks good. |
-| 2. | Mesasges EVM - WASM | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/pages/signMessage/SignMessage.tsx | Looks good. |
-| 3. | Transfer EVM - WASM | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/pages/send/Send.tsx | Looks good. |
-| 4. | Transaction history | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/entries/background/index.ts | Looks good. |
-| 5. | Explorer link | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/constants/chains.ts | Looks good. |
+| Number | Deliverable         | Accepted               | Link                                                                                                                              | Notes       |
+| ------ | ------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 0a.    | License             | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/LICENSE                                                                      | MIT         |
+| 0b.    | Documentation       | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/README.md, https://github.com/blockcoders/kuma-wallet/blob/main/README-es.md | Looks good. |
+| 0c.    | Testing Guide       | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet#running-locally                                                                        | Looks good. |
+| 1.     | Custom tokens       | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/pages/manageAssets/ManageAssets.tsx                                      | Looks good. |
+| 2.     | Mesasges EVM - WASM | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/pages/signMessage/SignMessage.tsx                                        | Looks good. |
+| 3.     | Transfer EVM - WASM | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/pages/send/Send.tsx                                                      | Looks good. |
+| 4.     | Transaction history | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/entries/background/index.ts                                              | Looks good. |
+| 5.     | Explorer link       | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/src/constants/chains.ts                                                      | Looks good. |
 
 # General
 
 Very well built wallet! It is sleek and I like it's simplicity, has a similar feel to using MetaMask. I was able to create and import test wallets and the UI is great, I didn't encounter any issues. I would love to see the addition of QR code functionality. I am also excited to try the XCM functionality in the next milestone.
-
 
 ## Tests
 
 Well documented code and tests. All GH action CI is successful.
 
 All 411 unit tests pass:
+
 ```js
  Test Files  56 passed (56)
       Tests  411 passed (411)
@@ -34,6 +34,7 @@ All 411 unit tests pass:
 ```
 
 Good coverage:
+
 ```js
  % Coverage report from c8
 -------------------------------|---------|----------|---------|---------|--------------------------------------------------
@@ -149,9 +150,11 @@ Functions    : 85.07% ( 359/422 )
 Lines        : 92.81% ( 6670/7186 )
 ================================================================================
 ```
+
 ## Linting
 
 Consider fixing this warning about rules for next milestone:
+
 ```js
 /Users/keeganquigley/kuma-wallet/src/Extension.ts
   227:73  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
@@ -178,4 +181,5 @@ Consider fixing this warning about rules for next milestone:
 
 ✖ 9 problems (0 errors, 9 warnings)
 ```
+
 Please note: No security audits were performed as a part of this evaluation.

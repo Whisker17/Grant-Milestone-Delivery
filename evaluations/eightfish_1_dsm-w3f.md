@@ -6,19 +6,19 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>|https://github.com/eightfish-org/eightfish/blob/master/LICENSE| | 
-| 0b. |Documentation|<ul><li>[x] </li></ul>|https://github.com/eightfish-org/eightfish#readme|   | 
-| 0c. | Testing and Testing Guide |<ul><li>[x] </li></ul>|https://github.com/eightfish-org/eightfish/blob/master/unit_tests.md|  | 
-| 0d.  | Docker |<ul><li>[x] </li></ul>|https://github.com/eightfish-org/eightfish/blob/master/Dockerfile|  | 
-| 0e. | Article |<ul><li>[x] </li></ul>|https://medium.com/@daogangtang/eightfish-milestone-1-81ef32e4bbf2|  | 
-| 1. | Substrate module: eightfish |<ul><li>[x] </li></ul>| 1. record the coming requests; https://github.com/eightfish-org/eightfish/blob/master/subnode/pallets/eightfish/src/lib.rs#L96 <br/> 2. record the coming model indexes; https://github.com/eightfish-org/eightfish/blob/master/subnode/pallets/eightfish/src/lib.rs#L117 <br/> 3. update the on-chain wasm code for the off-chain worker. https://github.com/eightfish-org/eightfish/blob/master/subnode/pallets/eightfish/src/lib.rs#L143 |  |
-| 2. | Subxt proxy |<ul><li>[x] </li></ul>| https://github.com/eightfish-org/eightfish/tree/master/subxtproxy| | 
-| 3. | Off-chain wasm worker |<ul><li>[x] </li></ul>| https://github.com/eightfish-org/eightfish/tree/master/spin_worker | | 
-| 4. | Upgrade utilities |<ul><li>[x] </li></ul>| 1. https://github.com/eightfish-org/eightfish/blob/master/upgrade/src/bin/upload_wasm.rs <br/> 2. https://github.com/eightfish-org/eightfish/blob/master/upgrade/src/main.rs <br/> 3.  https://github.com/eightfish-org/eightfish/blob/master/upgrade/nodemon.sh | | 
-| 5. | A set of rust derive procedural macro |<ul><li>[x] </li></ul>| https://github.com/eightfish-org/eightfish/tree/master/eightfish-derive | | 
-| 6. | Framework SDK interface |<ul><li>[x] </li></ul>| https://github.com/eightfish-org/eightfish/tree/master/src | | 
+| Number | Deliverable                           | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                                                        | Evaluation Notes |
+| ------ | ------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                               | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/blob/master/LICENSE                                                                                                                                                                                                                                                                                                                                                                              |                  |
+| 0b.    | Documentation                         | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish#readme                                                                                                                                                                                                                                                                                                                                                                                           |                  |
+| 0c.    | Testing and Testing Guide             | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/blob/master/unit_tests.md                                                                                                                                                                                                                                                                                                                                                                        |                  |
+| 0d.    | Docker                                | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/blob/master/Dockerfile                                                                                                                                                                                                                                                                                                                                                                           |                  |
+| 0e.    | Article                               | <ul><li>[x] </li></ul> | https://medium.com/@daogangtang/eightfish-milestone-1-81ef32e4bbf2                                                                                                                                                                                                                                                                                                                                                                          |                  |
+| 1.     | Substrate module: eightfish           | <ul><li>[x] </li></ul> | 1. record the coming requests; https://github.com/eightfish-org/eightfish/blob/master/subnode/pallets/eightfish/src/lib.rs#L96 <br/> 2. record the coming model indexes; https://github.com/eightfish-org/eightfish/blob/master/subnode/pallets/eightfish/src/lib.rs#L117 <br/> 3. update the on-chain wasm code for the off-chain worker. https://github.com/eightfish-org/eightfish/blob/master/subnode/pallets/eightfish/src/lib.rs#L143 |                  |
+| 2.     | Subxt proxy                           | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/tree/master/subxtproxy                                                                                                                                                                                                                                                                                                                                                                           |                  |
+| 3.     | Off-chain wasm worker                 | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/tree/master/spin_worker                                                                                                                                                                                                                                                                                                                                                                          |                  |
+| 4.     | Upgrade utilities                     | <ul><li>[x] </li></ul> | 1. https://github.com/eightfish-org/eightfish/blob/master/upgrade/src/bin/upload_wasm.rs <br/> 2. https://github.com/eightfish-org/eightfish/blob/master/upgrade/src/main.rs <br/> 3. https://github.com/eightfish-org/eightfish/blob/master/upgrade/nodemon.sh                                                                                                                                                                             |                  |
+| 5.     | A set of rust derive procedural macro | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/tree/master/eightfish-derive                                                                                                                                                                                                                                                                                                                                                                     |                  |
+| 6.     | Framework SDK interface               | <ul><li>[x] </li></ul> | https://github.com/eightfish-org/eightfish/tree/master/src                                                                                                                                                                                                                                                                                                                                                                                  |                  |
 
 ## Evaluation V4
 
@@ -28,13 +28,12 @@
 
 ### Testing
 
-They provided me [this example-todo](https://github.com/eightfish-org/eightfish-example-todo) application and [this upgraded flow test](https://github.com/eightfish-org/eightfish/blob/master/docs/upgrade.md). Both worked fine. 
+They provided me [this example-todo](https://github.com/eightfish-org/eightfish-example-todo) application and [this upgraded flow test](https://github.com/eightfish-org/eightfish/blob/master/docs/upgrade.md). Both worked fine.
 
-When I tested the upgraded flow test, I needed to run these commands 
+When I tested the upgraded flow test, I needed to run these commands
 `sudo npm install -g nodemon` and `rustup target add wasm32-wasi` to set up for other commands, and needed to run `spin build` before `spin up` in http_gate.
 
 For the next milestone delivery, I suggest using docker-compose to make easier to run the system.
-
 
 ###
 
@@ -43,7 +42,6 @@ For the next milestone delivery, I suggest using docker-compose to make easier t
 ### Flow Test
 
 All commands in this test work, but all services need to be running in the same docker container and the HTTP requests need to be made in the same docker container. Ideally, the HTTP request should be able to be done outside the container. Adding a docker-compose file to spin up the services and connect them is highly recommended for this project.
-
 
 ### Unit Test
 
@@ -82,7 +80,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 ### Code Quality
 
-Warnings from the subnode folder were fixed except substrate-node-template which doesn't need to be fixed. 
+Warnings from the subnode folder were fixed except substrate-node-template which doesn't need to be fixed.
 
 ### System test
 
@@ -122,7 +120,7 @@ error: could not compile `http-gate` due to previous error
 Error: Build command for component http-gate failed with status Exited(101)
 ```
 
-Because of that, I haven't tried to make the http requests. The other commands seem to be working. 
+Because of that, I haven't tried to make the http requests. The other commands seem to be working.
 
 ### Unit Test
 
@@ -223,56 +221,54 @@ Feb 27 12:44:27.786  INFO cargo_tarpaulin::report: Coverage Results:
 
 And in the folder `subnode` the coverage wasn't improved but isn't necessary to improve.
 
-
 ## Evaluation V1
 
 ### Documentation
 
 Docker builds without problems. The instructions to create postgres db and table are fine but would be better to have a script that runs these commands automatically during the build. I also notice that the ports are not being exported in the container. This can cause connectivity problems.
 
-
 The commands to run services got some problems:
 
 `target/release/eightfish_subnode --dev` the file was named as `eightfish-subnode` during the building. Please either rename the file or adjust the script command.
 
- `cargo build --release && target/release/subxtproxy` got some warnings during the building and fails to connect.
+`cargo build --release && target/release/subxtproxy` got some warnings during the building and fails to connect.
 
- ```
+```
 user@localhost:~/Documents/eightfish/subxtproxy$ cargo build --release && target/release/subxtproxy
 warning: unused manifest key: worksapce
 warning: unused import: `std::fmt`
- --> src/main.rs:2:5
-  |
+--> src/main.rs:2:5
+ |
 2 | use std::fmt;
-  | 	^^^^^^^^
-  |
-  = note: `#[warn(unused_imports)]` on by default
+ | 	^^^^^^^^
+ |
+ = note: `#[warn(unused_imports)]` on by default
 warning: unused import: `SubstrateConfig`
-  --> src/main.rs:10:5
-   |
+ --> src/main.rs:10:5
+  |
 10 | 	SubstrateConfig,
-   | 	^^^^^^^^^^^^^^^
+  | 	^^^^^^^^^^^^^^^
 warning: unused variable: `time`
-   --> src/main.rs:109:21
+  --> src/main.rs:109:21
 	|
 109 |             	let time = ev.3;
 	|                 	^^^^ help: if this is intentional, prefix it with an underscore: `_time`
 	|
 	= note: `#[warn(unused_variables)]` on by default
 warning: fields `time`, `nonce`, and `randomvec` are never read
-  --> src/main.rs:40:5
-   |
+ --> src/main.rs:40:5
+  |
 39 | pub struct ExtPayload {
-   |        	---------- fields in this struct
+  |        	---------- fields in this struct
 40 | 	time: u64,
-   | 	^^^^
+  | 	^^^^
 41 | 	nonce: u64,
-   | 	^^^^^
+  | 	^^^^^
 42 | 	randomvec: Vec<u8>,
-   | 	^^^^^^^^^
-   |
-   = note: `ExtPayload` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
-   = note: `#[warn(dead_code)]` on by default
+  | 	^^^^^^^^^
+  |
+  = note: `ExtPayload` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  = note: `#[warn(dead_code)]` on by default
 warning: `subxtproxy` (bin "subxtproxy") generated 4 warnings
 	Finished release [optimized] target(s) in 0.16s
 user@localhost:~/Documents/eightfish/subxtproxy$ target/release/subxtproxy
@@ -303,8 +299,6 @@ error: could not compile `wasi` due to 204 previous errors
 Error: Build command for component redis-worker failed with status Exited(101).
 ```
 
-
-
 ### Testing
 
 The test in `eightfish/eightfish-derive` failed to get `spin-sdk`
@@ -322,6 +316,7 @@ Caused by:
 Caused by:
   No such file or directory (os error 2)
 ```
+
 All tests in `eightfish/subnode` and `eightfish/subnode/pallets/eightfish` passed.
 
 I need a complete testing guide to evaluate the system's behavior. This guide should include all features in the milestone delivery and could have print screens or videos showing how to use them. The testing guide should not need programming skills to be used. In this way, if there are programming examples they need to be complete and have scripts that we can just run to evaluate the system.
@@ -388,7 +383,7 @@ Feb 17 10:30:03.673  INFO cargo_tarpaulin::report: Coverage Results:
 || node/src/rpc.rs: 0/6
 || pallets/eightfish/rpc/src/lib.rs: 0/12
 || pallets/eightfish/src/lib.rs: 23/51
-|| 
+||
 32.39% coverage, 23/71 lines covered
 ```
 
@@ -420,6 +415,6 @@ Feb 17 10:51:27.729  INFO cargo_tarpaulin::report: Coverage Results:
 || pallets/eightfish/src/mock.rs: 3/3
 || pallets/eightfish/src/tests.rs: 25/25
 || runtime/src/lib.rs: 2/66
-|| 
+||
 10.19% coverage, 53/520 lines covered
-``` 
+```

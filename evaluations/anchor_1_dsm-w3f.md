@@ -1,19 +1,19 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:**  https://github.com/w3f/Grants-Program/blob/master/applications/Anchor.md
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/Anchor.md
 - **Milestone:** 1
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |     
-| 0a. | License | <ul><li>[x] </li></ul>| [https://github.com/ff13dfly/Anchor/blob/main/LICENSE-APACHE2](https://github.com/ff13dfly/Anchor/blob/main/LICENSE-APACHE2) [https://github.com/ff13dfly/Anchor/blob/main/LICENSE-GPL3](https://github.com/ff13dfly/Anchor/blob/main/LICENSE-GPL3) |  |
-| 0b. | Documentation | <ul><li>[x] </li></ul>| [https://github.com/ff13dfly/Anchor/blob/main/README.md](https://github.com/ff13dfly/Anchor/blob/main/README.md) [https://github.com/ff13dfly/Anchor/blob/main/js/README.md](https://github.com/ff13dfly/Anchor/blob/main/js/README.md) |  |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul>| [https://github.com/ff13dfly/Anchor/blob/main/frame/anchor/README.md](https://github.com/ff13dfly/Anchor/blob/main/frame/anchor/README.md) [https://github.com/ff13dfly/Anchor/blob/main/js/playground/README.md](https://github.com/ff13dfly/Anchor/blob/main/js/playground/README.md) |  |  |
-| 0d. | Docker | <ul><li>[x] </li></ul>|[https://github.com/ff13dfly/Anchor/tree/main/docker](https://github.com/ff13dfly/Anchor/tree/main/docker)|  |
-| 0e. | Anchor pallet | <ul><li>[x] </li></ul>|[https://github.com/ff13dfly/Anchor](https://github.com/ff13dfly/Anchor)| |
-| 0f. | Anchor.js | <ul><li>[x] </li></ul>| [https://github.com/ff13dfly/Anchor/tree/main/js/playground](https://github.com/ff13dfly/Anchor/tree/main/js/playground)|  | |
+| Number | Deliverable   | Accepted               | Link                                                                                                                                                                                                                                                                                    | Evaluation Notes |
+| ------ | ------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --- |
+| 0a.    | License       | <ul><li>[x] </li></ul> | [https://github.com/ff13dfly/Anchor/blob/main/LICENSE-APACHE2](https://github.com/ff13dfly/Anchor/blob/main/LICENSE-APACHE2) [https://github.com/ff13dfly/Anchor/blob/main/LICENSE-GPL3](https://github.com/ff13dfly/Anchor/blob/main/LICENSE-GPL3)                                     |                  |
+| 0b.    | Documentation | <ul><li>[x] </li></ul> | [https://github.com/ff13dfly/Anchor/blob/main/README.md](https://github.com/ff13dfly/Anchor/blob/main/README.md) [https://github.com/ff13dfly/Anchor/blob/main/js/README.md](https://github.com/ff13dfly/Anchor/blob/main/js/README.md)                                                 |                  |
+| 0c.    | Testing Guide | <ul><li>[x] </li></ul> | [https://github.com/ff13dfly/Anchor/blob/main/frame/anchor/README.md](https://github.com/ff13dfly/Anchor/blob/main/frame/anchor/README.md) [https://github.com/ff13dfly/Anchor/blob/main/js/playground/README.md](https://github.com/ff13dfly/Anchor/blob/main/js/playground/README.md) |                  |     |
+| 0d.    | Docker        | <ul><li>[x] </li></ul> | [https://github.com/ff13dfly/Anchor/tree/main/docker](https://github.com/ff13dfly/Anchor/tree/main/docker)                                                                                                                                                                              |                  |
+| 0e.    | Anchor pallet | <ul><li>[x] </li></ul> | [https://github.com/ff13dfly/Anchor](https://github.com/ff13dfly/Anchor)                                                                                                                                                                                                                |                  |
+| 0f.    | Anchor.js     | <ul><li>[x] </li></ul> | [https://github.com/ff13dfly/Anchor/tree/main/js/playground](https://github.com/ff13dfly/Anchor/tree/main/js/playground)                                                                                                                                                                |                  |     |
 
 ## Evaluation V2
 
@@ -57,7 +57,7 @@ I wasn't able to run the docker following the instructions. I ran `sh build.sh` 
 
 ### System Test
 
-I tested the features with node and Anchor.js, and it seems to be working fine. But the guide needs examples with input and expected outputs to be sure the tests are correct. For testing the SDK please provide complete examples which do not require programming for us to run it. The expected outputs also need to be provided. 
+I tested the features with node and Anchor.js, and it seems to be working fine. But the guide needs examples with input and expected outputs to be sure the tests are correct. For testing the SDK please provide complete examples which do not require programming for us to run it. The expected outputs also need to be provided.
 
 ### Code Quality
 
@@ -105,6 +105,3 @@ warning: `pallet-anchor` (lib) generated 11 warnings
 I ran `cargo tarpaulin`. The lib.rs from template/anchor/src has good coverage.
 
 ![image (9)](https://user-images.githubusercontent.com/112647953/225634234-7c9dc9df-3c42-46e9-b182-5c64c57ea273.png)
-
-
-

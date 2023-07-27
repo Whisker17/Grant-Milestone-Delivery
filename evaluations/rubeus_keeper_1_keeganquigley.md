@@ -5,13 +5,13 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- |------------- | -------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/bsn-si/rubeus-smartcontract/blob/main/LICENSE) | Ok |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [Readme.md](https://github.com/bsn-si/rubeus-smartcontract/blob/main/README.md) | Looks good. |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [Readme.md](https://github.com/bsn-si/rubeus-smartcontract/blob/main/README.md#how-to) | All steps work after requested changes. All tests pass. E2E automated test also passes now. See notes below. |
-| 1.  | Ink! smart-contract | <ul><li>[x] </li></ul> | [See contract](https://github.com/bsn-si/rubeus-smartcontract/blob/main/lib.rs) | Successfully deployed `rubeus` contract to manually call functions. See notes below.| 
-| 2.  | Testing page | <ul><li>[x] </li></ul> | [Test page URL](https://bsn-si.github.io/rubeus/) | Manual testing works on the front-end test page. |
+| Number | Deliverable         | Accepted               | Link                                                                                   | Notes                                                                                                        |
+| ------ | ------------------- | ---------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 0a.    | License             | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/bsn-si/rubeus-smartcontract/blob/main/LICENSE)            | Ok                                                                                                           |
+| 0b.    | Documentation       | <ul><li>[x] </li></ul> | [Readme.md](https://github.com/bsn-si/rubeus-smartcontract/blob/main/README.md)        | Looks good.                                                                                                  |
+| 0c.    | Testing Guide       | <ul><li>[x] </li></ul> | [Readme.md](https://github.com/bsn-si/rubeus-smartcontract/blob/main/README.md#how-to) | All steps work after requested changes. All tests pass. E2E automated test also passes now. See notes below. |
+| 1.     | Ink! smart-contract | <ul><li>[x] </li></ul> | [See contract](https://github.com/bsn-si/rubeus-smartcontract/blob/main/lib.rs)        | Successfully deployed `rubeus` contract to manually call functions. See notes below.                         |
+| 2.     | Testing page        | <ul><li>[x] </li></ul> | [Test page URL](https://bsn-si.github.io/rubeus/)                                      | Manual testing works on the front-end test page.                                                             |
 
 # General Notes
 
@@ -48,6 +48,7 @@ I was able to get all the way through the testing guide and manually test all co
 ```rust
 2022-12-05 12:28:00.188 DEBUG tokio-runtime-worker runtime::contracts: Execution finished with debug buffer: panicked at 'dispatching ink! constructor failed: could not read input', /Users/keeganquigley/rubeus-smartcontract/lib.rs:11:5
 ```
+
 This happens both when using `new(owner: AccountId)` using Alice as the account, as well as the `default()` constructor.
 
 The contract still instantiates successfully so I could get through the evaluation, but please take a look to see what is causing this `constructor` to fail.
@@ -55,6 +56,7 @@ The contract still instantiates successfully so I could get through the evaluati
 2. In the testing guide, I would suggest mentioning that `substrate-contracts-node` needs to be running before changing into `example` directory and running the tests, just to make it clear that otherwise it will fail to connect to the node.
 
 3. Cargo clippy generates the following warnings:
+
 ```rust
 warning: called `is_none()` after searching an `Iterator` with `find`
   --> lib.rs:84:13

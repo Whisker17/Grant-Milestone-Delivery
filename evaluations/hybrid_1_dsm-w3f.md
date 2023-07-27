@@ -1,23 +1,23 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/hybrid.md 
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/hybrid.md
 - **Milestone:** 1
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.| License |<ul><li>[x] </li></ul>| [LICENSE](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/LICENSE) | Apache 2.0 | 
-| 0b.| Documentation | <ul><li>[x] </li></ul>| [README.md](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/README.md) |  | 
-| 0c.| Testing and Testing Guide | <ul><li>[x] </li></ul>| [README.md](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/README.md#tutorial) |  | 
-| 0d.| Docker | <ul><li>[x] </li></ul>| [README.md](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/README.md#docker) |  | 
-| 1.| Connect to Substrate chains | <ul><li>[x] </li></ul>| [main.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/main.rs#L50) |  | 
-| 2.| Block syncing | <ul><li>[x] </li></ul>| [substrate.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/substrate.rs#L283)|  | 
-| 3.| Index writing | <ul><li>[x] </li></ul>| [substrate.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/substrate.rs#L198) |  | 
-| 4.| Status querying | <ul><li>[x] </li></ul>| [websockets.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/websockets.rs#L83) |  | 
-| 5.| Index querying | <ul><li>[x] </li></ul>| [websockets.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/websockets.rs#L95) |  | 
-| 6.| Dapp | <ul><li>[x] </li></ul>| [hybrid-dapp](https://github.com/hybrid-explorer/hybrid-dapp/tree/milestone-1) |  | 
+| Number | Deliverable                 | Accepted               | Link                                                                                                      | Evaluation Notes |
+| ------ | --------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                     | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/LICENSE)                     | Apache 2.0       |
+| 0b.    | Documentation               | <ul><li>[x] </li></ul> | [README.md](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/README.md)                 |                  |
+| 0c.    | Testing and Testing Guide   | <ul><li>[x] </li></ul> | [README.md](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/README.md#tutorial)        |                  |
+| 0d.    | Docker                      | <ul><li>[x] </li></ul> | [README.md](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/README.md#docker)          |                  |
+| 1.     | Connect to Substrate chains | <ul><li>[x] </li></ul> | [main.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/main.rs#L50)             |                  |
+| 2.     | Block syncing               | <ul><li>[x] </li></ul> | [substrate.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/substrate.rs#L283)  |                  |
+| 3.     | Index writing               | <ul><li>[x] </li></ul> | [substrate.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/substrate.rs#L198)  |                  |
+| 4.     | Status querying             | <ul><li>[x] </li></ul> | [websockets.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/websockets.rs#L83) |                  |
+| 5.     | Index querying              | <ul><li>[x] </li></ul> | [websockets.rs](https://github.com/hybrid-explorer/hybrid-indexer/blob/milestone-1/src/websockets.rs#L95) |                  |
+| 6.     | Dapp                        | <ul><li>[x] </li></ul> | [hybrid-dapp](https://github.com/hybrid-explorer/hybrid-dapp/tree/milestone-1)                            |                  |
 
 ## Evaluation V4
 
@@ -29,7 +29,7 @@ Now I was able to search with all parameters without problems.
 
 ### Testing
 
-Thanks for providing the testing guide. During the tests, I only had one problem, in the case of the TipHash, in which the indexer indexed the block with the TipHash example, but the search returned nothing. All other cases worked without problems. I'm wondering if this is a bug or if there is some problem with the selected example for this case. Please provide an explanation or another example that works. 
+Thanks for providing the testing guide. During the tests, I only had one problem, in the case of the TipHash, in which the indexer indexed the block with the TipHash example, but the search returned nothing. All other cases worked without problems. I'm wondering if this is a bug or if there is some problem with the selected example for this case. Please provide an explanation or another example that works.
 
 ### Code Quality
 
@@ -144,16 +144,15 @@ Were add some tests for `websockets.rs`, it has good coverage.
 || src/shared.rs: 110/124 -0.18%
 || src/substrate.rs: 38/126 -2.04%
 || src/websockets.rs: 134/164 +81.71%
-|| 
+||
 16.35% coverage, 282/1725 lines covered, +7.64% change in coverage
 ```
-
 
 ## Evaluation V1
 
 ### Testing
 
-All unit tests passed, but the Testing Guide misses a step by step examples for manual testing. 
+All unit tests passed, but the Testing Guide misses a step by step examples for manual testing.
 
 ```
 running 28 tests
@@ -192,13 +191,14 @@ I tried to test the Dapp. I changed the block-height parameter to catch new bloc
 
 I noticed the blocks in the dapp stopped to update after the newest block 15,130,436 / 15,130,436, but the indexer was catching new blocks. So after some time, the dapp counter became 15,130,436 / 15,130,840 and the searches don't find the newest events. Needing to restart the indexer to store these events, but it will stop again. This is an intended feature or a bug in the system? I missused it in some way?
 
-### Docker 
+### Docker
 
 The docker starts the application without problems.
 
 ### Code Quality
 
 I ran `cargo clippy` to use a static analysis tool for rust and got too many warnings. There are some examples:
+
 ```
 user@localhost:~/Documents/block/hybrid-indexer$ cargo clippy
 warning: redundant field names in struct initialization

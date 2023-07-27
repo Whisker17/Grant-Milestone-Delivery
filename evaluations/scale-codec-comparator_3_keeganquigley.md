@@ -5,13 +5,12 @@
 - **Milestone:** 3
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-
-| Number | Deliverable   | Accepted | Link                                                                                 | Notes |
-|--------|---------------|----------|----------------------------------------------------------------------------|-------|
-| 0a.     | License   | <ul><li>[x] </li></ul> | MIT License                            |       |
-| 0b.     | Documentation       | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator                                                                        | Looks good.   |
-| 1.     | GitHub badge         | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator#comparator-result-badges                 | Badges work.      |
-| 2.     | Github CI ensure badge | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator/blob/main/.github/dependabot.yml | Github actions work.      |
+| Number | Deliverable            | Accepted               | Link                                                                                      | Notes                |
+| ------ | ---------------------- | ---------------------- | ----------------------------------------------------------------------------------------- | -------------------- |
+| 0a.    | License                | <ul><li>[x] </li></ul> | MIT License                                                                               |                      |
+| 0b.    | Documentation          | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator                                  | Looks good.          |
+| 1.     | GitHub badge           | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator#comparator-result-badges         | Badges work.         |
+| 2.     | Github CI ensure badge | <ul><li>[x] </li></ul> | https://github.com/gmajor-encrypt/scale-codec-comparator/blob/main/.github/dependabot.yml | Github actions work. |
 
 # General Notes
 

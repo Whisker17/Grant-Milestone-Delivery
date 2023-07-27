@@ -6,26 +6,24 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.| License |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur/blob/main/LICENSE |  | 
-| 0b.| Documentation |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur#run-tests |  | 
-| 0c.| Testing Guide |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur#run-tests |   | 
-| 0d.| Docker |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur#running-a-ventur-node-docker |  | 
-| 0e.| Article |<ul><li>[x] </li></ul>| https://docs.google.com/document/d/1aQOTNwcOgZ5_8VDloDmaGEs6si9hm5dCMSDXFHwo4LY/edit?usp=sharing | | 
-| 1. | Substrate module: escrow |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur/tree/main/pallets/escrow |  | 
-| 2. | Substrate module: contracted-payment-process |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur/tree/main/pallets/payments |  |
-| 3. | Substrate chain: Ventur |<ul><li>[x] </li></ul>| https://github.com/Popular-Coding/ventur |  |
-
+| Number | Deliverable                                  | Accepted               | Link                                                                                             | Evaluation Notes |
+| ------ | -------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------ | ---------------- |
+| 0a.    | License                                      | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur/blob/main/LICENSE                                       |                  |
+| 0b.    | Documentation                                | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur#run-tests                                               |                  |
+| 0c.    | Testing Guide                                | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur#run-tests                                               |                  |
+| 0d.    | Docker                                       | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur#running-a-ventur-node-docker                            |                  |
+| 0e.    | Article                                      | <ul><li>[x] </li></ul> | https://docs.google.com/document/d/1aQOTNwcOgZ5_8VDloDmaGEs6si9hm5dCMSDXFHwo4LY/edit?usp=sharing |                  |
+| 1.     | Substrate module: escrow                     | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur/tree/main/pallets/escrow                                |                  |
+| 2.     | Substrate module: contracted-payment-process | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur/tree/main/pallets/payments                              |                  |
+| 3.     | Substrate chain: Ventur                      | <ul><li>[x] </li></ul> | https://github.com/Popular-Coding/ventur                                                         |                  |
 
 # General Notes
 
 # Evaluation V2
 
-
 ## Docker
 
-The docker-compose and docker-build are running well. The problem with docker-compose was a old image in our test server. 
+The docker-compose and docker-build are running well. The problem with docker-compose was a old image in our test server.
 
 ## Code Quality
 
@@ -33,7 +31,7 @@ The docker-compose and docker-build are running well. The problem with docker-co
 
 Test coverage increased.
 
-lib.rs	219 / 255 (85.88%) (+32.64%)
+lib.rs 219 / 255 (85.88%) (+32.64%)
 
 All clippy warnings were fixed.
 
@@ -41,7 +39,7 @@ All clippy warnings were fixed.
 
 Test coverage decreased.
 
-lib.rs	95 / 124 (76.61%) (-5.00%)
+lib.rs 95 / 124 (76.61%) (-5.00%)
 
 All clippy warnings were fixed.
 
@@ -49,9 +47,7 @@ All clippy warnings were fixed.
 
 The requirement to lock more than the available balance was set up to not allow this case and the software is working as expected.
 
-
 The payment using an escrow account worked well.
-
 
 # Evaluation V1
 
@@ -61,19 +57,17 @@ The script for running the system using docker failed. See the image below:
 
 ![image](https://user-images.githubusercontent.com/112647953/197856459-58eb4144-ae4d-478f-8a4d-4a7029847730.png)
 
-
 ## Testing Guides
 
 ### Payment Pallet
 
-All steps of the tutorial worked well. 
+All steps of the tutorial worked well.
 
 ### Escrow Pallet
 
 I could lock more balance that I currently have in the Escrow when using the admin account to fund the escrow. Is this allowed?
 
 ![lock_more_than_I_have](https://user-images.githubusercontent.com/112647953/197858010-6c108144-db46-4521-aff4-7ba90553820d.jpg)
-
 
 All steps of the tutorial worked well. Some steps are not included in the tutorial such as removing admin and disabling open contributions. Would be nice to include.
 
@@ -189,7 +183,6 @@ note: this value is dropped without further use
    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#redundant_clone
 ```
 
-
 ### Escrow pallet
 
 Coverage: lib.rs 148 / 278 (53.24%)
@@ -197,19 +190,15 @@ Some paths and full methods are not covered.
 
 Good code documentation.
 
-
 ### Payment pallet
 
-lib.rs	71 / 87 (81.61%) 
+lib.rs 71 / 87 (81.61%)
 
 Some paths are not covered.
 
-
 Code documentation is present but some parts are not compatible with rustdocs. Please use /// instead of // for documentation on top of methods.
 
-
 cargo clippy generated this warning for the payment pallet:
-
 
 ```
 warning: this function has too many arguments (8/7)
@@ -234,4 +223,3 @@ warning: this function has too many arguments (8/7)
 
 warning: `pallet-payments` (lib) generated 1 warning
 ```
-

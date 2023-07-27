@@ -1,15 +1,13 @@
 # Evaluation
 
-
-
 - **Status:** ACCEPTED
 - **Application Document:** [IPFS Utilities](https://github.com/w3f/Grants-Program/blob/master/applications/ipfs_utilities.md)
 - **Milestone:** 1
 - **Kusama Identity:** randombishop (https://sub.id/5Gnixfp6vnznRkr91JgwkxYnCJCyHr8EaBzYfFsUKcTMzVYF)
-- **Previously successfully merged evaluation:** 
+- **Previously successfully merged evaluation:**
 
 | Number | Deliverable                                          | Accepted | Link                                                                                                                                                                   | Evaluation Notes                                                                                                   |
-|-------:|------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| -----: | ---------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 |    0a. | License                                              | Yes      | [LICENCE](https://github.com/TDSoftware/substrate-ipfs/blob/milestone-1/LICENSE-APACHE2)                                                                               | Apache 2.0                                                                                                         |
 |    0b. | Documentation                                        | Yes      | [Node](https://github.com/TDSoftware/substrate-ipfs/blob/milestone-1/README.md) [Frontend](https://github.com/TDSoftware/substrate-ipfs-ui/blob/milestone-1/README.md) | Very minimal documentation                                                                                         |
 |    0c. | Testing                                              | Yes      |                                                                                                                                                                        | The provided links don't indicate how to run the tests but managed to run the tests on substrate pallets and libs. |
@@ -18,20 +16,19 @@
 |     3. | Implementation of a web3 client                      | Yes      | https://github.com/TDSoftware/substrate-ipfs-ui/tree/milestone-1                                                                                                       | OK                                                                                                                 |
 |     4. | Benchmark and adjustments                            | No       | https://github.com/TDSoftware/substrate-ipfs-ui/tree/milestone-1                                                                                                       | OK                                                                                                                 |
 
-
 ## Repositories
+
 (Apache 2.0 licensed)
 
 |      Component | Repo                                            | Language |
-|---------------:|-------------------------------------------------|----------|
+| -------------: | ----------------------------------------------- | -------- |
 | Substrate node | https://github.com/TDSoftware/substrate-ipfs    | Rust     |
 |       Frontend | https://github.com/TDSoftware/substrate-ipfs-ui | JS       |
 
-
-
 ## Logs
 
-* Testing frame/tds-ipfs-core:
+- Testing frame/tds-ipfs-core:
+
 ```
 Running unittests src/lib.rs (/Users/w3f/pycharm_workspace/substrate-ipfs/target/debug/deps/pallet_tds_ipfs_core-eb8ffdf7599efb4f)
 running 8 tests
@@ -46,7 +43,8 @@ test tests::test_multiple_bytes_to_utf8_safe_bytes ... ok
 test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 ```
 
-* Testing frame/tds-ipfs:
+- Testing frame/tds-ipfs:
+
 ```
 Running unittests src/lib.rs (/Users/w3f/pycharm_workspace/substrate-ipfs/target/debug/deps/pallet_tds_ipfs-3a493fe1c17f422b)
 running 1 test
@@ -54,7 +52,8 @@ test mock::__construct_runtime_integrity_test::runtime_integrity_tests ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
 
-* Testing frame/tds-ipfs:
+- Testing frame/tds-ipfs:
+
 ```
 Running unittests src/lib.rs (/Users/w3f/pycharm_workspace/substrate-ipfs/target/debug/deps/sp_runtime-1f44f30367dc747b)
 running 56 tests
@@ -132,7 +131,8 @@ test src/lib.rs - assert_eq_error_rate (line 807) ... ok
 test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.79s
 ```
 
-* Running benchmark:
+- Running benchmark:
+
 ```
 ✔ Enter the websocket address of the node you want to connect to. · ws://127.0.0.1:9944
 ✔ Enter the amount of files you want to create. · 5
@@ -152,18 +152,16 @@ Returned file for 5FsLUdJXhBSGmXfCjNRriyqfKjSgexjqiuLZXbrNmqiJbWKm in: : 4.031s
 Returned file for 5H47invpYUKCiQyQtnLeiEEgJZYYCs5ktUmfa8razhe2aMhP in: : 4.081s
 ```
 
-
 ## General notes
 
 Everything works as expected and the code provides solid utilities for IPFS use cases.
 
-
 ## Improvement suggestions
 
-* Node documentation is basic pointers to the standard substrate template docs, would be nice if it was customized to this particular use case and repository. 
+- Node documentation is basic pointers to the standard substrate template docs, would be nice if it was customized to this particular use case and repository.
 
-* Frontend documentation is also very minimal, please include more details in future deliveries to help devs onboard the codebase (framework used, main features, autogenerated API docs, etc.)
+- Frontend documentation is also very minimal, please include more details in future deliveries to help devs onboard the codebase (framework used, main features, autogenerated API docs, etc.)
 
-* The docs don't show how to run the tests, I had to manually guess and go into the features folders and run `cargo test`
+- The docs don't show how to run the tests, I had to manually guess and go into the features folders and run `cargo test`
 
-* The benchmark run doesn't exit when done, probably some process stays hanging there.
+- The benchmark run doesn't exit when done, probably some process stays hanging there.

@@ -6,14 +6,14 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul>|[GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission/blob/main/LICENSE)|  |
-| 0b. | Documentation | <ul><li>[x] </li></ul>|[GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission/blob/main/README.md) |  |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul>|[GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission/blob/main/docs/AssetsTestingGuide.md)|  |
-| 0d. | Docker | <ul><li>[x] </li></ul>|[Docker Image](https://hub.docker.com/layers/societal/societal-node/vb4f81a4/images/sha256-69ba2805d6eb08d8bd5721afc4c82d2975a368efcde2634356ba6568a9111e9d?context=explore)|  |
-| 1. | Substrate Module: Reservable & Lockable Asset Pallet | <ul><li>[x] </li></ul>|[GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission) |   |  
-| 2. | Client Modules | <ul><li>[x] </li></ul>| [Polkadot-JS](https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944) |  |
+| Number | Deliverable                                          | Accepted               | Link                                                                                                                                                                         | Evaluation Notes |
+| ------ | ---------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                                              | <ul><li>[x] </li></ul> | [GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission/blob/main/LICENSE)                                                                                |                  |
+| 0b.    | Documentation                                        | <ul><li>[x] </li></ul> | [GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission/blob/main/README.md)                                                                              |                  |
+| 0c.    | Testing Guide                                        | <ul><li>[x] </li></ul> | [GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission/blob/main/docs/AssetsTestingGuide.md)                                                             |                  |
+| 0d.    | Docker                                               | <ul><li>[x] </li></ul> | [Docker Image](https://hub.docker.com/layers/societal/societal-node/vb4f81a4/images/sha256-69ba2805d6eb08d8bd5721afc4c82d2975a368efcde2634356ba6568a9111e9d?context=explore) |                  |
+| 1.     | Substrate Module: Reservable & Lockable Asset Pallet | <ul><li>[x] </li></ul> | [GitHub repo link](https://github.com/sctllabs/societal-grant-2-submission)                                                                                                  |                  |
+| 2.     | Client Modules                                       | <ul><li>[x] </li></ul> | [Polkadot-JS](https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944)                                                                                               |                  |
 
 ## Evaluation V2
 
@@ -25,12 +25,12 @@ The automated tests are now passing. For some reason `cargo tarpaulin` fail to r
 
 Some warnings of cargo clippy remain.
 
-
 ## Evaluation V1
 
 ### Starting the back-end
 
 When I ran `cargo run –release –  –dev` the backend started but I got some warnings. For example:
+
 ```
 warning: unused variable: `dao_id`
    --> pallets/dao-primitives/src/lib.rs:303:3
@@ -76,6 +76,7 @@ warning: unused variable: `hash`
 318 | 	fn approve_vote(dao_id: u32, hash: H256, approve: bool) -> Result<(), DispatchError> {
 	|                              	^^^^ help: if this is intentional, prefix it with an underscore: `_hash`
 ```
+
 ### Docker
 
 Works fine but got the same warnings as above.
@@ -153,10 +154,8 @@ The application works fine, but in the testing guide in [Proposal Volting](https
 Tutorial:
 ![image (4)](https://user-images.githubusercontent.com/112647953/217795447-de759222-abe2-4b51-af2c-1ab49ec45469.png)
 
-
 System:
 ![image (3)](https://user-images.githubusercontent.com/112647953/217795417-b0b105de-410f-4f80-8fda-c38caa393c78.png)
-
 
 ### Code Quality
 
@@ -222,4 +221,3 @@ warning: the following packages contain code that will be rejected by a future v
 note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
 
 ```
-

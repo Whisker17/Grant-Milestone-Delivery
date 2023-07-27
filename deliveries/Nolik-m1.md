@@ -2,8 +2,8 @@
 
 **The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** [Nolik](https://github.com/w3f/Grants-Program/blob/master/applications/Nolik.md)
-* **Milestone Number:** 1
+- **Application Document:** [Nolik](https://github.com/w3f/Grants-Program/blob/master/applications/Nolik.md)
+- **Milestone Number:** 1
 
 **Context**
 
@@ -22,20 +22,19 @@ As planned, right now the pallet logic validates the sender and the recipient an
 The message itself will be composed, encrypted, and then sent to the node from the client side.
 Those are the deliverables of the [second milestone](https://github.com/w3f/Grants-Program/blob/master/applications/Nolik.md#milestone-2--develop-cli-tools) of this application.
 
-
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License       | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/LICENCE | | 
-|     |               | https://github.com/chainify/substrate-nolik-dev/blob/6f51575cbf1eef2898ad1da0b0fece99d4a65ec6/LICENSE | |
-| 0b. | Documentstion | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/README.md | | 
-|     |               | https://github.com/chainify/substrate-nolik-dev/blob/6f51575cbf1eef2898ad1da0b0fece99d4a65ec6/README.md | |
-| 0c. | Testing Guide | https://github.com/chainify/pallet-nolik/tree/699ed354f75056a434fa4554f38cee453380bc20#testing | |
-|     |               | https://github.com/chainify/pallet-nolik/blob/0a854fd94f8a205483804f5df63813222ed55cfc/README.md#sample-scenario | UI testing guide scenario |
-| 0d. | Docker        | https://hub.docker.com/r/chainify/substrate-nolik-dev | Docker image |
-|     |               | https://github.com/chainify/substrate-nolik-dev/blob/4f1f36e01f5fb22d745e2a3566e84c43f58ba3c2/README.md#run-in-docker | Instructions |
-| 1.  | Substrate module: Account Rules | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/src/lib.rs | |
-| 2.  | Substrate module: Message Validation | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/src/lib.rs#L215 | |
-| 3.  | Substrate chain | https://github.com/chainify/substrate-nolik-dev/tree/6f51575cbf1eef2898ad1da0b0fece99d4a65ec6 | |
+| Number | Deliverable                          | Link                                                                                                                  | Notes                     |
+| ------ | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| 0a.    | License                              | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/LICENCE                        |                           |
+|        |                                      | https://github.com/chainify/substrate-nolik-dev/blob/6f51575cbf1eef2898ad1da0b0fece99d4a65ec6/LICENSE                 |                           |
+| 0b.    | Documentstion                        | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/README.md                      |                           |
+|        |                                      | https://github.com/chainify/substrate-nolik-dev/blob/6f51575cbf1eef2898ad1da0b0fece99d4a65ec6/README.md               |                           |
+| 0c.    | Testing Guide                        | https://github.com/chainify/pallet-nolik/tree/699ed354f75056a434fa4554f38cee453380bc20#testing                        |                           |
+|        |                                      | https://github.com/chainify/pallet-nolik/blob/0a854fd94f8a205483804f5df63813222ed55cfc/README.md#sample-scenario      | UI testing guide scenario |
+| 0d.    | Docker                               | https://hub.docker.com/r/chainify/substrate-nolik-dev                                                                 | Docker image              |
+|        |                                      | https://github.com/chainify/substrate-nolik-dev/blob/4f1f36e01f5fb22d745e2a3566e84c43f58ba3c2/README.md#run-in-docker | Instructions              |
+| 1.     | Substrate module: Account Rules      | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/src/lib.rs                     |                           |
+| 2.     | Substrate module: Message Validation | https://github.com/chainify/pallet-nolik/blob/699ed354f75056a434fa4554f38cee453380bc20/src/lib.rs#L215                |                           |
+| 3.     | Substrate chain                      | https://github.com/chainify/substrate-nolik-dev/tree/6f51575cbf1eef2898ad1da0b0fece99d4a65ec6                         |                           |
 
 **Additional Information**
 

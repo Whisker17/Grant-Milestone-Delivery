@@ -2,23 +2,24 @@
 
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/SubDAO_PolkaSign.md
+
 * **Milestone:** 1
 * **Kusama Identity:** [HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve](https://polkascan.io/pre/kusama/account/HFG4FvoJv8uanizzetS1tPA6wigNAiKuEHKcm1NaKNNDwve)
 * **Previously successfully merged evaluation:** All evaluations by Noc2
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [MIT License](https://github.com/SubDAO-Network/polkasign-contract/blob/main/LICENSE), [MIT Client](https://github.com/SubDAO-Network/subdao-polkasign/blob/main/LICENSE) | **27.12.21:** Correct License, but a lot of it is cloned from [apron](https://github.com/Apron-Network/apron-contracts) which has an apache license, **30.12.21** Readme was updated and it seems https://github.com/sharkygg works for both companies, which is why the code is similar.   |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [polkasign-docs](https://github.com/SubDAO-Network/polkasign-docs) | Good documentation |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [Usage](https://github.com/SubDAO-Network/polkasign-docs/blob/main/Usage.md) |  |
-| 0d. | Article | <ul><li>[x] </li></ul> | [medium article](https://subdao.medium.com/subdao-launched-polkasign-beta-which-will-be-embedded-in-ventures-dao-7fde5037c278) | Nice article, but it's already published |
-| 1a. | PolkaSign Client | <ul><li>[x] </li></ul> | [subdao-polkasign](https://github.com/SubDAO-Network/subdao-polkasign) | Also has a backend, a lot of warnings see below. The UI has no option to select different accounts   |
-| 1b. | PolkaSign Smart Contract | <ul><li>[x] </li></ul> | [contract](https://github.com/SubDAO-Network/polkasign-contract) | Compiles, but a lot of warnings |
-| 2. | Build instruction | <ul><li>[x] </li></ul> | [Deploy.md](https://github.com/SubDAO-Network/polkasign-docs/blob/main/Deploy.md) |  |
+| Number | Deliverable              | Accepted               | Link                                                                                                                                                                      | Evaluation Notes                                                                                                                                                                                                                                                                          |
+| ------ | ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                  | <ul><li>[x] </li></ul> | [MIT License](https://github.com/SubDAO-Network/polkasign-contract/blob/main/LICENSE), [MIT Client](https://github.com/SubDAO-Network/subdao-polkasign/blob/main/LICENSE) | **27.12.21:** Correct License, but a lot of it is cloned from [apron](https://github.com/Apron-Network/apron-contracts) which has an apache license, **30.12.21** Readme was updated and it seems https://github.com/sharkygg works for both companies, which is why the code is similar. |
+| 0b.    | Documentation            | <ul><li>[x] </li></ul> | [polkasign-docs](https://github.com/SubDAO-Network/polkasign-docs)                                                                                                        | Good documentation                                                                                                                                                                                                                                                                        |
+| 0c.    | Testing Guide            | <ul><li>[x] </li></ul> | [Usage](https://github.com/SubDAO-Network/polkasign-docs/blob/main/Usage.md)                                                                                              |                                                                                                                                                                                                                                                                                           |
+| 0d.    | Article                  | <ul><li>[x] </li></ul> | [medium article](https://subdao.medium.com/subdao-launched-polkasign-beta-which-will-be-embedded-in-ventures-dao-7fde5037c278)                                            | Nice article, but it's already published                                                                                                                                                                                                                                                  |
+| 1a.    | PolkaSign Client         | <ul><li>[x] </li></ul> | [subdao-polkasign](https://github.com/SubDAO-Network/subdao-polkasign)                                                                                                    | Also has a backend, a lot of warnings see below. The UI has no option to select different accounts                                                                                                                                                                                        |
+| 1b.    | PolkaSign Smart Contract | <ul><li>[x] </li></ul> | [contract](https://github.com/SubDAO-Network/polkasign-contract)                                                                                                          | Compiles, but a lot of warnings                                                                                                                                                                                                                                                           |
+| 2.     | Build instruction        | <ul><li>[x] </li></ul> | [Deploy.md](https://github.com/SubDAO-Network/polkasign-docs/blob/main/Deploy.md)                                                                                         |                                                                                                                                                                                                                                                                                           |
 
 ## General Notes
 
-The delivery is according to the contract. But it is clearly still in an early stage. For example the code shows a lot of warnings and there is now way to switch between different polkadot.js accounts. 
+The delivery is according to the contract. But it is clearly still in an early stage. For example the code shows a lot of warnings and there is now way to switch between different polkadot.js accounts.
 
 Lots of warnings for the contracts:
 
@@ -90,7 +91,6 @@ Lots of warnings for the contracts:
 
 Lots of warnings for the backend:
 
-
 <pre>yarn build
 <b>yarn run v1.22.5</b>
 <font color="#AAAAAA">$ next build &amp;&amp; next export</font>
@@ -151,7 +151,7 @@ Lots of warnings for the backend:
 <font color="#A2734C">14</font>:<font color="#A2734C">10</font>  <font color="#A2734C"><b>Warning</b></font>: &apos;client&apos; is defined but never used.  <font color="#5E5C64"><b>@typescript-eslint/no-unused-vars</b></font>
 </pre>
 
-Extra work: 
+Extra work:
 
 - https://github.com/SubDAO-Network/subDAO-frontend
 - https://github.com/SubDAO-Network/polkasign-backend

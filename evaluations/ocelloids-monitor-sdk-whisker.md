@@ -8,14 +8,14 @@
 
 **Deliverables**
 
-| Number  | Deliverable   | Link | Notes |
-| ------- | ------------- | ------------- |------------- |
-| **0a.** | License       | https://github.com/sodazone/ocelloids/blob/main/LICENSE | |
-| **0b.** | Documentation | <ul><li>https://github.com/sodazone/ocelloids/blob/main/README.md</li><li>https://github.com/sodazone/ocelloids/blob/main/guides/QUICKSTART.md</li><li>https://sodazone.github.io/ocelloids/</li></ul>| There are detailed READMEs for each module and also inline source code documentation. We also have a quickstart guide and a documentation site to help with setting up the first Ocelloids project. |
-| **0c.** | Testing and Testing Guide | https://github.com/sodazone/ocelloids#testing | |
-| 1.      | Core SDK | https://github.com/sodazone/ocelloids/tree/main/packages/core | |
-| 2.      | ink! Contracts Domain Logic | https://github.com/sodazone/ocelloids/tree/main/packages/pallets/contracts | |
-| 3.      | Example application | https://github.com/sodazone/ocelloids/tree/main/examples/watch-contracts | |
+| Number  | Deliverable                 | Link                                                                                                                                                                                                   | Notes                                                                                                                                                                                               |
+| ------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                     | https://github.com/sodazone/ocelloids/blob/main/LICENSE                                                                                                                                                |                                                                                                                                                                                                     |
+| **0b.** | Documentation               | <ul><li>https://github.com/sodazone/ocelloids/blob/main/README.md</li><li>https://github.com/sodazone/ocelloids/blob/main/guides/QUICKSTART.md</li><li>https://sodazone.github.io/ocelloids/</li></ul> | There are detailed READMEs for each module and also inline source code documentation. We also have a quickstart guide and a documentation site to help with setting up the first Ocelloids project. |
+| **0c.** | Testing and Testing Guide   | https://github.com/sodazone/ocelloids#testing                                                                                                                                                          |                                                                                                                                                                                                     |
+| 1.      | Core SDK                    | https://github.com/sodazone/ocelloids/tree/main/packages/core                                                                                                                                          |                                                                                                                                                                                                     |
+| 2.      | ink! Contracts Domain Logic | https://github.com/sodazone/ocelloids/tree/main/packages/pallets/contracts                                                                                                                             |                                                                                                                                                                                                     |
+| 3.      | Example application         | https://github.com/sodazone/ocelloids/tree/main/examples/watch-contracts                                                                                                                               |                                                                                                                                                                                                     |
 
 ## General Notes
 
@@ -45,48 +45,48 @@ Overall, this is a solid project, well documented and scripts, and all promised 
  PASS  packages/core/src/operators/filter.spec.ts (5.899 s)
  PASS  packages/core/src/operators/extract.spec.ts (7.689 s)
 ----------------------------------|---------|----------|---------|---------|-------------------------
-File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
+File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------------------------------|---------|----------|---------|---------|-------------------------
-All files                         |   95.86 |    94.54 |   93.82 |   95.74 |                         
- core/src                         |     100 |      100 |     100 |     100 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
- core/src/apis                    |   81.35 |      100 |      65 |   81.35 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
-  substrate-apis.ts               |   81.03 |      100 |      65 |   81.03 | 127,131-172,220,236,272 
- core/src/configuration           |     100 |      100 |     100 |     100 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
-  networks.ts                     |     100 |      100 |     100 |     100 |                         
-  utils.ts                        |     100 |      100 |     100 |     100 |                         
- core/src/converters              |     100 |    97.22 |     100 |     100 |                         
-  base.ts                         |     100 |    97.22 |     100 |     100 | 166                     
-  index.ts                        |     100 |      100 |     100 |     100 |                         
- core/src/observables             |     100 |      100 |     100 |     100 |                         
-  blocks.ts                       |     100 |      100 |     100 |     100 |                         
-  bn.ts                           |     100 |      100 |     100 |     100 |                         
-  events.ts                       |     100 |      100 |     100 |     100 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
- core/src/operators               |     100 |    94.44 |     100 |     100 |                         
-  convert.ts                      |     100 |      100 |     100 |     100 |                         
-  debug.ts                        |     100 |    66.66 |     100 |     100 | 34                      
-  extract.ts                      |     100 |      100 |     100 |     100 |                         
-  filter.ts                       |     100 |      100 |     100 |     100 |                         
-  flatten.ts                      |     100 |      100 |     100 |     100 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
-  mongo-filter.ts                 |     100 |      100 |     100 |     100 |                         
- core/src/subjects                |     100 |      100 |     100 |     100 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
-  mingo-ops.ts                    |     100 |      100 |     100 |     100 |                         
-  query.ts                        |     100 |      100 |     100 |     100 |                         
- core/src/types                   |   90.47 |      100 |   71.42 |   90.47 |                         
-  event.ts                        |    87.5 |      100 |   66.66 |    87.5 | 62                      
-  extrinsic.ts                    |      90 |      100 |      75 |      90 | 59                      
-  index.ts                        |     100 |      100 |     100 |     100 |                         
- pallets/contracts/src/converters |    87.5 |    71.42 |   92.85 |    87.5 |                         
-  contracts.ts                    |    87.5 |    71.42 |   92.85 |    87.5 | 118,122-134             
- pallets/contracts/src/operators  |   96.29 |      100 |     100 |   96.15 |                         
-  contracts.ts                    |   94.44 |      100 |     100 |   94.11 | 117-125                 
-  filter.ts                       |     100 |      100 |     100 |     100 |                         
-  index.ts                        |     100 |      100 |     100 |     100 |                         
+All files                         |   95.86 |    94.54 |   93.82 |   95.74 |
+ core/src                         |     100 |      100 |     100 |     100 |
+  index.ts                        |     100 |      100 |     100 |     100 |
+ core/src/apis                    |   81.35 |      100 |      65 |   81.35 |
+  index.ts                        |     100 |      100 |     100 |     100 |
+  substrate-apis.ts               |   81.03 |      100 |      65 |   81.03 | 127,131-172,220,236,272
+ core/src/configuration           |     100 |      100 |     100 |     100 |
+  index.ts                        |     100 |      100 |     100 |     100 |
+  networks.ts                     |     100 |      100 |     100 |     100 |
+  utils.ts                        |     100 |      100 |     100 |     100 |
+ core/src/converters              |     100 |    97.22 |     100 |     100 |
+  base.ts                         |     100 |    97.22 |     100 |     100 | 166
+  index.ts                        |     100 |      100 |     100 |     100 |
+ core/src/observables             |     100 |      100 |     100 |     100 |
+  blocks.ts                       |     100 |      100 |     100 |     100 |
+  bn.ts                           |     100 |      100 |     100 |     100 |
+  events.ts                       |     100 |      100 |     100 |     100 |
+  index.ts                        |     100 |      100 |     100 |     100 |
+ core/src/operators               |     100 |    94.44 |     100 |     100 |
+  convert.ts                      |     100 |      100 |     100 |     100 |
+  debug.ts                        |     100 |    66.66 |     100 |     100 | 34
+  extract.ts                      |     100 |      100 |     100 |     100 |
+  filter.ts                       |     100 |      100 |     100 |     100 |
+  flatten.ts                      |     100 |      100 |     100 |     100 |
+  index.ts                        |     100 |      100 |     100 |     100 |
+  mongo-filter.ts                 |     100 |      100 |     100 |     100 |
+ core/src/subjects                |     100 |      100 |     100 |     100 |
+  index.ts                        |     100 |      100 |     100 |     100 |
+  mingo-ops.ts                    |     100 |      100 |     100 |     100 |
+  query.ts                        |     100 |      100 |     100 |     100 |
+ core/src/types                   |   90.47 |      100 |   71.42 |   90.47 |
+  event.ts                        |    87.5 |      100 |   66.66 |    87.5 | 62
+  extrinsic.ts                    |      90 |      100 |      75 |      90 | 59
+  index.ts                        |     100 |      100 |     100 |     100 |
+ pallets/contracts/src/converters |    87.5 |    71.42 |   92.85 |    87.5 |
+  contracts.ts                    |    87.5 |    71.42 |   92.85 |    87.5 | 118,122-134
+ pallets/contracts/src/operators  |   96.29 |      100 |     100 |   96.15 |
+  contracts.ts                    |   94.44 |      100 |     100 |   94.11 | 117-125
+  filter.ts                       |     100 |      100 |     100 |     100 |
+  index.ts                        |     100 |      100 |     100 |     100 |
 ----------------------------------|---------|----------|---------|---------|-------------------------
 
 Test Suites: 15 passed, 15 total
@@ -157,9 +157,6 @@ Blocks: 100 (tx: 364, events: 4931)
 
 </details>
 
-
-
-
 <details>
 
 <summary>Integration tests 3 - light-client</summary>
@@ -193,7 +190,6 @@ Blocks: 100 (tx: 364, events: 4931)
 
 <details>
 
-
 <summary>Integration tests 4 - Running watch contracts on AZERO testnet for AZERO.ID contract to get its register events</summary>
 
 ```bash
@@ -205,10 +201,10 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: register
-> Arguments: 
+> Arguments:
 > - name: basecoin
 > - yearsToRegister: 3
-> - referrer: 
+> - referrer:
 > - merkleProof: null
 > - setAsPrimaryName: false
 > JSON:
@@ -217,10 +213,10 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: register
-> Arguments: 
+> Arguments:
 > - name: scroll
 > - yearsToRegister: 3
-> - referrer: 
+> - referrer:
 > - merkleProof: null
 > - setAsPrimaryName: false
 > JSON:
@@ -246,8 +242,8 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: shorten
-> Arguments: 
-> - slug: 
+> Arguments:
+> - slug:
 >   - deduplicateOrNew: XAo89
 > - url: https://foo.com
 > JSON:
@@ -256,8 +252,8 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: shorten
-> Arguments: 
-> - slug: 
+> Arguments:
+> - slug:
 >   - deduplicateOrNew: 4YhuF
 > - url: https://erp.pre
 > JSON:
@@ -266,8 +262,8 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: shorten
-> Arguments: 
-> - slug: 
+> Arguments:
+> - slug:
 >   - deduplicateOrNew: PrKJ3
 > - url: https://blam.com
 > JSON:
@@ -276,8 +272,8 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: shorten
-> Arguments: 
-> - slug: 
+> Arguments:
+> - slug:
 >   - deduplicateOrNew: BDQMJ
 > - url: https://foo.bax
 > JSON:
@@ -286,8 +282,8 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: shorten
-> Arguments: 
-> - slug: 
+> Arguments:
+> - slug:
 >   - deduplicateOrNew: M7ikd
 > - url: https://foom.boom
 > JSON:
@@ -320,7 +316,7 @@ Blocks: 100 (tx: 364, events: 4931)
 > 💬 Contract Message
 > ============================================================
 > Identifier: start
-> Arguments: 
+> Arguments:
 > - era: 2
 > JSON:
 {"dispatchInfo":{"weight":{"refTime":1243856965,"proofSize":22337},"class":"Normal","paysFee":"Yes"},"events":[{"method":"Withdraw","section":"balances","index":"0x1f08","data":{"who":"YDFDMh78emMcyN67CtwiiKrCWH6tDNVPcKeEUckY9YjRdPe","amount":"1,670,638,069,537,409"}},{"method":"Called","section":"contracts","index":"0x4606","data":{"caller":"YDFDMh78emMcyN67CtwiiKrCWH6tDNVPcKeEUckY9YjRdPe","contract":"apJNVQJ5T4C5gZ1XRPw2MAHcUFxbuHch7BPGQuTyT8DHjeX"}},{"method":"Transfer","section":"balances","index":"0x1f02","data":{"from":"YDFDMh78emMcyN67CtwiiKrCWH6tDNVPcKeEUckY9YjRdPe","to":"apJNVQJ5T4C5gZ1XRPw2MAHcUFxbuHch7BPGQuTyT8DHjeX","amount":"7,000,000,000"}},{"method":"Reserved","section":"balances","index":"0x1f04","data":{"who":"apJNVQJ5T4C5gZ1XRPw2MAHcUFxbuHch7BPGQuTyT8DHjeX","amount":"7,000,000,000"}},{"method":"Deposit","section":"balances","index":"0x1f07","data":{"who":"YDFDMh78emMcyN67CtwiiKrCWH6tDNVPcKeEUckY9YjRdPe","amount":"481,048,104,177"}},{"method":"Deposit","section":"balances","index":"0x1f07","data":{"who":"YQnbw3h6couUX48Ghs3qyzhdbyxA3Gu9KQCoi8z2CPBf9N3","amount":"1,336,125,617,146,586"}},{"method":"TransactionFeePaid","section":"transactionPayment","index":"0x1e00","data":{"who":"YDFDMh78emMcyN67CtwiiKrCWH6tDNVPcKeEUckY9YjRdPe","actualFee":"1,670,157,021,433,232","tip":"0"}},{"method":"ExtrinsicSuccess","section":"system","index":"0x0a00","data":{"dispatchInfo":{"weight":{"refTime":"1,243,856,965","proofSize":"22,337"},"class":"Normal","paysFee":"Yes"}}}],"extrinsic":{"extrinsicId":"3944053-2","blockNumber":"3,944,053","position":2,"isSigned":true,"method":{"args":{"dest":{"Id":"apJNVQJ5T4C5gZ1XRPw2MAHcUFxbuHch7BPGQuTyT8DHjeX"},"value":"0","gas_limit":{"refTime":"3,951,114,240","proofSize":"125,952"},"storage_deposit_limit":null,"data":"0x3c1e398602"},"method":"call","section":"contracts"},"era":{"MortalEra":{"period":"32","phase":"18"}},"nonce":"25","signature":"0xbca248c2599adc334a97cc852cab42f1aee0d42a121e7fbaaad0de63dc1ddc659c2af52ab49c798db755c8cff80a2998af14b2900a841ab09abe19841cc25186","signer":{"Id":"YDFDMh78emMcyN67CtwiiKrCWH6tDNVPcKeEUckY9YjRdPe"},"tip":"0"},"args":["0x02"],"message":{"isDefault":false,"isMutating":true,"isPayable":false,"returnType":{"info":13,"lookupIndex":2,"type":"Result<Null, InkPrimitivesLangError>","docs":[],"namespace":"Result","sub":[{"name":"Ok","info":8,"lookupIndex":3,"type":"Null","docs":[],"namespace":""},{"name":"Error","docs":[],"info":15,"lookupIndex":4,"lookupName":"InkPrimitivesLangError","type":"Lookup4"}]},"args":[{"name":"era","type":{"info":10,"lookupIndex":0,"type":"u8","docs":[],"namespace":""}}],"docs":[" (Re)Start the Magink the claiming era for the caller."],"identifier":"start","index":0,"method":"start","path":["start"],"selector":"0x3c1e3986"}}
@@ -655,4 +651,5 @@ Graph {
 
 
 ```
+
 </details>

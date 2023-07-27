@@ -6,12 +6,12 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul>| Unlicense  |
-| 0b. | Tutorial | <ul><li>[x] </li></ul>| Tutorial is provided in the [`/ebics-demo/DEMO.md`](https://github.com/element36-io/ocw-ebics/blob/main/ebics-demo/DEMO.md) file. | 
-| 1. | Buy me a coffee dApp | <ul><li>[x] </li></ul>| A decentralized [application](https://github.com/element36-io/ocw-ebics/tree/main/ebics-demo) is provided, which allows users to buy someone a coffee or simply donate to support their cause. Users can donate by either sending stablecoins or fiat to the recipient's on-chain account or bank account (IBAN). The recipient can then withdraw the funds to their bank account or send them to someone else. | 
-| 2. | Docker-Compose: node & Dapp | <ul><li>[x] </li></ul>| Instead of `docker-compose` a [Makefile](https://github.com/element36-io/ocw-ebics/blob/main/Makefile) is provided with the commands that launch the chain and the demo app |
+| Number | Deliverable                 | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                            | Evaluation Notes |
+| ------ | --------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                     | <ul><li>[x] </li></ul> | Unlicense                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 0b.    | Tutorial                    | <ul><li>[x] </li></ul> | Tutorial is provided in the [`/ebics-demo/DEMO.md`](https://github.com/element36-io/ocw-ebics/blob/main/ebics-demo/DEMO.md) file.                                                                                                                                                                                                                                                                               |
+| 1.     | Buy me a coffee dApp        | <ul><li>[x] </li></ul> | A decentralized [application](https://github.com/element36-io/ocw-ebics/tree/main/ebics-demo) is provided, which allows users to buy someone a coffee or simply donate to support their cause. Users can donate by either sending stablecoins or fiat to the recipient's on-chain account or bank account (IBAN). The recipient can then withdraw the funds to their bank account or send them to someone else. |
+| 2.     | Docker-Compose: node & Dapp | <ul><li>[x] </li></ul> | Instead of `docker-compose` a [Makefile](https://github.com/element36-io/ocw-ebics/blob/main/Makefile) is provided with the commands that launch the chain and the demo app                                                                                                                                                                                                                                     |
 
 ## Evaluation V2
 
@@ -88,12 +88,11 @@ This print show after the Jack withdraw.
 
 ![Screenshot 2023-05-10 at 12-25-06 Substrate Front End Template](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/e24da55f-03cf-4e78-939f-63f7c7271973)
 
-
 Could you explain to me if Jack could send the donations he received to someone? In the [specification of deliverable 1](https://github.com/w3f/Grant-Milestone-Delivery/pull/854/files#diff-630504d0a4dab4953c242376522f26d439de06d2c597ad4eba5637a1e136ddef) says "The recipient can then withdraw the funds to their bank account or send them to someone else.". Is it correct? Because the guide doesn't cover this feature, I checked the application and couldn't find this feature as well.
 
 ### Code Quality
 
-`cargo clippy` returned nothing. 
+`cargo clippy` returned nothing.
 
 ```
 user@localhost:~/Documents/fiat/ocw-ebics$ cargo clippy

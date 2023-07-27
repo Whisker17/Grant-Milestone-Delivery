@@ -1,9 +1,9 @@
 # Milestone Delivery :mailbox:
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/milestone-deliverables-guidelines.md).**  
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/psc.md 
-* **Milestone Number:** 1
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/psc.md
+- **Milestone Number:** 1
 
 **Context**
 
@@ -18,8 +18,8 @@ The main goals of the `Milestone 1` was to create base functionality of PSC(Polk
 **Deliverables**
 
 | Number  | Deliverable                            | Link                                                                              | Notes                                                                                                                                                      |
-|---------|----------------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                                | https://github.com/OmniBTC/PSC/blob/main/LICENSE                                  | GPLv3                                                                                                                                                      | 
+| ------- | -------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                                | https://github.com/OmniBTC/PSC/blob/main/LICENSE                                  | GPLv3                                                                                                                                                      |
 | **0b.** | Documentation                          | https://github.com/OmniBTC/PSC/blob/main/README.md                                | [PSC README](https://github.com/OmniBTC/PSC/blob/main/README.md)                                                                                           |
 | **0c.** | Testing and Testing Guide              | https://github.com/OmniBTC/PSC/blob/main/docs/test_guide.md                       | For unit test, run `cargo test --release`; For functional tests, follow this [test guide](https://github.com/OmniBTC/PSC/blob/main/docs/test_guide.md)     |
 | **0d.** | Docker                                 | https://github.com/OmniBTC/PSC/blob/main/zombienet/psc-small-network.toml         | Use [zombienet](https://github.com/paritytech/zombienet) and [podman](https://podman.io/getting-started/installation) launch a local testnet with dockers. |

@@ -6,9 +6,9 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** All by takahser
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 1.     | Terra Deep Dive | <ul><li>[x] </li></ul> | [Presentation](https://github.com/adit313/TerraDeepDive/blob/983e21e6ed76c1da1ff4ef9f8399852403413e90/Terra%20Deep%20Dive.pdf) | Presentation |
+| Number | Deliverable     | Accepted               | Link                                                                                                                           | Evaluation Notes |
+| ------ | --------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| 1.     | Terra Deep Dive | <ul><li>[x] </li></ul> | [Presentation](https://github.com/adit313/TerraDeepDive/blob/983e21e6ed76c1da1ff4ef9f8399852403413e90/Terra%20Deep%20Dive.pdf) | Presentation     |
 
 Ideally all links inside the above table should include the commit hash,
 which was used for testing the delivery. It should also be checked if the software is published under the correct open-source license.

@@ -1,4 +1,4 @@
- Evaluation
+Evaluation
 
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_2.md
@@ -6,21 +6,21 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/master/LICENSE | |
-| 0b. | Documentation | <ul><li>[x] </li></ul>| https://github.com/HugoByte/openwhisk-client-rust#usage <br/> https://github.com/HugoByte/aurras/tree/next/workflow/composer#usage |  |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul>| https://github.com/HugoByte/openwhisk-client-rust#test <br/> https://github.com/HugoByte/aurras/tree/next/workflow/composer#test |  |
-| 1a. | Workflow Composer: Rust OpenWhisk Client Library | <ul><li>[x] </li></ul>| https://github.com/HugoByte/openwhisk-client-rust |  |
-| 1b. | Workflow Composer: Composer | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/tree/next/workflow/composer |  |
-| 1c. | Workflow Composer: Pipe | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/workflow_macro/src/lib.rs#L85 |  |
-| 1d. | Workflow Composer: structured YAML file | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/examples/STRUCTURED_YAML.yaml |  |
-| 1e. | Workflow Composer: Concat Operator | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/functions.py#L362 |  |
-| 1f. | Workflow Composer: Map Operator | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/functions.py#L538 |  |
-| 2.  | Predefined boiler plate | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/tree/next/workflow/boilerplate |  |
-| 3a. | Flow Provider | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/flow.py |  |
-| 3b. | Task Provider | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/task.py |  |
-| 3c. | Workflow Provider | <ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/workflow.py |  |
+| Number | Deliverable                                      | Accepted               | Link                                                                                                                               | Evaluation Notes |
+| ------ | ------------------------------------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                                          | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/master/LICENSE                                                                             |                  |
+| 0b.    | Documentation                                    | <ul><li>[x] </li></ul> | https://github.com/HugoByte/openwhisk-client-rust#usage <br/> https://github.com/HugoByte/aurras/tree/next/workflow/composer#usage |                  |
+| 0c.    | Testing Guide                                    | <ul><li>[x] </li></ul> | https://github.com/HugoByte/openwhisk-client-rust#test <br/> https://github.com/HugoByte/aurras/tree/next/workflow/composer#test   |                  |
+| 1a.    | Workflow Composer: Rust OpenWhisk Client Library | <ul><li>[x] </li></ul> | https://github.com/HugoByte/openwhisk-client-rust                                                                                  |                  |
+| 1b.    | Workflow Composer: Composer                      | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/tree/next/workflow/composer                                                                     |                  |
+| 1c.    | Workflow Composer: Pipe                          | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/workflow_macro/src/lib.rs#L85                                                |                  |
+| 1d.    | Workflow Composer: structured YAML file          | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/examples/STRUCTURED_YAML.yaml                                                |                  |
+| 1e.    | Workflow Composer: Concat Operator               | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/functions.py#L362                                            |                  |
+| 1f.    | Workflow Composer: Map Operator                  | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/functions.py#L538                                            |                  |
+| 2.     | Predefined boiler plate                          | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/tree/next/workflow/boilerplate                                                                  |                  |
+| 3a.    | Flow Provider                                    | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/flow.py                                                      |                  |
+| 3b.    | Task Provider                                    | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/task.py                                                      |                  |
+| 3c.    | Workflow Provider                                | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/providers/hooks/workflow.py                                                  |                  |
 
 ## Evaluation V6
 
@@ -43,7 +43,7 @@ WARNING in /static/js/bundle.js is 7.55 MB, and won't be precached. Configure ma
 webpack compiled with 1 warning
 ```
 
-I noticed the page was too slow connected to `wss://rpc.polkadot.io`, but using a local node the page works. I tried to check the feature using a local node, I changed the `src/config/development.json` to connect to the local node. I could choose a wallet, register the Balance Notification, transfer, and check the transfer in the local node, but I couldn't check the notification using the Developer Tools. Did I miss something or need to do some other step to get the notification? Just this last step didn't work. 
+I noticed the page was too slow connected to `wss://rpc.polkadot.io`, but using a local node the page works. I tried to check the feature using a local node, I changed the `src/config/development.json` to connect to the local node. I could choose a wallet, register the Balance Notification, transfer, and check the transfer in the local node, but I couldn't check the notification using the Developer Tools. Did I miss something or need to do some other step to get the notification? Just this last step didn't work.
 
 ## Evaluation V4
 
@@ -107,20 +107,23 @@ Ran 8 tests in 2.767s
 OK
 Test Completed
 ```
+
 I noticed this time only have 8 tests and before it was 10 tests. I could create the .wasm file and it is not empty anymore.
 
 ### Aurras
 
- I was able to run the `./deploy.sh` and register the event source without problems. I tried to test following [the integration test](https://github.com/HugoByte/aurras/blob/next/docs/integration-testing.md) using the [aurras deployment docker](https://github.com/HugoByte/aurras-deployment-docker-compose/tree/master), but when I ran `yarn start` I got this problem:
+I was able to run the `./deploy.sh` and register the event source without problems. I tried to test following [the integration test](https://github.com/HugoByte/aurras/blob/next/docs/integration-testing.md) using the [aurras deployment docker](https://github.com/HugoByte/aurras-deployment-docker-compose/tree/master), but when I ran `yarn start` I got this problem:
 
 ```
 Failed to compile.
 ./node_modules/@ledgerhq/hw-transport-webhid/lib-es/TransportWebHID.js
 Module not found: Can't resolve '@ledgerhq/devices/hid-framing' in '/home/user/Documents/aurras/aurras/examples/substrate-push-notification/node_modules/@ledgerhq/hw-transport-webhid/lib-es'
 ```
-I tried to solve the problem putting this code in the packge.json 
+
+I tried to solve the problem putting this code in the packge.json
+
 ```
-{ 
+{
   ...
   "alias": {
     "@ledgerhq/devices": "@ledgerhq/devices/lib-es"
@@ -143,6 +146,7 @@ You may need an additional loader to handle the result of these loaders.
 |   type: 'esm',
 |   version: '4.6.1'
 ```
+
 Can you assist with this problem? What version of node.js are you using?
 
 ## Evaluation V3
@@ -225,11 +229,12 @@ Traceback (most recent call last):
     #[Chain="{properties['chain']}"]
 KeyError: 'chain'
 ```
+
 The problem I had with `./deploy.sh` from Aurras remains. I think this problem is related to the building image `hugobyte/openwhisk-runtime-rust:v0.2`. Maybe it needs some changes. Did you test this using a local image? Maybe you are using a different version of the image provided in the scripts for building. Could you provide me the version of your rust toolchain?
 
 ### Code Quality
 
-The warning that `cargo clippy` returned in Aurras was fixed. Now `cargo clippy` returns no warnings in Aurras and the OpenWhisk Rust Client. 
+The warning that `cargo clippy` returned in Aurras was fixed. Now `cargo clippy` returns no warnings in Aurras and the OpenWhisk Rust Client.
 
 I tried to check the test coverage of OpenWhisk Rust Clint using `cargo tarpaulin` and got an error.
 
@@ -238,8 +243,7 @@ I tried to check the test coverage of OpenWhisk Rust Clint using `cargo tarpauli
 ### Documentation
 
 I'm trying to understand what would be the expected behavior for these tests in M1. From the application document, the system intends to get events from a substrate blockchain and generate push notifications. I'm understanding that this delivery is not able to do that yet. So, how to check if the parts delivered are contributing or working in this direction?
- Could you explain logically if the parts of this delivery are already connected or at this point what we can do to check the system behavior? 
-
+Could you explain logically if the parts of this delivery are already connected or at this point what we can do to check the system behavior?
 
 One doubt, these [default values](https://github.com/HugoByte/aurras/blob/next/docs/configuration.md) can be used in this [configuration](https://github.com/HugoByte/openwhisk-client-rust#configuration)? If yes, would be nice to have the default values link in the configuration page. I have looked, and the tests use these values.
 
@@ -320,10 +324,9 @@ Caused by:
   `cargo-features = ["edition2021"]` to enable this feature
 ```
 
-Even using nightly it wasn't work. 
+Even using nightly it wasn't work.
 
 This error prevented me to complete the installation of Aurras.
-
 
 ### Code Quality
 
@@ -348,7 +351,7 @@ warning: returning the result of a `let` binding from a block
    = note: `#[warn(clippy::let_and_return)]` on by default
 help: return the expression directly
    |
-10 ~	 
+10 ~
 11 ~ 	MockServer::builder().listener(listener).start().await
 ```
 
@@ -356,7 +359,8 @@ help: return the expression directly
 
 ### Documentation
 
-Please add a complete step-by-step guide to run the application and check the deliverables. This guide can include print screens or videos explaining how to run the system and use the features included.  For example, we need:
+Please add a complete step-by-step guide to run the application and check the deliverables. This guide can include print screens or videos explaining how to run the system and use the features included. For example, we need:
+
 - Need some examples or explanations on how to run the application.
 - In the configuration, the parameters of API_HOST, NAMESPACE, and AUTH_TOKEN need some explanation on how to set up these values.
 - Need a better explanation on how to run the composer to perform the tests.
@@ -366,7 +370,7 @@ Please add a complete step-by-step guide to run the application and check the de
 
 System tests and tests from composer were not performed due to the lack of complete explanation on how to run the application and tests.
 
-I tried to run some tests with `cargo test` but they are failing. 
+I tried to run some tests with `cargo test` but they are failing.
 
 When used `cargo build` got this warning:
 
@@ -458,8 +462,6 @@ failures:
 test result: FAILED. 0 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 130.64s
 error: test failed, to rerun pass `--test test_actions`
 ```
-
-
 
 ### Code Quality
 

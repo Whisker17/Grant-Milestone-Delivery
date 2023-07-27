@@ -6,22 +6,19 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-
-
 **Deliverables**
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li> [x] </li></ul> | [Link](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/LICENSE) | Ok |
-| 0b. | Documentation | <ul><li> [x] </li></ul> | [Wiki](https://github.com/Qrucial/QRUCIAL-DAO/wiki) and [Whitepaper](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/docs/QRUCIAL_DAO_Whitepaper.pdf) | Ok |
-| 0c. | Testing Guide | <ul><li> [x] </li></ul> | [Development and testing guide](https://github.com/Qrucial/QRUCIAL-DAO/wiki/Development-and-testing-guide) |  |
-| 0d. | Docker | <ul><li> [x] </li></ul> | [Docker](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/docker/files/dockerfile) and [node-setup.sh](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/node-setup.sh) |  |
-| 1. | Substrate runtime | <ul><li> [x] </li></ul> | [Crate source](https://github.com/Qrucial/QRUCIAL-DAO/tree/milestone1/qdao-node/runtime) |  |
-| 2. | Substrate pallet: ExoSys | <ul><li> [x] </li></ul> | [Crate source](https://github.com/Qrucial/QRUCIAL-DAO/tree/milestone1/qdao-node/exo-pallet) |  |
-| 3. | Substrate pallet: AuditorRep | <ul><li> [x] </li></ul> | [Crate source](https://github.com/Qrucial/QRUCIAL-DAO/tree/milestone1/qdao-node/audit-pallet) |  |
-| 4. | Substrate report storage | <ul><li> [x] </li></ul> | [Part of ExoTool](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/exotools/lar.py) |  |
-| 5. | Substrate pallet: governance | <ul><li> [x] </li></ul> | [Sudo](https://github.com/Qrucial/QRUCIAL-DAO/blob/167d856b87f6ea21c86dd3f3c556ab8e70bb6f35/qdao-node/runtime/src/lib.rs#L306) |  |
-
+| Number | Deliverable                  | Accepted                | Link                                                                                                                                                                               | Evaluation Notes |
+| ------ | ---------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                      | <ul><li> [x] </li></ul> | [Link](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/LICENSE)                                                                                                             | Ok               |
+| 0b.    | Documentation                | <ul><li> [x] </li></ul> | [Wiki](https://github.com/Qrucial/QRUCIAL-DAO/wiki) and [Whitepaper](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/docs/QRUCIAL_DAO_Whitepaper.pdf)                       | Ok               |
+| 0c.    | Testing Guide                | <ul><li> [x] </li></ul> | [Development and testing guide](https://github.com/Qrucial/QRUCIAL-DAO/wiki/Development-and-testing-guide)                                                                         |                  |
+| 0d.    | Docker                       | <ul><li> [x] </li></ul> | [Docker](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/docker/files/dockerfile) and [node-setup.sh](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/node-setup.sh) |                  |
+| 1.     | Substrate runtime            | <ul><li> [x] </li></ul> | [Crate source](https://github.com/Qrucial/QRUCIAL-DAO/tree/milestone1/qdao-node/runtime)                                                                                           |                  |
+| 2.     | Substrate pallet: ExoSys     | <ul><li> [x] </li></ul> | [Crate source](https://github.com/Qrucial/QRUCIAL-DAO/tree/milestone1/qdao-node/exo-pallet)                                                                                        |                  |
+| 3.     | Substrate pallet: AuditorRep | <ul><li> [x] </li></ul> | [Crate source](https://github.com/Qrucial/QRUCIAL-DAO/tree/milestone1/qdao-node/audit-pallet)                                                                                      |                  |
+| 4.     | Substrate report storage     | <ul><li> [x] </li></ul> | [Part of ExoTool](https://github.com/Qrucial/QRUCIAL-DAO/blob/milestone1/exotools/lar.py)                                                                                          |                  |
+| 5.     | Substrate pallet: governance | <ul><li> [x] </li></ul> | [Sudo](https://github.com/Qrucial/QRUCIAL-DAO/blob/167d856b87f6ea21c86dd3f3c556ab8e70bb6f35/qdao-node/runtime/src/lib.rs#L306)                                                     |                  |
 
 ## General Notes
 
@@ -38,7 +35,7 @@ Step 12/23 : ADD ./data /opt/data
 ADD failed: file not found in build context or excluded by .dockerignore: stat data: file does not exist
 ```
 
-The automated tests are now passing. 
+The automated tests are now passing.
 
 Now it was provided a tutorial for testing the application. The steps of the tutorial provided worked. However, from the list of features of the software only two were effectively tested in the tutorial (sign_up and approve_auditor). Please, complete the tutorial in order to test all functions provided. The functions below are missing in the tutorial:
 
@@ -56,19 +53,18 @@ Now it was provided a tutorial for testing the application. The steps of the tut
 ## Update V2: October 6.
 
 1. Problems with Docker
-Commands. The build commands and folders are with some problems in the manual. The commands that worked for me were:
+   Commands. The build commands and folders are with some problems in the manual. The commands that worked for me were:
 
 ```
 cd QRUCIAL-DAO/docker/files
 docker build .  -t "qdao:V0.3"
 ```
 
-  - dependencies
-    - I needed to add `RUN apt-get install -y python3-setuptools` to line 11 of the docker file to fulfill a missing dependency problem.
-  - expose ports
-    - After the container start, there is no port exposed by the container. In this way, the services are not available outside of the container. Please export the ports needed to access the application from outside of the container.
-  - service not running. After checking the services running inside the container the `tmux a -t qdao-api` was not running.
-
+- dependencies
+  - I needed to add `RUN apt-get install -y python3-setuptools` to line 11 of the docker file to fulfill a missing dependency problem.
+- expose ports
+  - After the container start, there is no port exposed by the container. In this way, the services are not available outside of the container. Please export the ports needed to access the application from outside of the container.
+- service not running. After checking the services running inside the container the `tmux a -t qdao-api` was not running.
 
 2. Clippy (ok)
 
@@ -87,9 +83,8 @@ Ok. Improved.
 I tried to guess some order and way to run the pallets extrinsic, however, when I started the auditor part I cannot get an authorized auditor.
 Please, help me with a tutorial to run the full process of QDAO using the available methods. A complete example should be enough to fulfill this requirement of the evaluation.
 
+---
 
-
-----
 ## Evaluation V1
 
 LICENSE – Ok.
@@ -145,14 +140,11 @@ docker run 5777941d397f
 
 Regarding the extrinsics/modules available for testing, would be nice to have more information to perform exploratory testing as a workflow (sequence of function calls that have a specific meaning), or use cases. Please provide the main flow of the application within an example, as a sequence of calls and expected results, for us to perform exploratory testing. If there are any alternative use cases (workflows) please also provide for testing. Maybe the wiki could be an appropriate location for this documentation.
 
-
 ### Automated Testing / Code Quality / Code documentation
 
- - exo_pallet/src/lib.rs – 60% - some methods are not covered, please improve.
- - audit_pallet/src/lib.rs – 75.32% - some error paths are not covered, and could be improved. Some unimplemented methods.
- - exosysd/src/main.rs – This code is quite complex, with many nested loops and conditionals. Could be refactored to have a better design.
-
-
+- exo_pallet/src/lib.rs – 60% - some methods are not covered, please improve.
+- audit_pallet/src/lib.rs – 75.32% - some error paths are not covered, and could be improved. Some unimplemented methods.
+- exosysd/src/main.rs – This code is quite complex, with many nested loops and conditionals. Could be refactored to have a better design.
 
 Static analysis (cargo clippy):
 
@@ -252,47 +244,46 @@ warning: `qdao-node` (bin "qdao-node") generated 7 warnings
 These warnings were presented during the build, please review:
 
 ```
-warning: unused variable: `origin`                                                                                                                                                                                                                           
-   --> exo-pallet/src/lib.rs:160:41                                                                                                                                                                                                                          
-    |                                                                                                                                                                                                                                                        
-160 |         pub fn tool_exec_cancel_invalid(origin: OriginFor<T>, hash: T::Hash) -> DispatchResult {                                                                                                                                                       
-    |                                         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_origin`                                                                                                                                   
-    |                                                                                                                                                                                                                                                        
-    = note: `#[warn(unused_variables)]` on by default                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                             
-warning: unused variable: `hash`                                                                                                                                                                                                                             
-   --> exo-pallet/src/lib.rs:160:63                                                                                                                                                                                                                          
-    |                                                                                                                                                                                                                                                        
-160 |         pub fn tool_exec_cancel_invalid(origin: OriginFor<T>, hash: T::Hash) -> DispatchResult {                                                                                                                                                       
-    |                                                               ^^^^ help: if this is intentional, prefix it with an underscore: `_hash`                                                                                                                 
-                                                                                                                                                                                                                                                             
-warning: unused variable: `origin`                                                                                                                                                                                                                           
-   --> exo-pallet/src/lib.rs:167:13                                                                                                                                                                                                                          
-    |                                                                                                                                                                                                                                                        
-167 |             origin: OriginFor<T>,                                                                                                                                                                                                                      
-    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_origin`                                                                                                                                                               
-                                                                                                                                                                                                                                                             
-warning: unused variable: `hash`                                                                                                                                                                                                                             
-   --> exo-pallet/src/lib.rs:168:13                                                                                                                                                                                                                          
-    |                                                                                                                                                                                                                                                        
-168 |             hash: T::Hash,                                                                                                                                                                                                                             
-    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_hash`                                                                                                                                                                   
-                                                                                                                                                                                                                                                             
-warning: unused variable: `result`                                                                                                                                                                                                                           
-   --> exo-pallet/src/lib.rs:169:13                                                                                                                                                                                                                          
-    |                                                                                                                                                                                                                                                        
-169 |             result: Vec<u8>,                                                                                                                                                                                                                           
-    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`                                                                                                                                                               
-                                                                                                                                                                                                                                                             
-warning: unused variable: `result`                                                                                                                                                                                                                           
-   --> exo-pallet/src/lib.rs:179:13                                                                                                                                                                                                                          
-    |                                                                                                                                                                                                                                                        
-179 |             result: Vec<u8>,                                                                                                                                                                                                                           
-    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`                                                                                                                                                               
-                                                                                                                                                                                                                                                             
+warning: unused variable: `origin`
+   --> exo-pallet/src/lib.rs:160:41
+    |
+160 |         pub fn tool_exec_cancel_invalid(origin: OriginFor<T>, hash: T::Hash) -> DispatchResult {
+    |                                         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_origin`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `hash`
+   --> exo-pallet/src/lib.rs:160:63
+    |
+160 |         pub fn tool_exec_cancel_invalid(origin: OriginFor<T>, hash: T::Hash) -> DispatchResult {
+    |                                                               ^^^^ help: if this is intentional, prefix it with an underscore: `_hash`
+
+warning: unused variable: `origin`
+   --> exo-pallet/src/lib.rs:167:13
+    |
+167 |             origin: OriginFor<T>,
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_origin`
+
+warning: unused variable: `hash`
+   --> exo-pallet/src/lib.rs:168:13
+    |
+168 |             hash: T::Hash,
+    |             ^^^^ help: if this is intentional, prefix it with an underscore: `_hash`
+
+warning: unused variable: `result`
+   --> exo-pallet/src/lib.rs:169:13
+    |
+169 |             result: Vec<u8>,
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: unused variable: `result`
+   --> exo-pallet/src/lib.rs:179:13
+    |
+179 |             result: Vec<u8>,
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
 warning: `qdao-exo-pallet` (lib) generated 6 warnings
 ```
-
 
 Code documentation:
 

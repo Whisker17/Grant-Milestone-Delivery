@@ -5,15 +5,15 @@
 - **Milestone:** 3
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- |------------- | ------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/LICENSE | MIT |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/README.md, https://github.com/blockcoders/kuma-wallet/blob/main/README-es.md | Ok. |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet#running-locally | Ok. |
-| 1. | XCM/XVM standard for transfers | <ul><li>[x] </li></ul> | [Link](https://github.com/kumawallet/extension/blob/main/src/constants/xcm.ts) | Ok. |
-| 2. | Call to custom smart contracts | <ul><li>[x] </li></ul> | [Link](https://github.com/kumawallet/extension/blob/main/src/pages/callContract/CallContract.tsx) | Ok. |
-| 3. | Transactions to custom smart contracts | <ul><li>[x] </li></ul> | [Link](https://github.com/kumawallet/extension/blob/main/src/providers/txProvider/TxProvider.tsx) | Ok. |
-| 4. | Open Beta | <ul><li>[x] </li></ul> | [Link1](https://kumawallet.io/), [Link2](https://chrome.google.com/webstore/detail/kuma-wallet/hbinmkhlebcnghpikoekkbeljbealbje), [Link3](https://addons.mozilla.org/en-US/firefox/addon/kuma-wallet/), [Link4](https://twitter.com/getkuma/status/1678075363165888513) | Ok. |
+| Number | Deliverable                            | Accepted               | Link                                                                                                                                                                                                                                                                    | Notes |
+| ------ | -------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 0a.    | License                                | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/LICENSE                                                                                                                                                                                                            | MIT   |
+| 0b.    | Documentation                          | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet/blob/main/README.md, https://github.com/blockcoders/kuma-wallet/blob/main/README-es.md                                                                                                                                       | Ok.   |
+| 0c.    | Testing Guide                          | <ul><li>[x] </li></ul> | https://github.com/blockcoders/kuma-wallet#running-locally                                                                                                                                                                                                              | Ok.   |
+| 1.     | XCM/XVM standard for transfers         | <ul><li>[x] </li></ul> | [Link](https://github.com/kumawallet/extension/blob/main/src/constants/xcm.ts)                                                                                                                                                                                          | Ok.   |
+| 2.     | Call to custom smart contracts         | <ul><li>[x] </li></ul> | [Link](https://github.com/kumawallet/extension/blob/main/src/pages/callContract/CallContract.tsx)                                                                                                                                                                       | Ok.   |
+| 3.     | Transactions to custom smart contracts | <ul><li>[x] </li></ul> | [Link](https://github.com/kumawallet/extension/blob/main/src/providers/txProvider/TxProvider.tsx)                                                                                                                                                                       | Ok.   |
+| 4.     | Open Beta                              | <ul><li>[x] </li></ul> | [Link1](https://kumawallet.io/), [Link2](https://chrome.google.com/webstore/detail/kuma-wallet/hbinmkhlebcnghpikoekkbeljbealbje), [Link3](https://addons.mozilla.org/en-US/firefox/addon/kuma-wallet/), [Link4](https://twitter.com/getkuma/status/1678075363165888513) | Ok.   |
 
 # General Notes
 
@@ -24,6 +24,7 @@ Right now the main display only shows the dollar conversion amount. Just a sugge
 The wallet works great for both SS58 and EVM accounts, and all features have been delivered. I can easily perform all actions in the guide and the wallet is more robust than many I've seen. Great work!
 
 ## Tests
+
 ```js
  ✓ src/accounts/AccountManager.test.ts (20)
    ✓ AccountManager (20)

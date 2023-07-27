@@ -5,15 +5,14 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-
-| Number | Deliverable   | Accepted | Link                                                                                 | Notes |
-|--------|---------------|----------|----------------------------------------------------------------------------|-------|
-| 0a.    | License   | <ul><li>[x] </li></ul> | MIT            | Okay.      |
-| 0b.    | Documentation       | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps/blob/main/README.md | Okay.   |
-| 0c.    | Testing Guide      | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps/tree/main/doc | Okay. |
-| 0d.    | Article         | <ul><li>[x] </li></ul> | https://twitter.com/w3b_official/status/1623649936364703744                 | Okay.      |
-| 1.     | Implementations of APIs from third parties | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps/blob/main/src/substrate/polkadot.js | Okay.      |
-| 2 - 6.     | Dashboard | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps#readme | Okay. |
+| Number | Deliverable                                | Accepted               | Link                                                                     | Notes |
+| ------ | ------------------------------------------ | ---------------------- | ------------------------------------------------------------------------ | ----- |
+| 0a.    | License                                    | <ul><li>[x] </li></ul> | MIT                                                                      | Okay. |
+| 0b.    | Documentation                              | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps/blob/main/README.md                 | Okay. |
+| 0c.    | Testing Guide                              | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps/tree/main/doc                       | Okay. |
+| 0d.    | Article                                    | <ul><li>[x] </li></ul> | https://twitter.com/w3b_official/status/1623649936364703744              | Okay. |
+| 1.     | Implementations of APIs from third parties | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps/blob/main/src/substrate/polkadot.js | Okay. |
+| 2 - 6. | Dashboard                                  | <ul><li>[x] </li></ul> | https://github.com/web3box-labs/apps#readme                              | Okay. |
 
 # General Notes
 
@@ -96,6 +95,7 @@ webpack compiled with 1 warning
 
 `yarn test` also doesn't work to run any tests. I'm not seeing a tests folder or any unit tests.
 **UPDATE:** Team has now included unit tests.
+
 ## Evaluation V2
 
 1. `yarn build` and `yarn run` works successfully, but with a ton of warnings about variables that are defined and/or assigned a value but never used:
@@ -353,7 +353,9 @@ Find out more about deployment here:
 
 ✨  Done in 22.84s.
 ```
+
 2. `yarn test` succeeds, but Jest doesn't exit because of operations that are still active:
+
 ```js
  PASS  src/substrate/polkadot.test.js (10.082 s)
    polkadot wallet manager
@@ -378,7 +380,9 @@ Jest did not exit one second after the test run has completed.
 
 This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
 ```
+
 3. Some RPC calls still timeout:
+
 ```js
  2023-02-16 17:48:47        API/INIT: RPC methods not decorated: evm_blockLimits, evm_call, evm_estimateResources, oracle_getAllValues, oracle_getValue, tokens_queryExistentialDeposit, transaction_unstable_submitAndWatch, transaction_unstable_unwatch
 
@@ -400,6 +404,7 @@ This usually means that there are asynchronous operations that weren't stopped i
       at ApiPromise._initFromMeta (node_modules/@polkadot/api/cjs/base/Init.js:351:10)
       at ApiPromise._loadMeta (node_modules/@polkadot/api/cjs/base/Init.js:260:17)
 ```
+
 When running `yarn test --detectOpenHandles` it shows that there is an issue with the API promises:
 
 ```js
@@ -498,9 +503,9 @@ When running `yarn test --detectOpenHandles` it shows that there is an issue wit
       at Object.tokenPrice (src/substrate/polkadot.test.js:99:6)
 ```
 
-## V2 
+## V2
 
-**UPDATE: Tests have been resolved. Code comments have been somewhat improved. 
+\*\*UPDATE: Tests have been resolved. Code comments have been somewhat improved.
 
 I would also recommend adding functionality for Westend (testnet) so that users (as well as yourself) can use it for testing purposes.
 

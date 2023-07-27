@@ -1,31 +1,31 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/SaaS3.md 
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/SaaS3.md
 - **Milestone:** 2
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>| Apache 2.0 | 
-| 0b. | Documentation |<ul><li>[x] </li></ul>|https://github.com/SaaS3-Foundation/saas3-dao|  | 
-| 0c.  | Testing Guide |<ul><li>[x] </li></ul>|https://github.com/SaaS3-Foundation/saas3-dao|  | 
-| 0d. | Docker |<ul><li>[x] </li></ul>|  We are not able to provide a Dockerfile | I was able to test it locally without docker |
-| oe. | Article/Tutorial |<ul><li>[x] </li></ul>| https://github.com/SaaS3-Foundation/saas3-dao/blob/main/Tutorial.md |  |
-| 1. | pallet-court |<ul><li>[x] </li></ul>| https://github.com/SaaS3-Foundation/saas3-dao/tree/main/pallets/court |  |
-|  | Functions |<ul><li>[x] </li></ul>| https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L233 </br> https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L262 </br> https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L286|  |
-|  | Structs |  | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#LL68C1-L79C2 | |
-|  | Storage |  | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#LL115C2-L121C4 | |
-| | Events |  |https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L160 |
-| 2. | pallet-treasury |<ul><li>[x] </li></ul>| https://github.com/SaaS3-Foundation/saas3-dao/blob/main/pallets/treasury/src/lib.rs|  |
-| | Storage |   | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/treasury/src/lib.rs#L117 |
-| | Events |   | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/treasury/src/lib.rs#L169| |
-| 3. | UI & Frontend |<ul><li>[x] </li></ul>| https://github.com/SaaS3-Foundation/SaaS3-DAO-Pallets|  |
+| Number | Deliverable      | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                      | Evaluation Notes                             |
+| ------ | ---------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| 0a.    | License          | <ul><li>[x] </li></ul> | Apache 2.0                                                                                                                                                                                                                                                                                                                                                                                |
+| 0b.    | Documentation    | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/saas3-dao                                                                                                                                                                                                                                                                                                                                             |                                              |
+| 0c.    | Testing Guide    | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/saas3-dao                                                                                                                                                                                                                                                                                                                                             |                                              |
+| 0d.    | Docker           | <ul><li>[x] </li></ul> | We are not able to provide a Dockerfile                                                                                                                                                                                                                                                                                                                                                   | I was able to test it locally without docker |
+| oe.    | Article/Tutorial | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/saas3-dao/blob/main/Tutorial.md                                                                                                                                                                                                                                                                                                                       |                                              |
+| 1.     | pallet-court     | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/saas3-dao/tree/main/pallets/court                                                                                                                                                                                                                                                                                                                     |                                              |
+|        | Functions        | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L233 </br> https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L262 </br> https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L286 |                                              |
+|        | Structs          |                        | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#LL68C1-L79C2                                                                                                                                                                                                                                                         |                                              |
+|        | Storage          |                        | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#LL115C2-L121C4                                                                                                                                                                                                                                                       |                                              |
+|        | Events           |                        | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/court/src/lib.rs#L160                                                                                                                                                                                                                                                                 |
+| 2.     | pallet-treasury  | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/saas3-dao/blob/main/pallets/treasury/src/lib.rs                                                                                                                                                                                                                                                                                                       |                                              |
+|        | Storage          |                        | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/treasury/src/lib.rs#L117                                                                                                                                                                                                                                                              |
+|        | Events           |                        | https://github.com/SaaS3-Foundation/saas3-dao/blob/ce2447ab1d54b2723f9ab72d8aabe5d65fff34d5/pallets/treasury/src/lib.rs#L169                                                                                                                                                                                                                                                              |                                              |
+| 3.     | UI & Frontend    | <ul><li>[x] </li></ul> | https://github.com/SaaS3-Foundation/SaaS3-DAO-Pallets                                                                                                                                                                                                                                                                                                                                     |                                              |
 
 ## Evaluation V6
 
-The licenses were added and now the tests are passing. As declared [here](https://github.com/w3f/Grant-Milestone-Delivery/pull/872#issuecomment-1616628303), the `removeSue` is out of the scope of the grant. 
+The licenses were added and now the tests are passing. As declared [here](https://github.com/w3f/Grant-Milestone-Delivery/pull/872#issuecomment-1616628303), the `removeSue` is out of the scope of the grant.
 
 ## Evaluation V5
 
@@ -104,11 +104,11 @@ I tried again, and this time, I could successfully process a lawsuit using polka
 
 ## Evaluation V4
 
-I tried to use the frontend in the Evaluation V3, but I tested again to provide some prints. I created a lawsuit and voted with four different accounts. 
+I tried to use the frontend in the Evaluation V3, but I tested again to provide some prints. I created a lawsuit and voted with four different accounts.
 
 ![Screenshot 2023-06-22 at 08-00-49 SaaS3 DAO Pallets](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/8e023ec3-7947-499e-ba0c-5e84e224bc1c)
 
-With any of the jury accounts, I tried to approve the lawsuit. The frontend showed a success message but wasn't added new events in the polkadot.js. 
+With any of the jury accounts, I tried to approve the lawsuit. The frontend showed a success message but wasn't added new events in the polkadot.js.
 
 ![image (22)](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/bfa1e372-047e-4140-bbb0-c883b034d07d)
 
@@ -121,7 +121,6 @@ I found another problem. I created another lawsuit, but when I voted in the seco
 ![image (23)](https://github.com/w3f/Grant-Milestone-Delivery/assets/112647953/925e0e2e-25ee-475a-b3d7-ef6f8c92b331)
 
 The last vote was trying to vote on the first lawsuit, but it seeded to the second one. The order of the list seems to be inverted, showing the second lawsuit on top of the list, but on top of the list, the id is 0.
-
 
 ## Evaluation V3
 
@@ -157,6 +156,7 @@ I got the same error, BadOrigin, when trying to Process a Lawsuit using any of t
 I changed the unit test code to check if the pallet works with a signature from the jury.
 
 Original Test
+
 ```
 #[test]
 fn process_sue_works() {
@@ -175,6 +175,7 @@ fn process_sue_works() {
 ```
 
 Modified Test
+
 ```
 #[test]
 fn process_sue_works() {
@@ -192,7 +193,7 @@ fn process_sue_works() {
 }
 ```
 
-This test passed, so I don't know why this isn't working using polkadot.js. It is working for you? Did you tried it using polkadot.js? 
+This test passed, so I don't know why this isn't working using polkadot.js. It is working for you? Did you tried it using polkadot.js?
 
 ## Evaluation V2
 
@@ -274,13 +275,13 @@ Jun 12 10:49:44.439  INFO cargo_tarpaulin::report: Coverage Results:
 || runtime/src/weights/rocksdb_weights.rs: 0/3
 || runtime/src/xcm_config.rs: 0/31
 ||
-17.34% coverage, 125/721 lines covered   
+17.34% coverage, 125/721 lines covered
 ```
 
 ### Manual Testing
 
 I didn't understand what the `root user` is in this application. Is it to use `sudo` to use the command `court.processSue`? Please explain. Do I need to use the root user to approve in the frontend?
-The lack of access to the root user prevented me to complete the manual testing of the application. 
+The lack of access to the root user prevented me to complete the manual testing of the application.
 
 ### Code Quality
 
@@ -294,7 +295,7 @@ During the execution of the installation steps I had one doubt. Is the [Prepare 
 
 In [Register with the local relay chain](https://github.com/SaaS3-Foundation/saas3-dao#register-with-the-local-relay-chain) and in the Prepare parachain node needs to specify that the user needs to access the substrate with port 9977 to do the configuration.
 
-The testing guide needs to have examples of inputs and expected outputs. The frontend also needs a testing guide. 
+The testing guide needs to have examples of inputs and expected outputs. The frontend also needs a testing guide.
 
 ### Automated Test
 
@@ -430,13 +431,13 @@ Jun 01 09:06:34.358  INFO cargo_tarpaulin::report: Coverage Results:
 || runtime/src/weights/paritydb_weights.rs: 0/3
 || runtime/src/weights/rocksdb_weights.rs: 0/3
 || runtime/src/xcm_config.rs: 0/31
-|| 
+||
 14.46% coverage, 104/719 lines covered
 ```
 
 ### Manual testing
 
-Despite the testing guide doesn't have examples of inputs and expected outputs, I tried to check the pallets and the frontend. 
+Despite the testing guide doesn't have examples of inputs and expected outputs, I tried to check the pallets and the frontend.
 
 I couldn't figure out what to put in the `category_type` of `Treasury.receive`. So I have done the donations using the frontend and could check the transfer to the Treasury in the substrate. I could submit a lawsuit and vote using the frontend and the substrate, but when I tried to process the lawsuit, in the frontend, nothing occurred. In the substrate, I received a BadOrigin message. So I couldn't try to claim the rewards.
 

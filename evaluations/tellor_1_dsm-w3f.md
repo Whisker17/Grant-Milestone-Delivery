@@ -6,15 +6,14 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| **0a.** | License | <ul><li>[x] </li></ul>|  https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/LICENSE |
-| **0b.** | Documentation | <ul><li>[x] </li></ul>| We will provide both **inline documentation** of the code and a basic **tutorial**. [Link to basic tutorial](https://drive.google.com/file/d/1E8XVzq2C875fyBnht7MA58a2ix9RIv2b/view?usp=share_link) | Would be nice to have a text tutorial for the software usage. Could be delivered in the next milestone |
-| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul>| https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/README.md |  |
-| **0d.** | Docker | <ul><li>[x] </li></ul>| https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/Dockerfile |  |
-| 1 | Develop Controller contracts | <ul><li>[x] </li></ul>| [Staking](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/ParachainStaking.sol), [Governance](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/ParachainGovernance.sol)  | |
-| 2 | Develop Parachain integration contract| <ul><li>[x] </li></ul>| [ParachainRegistry](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/ParachainRegistry.sol), [Parachain](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/Parachain.sol) |  |
-
+| Number  | Deliverable                            | Accepted               | Link                                                                                                                                                                                                                                                                                       | Evaluation Notes                                                                                       |
+| ------- | -------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **0a.** | License                                | <ul><li>[x] </li></ul> | https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/LICENSE                                                                                                                                                                              |
+| **0b.** | Documentation                          | <ul><li>[x] </li></ul> | We will provide both **inline documentation** of the code and a basic **tutorial**. [Link to basic tutorial](https://drive.google.com/file/d/1E8XVzq2C875fyBnht7MA58a2ix9RIv2b/view?usp=share_link)                                                                                        | Would be nice to have a text tutorial for the software usage. Could be delivered in the next milestone |
+| **0c.** | Testing and Testing Guide              | <ul><li>[x] </li></ul> | https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/README.md                                                                                                                                                                            |                                                                                                        |
+| **0d.** | Docker                                 | <ul><li>[x] </li></ul> | https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/Dockerfile                                                                                                                                                                           |                                                                                                        |
+| 1       | Develop Controller contracts           | <ul><li>[x] </li></ul> | [Staking](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/ParachainStaking.sol), [Governance](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/ParachainGovernance.sol) |                                                                                                        |
+| 2       | Develop Parachain integration contract | <ul><li>[x] </li></ul> | [ParachainRegistry](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/ParachainRegistry.sol), [Parachain](https://github.com/tellor-io/tellor-parachain-contracts/blob/7f8cf44f526d0c42fd35074024f2daa40c637579/src/Parachain.sol) |                                                                                                        |
 
 ## Evaluation V2
 
@@ -252,7 +251,7 @@ Dockerfile:11
    9 | 	COPY . .
   10 | 	RUN forge build
   11 | >>> RUN forge test
-  12 |	 
+  12 |
 --------------------
 ERROR: failed to solve: process "/bin/sh -c forge test" did not complete successfully: exit code: 1
 ```

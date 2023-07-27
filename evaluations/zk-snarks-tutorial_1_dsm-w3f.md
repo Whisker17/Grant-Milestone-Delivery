@@ -1,5 +1,3 @@
-
-
 # Evaluation
 
 - **Status:** Approved.
@@ -8,27 +6,26 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| **0a.** | License |<ul><li>[x] </li></ul>| MIT license can be found [here](https://github.com/bright/zk-snarks-with-substrate/tree/main/LICENSE). |  |
-| **0b.** | Documentation |<ul><li>[x] </li></ul>| Documentation can be found in the [README](https://github.com/bright/zk-snarks-with-substrate/tree/main/pallets/zk-snarks/README.md) file. ||
-| **0c.** | Testing and Testing Guide |<ul><li>[x] </li></ul>| [Repository](https://github.com/bright/zk-snarks-with-substrate/) |  |
-| **0d.** | Docker |<ul><li>[x] </li></ul>| [Repository](https://github.com/bright/zk-snarks-with-substrate/) | 
-| 1. | The pallet |<ul><li>[x] </li></ul>| [Repository](https://github.com/bright/zk-snarks-with-substrate/) and [polkadotjs app](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/extrinsics) | 
-| 2. | Blog post |<ul><li>[x] </li></ul> | Blog post can be found in https//github.com/bright/zk-snarks-with-substrate/tree/main/blog/introduction.md | 
+| Number  | Deliverable               | Accepted               | Link                                                                                                                                                              | Evaluation Notes |
+| ------- | ------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **0a.** | License                   | <ul><li>[x] </li></ul> | MIT license can be found [here](https://github.com/bright/zk-snarks-with-substrate/tree/main/LICENSE).                                                            |                  |
+| **0b.** | Documentation             | <ul><li>[x] </li></ul> | Documentation can be found in the [README](https://github.com/bright/zk-snarks-with-substrate/tree/main/pallets/zk-snarks/README.md) file.                        |                  |
+| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/zk-snarks-with-substrate/)                                                                                                 |                  |
+| **0d.** | Docker                    | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/zk-snarks-with-substrate/)                                                                                                 |
+| 1.      | The pallet                | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/zk-snarks-with-substrate/) and [polkadotjs app](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/extrinsics) |
+| 2.      | Blog post                 | <ul><li>[x] </li></ul> | Blog post can be found in https//github.com/bright/zk-snarks-with-substrate/tree/main/blog/introduction.md                                                        |
 
 ## Evaluation V2
 
 The tutorial was improved by adding references/citations and fixing the other problems mentioned. The references/citations are mostly from other blogs/tutorials. This is an unusual way to cite other works since are expected to be cited the original source of the information (creator of that, scientifically speaking). As the tutorial is for developers, who may find it interesting to find other blogs/tutorials on the topic, I see no problem with the citations/references in this case.
 
-The code in the tutorial ran without problems. 
+The code in the tutorial ran without problems.
 
-A tutorial was added to show how to run the system using polkadot.js. The system ran as explained in the tutorial. At this point, the extrinsic are not actually verifying the proof since this is expected to be delivered in milestone 2. 
+A tutorial was added to show how to run the system using polkadot.js. The system ran as explained in the tutorial. At this point, the extrinsic are not actually verifying the proof since this is expected to be delivered in milestone 2.
 
 The cargo clippy warnings from pallet-zk-snarks were fixed.
 
 ## Evaluation V1
-
 
 ### Tutorial text
 
@@ -38,29 +35,25 @@ The cargo clippy warnings from pallet-zk-snarks were fixed.
 
 Please review all text.
 
-
 2. For some affirmations there is no explanation at all, please include at least one statement explaining the why of the statements. You can also include a citation/reference for further explanations if the reader wants to know more about the topic. Example below:
 
-"The first ones are the problems that can be run in polynomial time and those are not applicable for the zk-SNARKs.". Why? 
+"The first ones are the problems that can be run in polynomial time and those are not applicable for the zk-SNARKs.". Why?
 
-What is a QAP (Quadratic Arithmetic Program)? You mention the term as if the reader already knows what it is. The first time you mention a term you should give at least a brief explanation of it or let a reference for further reading. 
-
+What is a QAP (Quadratic Arithmetic Program)? You mention the term as if the reader already knows what it is. The first time you mention a term you should give at least a brief explanation of it or let a reference for further reading.
 
 3. R1CS is mentioned before the acronym definition.
-
 
 ### Code in the tutorial
 
 After installing Circom (Rust version, javascript one is deprecated) and trying to run the examples in the tutorial, I got that some options are not valid, you need to change --o to -o and --p to -p as shown below. Furthermore, the --O0 is a parameter and not an option, then should be placed together with the parameters (before the options).
 
-`circom task.circom --r1cs --wasm --sym --c --o build --O0 --p bls12381` change to `circom task.circom --r1cs --wasm --sym --c --O0 -o build -p bls12381` in order to work. 
+`circom task.circom --r1cs --wasm --sym --c --o build --O0 --p bls12381` change to `circom task.circom --r1cs --wasm --sym --c --O0 -o build -p bls12381` in order to work.
 
 The next step, generating the witness, is also with some problems in the command. You need to navigate to the folder where generate_witness.js was generated to run the command. There is no explanation of that in the tutorial. Please add more information about what are the outputs of the commands and how to properly execute the commands with all steps required explained. Would be nice to have information on where the files needed are being generated by the commands as well.
 
-### Running the system 
+### Running the system
 
 Please add to the tutorial an explanation on how to run the extrinsic in the zk-snarks pallet with examples. Predefined input examples and print screens are welcome in this part of the tutorial.
-
 
 ### Code Quality
 
@@ -449,7 +442,3 @@ note: this value is dropped without further use
 
 warning: `node-template` (bin "node-template") generated 7 warnings (2 duplicates)
 ```
-
-
-
-

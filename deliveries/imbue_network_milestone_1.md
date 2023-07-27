@@ -1,9 +1,9 @@
 # Milestone Delivery :mailbox:
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/imbue_network.md#milestone-1--mvp-start
-* **Milestone Number:** 1
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/imbue_network.md#milestone-1--mvp-start
+- **Milestone Number:** 1
 
 **Context** (optional)
 
@@ -14,29 +14,25 @@ The team has been mainly focused on getting the collator part done for both mile
 
 The only missing point is `0e` which is an article explaining how to go through the UI. We are planning to do this as soon as we complete the UI for voting/contributing as we feel it will make sense to our community
 
-
 However, that said the core functionality of creating a project, defining its milestones as well as contributing and having the funds unloked based on votes is complete
 
 We also did a tremendous amount of work to make it seamless to launch the collator using docker/polkadot-js so every single member of our community can launch the entire chain with very little technical knowledge
 
-
 Finally, We have shared a demo of the full flow [here](https://imbuenetwork.medium.com/imbue-mvp-demo-33d6c3e29856)
-
-
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a (milestone 2) | CI/CD |https://github.com/ImbueNetwork/imbue/blob/main/.github/workflows/collator_actions.yml| While this pipeline only ensures the code can be built, we will be expanding it to include deployment to an environment as soon the UI prototype is done |
-| 0a | licence | https://github.com/ImbueNetwork/imbue| License | 
-| 0b  | DAPP |https://github.com/ImbueNetwork/prototype| The UI to allow you to submit proposals | 
-| 0c  | Documentation | https://github.com/ImbueNetwork/imbue/blob/main/scripts/docker-compose.yml | The main repo has a guide on launching from source | 
-| 0d  | Docker |https://github.com/ImbueNetwork/prototype | The main repo has a polkadot-launch docker-compose file to get the entire infrastructure up, including polkadotJS |
-| 1 | Grants Pallet | https://github.com/ImbueNetwork/imbue/blob/main/pallets/proposals/src/lib.rs#L187 | Renamed to proposals, has alot of the functionality required for milestone 2. |
-
+| Number           | Deliverable   | Link                                                                                   | Notes                                                                                                                                                    |
+| ---------------- | ------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a (milestone 2) | CI/CD         | https://github.com/ImbueNetwork/imbue/blob/main/.github/workflows/collator_actions.yml | While this pipeline only ensures the code can be built, we will be expanding it to include deployment to an environment as soon the UI prototype is done |
+| 0a               | licence       | https://github.com/ImbueNetwork/imbue                                                  | License                                                                                                                                                  |
+| 0b               | DAPP          | https://github.com/ImbueNetwork/prototype                                              | The UI to allow you to submit proposals                                                                                                                  |
+| 0c               | Documentation | https://github.com/ImbueNetwork/imbue/blob/main/scripts/docker-compose.yml             | The main repo has a guide on launching from source                                                                                                       |
+| 0d               | Docker        | https://github.com/ImbueNetwork/prototype                                              | The main repo has a polkadot-launch docker-compose file to get the entire infrastructure up, including polkadotJS                                        |
+| 1                | Grants Pallet | https://github.com/ImbueNetwork/imbue/blob/main/pallets/proposals/src/lib.rs#L187      | Renamed to proposals, has alot of the functionality required for milestone 2.                                                                            |
 
 **Additional Information**
+
 > We also completed some of Milestone 2 points, we would like to submit milestone 1 as we are very keen on joining substrate builders programme and a successful milestone delivery will strongly help our application
 
 We are now in a position where we are thinking how we can mint on statemint, and maybe use its stable currencies when it is available.

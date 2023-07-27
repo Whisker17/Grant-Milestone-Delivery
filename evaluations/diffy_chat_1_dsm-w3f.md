@@ -1,25 +1,25 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:**  https://github.com/w3f/Grants-Program/blob/master/applications/Diffy_chat.md 
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/Diffy_chat.md
 - **Milestone:** 1
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a.| License | <ul><li>[x] </li></ul>| [LICENSE](https://github.com/Belsoft-rs/diffychat-pallet/blob/main/LICENSE) |  |
-| 0b.| Documentation |<ul><li>[x] </li></ul>| [Readme.md](https://github.com/Belsoft-rs/diffychat-pallet#readme) |   |
-| 0c.| Testing Guide |<ul><li>[x] </li></ul>| [DOTRTC usage](https://github.com/Belsoft-rs/diffychat-dotrtc#usage); [Substrate pallet](https://github.com/Belsoft-rs/diffychat-pallet#getting-started) |  |
-| 1.| Diffy chat pallet |<ul><li>[x] </li></ul>| [See here](https://github.com/Belsoft-rs/diffychat-pallet) |   | 
-| 2.| DOTRTC library |<ul><li>[x] </li></ul>| [See here](https://github.com/Belsoft-rs/diffychat-dotrtc) |   | 
-| 3.| HTML test page |<ul><li>[x] </li></ul>| [See here](https://belsoft-rs.github.io/diffychat/index.html) | | 
+| Number | Deliverable       | Accepted               | Link                                                                                                                                                     | Evaluation Notes |
+| ------ | ----------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License           | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/Belsoft-rs/diffychat-pallet/blob/main/LICENSE)                                                                              |                  |
+| 0b.    | Documentation     | <ul><li>[x] </li></ul> | [Readme.md](https://github.com/Belsoft-rs/diffychat-pallet#readme)                                                                                       |                  |
+| 0c.    | Testing Guide     | <ul><li>[x] </li></ul> | [DOTRTC usage](https://github.com/Belsoft-rs/diffychat-dotrtc#usage); [Substrate pallet](https://github.com/Belsoft-rs/diffychat-pallet#getting-started) |                  |
+| 1.     | Diffy chat pallet | <ul><li>[x] </li></ul> | [See here](https://github.com/Belsoft-rs/diffychat-pallet)                                                                                               |                  |
+| 2.     | DOTRTC library    | <ul><li>[x] </li></ul> | [See here](https://github.com/Belsoft-rs/diffychat-dotrtc)                                                                                               |                  |
+| 3.     | HTML test page    | <ul><li>[x] </li></ul> | [See here](https://belsoft-rs.github.io/diffychat/index.html)                                                                                            |                  |
 
 ## Evaluation V3
 
 ### License and Documentation
 
-DOTRTC Library now has a License. The documentation has instructions to run the unit test in the DOTRTC Library but doesn't mention `cargo test` in the Diffy Chat Pallet. Please update the documentation. 
+DOTRTC Library now has a License. The documentation has instructions to run the unit test in the DOTRTC Library but doesn't mention `cargo test` in the Diffy Chat Pallet. Please update the documentation.
 
 ### Manual Testing
 
@@ -119,8 +119,8 @@ I tested using Firefox and got the same problem. Alice send a message to Bob, bu
 
 I checked the developer tool and got this error:
 
-
 Using the index.html:
+
 ```
 Uncaught RangeError: source array is too long
     frameSet file:///home/user/Documents/diffychat/diffychat-dotrtc/demo/build/index.js:56671
@@ -131,6 +131,7 @@ index.js:56671:17
 ```
 
 Using the external application:
+
 ```
 Uncaught RangeError: source array is too long
     frameSet https://belsoft-rs.github.io/diffychat/index.html:1857
@@ -167,6 +168,7 @@ The documentation misses instructions to run the unit tests, instructions to sta
 I ran `cargo test` for running the tests and `cargo tarpaulin` to check the coverage of the tests.
 
 All tests passed:
+
 ```
 running 6 tests
 test mock::__construct_runtime_integrity_test::runtime_integrity_tests ... ok
@@ -195,13 +197,12 @@ Apr 18 08:32:51.827  INFO cargo_tarpaulin::report: Coverage Results:
 || node/src/rpc.rs: 0/5
 || pallets/template/src/lib.rs: 10/21
 || runtime/src/lib.rs: 2/5
-|| 
+||
 36.36% coverage, 12/33 lines covered
 ```
 
 ### Manual Testing
 
 I tried to use the chat using the external link that you provided. In chrome the chat doesn't work, and I couldn't login using Chrome. Using Firefox, I could login and connect, but Bob didn't receive the messages from Alice. Alice received messages from Bob.
-
 
 I tried to search for the application of this chat and found [this repository](https://github.com/Belsoft-rs/belsoft-rs.github.io) and [this demo in DOTRTC](https://github.com/Belsoft-rs/diffychat-dotrtc/tree/main/demo) which only have one commit on git, I tested using firefox and got the same results. Could you explain me if this chat is using the substrate?

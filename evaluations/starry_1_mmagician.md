@@ -1,13 +1,13 @@
 # Evaluation
 
-* **Status:** Accepted
-* **Application Document:** https://github.com/w3f/Open-Grants-Program/blob/master/applications/Starry_Network.md
-* **Milestone:** 1
-* **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
-* **Previously successfully merged evaluation:** All by mmagician
+- **Status:** Accepted
+- **Application Document:** https://github.com/w3f/Open-Grants-Program/blob/master/applications/Starry_Network.md
+- **Milestone:** 1
+- **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
+- **Previously successfully merged evaluation:** All by mmagician
 
 | Number | Deliverable   | Accepted               | Link                                                                                                                                                                        | Evaluation Notes                                                                                      |
-|--------|---------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| ------ | ------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | 0a.    | License       | <ul><li>[x] </li></ul> | [Apache License - node](https://github.com/Starry-Network/starry_node/blob/master/LICENSE), [Apache License - app](https://github.com/Starry-Network/app/blob/main/LICENSE) |                                                                                                       |
 | 0b.    | Documentation | <ul><li>[x] </li></ul> | [https://github.com/Starry-Network/starry_node#pallets-documentation](https://github.com/Starry-Network/starry_node#pallets-documentation)                                  |                                                                                                       |
 | 0c.    | Testing Guide | <ul><li>[x] </li></ul> | [https://github.com/Starry-Network/starry_node#test](https://github.com/Starry-Network/starry_node#test)                                                                    |                                                                                                       |

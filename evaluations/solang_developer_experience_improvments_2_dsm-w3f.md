@@ -6,20 +6,20 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | https://github.com/hyperledger/solang/blob/main/LICENSE | Apache-2.0 |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | https://solang.readthedocs.io/en/latest/running.html#compiler-usage https://solang.readthedocs.io/en/latest/running.html#starting-a-new-project| |
-| 0c. | Testing | <ul><li>[x] </li></ul> | https://github.com/hyperledger/solang/blob/main/src/bin/cli/test.rs https://github.com/hyperledger/solang/blob/main/tests/cli.rs|  |
-| **0d.** | Docker | <ul><li>[x] </li></ul> | There will be no independent DockerFiler for this milestone, because Solang has its own DockerFile, which can be used to test the mentioned functionalities.|
-|     0e. | Article | <ul><li>[x] </li></ul> | https://forum.polkadot.network/t/introducing-solang-improvements/3361 |
-|      1. | Implement [Solang projects](https://github.com/hyperledger/solang/milestone/6) | <ul><li>[x] </li></ul> | https://github.com/hyperledger/solang/pull/1316 https://github.com/hyperledger/solang/pull/1347 https://github.com/hyperledger/solang/pull/1392 |  |
+| Number  | Deliverable                                                                    | Accepted               | Link                                                                                                                                                         | Notes      |
+| ------- | ------------------------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| 0a.     | License                                                                        | <ul><li>[x] </li></ul> | https://github.com/hyperledger/solang/blob/main/LICENSE                                                                                                      | Apache-2.0 |
+| 0b.     | Documentation                                                                  | <ul><li>[x] </li></ul> | https://solang.readthedocs.io/en/latest/running.html#compiler-usage https://solang.readthedocs.io/en/latest/running.html#starting-a-new-project              |            |
+| 0c.     | Testing                                                                        | <ul><li>[x] </li></ul> | https://github.com/hyperledger/solang/blob/main/src/bin/cli/test.rs https://github.com/hyperledger/solang/blob/main/tests/cli.rs                             |            |
+| **0d.** | Docker                                                                         | <ul><li>[x] </li></ul> | There will be no independent DockerFiler for this milestone, because Solang has its own DockerFile, which can be used to test the mentioned functionalities. |
+| 0e.     | Article                                                                        | <ul><li>[x] </li></ul> | https://forum.polkadot.network/t/introducing-solang-improvements/3361                                                                                        |
+| 1.      | Implement [Solang projects](https://github.com/hyperledger/solang/milestone/6) | <ul><li>[x] </li></ul> | https://github.com/hyperledger/solang/pull/1316 https://github.com/hyperledger/solang/pull/1347 https://github.com/hyperledger/solang/pull/1392              |            |
 
 ## Evaluation V2
 
 ### Configuration file
 
-The PR fixed the `verbose` flag issue in the `solang.toml` file. 
+The PR fixed the `verbose` flag issue in the `solang.toml` file.
 
 ## Testing
 
@@ -35,7 +35,7 @@ Apache License 2.0 ok
 
 ### Installation and compiler usage
 
-I followed the installation and compiler usage documentation, I achieved the expected results installing through "Download from a Docker container" as well as "Build using Dockerfile" docs. In the usage section running Solang using a container also worked as expected. 
+I followed the installation and compiler usage documentation, I achieved the expected results installing through "Download from a Docker container" as well as "Build using Dockerfile" docs. In the usage section running Solang using a container also worked as expected.
 
 In the Solang README.md, maybe the compile command for docker should include the "/examples/polkadot" path as follows:
 
@@ -69,58 +69,58 @@ Executing `target/release/solang new --target solana my_project` creates the sol
 
 - Running `cargo test` showed that one test case failed in the ethereum_solidity_tests test. All the remaining tests have passed ok, including the `cli.rs` tests. See the test result:
 
-     ```sh
-     ...
-     test basic_compilation_from_toml ... ok
-     test create_output_dir ... ok
-     ...
-     test polkadot_specific ... ok
-     test polkadot_general ... ok
+  ```sh
+  ...
+  test basic_compilation_from_toml ... ok
+  test create_output_dir ... ok
+  ...
+  test polkadot_specific ... ok
+  test polkadot_general ... ok
 
-     test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.09s
+  test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.09s
 
-     Running tests/evm.rs (target/debug/deps/evm-fcd79123e1e1cf77)
+  Running tests/evm.rs (target/debug/deps/evm-fcd79123e1e1cf77)
 
-     running 5 tests
-     test eth_builtins ... ok
-     test selfdestruct ... ok
-     test try_catch ... ok
-     test address ... ok
-     test ethereum_solidity_tests ... FAILED
+  running 5 tests
+  test eth_builtins ... ok
+  test selfdestruct ... ok
+  test try_catch ... ok
+  test address ... ok
+  test ethereum_solidity_tests ... FAILED
 
-     failures:
+  failures:
 
-     ---- ethereum_solidity_tests stdout ----
-     thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: Error { depth: 0, inner: Io { path: Some("/home/user/w3f/solang/testdata/solidity/test/libsolidity/semanticTests"), err: Os { code: 2, kind: NotFound, message: "No such file or directory" } } }', tests/evm.rs:193:27
-     note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-     thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: Error { depth: 0, inner: Io { path: Some("/home/user/w3f/solang/testdata/solidity/test/libsolidity/syntaxTests"), err: Os { code: 2, kind: NotFound, message: "No such file or directory" } } }', tests/evm.rs:193:27
+  ---- ethereum_solidity_tests stdout ----
+  thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: Error { depth: 0, inner: Io { path: Some("/home/user/w3f/solang/testdata/solidity/test/libsolidity/semanticTests"), err: Os { code: 2, kind: NotFound, message: "No such file or directory" } } }', tests/evm.rs:193:27
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: Error { depth: 0, inner: Io { path: Some("/home/user/w3f/solang/testdata/solidity/test/libsolidity/syntaxTests"), err: Os { code: 2, kind: NotFound, message: "No such file or directory" } } }', tests/evm.rs:193:27
 
 
-     failures:
-     ethereum_solidity_tests
+  failures:
+  ethereum_solidity_tests
 
-     test result: FAILED. 4 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+  test result: FAILED. 4 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
-     error: test failed, to rerun pass `--test evm`
-     ``` 
+  error: test failed, to rerun pass `--test evm`
+  ```
 
 - Got an error running `cargo tarpaulin` to get tests coverage:
 
-     ```sh
-     ...
-     Compiling secp256k1 v0.27.0
-     Compiling ink_engine v4.2.1
-     Compiling ink_env v4.2.1
-     Compiling wasm-opt v0.112.0
-     error: Broken pipe (os error 32)
-     warning: build failed, waiting for other jobs to finish...
-     error: could not compile `solang` (test "builtins") due to 2 previous errors
-     error: could not compile `solang` (test "undefined_variable_detection") due to 2 previous errors
-     error: could not compile `solang` (lib test) due to 2 previous errors
-     error: could not compile `solang` (test "solana") due to 2 previous errors
-     Jul 12 12:20:37.706 ERROR cargo_tarpaulin: Failed to compile tests!
-     error: linking with `cc` failed: exit status: 1
-     ```
+  ```sh
+  ...
+  Compiling secp256k1 v0.27.0
+  Compiling ink_engine v4.2.1
+  Compiling ink_env v4.2.1
+  Compiling wasm-opt v0.112.0
+  error: Broken pipe (os error 32)
+  warning: build failed, waiting for other jobs to finish...
+  error: could not compile `solang` (test "builtins") due to 2 previous errors
+  error: could not compile `solang` (test "undefined_variable_detection") due to 2 previous errors
+  error: could not compile `solang` (lib test) due to 2 previous errors
+  error: could not compile `solang` (test "solana") due to 2 previous errors
+  Jul 12 12:20:37.706 ERROR cargo_tarpaulin: Failed to compile tests!
+  error: linking with `cc` failed: exit status: 1
+  ```
 
 ## Docker
 

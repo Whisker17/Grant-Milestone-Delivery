@@ -7,7 +7,7 @@
 - **Previously successfully merged evaluation:** N/A
 
 | Number | Deliverable     | Accepted                | Link                                                                                                                              | Evaluation Notes     |
-|--------|-----------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| ------ | --------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | 1.     | License         | <ul><li>[x] </li> </ul> | [License](https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing-v2-milestone-1/LICENSE)                       | Apache License v2    |
 | 2.     | Documentation   | <ul><li>[x] </li></ul>  | [Documentation](https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing-v2-milestone-1/README.md)               | inline documentation |
 | 3.     | PR with changes | <ul><li>[x] </li></ul>  | [centrifuge/go-substrate-rpc-client#327](https://github.com/centrifuge/go-substrate-rpc-client/pull/327)                          |                      |
@@ -182,7 +182,6 @@ ok      github.com/centrifuge/go-substrate-rpc-client/v4/registry       1.787s  
 ?       github.com/centrifuge/go-substrate-rpc-client/v4/registry/test  [no test files]
 ```
 
-
 ## General Notes v2 - March 07, 2023
 
 Finished nicely so far, there are a few little problems with the test that need to be fixed.
@@ -190,14 +189,15 @@ Finished nicely so far, there are a few little problems with the test that need 
 ### Run test
 
 1. Tests link error, should be https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing-v2-milestone-1/registry/registry_test.go
-2. ``Dockerfile_milestone1`` test command error.
-3. Lack ``CreateErrorRegistry`` function test
+2. `Dockerfile_milestone1` test command error.
+3. Lack `CreateErrorRegistry` function test
 
 ```bash
 go test -v ./registry/... --cover
 ```
 
 output
+
 ```
 === RUN   TestCreateEventRegistry
 === RUN   TestCreateEventRegistry/centrifuge
@@ -249,24 +249,23 @@ ok      github.com/centrifuge/go-substrate-rpc-client/v4/registry       1.731s  
 ?       github.com/centrifuge/go-substrate-rpc-client/v4/registry/test  [no test files]
 ```
 
-
-
 ## General Notes v1 - Feb 23, 2023
 
 There are basically not any docs found in pr.
 
-The goal of the first milestone is to complete Dynamic Type Loader from metadata, but I can only see the processing of metadata events from pr https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing -v2-milestone-1/events/registry.go#L44, lack of support for ``calls``
+The goal of the first milestone is to complete Dynamic Type Loader from metadata, but I can only see the processing of metadata events from pr https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing -v2-milestone-1/events/registry.go#L44, lack of support for `calls`
 
-1. https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing-v2-milestone-1/events/registry.go#L228 This function deals with the ``Compact`` type, and this place is written as compositeFieldType
+1. https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing-v2-milestone-1/events/registry.go#L228 This function deals with the `Compact` type, and this place is written as compositeFieldType
 2. https://github.com/centrifuge/go-substrate-rpc-client/blob/events-parsing-v2-milestone-1/events/registry.go#L200-L216 Missing support for enum index
 
-### Run test 
+### Run test
 
 ```bash
 go test -v ./events/... --cover
 ```
 
 output
+
 ```
 === RUN   TestCreateEventRegistry
 === RUN   TestCreateEventRegistry/centrifuge

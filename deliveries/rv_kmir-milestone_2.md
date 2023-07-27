@@ -1,22 +1,22 @@
 # Milestone Delivery :mailbox:
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/milestone-deliverables-guidelines.md).**  
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** [RV KMIR](https://github.com/w3f/Grants-Program/blob/master/applications/rv-kmir.md)
+- **Application Document:** [RV KMIR](https://github.com/w3f/Grants-Program/blob/master/applications/rv-kmir.md)
 
-* **Milestone Number:** 2
+- **Milestone Number:** 2
 
 **Deliverables**
 Specify the syntax of MIR programs in K.
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | [BSD-3](https://github.com/runtimeverification/mir-semantics/blob/master/LICENSE)  |
-| **0b.** | Documentation | [kmir CLI instructions](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md) |
-| **0c.** | Testing and Testing Guide | [Testing Instructions with Docker](https://github.com/runtimeverification/mir-semantics/tree/milestone2-deliverable#running-integration-tests-with-docker) |
-| **0d.** | Docker | [Dockerfile](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/Dockerfile) |
-| 1. | KMIR syntax | [mir-syntax.k](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/k-src/mir-syntax.k) |
-| 2. | **kmir** executable extension | [**kmir parse** implementation](https://github.com/runtimeverification/mir-semantics/blob/bd09e9d1716904afbbab2c0e27735202689d788e/kmir/src/kmir/__main__.py#L23), [**kmir parse** examples](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md#examples) |
+|  Number | Deliverable                   | Specification                                                                                                                                                                                                                                                                                          |
+| ------: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **0a.** | License                       | [BSD-3](https://github.com/runtimeverification/mir-semantics/blob/master/LICENSE)                                                                                                                                                                                                                      |
+| **0b.** | Documentation                 | [kmir CLI instructions](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md)                                                                                                                                                                               |
+| **0c.** | Testing and Testing Guide     | [Testing Instructions with Docker](https://github.com/runtimeverification/mir-semantics/tree/milestone2-deliverable#running-integration-tests-with-docker)                                                                                                                                             |
+| **0d.** | Docker                        | [Dockerfile](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/Dockerfile)                                                                                                                                                                                              |
+|      1. | KMIR syntax                   | [mir-syntax.k](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/k-src/mir-syntax.k)                                                                                                                                                                               |
+|      2. | **kmir** executable extension | [**kmir parse** implementation](https://github.com/runtimeverification/mir-semantics/blob/bd09e9d1716904afbbab2c0e27735202689d788e/kmir/src/kmir/__main__.py#L23), [**kmir parse** examples](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md#examples) |
 
 **Additional Information**
 

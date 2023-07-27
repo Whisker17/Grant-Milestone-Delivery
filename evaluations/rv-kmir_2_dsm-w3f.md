@@ -6,21 +6,20 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| **0a.** | License | <ul><li>[x] </li></ul>| [BSD-3](https://github.com/runtimeverification/mir-semantics/blob/master/LICENSE)  | |
-| **0b.** | Documentation |<ul><li>[x] </li></ul>|[kmir CLI instructions](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md) |  |
-| **0c.** | Testing and Testing Guide | <ul><li>[x] </li></ul>| [Testing Instructions with Docker](https://github.com/runtimeverification/mir-semantics/tree/milestone2-deliverable#running-integration-tests-with-docker) |  |
-| **0d.** | Docker | <ul><li>[x] </li></ul>| [Dockerfile](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/Dockerfile) | 
-| 1. | KMIR syntax | <ul><li>[x] </li></ul>| [mir-syntax.k](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/k-src/mir-syntax.k) |  |
-| 2. | **kmir** executable extension | <ul><li>[x] </li></ul>| [**kmir parse** implementation](https://github.com/runtimeverification/mir-semantics/blob/bd09e9d1716904afbbab2c0e27735202689d788e/kmir/src/kmir/__main__.py#L23), [**kmir parse** examples](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md#examples) |  |
+| Number  | Deliverable                   | Accepted               | Link                                                                                                                                                                                                                                                                                                   | Evaluation Notes |
+| ------- | ----------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| **0a.** | License                       | <ul><li>[x] </li></ul> | [BSD-3](https://github.com/runtimeverification/mir-semantics/blob/master/LICENSE)                                                                                                                                                                                                                      |                  |
+| **0b.** | Documentation                 | <ul><li>[x] </li></ul> | [kmir CLI instructions](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md)                                                                                                                                                                               |                  |
+| **0c.** | Testing and Testing Guide     | <ul><li>[x] </li></ul> | [Testing Instructions with Docker](https://github.com/runtimeverification/mir-semantics/tree/milestone2-deliverable#running-integration-tests-with-docker)                                                                                                                                             |                  |
+| **0d.** | Docker                        | <ul><li>[x] </li></ul> | [Dockerfile](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/Dockerfile)                                                                                                                                                                                              |
+| 1.      | KMIR syntax                   | <ul><li>[x] </li></ul> | [mir-syntax.k](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/k-src/mir-syntax.k)                                                                                                                                                                               |                  |
+| 2.      | **kmir** executable extension | <ul><li>[x] </li></ul> | [**kmir parse** implementation](https://github.com/runtimeverification/mir-semantics/blob/bd09e9d1716904afbbab2c0e27735202689d788e/kmir/src/kmir/__main__.py#L23), [**kmir parse** examples](https://github.com/runtimeverification/mir-semantics/blob/milestone2-deliverable/kmir/README.md#examples) |                  |
 
 ## Evaluation V3
 
 ### Docker
 
 The steps you sent me are missing the `make build` command, resulting in the path problem. The `kmir parse` doesn't result in this problem if I run `make build` before `poetry shell`.
-
 
 kmir parse
 
@@ -68,7 +67,7 @@ src/tests/integration/test_parse.py::test_handwritten_syntax[type-array-identifi
 
 ### Kmir parse
 
-I had the same problems again. 
+I had the same problems again.
 
 Here is the list of versions:
 
@@ -94,9 +93,7 @@ user@localhost:~/Documents/kmir/mir-semantics/kmir$ python -V
 Python 3.10.8
 ```
 
-Is the Python version in the prerequisites correct? Could you provide the versions that you are using? Usually, when we have problems reproducing the steps to install the software under evaluation we ask for a demo video to help in this task. Can you provide a demo video showing how to install and use the application? Otherwise, we will wait for the docker ticket to be solved to try again with docker, which is a more controlled environment. 
-
-
+Is the Python version in the prerequisites correct? Could you provide the versions that you are using? Usually, when we have problems reproducing the steps to install the software under evaluation we ask for a demo video to help in this task. Can you provide a demo video showing how to install and use the application? Otherwise, we will wait for the docker ticket to be solved to try again with docker, which is a more controlled environment.
 
 ## Evaluation V1
 
@@ -218,7 +215,7 @@ kmir parse: error: argument --definition-dir: invalid dir_path value: 'src/tests
 
 I tried with a local installation using python 3.10.8 without Docker and got the same problem.
 
-```  
+```
 (kmir-py3.10) user@localhost:~/Documents/kmir/mir-semantics/kmir$ kmir parse --definition-dir $(kbuild which llvm) src/tests/integration/test-data/handwritten-mir/execution/assert-true.mir
 Directory does not exist: /home/user/.kbuild/mir-semantics/672f79c/target/v5.6.100/llvm
 usage: kmir parse [-h] [--definition-dir DEFINITION_DIR] [--input {program,binary,json,kast,kore}] [--output {pretty,program,json,kore,kast,none}] input_file
@@ -228,6 +225,7 @@ kmir parse: error: argument --definition-dir: invalid dir_path value: 'src/tests
 Could you explain to me how do I get this Directory? I also tried using python 3.8.10 and 3.9 but got some errors for kmir commands. Is the python version in prerequisites correct? Because Docker also uses python 3.10.8
 
 python 3.9
+
 ```
 (kmir-py3.9) user@localhost:~/Documents/kmir/mir-semantics/kmir$ kmir --help
 Traceback (most recent call last):
@@ -248,6 +246,7 @@ SyntaxError: invalid syntax
 ```
 
 python 3.8
+
 ```
 (kmir-py3.8) user@localhost:~/Documents/kmir/mir-semantics/kmir$ kmir --help
 Traceback (most recent call last):

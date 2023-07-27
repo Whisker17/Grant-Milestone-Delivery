@@ -5,19 +5,21 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| 0a.    | License     | <ul><li>[x] </li></ul> | [LICENSE file](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-3/LICENSE) | Apache 2.0 | 
-| 0b.    | Documentation | <ul><li>[x] </li></ul> | [Hosted Rustdocs](https://off-narrative-labs.github.io/Tuxedo) | Great docs and guide. | 
-| 0c.    | Testing     | <ul><li>[x] </li></ul> | [Readme Section](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-3#testing-and-code-quality) | All tests pass. |
-| 0d.    | Docker      | <ul><li>[x] </li></ul> | [Readme Section](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-3#docker), [Published Images](https://github.com/orgs/Off-Narrative-Labs/packages) | Node and CLI both run successfully. | 
-| 0e.    | Full Tutorial | <ul><li>[x] </li></ul> | [Starter Code](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial/), [Complete Solutions](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial/tree/dex-solutions), [Walkthrough Video](https://www.youtube.com/watch?v=bWA2ksTmNBU) | Ok.
-| 1.     | Template Piece | <ul><li>[x] </li></ul> | [Readme Section](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial#use-as-a-template), [Dex Template](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial/blob/dex-tutorial/dex/src/lib.rs) | Ok.
+| Number | Deliverable    | Accepted               | Link                                                                                                                                                                                                                                                                   | Notes                               |
+| ------ | -------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| 0a.    | License        | <ul><li>[x] </li></ul> | [LICENSE file](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-3/LICENSE)                                                                                                                                                                                  | Apache 2.0                          |
+| 0b.    | Documentation  | <ul><li>[x] </li></ul> | [Hosted Rustdocs](https://off-narrative-labs.github.io/Tuxedo)                                                                                                                                                                                                         | Great docs and guide.               |
+| 0c.    | Testing        | <ul><li>[x] </li></ul> | [Readme Section](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-3#testing-and-code-quality)                                                                                                                                                               | All tests pass.                     |
+| 0d.    | Docker         | <ul><li>[x] </li></ul> | [Readme Section](https://github.com/Off-Narrative-Labs/Tuxedo/blob/milestone-3#docker), [Published Images](https://github.com/orgs/Off-Narrative-Labs/packages)                                                                                                        | Node and CLI both run successfully. |
+| 0e.    | Full Tutorial  | <ul><li>[x] </li></ul> | [Starter Code](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial/), [Complete Solutions](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial/tree/dex-solutions), [Walkthrough Video](https://www.youtube.com/watch?v=bWA2ksTmNBU) | Ok.                                 |
+| 1.     | Template Piece | <ul><li>[x] </li></ul> | [Readme Section](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial#use-as-a-template), [Dex Template](https://github.com/Off-Narrative-Labs/Tuxedo-Order-Book-Dex-Tutorial/blob/dex-tutorial/dex/src/lib.rs)                                        | Ok.                                 |
+
 # General Notes
 
-Excellent work! Amazing docs and guides, and the tutorial is very helpful to see UTXO in action. Very cool to see it working in Substrate. 
+Excellent work! Amazing docs and guides, and the tutorial is very helpful to see UTXO in action. Very cool to see it working in Substrate.
 
 I was able to run the node and CLI locally as well as with Docker. I was able to play with the CLI to create UXTO transactions:
+
 ```rust
 docker run --network host ghcr.io/off-narrative-labs/tuxedo-wallet show-balance
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
@@ -29,6 +31,7 @@ Balance Summary
 --------------------
 total      : 100
 ```
+
 ```rust
 docker run --network host ghcr.io/off-narrative-labs/tuxedo-wallet show-all-outputs
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
@@ -38,6 +41,7 @@ WARNING: The requested image's platform (linux/amd64) does not match the detecte
 ###### Unspent outputs ###########
 000000000000000000000000000000000000000000000000000000000000000000000000: owner 0xd2bf4b844dfefd6772a8843e669f943408966a977e3ae2af1dd78e0f55f4df67, amount 100
 ```
+
 ```rust
 docker run --network host ghcr.io/off-narrative-labs/tuxedo-wallet spend-coins -o 50 -o 40 -o 5
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
@@ -53,6 +57,7 @@ Created "dc867b7132dbb7951c30569f7d1f3bfd92bdf497a22720728cfe886d9777aef30200000
 ## Tests
 
 Unit tests all pass for the Crypto Kitties game, the CLI, Tuxedo Core, Money, and the runtime template:
+
 ```rust
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -283,4 +288,5 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
+
 Cargo Clippy comes back clean.

@@ -7,7 +7,7 @@
 - **Previously successfully merged evaluation:** [Milestone 1](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/xcm-sdk_1_dsm-w3f.md)
 
 | Number | Deliverable                  | Accepted | Link                                                                                                                      | Evaluation Notes                                              |
-|--------|------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| ------ | ---------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | 0a.    | License                      | Yes      | https://github.com/blockcoders/xcm-sdk/blob/main/LICENSE                                                                  | MIT                                                           |
 | 0b.    | Documentation                | Yes      | https://github.com/blockcoders/xcm-sdk/blob/main/README.md, https://github.com/blockcoders/xcm-sdk/blob/main/README-es.md | Good documentation                                            |
 | 0c.    | Testing Guide                | Yes      | https://github.com/blockcoders/xcm-sdk#testing                                                                            | OK                                                            |
@@ -19,6 +19,7 @@
 ## Logs
 
 - npm run test
+
 ```
 > xcm-sdk@0.1.0-rc.2 test
 > mocha -t 120000 --require ts-node/register src/**/*.spec.ts --exit
@@ -63,8 +64,8 @@
   23 passing (44ms)
 ```
 
-
 - Installing CLI executable with npm: 0 vulnerabilities
+
 ```
 added 89 packages, and audited 90 packages in 3s
 
@@ -74,10 +75,8 @@ added 89 packages, and audited 90 packages in 3s
 found 0 vulnerabilities
 ```
 
-
-
 ## General notes
 
 - SDK works as expected and documentation and tests cover all the codebase pretty well.
-- 
+-
 - Good delivery.

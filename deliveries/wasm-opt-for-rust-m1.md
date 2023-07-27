@@ -1,9 +1,9 @@
 # Milestone Delivery :mailbox:
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/wasm-opt-for-rust.md
-* **Milestone Number:** 1
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/wasm-opt-for-rust.md
+- **Milestone Number:** 1
 
 **Context**
 
@@ -13,19 +13,19 @@ We encountered only minor unexpected obstacles, discussed below, and expect the 
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3 | |
-| 0b. | Documentation | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3 | |
-| 0c. | Testing Guide | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3/components/wasm-opt/tests <br> | Integration tests. |
-| 0d. | Docker | Docker is not required for this project. | |
-| 1. | `wasm-opt` binary | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3#installing-the-binary | |
-| 2. | APIs | https://docs.rs/wasm-opt/0.0.1-preview.3/wasm_opt <br> https://docs.rs/wasm-opt-cxx-sys/0.0.1-preview.3/wasm_opt_cxx_sys <br> https://docs.rs/wasm-opt-sys/0.0.1-preview.3/wasm_opt_sys | |
+| Number | Deliverable       | Link                                                                                                                                                                                    | Notes              |
+| ------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| 0a.    | License           | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3                                                                                                                              |                    |
+| 0b.    | Documentation     | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3                                                                                                                              |                    |
+| 0c.    | Testing Guide     | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3/components/wasm-opt/tests <br>                                                                                               | Integration tests. |
+| 0d.    | Docker            | Docker is not required for this project.                                                                                                                                                |                    |
+| 1.     | `wasm-opt` binary | https://github.com/brson/wasm-opt-rs/tree/v0.0.1-preview.3#installing-the-binary                                                                                                        |                    |
+| 2.     | APIs              | https://docs.rs/wasm-opt/0.0.1-preview.3/wasm_opt <br> https://docs.rs/wasm-opt-cxx-sys/0.0.1-preview.3/wasm_opt_cxx_sys <br> https://docs.rs/wasm-opt-sys/0.0.1-preview.3/wasm_opt_sys |                    |
 
 **Additional Information**
 
 The current implementation is published at the links above.
-It is mostly complete, functional and suitable for cursory testing. 
+It is mostly complete, functional and suitable for cursory testing.
 
 We have an idiomatic Rust API that is mostly-completely documented,
 and we welcome review.

@@ -1,13 +1,13 @@
 # Evaluation
 
-* **Status:** Accepted
-* **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/yatima.md
-* **Milestone:** 1
-* **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
-* **Previously successfully merged evaluation:** All by mmagician
+- **Status:** Accepted
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/yatima.md
+- **Milestone:** 1
+- **Kusama Identity:** [H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85](https://polkascan.io/pre/kusama/account/H9M22FTqs1kKRAUiEk1BCVNQfWdMzVV3HbHuMwkirirxk85)
+- **Previously successfully merged evaluation:** All by mmagician
 
 | Number | Deliverable                      | Accepted               | Link                                                                   | Evaluation notes                                                                                                                                                                                           |
-|--------|----------------------------------|------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------ | -------------------------------- | ---------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 0a.    | License                          | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/yatima-inc/sp-ipld/blob/main/LICENSE)     |                                                                                                                                                                                                            |
 | 0b.    | Documentation                    | <ul><li>[x] </li></ul> | [README](https://github.com/yatima-inc/sp-ipld/blob/main/README.md)    |                                                                                                                                                                                                            |
 | 0c.    | Testing Guide                    | <ul><li>[x] </li></ul> | [README](https://github.com/yatima-inc/sp-ipld/blob/main/README.md)    |                                                                                                                                                                                                            |
@@ -22,8 +22,8 @@
 
 The deliverables from 1st milestone are just building blocks for future developments.
 
-There was some misunderstanding regarding the naming convention: substrate module isn't exactly the same as a Rust module. 
-However, the team has provided an adaptation of the `pallet-template` which could easily have been submitted as a deliverable for 1a-1e, so that's ok. 
+There was some misunderstanding regarding the naming convention: substrate module isn't exactly the same as a Rust module.
+However, the team has provided an adaptation of the `pallet-template` which could easily have been submitted as a deliverable for 1a-1e, so that's ok.
 
 Also, most of the Rust modules delivered were "forks" of existing repositories (not marked as fork, but commit history preserved).
 One could argue that it's better to properly fork and only then adapt the existing codebase, perhaps try to contribute upstream.

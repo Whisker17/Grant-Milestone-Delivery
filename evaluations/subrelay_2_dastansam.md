@@ -8,23 +8,23 @@
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License | https://github.com/subrelay/subrelay-api/blob/main/LICENSE https://github.com/subrelay/interface/blob/main/LICENSE | Correct licenses. | 
-| 0b.  | Documentation | https://docs.subrelay.com/ | Extensive documentation. In some places invalid url is present https://app.subrelay.xyz (forgot to rename?) | 
-| 0c. | Testing and Testing Guide | https://github.com/subrelay/interface/tree/main/cypress https://github.com/subrelay/subrelay-api/tree/main/test | Couldn't run integration tests, more on this below. | 
-| 0d. | Docker file | https://docs.subrelay.com/self-hosted/getting-started | Working as expected. | 
-| 0e. | Article | https://docs.subrelay.com | Documentation page is working as expected. | 
-| 1.  | Feature: Email integration | https://docs.subrelay.com/user-guide/email | Working as expected (screenshots attached below) |
-| 2.  | Feature: Telegram integration| https://docs.subrelay.com/user-guide/telegram | Working as expected (screenshots attached below) | 
-| 3.  | Feature: Discord integration | https://docs.subrelay.com/user-guide/discord | Working as expected (screenshots attached below) | 
-| 4.  | Feature: Workflow execution detail | https://app.subrelay.com/logs | Working as expected (screenshots attached below) | 
-| 5.  | API | https://github.com/subrelay/subrelay-api | Runs locally, tests are provided and well documented | 
-| 6.  | Integration | https://github.com/subrelay/interface | Looks smooth, every page works as expected. |
+| Number | Deliverable                        | Link                                                                                                               | Notes                                                                                                       |
+| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                            | https://github.com/subrelay/subrelay-api/blob/main/LICENSE https://github.com/subrelay/interface/blob/main/LICENSE | Correct licenses.                                                                                           |
+| 0b.    | Documentation                      | https://docs.subrelay.com/                                                                                         | Extensive documentation. In some places invalid url is present https://app.subrelay.xyz (forgot to rename?) |
+| 0c.    | Testing and Testing Guide          | https://github.com/subrelay/interface/tree/main/cypress https://github.com/subrelay/subrelay-api/tree/main/test    | Couldn't run integration tests, more on this below.                                                         |
+| 0d.    | Docker file                        | https://docs.subrelay.com/self-hosted/getting-started                                                              | Working as expected.                                                                                        |
+| 0e.    | Article                            | https://docs.subrelay.com                                                                                          | Documentation page is working as expected.                                                                  |
+| 1.     | Feature: Email integration         | https://docs.subrelay.com/user-guide/email                                                                         | Working as expected (screenshots attached below)                                                            |
+| 2.     | Feature: Telegram integration      | https://docs.subrelay.com/user-guide/telegram                                                                      | Working as expected (screenshots attached below)                                                            |
+| 3.     | Feature: Discord integration       | https://docs.subrelay.com/user-guide/discord                                                                       | Working as expected (screenshots attached below)                                                            |
+| 4.     | Feature: Workflow execution detail | https://app.subrelay.com/logs                                                                                      | Working as expected (screenshots attached below)                                                            |
+| 5.     | API                                | https://github.com/subrelay/subrelay-api                                                                           | Runs locally, tests are provided and well documented                                                        |
+| 6.     | Integration                        | https://github.com/subrelay/interface                                                                              | Looks smooth, every page works as expected.                                                                 |
 
 ## General Notes
 
-In general, all the features are delivered, I was able to test them on production and everything works as expected. 
+In general, all the features are delivered, I was able to test them on production and everything works as expected.
 
 The only thing that I couldn't test locally was the integration tests. Initially the errors were related to Postgres DB, I resolved them and even run the `migration` script that you run in the CI `yarn run typeorm migration:run`. But I still get several errors and all tests are failing. Maybe this is related to my local environment, regardless, I think this part of the code is missing some documentation. I see that errors are related to DB and missing tokens for Discord and Telegram bots. Would be great if you could clearly indicate pre-requisites for running the integration tests locally in the README.
 
@@ -152,7 +152,6 @@ Workflow dashboard:
 #### Webhook
 
 <img width="1713" alt="Webhook notifs" src="https://github.com/dastansam/Grant-Milestone-Delivery/assets/88332432/ff62b709-5cca-4cfb-a387-bc461856939a">
-
 
 #### Discord
 

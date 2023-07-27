@@ -1,13 +1,13 @@
 # Milestone Delivery :mailbox:
 
-> ⚡ Only the GitHub account that submitted the application is allowed to submit milestones. 
-> 
+> ⚡ Only the GitHub account that submitted the application is allowed to submit milestones.
+>
 > Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with `>`, such as this one, can be removed.
 
-**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
+**The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**
 
-* **Application Document:** [polket_toearnfun application](https://github.com/w3f/Grants-Program/blob/master/applications/polket_toearnfun.md)
-* **Milestone Number:** 1
+- **Application Document:** [polket_toearnfun application](https://github.com/w3f/Grants-Program/blob/master/applications/polket_toearnfun.md)
+- **Milestone Number:** 1
 
 **Context**
 
@@ -15,9 +15,8 @@ In Milestone 1, we successfully completed the development and deployment of the 
 
 **Deliverables**
 
-
 | Number | Deliverable                            | Link                                                                                                                                                                                                    | Notes                                                                              |
-|--------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 0a.    | License                                | [GPL-v3.0](https://github.com/polketio/polket-node/blob/milestone-01-delivery/LICENSE)                                                                                                                  |                                                                                    |
 | 0b.    | Documentation                          | [Doc](https://polketio.gitbook.io/toearnfun/)                                                                                                                                                           |                                                                                    |
 | 0c.    | Testing Guide                          | [Rust Unit Test](https://github.com/polketio/polket-node/tree/milestone-01-delivery#testing), [ToEarnFun Demo Guide](https://polketio.gitbook.io/toearnfun/guides/how-to-run-toearnfun-app)             |                                                                                    |

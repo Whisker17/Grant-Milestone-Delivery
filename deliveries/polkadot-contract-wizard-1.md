@@ -32,14 +32,13 @@ A quick note: we understand that the current version of the wizard may not be fu
 
 [Milestone 1 deployment preview](https://polkadot-contract-wizard-fbukarssr-proto-polkadot.vercel.app/)
 
-| Number | Deliverable                                                   | Link | Notes |
-| ------ | ------------------------------------------------------------- | ---- | ----- |
-| 0a.    | License.                                                      | https://github.com/protofire/polkadot-contract-wizard/blob/milestone-1/LICENSE  | ...   |
-| 0b.    | Documentation.                                                | https://github.com/protofire/polkadot-contract-wizard/blob/milestone-1/README.md  | ...   |
-| 0c.    | Testing and Testing Guide.                                    | https://github.com/protofire/polkadot-contract-wizard/blob/milestone-1/tests/Readme.md  | ...   |
-| 0d.    | Docker.                                                       | https://github.com/protofire/polkadot-contract-wizard#a-with-docker  | ...   |
-| 1.     | Redesign frontend interface.                                  | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1  | ...   |
-| 2.     | Develop the interface based on the previous task result.      | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1  | ...   |
-| 3.     | Compose the contract based on the selection.                  | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1  | ...   |
-| 4.     | Add syntax highlighting to the displayed smart contract code. | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1  | ...   |
-
+| Number | Deliverable                                                   | Link                                                                                   | Notes |
+| ------ | ------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----- |
+| 0a.    | License.                                                      | https://github.com/protofire/polkadot-contract-wizard/blob/milestone-1/LICENSE         | ...   |
+| 0b.    | Documentation.                                                | https://github.com/protofire/polkadot-contract-wizard/blob/milestone-1/README.md       | ...   |
+| 0c.    | Testing and Testing Guide.                                    | https://github.com/protofire/polkadot-contract-wizard/blob/milestone-1/tests/Readme.md | ...   |
+| 0d.    | Docker.                                                       | https://github.com/protofire/polkadot-contract-wizard#a-with-docker                    | ...   |
+| 1.     | Redesign frontend interface.                                  | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1                 | ...   |
+| 2.     | Develop the interface based on the previous task result.      | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1                 | ...   |
+| 3.     | Compose the contract based on the selection.                  | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1                 | ...   |
+| 4.     | Add syntax highlighting to the displayed smart contract code. | https://github.com/protofire/polkadot-contract-wizard/tree/milestone-1                 | ...   |

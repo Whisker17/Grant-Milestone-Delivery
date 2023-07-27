@@ -6,51 +6,48 @@
 - **Kusama Identity:** Ha27MB4gKH36ieRPa1T1ASqhUz4sVxMoVmK7o5CS6tXDqjW
 - **Previously successfully merged evaluation:** https://github.com/UniversalDot/Grant-Milestone-Delivery/blob/master/evaluations/crossbow_1_jkl.md
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul> | [Link](https://github.com/liberland/liberland_substrate/blob/main/LICENSE-MIT)| License is Ok. The MIT license is also referenced in their pallets.|
-| 0b.  | Documentation |<ul><li>[x] </li></ul> | [Link](https://liberland-1.gitbook.io/wiki/v/public-documents/blockchain/for-developers-and-testers)| Good inline documentation in pallets. It contains dispatchable functions, configs, etc. The Gitbook is also good, but can be further imrproved. See 1. in General Notes.|
-| 0c. | Testing Guide |<ul><li>[x] </li></ul>| [Testing Guide](https://docs.google.com/document/d/1ntrT6bafTD2LfXUG9QLxOieogXELn9icN1y__EGfZ98/edit#heading=h.yfda4shb4ggs) | ~~I can see you have created tests for your pallets. Please include a short guide on how to run these tests. Incude this guide in your README document.~~ See [Testing Guide Feedback](#testing-guide-feedback) |
-| 0d.  | Docker |<ul><li>[x] </li></ul> | [Link](https://hub.docker.com/layers/liberland/blockchain-node/latest/images/sha256-e59f697c8df37b6c8c509e1c949cb23c052b4e95463f087abb044d4873a791b5?context=explore) | Docker Image works. See 3. In General notes. |
-| 0e. | Article |<ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1IiOEka3eZOOyM7GuT5aVJYihdSz3qYbWqwcTNS_Pvqg/edit#heading=h.gvgdsh4wfciv)| Draft is ok.|
-| 1.  | Land owner Pallet |<ul><li>[x] </li></ul> | [Modified NFT Pallet](https://github.com/liberland/liberland_substrate/tree/bc60180005a17a3953c95b96fb06b95fe539f6cb/frame/nfts), [Office Pallet](https://github.com/liberland/liberland_substrate/tree/d2f9692e7137d830b6ea681b22e44d91b4255b97/frame/office), [PR for on-chain Geo validation](https://github.com/liberland/liberland_substrate/pull/291/files#diff-2126ae6766e9fabbb2462c7c1d2b0494c27b7c6e518f4672b1cc3a9d335afb3cR323) | See [Land owner Pallet Feedback](#landowner-pallet-feedback) |
-| 2 | Metaverse integration Pallet |<ul><li>[x] </li></ul>| [Deployed Metaverse](https://liberverse.net/), [Live API](http://api.liberverse.net/v1/plots), [api repo](https://github.com/DorianSternVukotic/liberland-middleware-api/tree/3c71577108b1035fb8e7c1cd35ad224e53ea6a61) | See [Metaverse Integration Pallet Feedback](#metaverse-integration-pallet-feedback) |
-| 3 | Company Registration Pallet |<ul><li>[x] </li></ul> | [Link](https://github.com/liberland/liberland_substrate/blob/main/frame/registry/src/lib.rs)| Good. But it seems to be inspired from the original substrate [Registry pallet](https://github.com/liberland/liberland_substrate/blob/main/frame/registry/src/lib.rs)|
-
-
+| Number | Deliverable                  | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                                                        | Evaluation Notes                                                                                                                                                                                                |
+| ------ | ---------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                      | <ul><li>[x] </li></ul> | [Link](https://github.com/liberland/liberland_substrate/blob/main/LICENSE-MIT)                                                                                                                                                                                                                                                                                                                                                              | License is Ok. The MIT license is also referenced in their pallets.                                                                                                                                             |
+| 0b.    | Documentation                | <ul><li>[x] </li></ul> | [Link](https://liberland-1.gitbook.io/wiki/v/public-documents/blockchain/for-developers-and-testers)                                                                                                                                                                                                                                                                                                                                        | Good inline documentation in pallets. It contains dispatchable functions, configs, etc. The Gitbook is also good, but can be further imrproved. See 1. in General Notes.                                        |
+| 0c.    | Testing Guide                | <ul><li>[x] </li></ul> | [Testing Guide](https://docs.google.com/document/d/1ntrT6bafTD2LfXUG9QLxOieogXELn9icN1y__EGfZ98/edit#heading=h.yfda4shb4ggs)                                                                                                                                                                                                                                                                                                                | ~~I can see you have created tests for your pallets. Please include a short guide on how to run these tests. Incude this guide in your README document.~~ See [Testing Guide Feedback](#testing-guide-feedback) |
+| 0d.    | Docker                       | <ul><li>[x] </li></ul> | [Link](https://hub.docker.com/layers/liberland/blockchain-node/latest/images/sha256-e59f697c8df37b6c8c509e1c949cb23c052b4e95463f087abb044d4873a791b5?context=explore)                                                                                                                                                                                                                                                                       | Docker Image works. See 3. In General notes.                                                                                                                                                                    |
+| 0e.    | Article                      | <ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1IiOEka3eZOOyM7GuT5aVJYihdSz3qYbWqwcTNS_Pvqg/edit#heading=h.gvgdsh4wfciv)                                                                                                                                                                                                                                                                                                                         | Draft is ok.                                                                                                                                                                                                    |
+| 1.     | Land owner Pallet            | <ul><li>[x] </li></ul> | [Modified NFT Pallet](https://github.com/liberland/liberland_substrate/tree/bc60180005a17a3953c95b96fb06b95fe539f6cb/frame/nfts), [Office Pallet](https://github.com/liberland/liberland_substrate/tree/d2f9692e7137d830b6ea681b22e44d91b4255b97/frame/office), [PR for on-chain Geo validation](https://github.com/liberland/liberland_substrate/pull/291/files#diff-2126ae6766e9fabbb2462c7c1d2b0494c27b7c6e518f4672b1cc3a9d335afb3cR323) | See [Land owner Pallet Feedback](#landowner-pallet-feedback)                                                                                                                                                    |
+| 2      | Metaverse integration Pallet | <ul><li>[x] </li></ul> | [Deployed Metaverse](https://liberverse.net/), [Live API](http://api.liberverse.net/v1/plots), [api repo](https://github.com/DorianSternVukotic/liberland-middleware-api/tree/3c71577108b1035fb8e7c1cd35ad224e53ea6a61)                                                                                                                                                                                                                     | See [Metaverse Integration Pallet Feedback](#metaverse-integration-pallet-feedback)                                                                                                                             |
+| 3      | Company Registration Pallet  | <ul><li>[x] </li></ul> | [Link](https://github.com/liberland/liberland_substrate/blob/main/frame/registry/src/lib.rs)                                                                                                                                                                                                                                                                                                                                                | Good. But it seems to be inspired from the original substrate [Registry pallet](https://github.com/liberland/liberland_substrate/blob/main/frame/registry/src/lib.rs)                                           |
 
 ## General Notes
 
-1. In your documentation [here](https://liberland-1.gitbook.io/wiki/v/public-documents/blockchain/for-developers-and-testers/testing_guide), you are including link to google doc, instead of having the information available on the wiki. Consolidate your documentation in one place so you have one source of truth. 
+1. In your documentation [here](https://liberland-1.gitbook.io/wiki/v/public-documents/blockchain/for-developers-and-testers/testing_guide), you are including link to google doc, instead of having the information available on the wiki. Consolidate your documentation in one place so you have one source of truth.
 
-2. In your Testing Guide, you are including some keys together with the mnemonics used to derive the keys. Make sure you keep all key information interally and preferably private, even if you are using for testing accounts. 
+2. In your Testing Guide, you are including some keys together with the mnemonics used to derive the keys. Make sure you keep all key information interally and preferably private, even if you are using for testing accounts.
 
-3. Docker image works. It seems we can run your node in --dev mode and from chain-spec. Maybe you can include this in your documentation. 
+3. Docker image works. It seems we can run your node in --dev mode and from chain-spec. Maybe you can include this in your documentation.
 
 ```
-2023-04-14 13:26:06 Substrate Node    
-2023-04-14 13:26:06 ✌️  version 3.0.0-dev-unknown    
-2023-04-14 13:26:06 ❤️  by Parity Technologies <admin@parity.io>, 2017-2023    
-2023-04-14 13:26:06 📋 Chain specification: Development    
-2023-04-14 13:26:06 🏷  Node name: spotted-wool-7161    
-2023-04-14 13:26:06 👤 Role: AUTHORITY    
-2023-04-14 13:26:06 💾 Database: RocksDb at /tmp/substrateAV9b9f/chains/dev/db/full    
-2023-04-14 13:26:06 ⛓  Native runtime: Liberland-8 (liberland-node-0.tx1.au10)    
-2023-04-14 13:26:09 [0] 💸 generated 1 npos voters, 1 from validators and 0 nominators    
-2023-04-14 13:26:09 [0] 💸 generated 1 npos targets    
-2023-04-14 13:26:10 You're running on a system with a broken `madvise(MADV_DONTNEED)` implementation. This will result in lower performance.    
-2023-04-14 13:26:27 🔨 Initializing Genesis block/state (state: 0x12f5…4c6f, header-hash: 0x9f82…9441)    
-2023-04-14 13:26:27 👴 Loading GRANDPA authority set from genesis on what appears to be first startup. 
+2023-04-14 13:26:06 Substrate Node
+2023-04-14 13:26:06 ✌️  version 3.0.0-dev-unknown
+2023-04-14 13:26:06 ❤️  by Parity Technologies <admin@parity.io>, 2017-2023
+2023-04-14 13:26:06 📋 Chain specification: Development
+2023-04-14 13:26:06 🏷  Node name: spotted-wool-7161
+2023-04-14 13:26:06 👤 Role: AUTHORITY
+2023-04-14 13:26:06 💾 Database: RocksDb at /tmp/substrateAV9b9f/chains/dev/db/full
+2023-04-14 13:26:06 ⛓  Native runtime: Liberland-8 (liberland-node-0.tx1.au10)
+2023-04-14 13:26:09 [0] 💸 generated 1 npos voters, 1 from validators and 0 nominators
+2023-04-14 13:26:09 [0] 💸 generated 1 npos targets
+2023-04-14 13:26:10 You're running on a system with a broken `madvise(MADV_DONTNEED)` implementation. This will result in lower performance.
+2023-04-14 13:26:27 🔨 Initializing Genesis block/state (state: 0x12f5…4c6f, header-hash: 0x9f82…9441)
+2023-04-14 13:26:27 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.
 ```
 
-###  Concluding Remarks
+### Concluding Remarks
 
 #### Remarks by @JosephKnecht-lab
 
+Based on my evaluation, you have not provided all the deliverables as described in you application. Thus I have to reject this delivery. My advise is to update your initial application with the exact deliverables that you are delivering for this milestone, before it can be accepted.
 
-Based on my evaluation, you have not provided all the deliverables as described in you application. Thus I have to reject this delivery. My advise is to update your initial application with the exact deliverables that you are delivering for this milestone, before it can be accepted. 
-
-Furthermore, a lot of your pallets are derivative work from already existing pallets (such as registry, nfts) and I would expect more original work for grant submission. 
+Furthermore, a lot of your pallets are derivative work from already existing pallets (such as registry, nfts) and I would expect more original work for grant submission.
 
 Note that this evaluation is not binding since I do not work of Web3 Foundation, so the Web3 team can accept your delivery in its current state.
 
@@ -67,45 +64,45 @@ I've added my remarks below in separate chapters:
 - testing instructions can found in the [gitbook](https://liberland-1.gitbook.io/wiki/v/public-documents/blockchain/for-developers-and-testers/dev#run-automated-tests)
 - ~~however, running the node failed with an "cannot deserialize module: UnknownOpcode(192)" error on my machine~~ the node can be run successfully:
 
-    ```bash
-    liberland_substrate % cargo run --release -- --dev
-        (...)
-        Compiling sc-basic-authorship v0.10.0-dev (https://github.com/paritytech/substrate?branch=polkadot-v0.9.37#f38bd667)
-            Finished release [optimized] target(s) in 1m 19s
-            Running `target/release/substrate --dev`
-        2023-05-08 23:53:04 Substrate Node    
-        2023-05-08 23:53:04 ✌️  version 3.0.0-dev-bc60180005a    
-        2023-05-08 23:53:04 ❤️  by Parity Technologies <admin@parity.io>, 2017-2023    
-        2023-05-08 23:53:04 📋 Chain specification: Development    
-        2023-05-08 23:53:04 🏷  Node name: jaded-ticket-2873    
-        2023-05-08 23:53:04 👤 Role: AUTHORITY    
-        2023-05-08 23:53:04 💾 Database: RocksDb at /var/folders/9y/ny58jn152dzcqf036v5cb4nh0000gn/T/substratexgcdzb/chains/dev/db/full    
-        2023-05-08 23:53:04 ⛓  Native runtime: Liberland-8 (liberland-node-0.tx1.au10)    
-        2023-05-08 23:53:05 [0] 💸 generated 1 npos voters, 1 from validators and 0 nominators    
-        2023-05-08 23:53:05 [0] 💸 generated 1 npos targets    
-        2023-05-08 23:53:06 🔨 Initializing Genesis block/state (state: 0x724a…1821, header-hash: 0xd235…2507)    
-        2023-05-08 23:53:06 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.    
-        2023-05-08 23:53:07 👶 Creating empty BABE epoch changes on what appears to be first startup.    
-        2023-05-08 23:53:07 Using default protocol ID "sup" because none is configured in the chain specs    
-        2023-05-08 23:53:07 🏷  Local node identity is: 12D3KooWLq8fs6WMwp783ETG4Ck4Wsu7SKECqcWARkvR7Et6QpdA    
-        2023-05-08 23:53:07 💻 Operating system: macos    
-        2023-05-08 23:53:07 💻 CPU architecture: aarch64    
-        2023-05-08 23:53:07 📦 Highest known block at #0    
-        2023-05-08 23:53:07 〽️ Prometheus exporter started at 127.0.0.1:9615    
-        2023-05-08 23:53:07 Running JSON-RPC HTTP server: addr=127.0.0.1:9933, allowed origins=["*"]    
-        2023-05-08 23:53:07 Running JSON-RPC WS server: addr=127.0.0.1:9944, allowed origins=["*"]    
-        2023-05-08 23:53:07 🏁 CPU score: 718.16 MiBs    
-        2023-05-08 23:53:07 🏁 Memory score: 41.01 GiBs    
-        2023-05-08 23:53:07 🏁 Disk score (seq. writes): 3.05 GiBs    
-        2023-05-08 23:53:07 🏁 Disk score (rand. writes): 442.05 MiBs    
-        2023-05-08 23:53:07 👶 Starting BABE Authorship worker    
-        2023-05-08 23:53:12 🙌 Starting consensus session on top of parent 0xd2352ca73715ed46b279cd3a3e6dbc3f11ed17f710a200d954777405c9842507    
-        2023-05-08 23:53:12 🎁 Prepared block for proposing at 1 (1 ms) [hash: 0xbe8f75bc8fa31df6cebf7a73556205eff75ce20902a19667d6b1190dd484c832; parent_hash: 0xd235…2507; extrinsics (1): [0x0cc8…b01e]]    
-        2023-05-08 23:53:12 🔖 Pre-sealed block for proposal at 1. Hash now 0xe325a2316b5f622f5b7ae76bcc1143af3b8a3ded12e6962098a4b86293950c3f, previously 0xbe8f75bc8fa31df6cebf7a73556205eff75ce20902a19667d6b1190dd484c832.    
-        2023-05-08 23:53:12 👶 New epoch 0 launching at block 0xe325…0c3f (block slot 280597132 >= start slot 280597132).    
-        2023-05-08 23:53:12 👶 Next epoch starts at slot 280597732    
-        2023-05-08 23:53:12 ✨ Imported #1 (0xe325…0c3f)    
-    ```
+  ```bash
+  liberland_substrate % cargo run --release -- --dev
+      (...)
+      Compiling sc-basic-authorship v0.10.0-dev (https://github.com/paritytech/substrate?branch=polkadot-v0.9.37#f38bd667)
+          Finished release [optimized] target(s) in 1m 19s
+          Running `target/release/substrate --dev`
+      2023-05-08 23:53:04 Substrate Node
+      2023-05-08 23:53:04 ✌️  version 3.0.0-dev-bc60180005a
+      2023-05-08 23:53:04 ❤️  by Parity Technologies <admin@parity.io>, 2017-2023
+      2023-05-08 23:53:04 📋 Chain specification: Development
+      2023-05-08 23:53:04 🏷  Node name: jaded-ticket-2873
+      2023-05-08 23:53:04 👤 Role: AUTHORITY
+      2023-05-08 23:53:04 💾 Database: RocksDb at /var/folders/9y/ny58jn152dzcqf036v5cb4nh0000gn/T/substratexgcdzb/chains/dev/db/full
+      2023-05-08 23:53:04 ⛓  Native runtime: Liberland-8 (liberland-node-0.tx1.au10)
+      2023-05-08 23:53:05 [0] 💸 generated 1 npos voters, 1 from validators and 0 nominators
+      2023-05-08 23:53:05 [0] 💸 generated 1 npos targets
+      2023-05-08 23:53:06 🔨 Initializing Genesis block/state (state: 0x724a…1821, header-hash: 0xd235…2507)
+      2023-05-08 23:53:06 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.
+      2023-05-08 23:53:07 👶 Creating empty BABE epoch changes on what appears to be first startup.
+      2023-05-08 23:53:07 Using default protocol ID "sup" because none is configured in the chain specs
+      2023-05-08 23:53:07 🏷  Local node identity is: 12D3KooWLq8fs6WMwp783ETG4Ck4Wsu7SKECqcWARkvR7Et6QpdA
+      2023-05-08 23:53:07 💻 Operating system: macos
+      2023-05-08 23:53:07 💻 CPU architecture: aarch64
+      2023-05-08 23:53:07 📦 Highest known block at #0
+      2023-05-08 23:53:07 〽️ Prometheus exporter started at 127.0.0.1:9615
+      2023-05-08 23:53:07 Running JSON-RPC HTTP server: addr=127.0.0.1:9933, allowed origins=["*"]
+      2023-05-08 23:53:07 Running JSON-RPC WS server: addr=127.0.0.1:9944, allowed origins=["*"]
+      2023-05-08 23:53:07 🏁 CPU score: 718.16 MiBs
+      2023-05-08 23:53:07 🏁 Memory score: 41.01 GiBs
+      2023-05-08 23:53:07 🏁 Disk score (seq. writes): 3.05 GiBs
+      2023-05-08 23:53:07 🏁 Disk score (rand. writes): 442.05 MiBs
+      2023-05-08 23:53:07 👶 Starting BABE Authorship worker
+      2023-05-08 23:53:12 🙌 Starting consensus session on top of parent 0xd2352ca73715ed46b279cd3a3e6dbc3f11ed17f710a200d954777405c9842507
+      2023-05-08 23:53:12 🎁 Prepared block for proposing at 1 (1 ms) [hash: 0xbe8f75bc8fa31df6cebf7a73556205eff75ce20902a19667d6b1190dd484c832; parent_hash: 0xd235…2507; extrinsics (1): [0x0cc8…b01e]]
+      2023-05-08 23:53:12 🔖 Pre-sealed block for proposal at 1. Hash now 0xe325a2316b5f622f5b7ae76bcc1143af3b8a3ded12e6962098a4b86293950c3f, previously 0xbe8f75bc8fa31df6cebf7a73556205eff75ce20902a19667d6b1190dd484c832.
+      2023-05-08 23:53:12 👶 New epoch 0 launching at block 0xe325…0c3f (block slot 280597132 >= start slot 280597132).
+      2023-05-08 23:53:12 👶 Next epoch starts at slot 280597732
+      2023-05-08 23:53:12 ✨ Imported #1 (0xe325…0c3f)
+  ```
 
 - when running the tests, ~~most pass but the ~~"benchmark_block_works"~~ "temp_base_path_works" test fails~~ they all pass:
 

@@ -1,30 +1,30 @@
 # Evaluation
 
 - **Status:** In Progress
-- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/ink-pallet-benchmarking-phase-2.md 
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/ink-pallet-benchmarking-phase-2.md
 - **Milestone:** 3
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| **0a.** | License | <ul><li>[x] </li></ul>| Apache 2.0 / GPLv3 / MIT / Unlicense |  |
-| **0b.** | Documentation | <ul><li>[ ] </li></ul>| [README](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/README.md) |  |
-| **0c.** | Testing and Testing Guide | <ul><li>[ ] </li></ul>| N/A | Not provided |
-| **0d.** | Docker | <ul><li>[x] </li></ul>| Not Applicable. |  |
-| 0e. | Article | <ul><li>[ ] </li></ul>| https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS | Not fully evaluated yet. |
-| 1. | Pallet CPU-intensive extrinsic | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/pallets/template/src/lib.rs | Not fully evaluated yet. |
-| 2. | Ink! CPU-intensive function | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/test/lib.rs | Not fully evaluated yet. |
-| 3. | Solidity-WASM and Solidity-Native CPU-intensive function | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/solidity-sample-contract/sample.sol | Not fully evaluated yet. |
-| 4. | CPU-intensive benchmarks | <ul><li>[ ] </li></ul>| https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS | Not fully evaluated yet. |
-| 5. | Pallet cross-contract call | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/pallets/callee/src/lib.rs | Not fully evaluated yet. |
-| 6. | Ink! cross-contract call | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/inner/lib.rs | Not fully evaluated yet. |
-| 7. | cross-contract benchmarks | <ul><li>[ ] </li></ul>| https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS | Not fully evaluated yet. |
-| 8. | Solidity-WASM and Solidity-Native cross-contract call | <ul><li>[ ] </li></ul>| Add another Solidity contract and invoke it from the sample Solidity contract. (Note: There are [unresolved issues](https://github.com/hyperledger/solang/issues/666) questioning the feasibility of cross-contract calls in Solidity-WASM and Solidity-Native. Nevertheless, an attempt will be made to see if it's possible. |  |
-| 9. | Pallet events | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/pallets/template/src/lib.rs | Not fully evaluated yet. |
-| 10. | Ink! events | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/test/lib.rs | Not fully evaluated yet. |
-| 11. | Solidity-WASM and Solidity-Native events | <ul><li>[ ] </li></ul>| https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/solidity-sample-contract/sample.sol | Not fully evaluated yet. |
-| 12. | Benchmark events across implementations | <ul><li>[ ] </li></ul>| https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS | Not fully evaluated yet. | 
+| Number  | Deliverable                                              | Accepted               | Link                                                                                                                                                                                                                                                                                                                           | Evaluation Notes         |
+| ------- | -------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| **0a.** | License                                                  | <ul><li>[x] </li></ul> | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                                                                                                           |                          |
+| **0b.** | Documentation                                            | <ul><li>[ ] </li></ul> | [README](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/README.md)                                                                                                                                                                                                 |                          |
+| **0c.** | Testing and Testing Guide                                | <ul><li>[ ] </li></ul> | N/A                                                                                                                                                                                                                                                                                                                            | Not provided             |
+| **0d.** | Docker                                                   | <ul><li>[x] </li></ul> | Not Applicable.                                                                                                                                                                                                                                                                                                                |                          |
+| 0e.     | Article                                                  | <ul><li>[ ] </li></ul> | https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS                                                                                                                                                                                       | Not fully evaluated yet. |
+| 1.      | Pallet CPU-intensive extrinsic                           | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/pallets/template/src/lib.rs                                                                                                                                                                                         | Not fully evaluated yet. |
+| 2.      | Ink! CPU-intensive function                              | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/test/lib.rs                                                                                                                                                                                                         | Not fully evaluated yet. |
+| 3.      | Solidity-WASM and Solidity-Native CPU-intensive function | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/solidity-sample-contract/sample.sol                                                                                                                                                                                 | Not fully evaluated yet. |
+| 4.      | CPU-intensive benchmarks                                 | <ul><li>[ ] </li></ul> | https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS                                                                                                                                                                                       | Not fully evaluated yet. |
+| 5.      | Pallet cross-contract call                               | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/pallets/callee/src/lib.rs                                                                                                                                                                                           | Not fully evaluated yet. |
+| 6.      | Ink! cross-contract call                                 | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/inner/lib.rs                                                                                                                                                                                                        | Not fully evaluated yet. |
+| 7.      | cross-contract benchmarks                                | <ul><li>[ ] </li></ul> | https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS                                                                                                                                                                                       | Not fully evaluated yet. |
+| 8.      | Solidity-WASM and Solidity-Native cross-contract call    | <ul><li>[ ] </li></ul> | Add another Solidity contract and invoke it from the sample Solidity contract. (Note: There are [unresolved issues](https://github.com/hyperledger/solang/issues/666) questioning the feasibility of cross-contract calls in Solidity-WASM and Solidity-Native. Nevertheless, an attempt will be made to see if it's possible. |                          |
+| 9.      | Pallet events                                            | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/pallets/template/src/lib.rs                                                                                                                                                                                         | Not fully evaluated yet. |
+| 10.     | Ink! events                                              | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/test/lib.rs                                                                                                                                                                                                         | Not fully evaluated yet. |
+| 11.     | Solidity-WASM and Solidity-Native events                 | <ul><li>[ ] </li></ul> | https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/solidity-sample-contract/sample.sol                                                                                                                                                                                 | Not fully evaluated yet. |
+| 12.     | Benchmark events across implementations                  | <ul><li>[ ] </li></ul> | https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS                                                                                                                                                                                       | Not fully evaluated yet. |
 
 ## Evaluation V1
 
@@ -36,8 +36,8 @@ When I ran the command `./target/release/node-template benchmark extrinsic --lis
 
 ```
 user@localhost:~/Documents/ink-pallet-benchmarking/substrate-node-template-benchmarking$ ./target/release/node-template benchmark extrinsic --list
-2023-07-12 08:59:50 🔨 Initializing Genesis block/state (state: 0x322d…79dd, header-hash: 0x9e7c…0f64)    
-2023-07-12 08:59:50 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.    
+2023-07-12 08:59:50 🔨 Initializing Genesis block/state (state: 0x322d…79dd, header-hash: 0x9e7c…0f64)
+2023-07-12 08:59:50 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.
 
 ====================
 
@@ -94,15 +94,15 @@ This is a bug. Please report it at:
     support.anonymous.an
 ```
 
-This problem prevented me to continue this part. 
+This problem prevented me to continue this part.
 
 I tested the branch solidity-native, and it worked without problems.
 
 ```
 user@localhost:~/Documents/ink-pallet-benchmarking/asd/substrate-node-template-benchmarking$ ./target/release/frontier-template-node benchmark extrinsic --pallet native_solidity --extrinsic generic_call
-2023-07-12 12:06:21 🔨 Initializing Genesis block/state (state: 0x52cf…b3cd, header-hash: 0x70e3…3ab1)    
-2023-07-12 12:06:21 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.    
-2023-07-12 12:06:21 Essential task `basic-block-import-worker` failed. Shutting down service.    
+2023-07-12 12:06:21 🔨 Initializing Genesis block/state (state: 0x52cf…b3cd, header-hash: 0x70e3…3ab1)
+2023-07-12 12:06:21 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.
+2023-07-12 12:06:21 Essential task `basic-block-import-worker` failed. Shutting down service.
 d43593c715fdd31c61141abd04a99fd6822c8558
 8a50db1e0f9452cfd91be8dc004ceb11cb08832f
 d43593c715fdd31c61141abd04a99fd6822c8558
@@ -122,17 +122,17 @@ d43593c715fdd31c61141abd04a99fd6822c8558
 d43593c715fdd31c61141abd04a99fd6822c8558
 8a50db1e0f9452cfd91be8dc004ceb11cb08832f
 9ac1762f00000000000000000000000000000000000000000000000000000000000003e8
-2023-07-12 12:06:21 Running 10 warmups...    
-2023-07-12 12:06:21 Executing block 100 times    
-2023-07-12 12:06:21 Building block, this takes some time...    
-2023-07-12 12:06:22 Extrinsics per block: 174    
-2023-07-12 12:06:22 Running 10 warmups...    
-2023-07-12 12:06:22 Executing block 100 times    
+2023-07-12 12:06:21 Running 10 warmups...
+2023-07-12 12:06:21 Executing block 100 times
+2023-07-12 12:06:21 Building block, this takes some time...
+2023-07-12 12:06:22 Extrinsics per block: 174
+2023-07-12 12:06:22 Running 10 warmups...
+2023-07-12 12:06:22 Executing block 100 times
 2023-07-12 12:06:24 Executing a native_solidity::generic_call extrinsic takes[ns]:
 Total: 13875562
 Min: 133445, Max: 197207
 Average: 138755, Median: 136566, Stddev: 7439.89
-Percentiles 99th, 95th, 75th: 152960, 149610, 139231	
+Percentiles 99th, 95th, 75th: 152960, 149610, 139231
 ```
 
 It was added some unit tests in this application? If it was, let me know how to run them properly.

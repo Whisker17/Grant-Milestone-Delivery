@@ -6,14 +6,14 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/master/LICENSE | |
-| 0b. | Documentation |<ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/tree/next/workflow/workflow_macro |  |
-| 0c. | Testing Guide |<ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/tree/next/workflow/workflow_macro#testing |  |
-| 0d. | Docker File |<ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/Dockerfile |  |
-| 1a. | Workflow Composer: Flow Macro |<ul><li>[x] </li></ul>| https://github.com/HugoByte/aurras/blob/next/workflow/workflow_macro/src/lib.rs |  |
-| 1b. | staking and payout features for scs/substrate-api-client |<ul><li>[x] </li></ul>| https://github.com/scs/substrate-api-client/pull/294 |  |
+| Number | Deliverable                                              | Accepted               | Link                                                                            | Evaluation Notes |
+| ------ | -------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                                                  | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/master/LICENSE                          |                  |
+| 0b.    | Documentation                                            | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/tree/next/workflow/workflow_macro            |                  |
+| 0c.    | Testing Guide                                            | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/tree/next/workflow/workflow_macro#testing    |                  |
+| 0d.    | Docker File                                              | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/Dockerfile                |                  |
+| 1a.    | Workflow Composer: Flow Macro                            | <ul><li>[x] </li></ul> | https://github.com/HugoByte/aurras/blob/next/workflow/workflow_macro/src/lib.rs |                  |
+| 1b.    | staking and payout features for scs/substrate-api-client | <ul><li>[x] </li></ul> | https://github.com/scs/substrate-api-client/pull/294                            |                  |
 
 ## Evaluation V5
 
@@ -116,16 +116,15 @@ Jun 19 07:48:16.693  INFO cargo_tarpaulin::report: Coverage Results:
 || workflow/test_util/src/helper.rs: 66/66
 || workflow/test_util/src/main.rs: 0/1
 || workflow/workflow_apis/src/errors/mod.rs: 0/1
-|| 
+||
 78.28% coverage, 310/396 lines covered
 ```
-
 
 ## Evaluation V4
 
 ### Test
 
-I tried again doing all the configuration, like in Milestone 1, to register the push notification token, but the test failed. 
+I tried again doing all the configuration, like in Milestone 1, to register the push notification token, but the test failed.
 
 ```
 running 3 tests
@@ -150,7 +149,6 @@ failures:
 test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.54s
 ```
 
-
 ## Evaluation V3
 
 ### Docker
@@ -162,12 +160,12 @@ user@localhost:~/Documents/aurras/aurras/workflow/composer$ cat ../examples/Polk
 go: downloading github.com/spf13/cobra v1.6.1
 go: downloading github.com/spf13/pflag v1.0.5
 info: component 'rust-std' for target 'wasm32-wasi' is up to date
-user@localhost:~/Documents/aurras/aurras/workflow/composer$ 
+user@localhost:~/Documents/aurras/aurras/workflow/composer$
 ```
 
 ### Flow Macro
 
-I ran `cargo test --not-fail-fast`, and two tests failed. I noticed the tests for Workflow Macro are passing. 
+I ran `cargo test --not-fail-fast`, and two tests failed. I noticed the tests for Workflow Macro are passing.
 
 ```
 user@localhost:~/Documents/aurras/aurras/workflow$ cargo test --no-fail-fast
@@ -296,13 +294,14 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 ## Evaluation V2
 
-### Documentation 
+### Documentation
 
 It is missing the testing instructions to test the flow macro.
 
-### Docker 
+### Docker
 
 The command to generate the .wasm file got an error but the command for testing the .yaml file worked fine. I remember testing the .wasm generator before and it was working.
+
 ```
 user@localhost:~/Documents/aurras/aurras/workflow/composer$ cat ../examples/PolkadotPayout.yaml | docker run -i --rm hugobyte/workflow-composer generate > output.wasm
 go: downloading github.com/spf13/cobra v1.6.1
@@ -334,7 +333,6 @@ Test Completed
 ### Flow Macro
 
 The instructions to test the flow macro are missing. I assumed the way to test is using `cargo test`. So I ran `cargo test` and got some warnings. All tests passed except one what is skipped.
-
 
 ```
 user@localhost:~/Documents/aurras/aurras$ cargo test
@@ -458,7 +456,7 @@ test tests::openwhisk_test::get_action_list_test ... ok
 test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
 ```
 
-I tried to check the test coverage with `cargo tarpaulin` and got this error. 
+I tried to check the test coverage with `cargo tarpaulin` and got this error.
 
 ```
 Compiling action-substrate-event-processor v0.1.0 (/home/user/Documents/aurras/aurras/actions/substrate-event-processor)
@@ -479,7 +477,7 @@ error: linking with `cc` failed: exit status: 1
       	/usr/bin/ld: /home/user/Documents/aurras/aurras/target/debug/deps/libwasi_experimental_http-38895d6571b1fc77.rlib(wasi_experimental_http-38895d6571b1fc77.wasi_experimental_http.2f4a9342-cgu.9.rcgu.o): in function `wasi_experimental_http::raw::body_read':
       	/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/wasi-experimental-http-0.9.0/src/raw.rs:295: undefined reference to `body_read'
       	collect2: error: ld returned 1 exit status
-     	 
+
   = note: some `extern` functions couldn't be found; some native libraries may need to be installed or have their path specified
   = note: use the `-l` flag to specify native libraries to link
   = note: use the `cargo:rustc-link-lib` directive to specify the native libraries to link with Cargo (see https://doc.rust-lang.org/cargo/reference/build-scripts.html#cargorustc-link-libkindname)
@@ -491,8 +489,6 @@ Error: "Failed to compile tests!\nerror: linking with `cc` failed: exit status: 
 /home/user/Documents/aurras/aurras/target/debug/deps/libwasi_experimental_http-38895d6571b1fc77.rlib(wasi_experimental_http-38895d6571b1fc77.wasi_experimental_http.2f4a9342-cgu.9.rcgu.o): in function `wasi_experimental_http::raw::req':\n      	/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/wasi-experimental-http-0.9.0/src/raw.rs:180: undefined reference to `req'\n      	/usr/bin/ld: /home/user/Documents/aurras/aurras/target/debug/deps/libwasi_experimental_http-38895d6571b1fc77.rlib(wasi_experimental_http-38895d6571b1fc77.wasi_experimental_http.2f4a9342-cgu.9.rcgu.o): in function `wasi_experimental_http::raw::header_get':\n      	/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/wasi-experimental-http-0.9.0/src/raw.rs:237: undefined reference to `header_get'\n      	/usr/bin/ld: /home/user/Documents/aurras/aurras/target/debug/deps/libwasi_experimental_http-38895d6571b1fc77.rlib(wasi_experimental_http-38895d6571b1fc77.wasi_experimental_http.2f4a9342-cgu.9.rcgu.o): in function `wasi_experimental_http::raw::headers_get_all':\n      	/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/wasi-experimental-http-0.9.0/src/raw.rs:267: undefined reference to `headers_get_all'\n      	/usr/bin/ld: /home/user/Documents/aurras/aurras/target/debug/deps/libwasi_experimental_http-38895d6571b1fc77.rlib(wasi_experimental_http-38895d6571b1fc77.wasi_experimental_http.2f4a9342-cgu.9.rcgu.o): in function `wasi_experimental_http::raw::body_read':\n      	/home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/wasi-experimental-http-0.9.0/src/raw.rs:295: undefined reference to `body_read'\n      	collect2: error: ld returned 1 exit status\n      	\n  = note: some `extern` functions couldn't be found; some native libraries may need to be installed or have their path specified\n  = note: use the `-l` flag to specify native libraries to link\n  = note: use the `cargo:rustc-link-lib` directive to specify the native libraries to link with Cargo (see https://doc.rust-lang.org/cargo/reference/build-scripts.html#cargorustc-link-libkindname)\n\n"
 ```
 
-
-
 ### Substrate-API-Client
 
 Could you explain bette this derivable and how to test it?
@@ -503,7 +499,7 @@ Could you explain bette this derivable and how to test it?
 
 Need better instructions how to run and how to test.
 
-### Code Quality 
+### Code Quality
 
 The application fail to build with some warnings and errors:
 
@@ -549,6 +545,7 @@ warning: `composer` (lib) generated 13 warnings
 error: could not compile `composer` due to previous error; 13 warnings emitted
 warning: build failed, waiting for other jobs to finish...
 ```
+
 I ran `cargo clippy` in workflow_marco and got these warnings
 
 ```

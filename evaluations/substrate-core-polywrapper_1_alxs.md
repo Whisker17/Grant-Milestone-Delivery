@@ -5,15 +5,15 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** Alxs, keeganquigley
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [rpc-wrapper](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/LICENSE.md), [signer-provider-js](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/LICENSE.md) | GPL v3 |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [README](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/README.md) | |
-| 0c. | Testing | <ul><li>[x] </li></ul> | [rpc-wrapper](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/src/__tests__/e2e.spec.ts), [signer-provider-js](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/src/__tests__/e2e.spec.ts) | Looks good.
-| 0d. | Article | <ul><li>[x] </li></ul> | [GDoc](https://docs.google.com/document/d/1G7l0sgyEI_X9ucnEkJMUcD_bYo-FeCm9Ot_ETR7giiM/edit#heading=h.uzkbekb348bf) | sent to grantsPR for review |
-| 1. | Schema Definitions | <ul><li>[x] </li></ul> | [Signer-Provider Plugin Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/src/schema.graphql), [RPC Wrapper Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/schema.graphql) | looks good.
-| 2. | `signer-provider` TypeScript Plugin | <ul><li>[x] </li></ul>  | [signer-provider-js](https://github.com/polywrap/integrations/tree/main/protocol/substrate/signer-provider-js) | implemented.
-| 3. | `rpc-wrapper` Wasm Wrapper | <ul><li>[x] </li></ul> | [rpc-wrapper](https://github.com/polywrap/integrations/tree/main/protocol/substrate/rpc-wrapper) | build errors fixed.
+| Number | Deliverable                         | Accepted               | Link                                                                                                                                                                                                                                                                 | Evaluation Notes            |
+| ------ | ----------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| 0a.    | License                             | <ul><li>[x] </li></ul> | [rpc-wrapper](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/LICENSE.md), [signer-provider-js](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/LICENSE.md)                               | GPL v3                      |
+| 0b.    | Documentation                       | <ul><li>[x] </li></ul> | [README](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/README.md)                                                                                                                                                                |                             |
+| 0c.    | Testing                             | <ul><li>[x] </li></ul> | [rpc-wrapper](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/src/__tests__/e2e.spec.ts), [signer-provider-js](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/src/__tests__/e2e.spec.ts) | Looks good.                 |
+| 0d.    | Article                             | <ul><li>[x] </li></ul> | [GDoc](https://docs.google.com/document/d/1G7l0sgyEI_X9ucnEkJMUcD_bYo-FeCm9Ot_ETR7giiM/edit#heading=h.uzkbekb348bf)                                                                                                                                                  | sent to grantsPR for review |
+| 1.     | Schema Definitions                  | <ul><li>[x] </li></ul> | [Signer-Provider Plugin Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/src/schema.graphql), [RPC Wrapper Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/schema.graphql)     | looks good.                 |
+| 2.     | `signer-provider` TypeScript Plugin | <ul><li>[x] </li></ul> | [signer-provider-js](https://github.com/polywrap/integrations/tree/main/protocol/substrate/signer-provider-js)                                                                                                                                                       | implemented.                |
+| 3.     | `rpc-wrapper` Wasm Wrapper          | <ul><li>[x] </li></ul> | [rpc-wrapper](https://github.com/polywrap/integrations/tree/main/protocol/substrate/rpc-wrapper)                                                                                                                                                                     | build errors fixed.         |
 
 ## General Notes
 
@@ -30,6 +30,7 @@ Great communication with the team, who among other things provided a demo applic
 ### General Notes v2
 
 The `yarn codegen && yarn build` command now works after first running `yarn` in the substrate directory.
+
 ```rust
 > docker run --rm -v /home/keegan/integrations/protocol/substrate/rpc-wrapper/.polywrap/wasm/build/project:/project -v /home/keegan/integrations/protocol/substrate/rpc-wrapper/.polywrap/wasm/build/linked-packages:/linked-packages polywrap/vm-base-rs:latest /bin/bash -c "chmod -R 777 /project && chmod -R 777 /linked-packages"
 🔄 Artifacts written to ./build
@@ -39,6 +40,7 @@ Done in 132.15s.
 ```
 
 `yarn deploy` is also successful:
+
 ```rust
 yarn deploy
 yarn run v1.22.19
@@ -68,6 +70,7 @@ Done in 2.04s.
 ```
 
 Thanks for creating the `substrate-wrapper-test` repo, this test completes successfully as noted [here](https://github.com/w3f/Grant-Milestone-Delivery/pull/610#issuecomment-1361709184):
+
 ```rust
 Starting substrate-test-env_substrate-node-template_1 ... done
 ****************************************
@@ -97,6 +100,7 @@ $ npx polywrap codegen
 🔥 Types were generated successfully 🔥
 Done in 2.76s.
 ```
+
 ```rust
 > docker run --rm -v /home/keegan/integrations/protocol/substrate/rpc-wrapper/.polywrap/wasm/build/project:/project -v /home/keegan/integrations/protocol/substrate/rpc-wrapper/.polywrap/wasm/build/linked-packages:/linked-packages polywrap/vm-base-rs:latest /bin/bash -c "chmod -R 777 /project && chmod -R 777 /linked-packages"
 🔄 Artifacts written to ./build
@@ -105,7 +109,8 @@ Done in 2.76s.
 Done in 40.55s.
 ```
 
-`yarn test` works for both `signer-provider-js` and `rpc-wrapper` 
+`yarn test` works for both `signer-provider-js` and `rpc-wrapper`
+
 ```js
  PASS  src/__tests__/e2e.spec.ts (7.721 s)
   e2e
@@ -129,6 +134,7 @@ Snapshots:   0 total
 Time:        7.984 s
 Ran all test suites.
 ```
+
 The only remaining issue is the skipped test. Can this be fixed or refactored?
 **UPDATE:** Test was fixed.
 
@@ -151,7 +157,9 @@ Time:        8.897 s
 Ran all test suites.
 ✨  Done in 9.44s.
 ```
+
 Although there are a number of conflicting packages warnings:
+
 ```js
 console.warn
     @polkadot/util has multiple versions, ensure that there is only one installed.
@@ -171,5 +179,5 @@ console.warn
       9 |   injectExtension(
 
 ```
-For `rpc-wrapper`, Docker compose file build and tests successfully with `yarn build` and `yarn test`. 
 
+For `rpc-wrapper`, Docker compose file build and tests successfully with `yarn build` and `yarn test`.

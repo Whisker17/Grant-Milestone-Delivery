@@ -8,20 +8,20 @@
 
 **Deliverables**
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License |[Apache 2.0](https://github.com/tesseract-one/Substrate.swift/blob/main/LICENSE)| Correct license | 
-| 0b. | Documentation | [README](https://github.com/tesseract-one/Substrate.swift/blob/main/README.md) | Extensive documentation |
-| 0c. | Testing Guide |[gdoc](https://docs.google.com/document/d/1LrINndmDI_1QnrpCwcV62EFKvIxylCHwH7oY5BJJXtY)| Helpful testing guide, all tests are passing. Logs for tests below |
-| 1. | Swift wrapper for C sr25519 library | [Sr25519.swift](https://github.com/tesseract-one/Sr25519.swift) | Wrappers for Sr25519 and Ed25519 library are provided with tests. |
-| 2. | In-App Keychain | [Keychain](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Keychain) | In-app keychain support is delivered, with extensive unit tests. |
-| 3. |  Dynamic Type Registry | [Runtime](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Runtime) | Dynamic type registry is delivered, with unit tests |
-| 4. | Dynamic Value | [Value](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Types/Value) | Dynamic Value serialization and deserialization support is delivered |
-| 5. | RPC | [RPC](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/RPC) | Dynamic RPC calls support is delivered |
-| 6. | Extrinsic Extensions | [Extrinsic](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Extrinsic) | Dynamic ExtrinsicExtensions and ExtrinsicExtra is delivered |
-| 7. | Primitives | [Types](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Types) | Base types StorageKeys, Calls, RuntimeCalls, Events, Block, BlockHeader, Extrinsic, StorageChanges are delivered and work as expected |
-| 8. | Hashers | [Hashers.swift](https://github.com/tesseract-one/Substrate.swift/blob/main/Sources/Substrate/Types/Hashers.swift) | All hashers (Blake2, TwoX, Identity) and AnyHasher(dynamic) are provided and work as expected |
-| 9. | JsonRPC Client | [JsonRPC](https://github.com/tesseract-one/JsonRPC.swift) | Json RPC client with WebSocket and HTTP connections is delivered |
+| Number | Deliverable                         | Link                                                                                                              | Notes                                                                                                                                 |
+| ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                             | [Apache 2.0](https://github.com/tesseract-one/Substrate.swift/blob/main/LICENSE)                                  | Correct license                                                                                                                       |
+| 0b.    | Documentation                       | [README](https://github.com/tesseract-one/Substrate.swift/blob/main/README.md)                                    | Extensive documentation                                                                                                               |
+| 0c.    | Testing Guide                       | [gdoc](https://docs.google.com/document/d/1LrINndmDI_1QnrpCwcV62EFKvIxylCHwH7oY5BJJXtY)                           | Helpful testing guide, all tests are passing. Logs for tests below                                                                    |
+| 1.     | Swift wrapper for C sr25519 library | [Sr25519.swift](https://github.com/tesseract-one/Sr25519.swift)                                                   | Wrappers for Sr25519 and Ed25519 library are provided with tests.                                                                     |
+| 2.     | In-App Keychain                     | [Keychain](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Keychain)                           | In-app keychain support is delivered, with extensive unit tests.                                                                      |
+| 3.     | Dynamic Type Registry               | [Runtime](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Runtime)                   | Dynamic type registry is delivered, with unit tests                                                                                   |
+| 4.     | Dynamic Value                       | [Value](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Types/Value)                 | Dynamic Value serialization and deserialization support is delivered                                                                  |
+| 5.     | RPC                                 | [RPC](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/RPC)                                     | Dynamic RPC calls support is delivered                                                                                                |
+| 6.     | Extrinsic Extensions                | [Extrinsic](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Extrinsic)               | Dynamic ExtrinsicExtensions and ExtrinsicExtra is delivered                                                                           |
+| 7.     | Primitives                          | [Types](https://github.com/tesseract-one/Substrate.swift/tree/main/Sources/Substrate/Types)                       | Base types StorageKeys, Calls, RuntimeCalls, Events, Block, BlockHeader, Extrinsic, StorageChanges are delivered and work as expected |
+| 8.     | Hashers                             | [Hashers.swift](https://github.com/tesseract-one/Substrate.swift/blob/main/Sources/Substrate/Types/Hashers.swift) | All hashers (Blake2, TwoX, Identity) and AnyHasher(dynamic) are provided and work as expected                                         |
+| 9.     | JsonRPC Client                      | [JsonRPC](https://github.com/tesseract-one/JsonRPC.swift)                                                         | Json RPC client with WebSocket and HTTP connections is delivered                                                                      |
 
 # Evaluation V1
 

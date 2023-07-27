@@ -5,16 +5,16 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/blob/main/LICENSE | MIT | 
-| 0b. | Documentation | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/blob/main/assets/scout-vulnerabilities-report.pdf | Ok. | 
-| 0c. | Testing and Testing Guide | <ul><li>[x] </li></ul> | - | - |
-| 0d. | Docker | <ul><li>[x] </li></ul> | - | - |
-| 0e. | Article | <ul><li>[x] </li></ul> | https://blog.coinfabrik.com/vulnerability-detection-in-ink-programming-language | Ok. |
-| **1** | Research | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/tree/main/curated-list-of-vulnerabilities | Ok. |
-| **2** | Development | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/tree/main/vulnerabilities | Ok. |
-| **3** | Development |  <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/tree/main/detectors| Ok. |
+| Number | Deliverable               | Accepted               | Link                                                                                       | Notes |
+| ------ | ------------------------- | ---------------------- | ------------------------------------------------------------------------------------------ | ----- |
+| 0a.    | License                   | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/blob/main/LICENSE                                 | MIT   |
+| 0b.    | Documentation             | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/blob/main/assets/scout-vulnerabilities-report.pdf | Ok.   |
+| 0c.    | Testing and Testing Guide | <ul><li>[x] </li></ul> | -                                                                                          | -     |
+| 0d.    | Docker                    | <ul><li>[x] </li></ul> | -                                                                                          | -     |
+| 0e.    | Article                   | <ul><li>[x] </li></ul> | https://blog.coinfabrik.com/vulnerability-detection-in-ink-programming-language            | Ok.   |
+| **1**  | Research                  | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/tree/main/curated-list-of-vulnerabilities         | Ok.   |
+| **2**  | Development               | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/tree/main/vulnerabilities                         | Ok.   |
+| **3**  | Development               | <ul><li>[x] </li></ul> | https://github.com/CoinFabrik/web3-grant/tree/main/detectors                               | Ok.   |
 
 # General Notes
 
@@ -26,6 +26,6 @@ Regarding the detectors, a minor correction for `cargo-fuzz` I believe Step 3 ha
 
 [Semgrep](https://github.com/CoinFabrik/web3-grant/tree/main/detectors/semgrep) is pretty cool, especially the fact that the rules are written into yaml files. I was able to run the examples.
 
-Overall this is very useful work! 
+Overall this is very useful work!
 
 Please note: No security audits have been performed as part of this evaluation.

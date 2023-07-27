@@ -1,22 +1,19 @@
 # Evaluation Solang
 
-
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/pull/1334
 - **Milestone:** 2
 - **Kusama Identity:** Ha27MB4gKH36ieRPa1T1ASqhUz4sVxMoVmK7o5CS6tXDqjW
 - **Previously successfully merged evaluation:** https://github.com/w3f/Grant-Milestone-Delivery/pull/883
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>|[Link](https://github.com/hyperledger/solang/blob/main/LICENSE)| License is Acceptable. Please write year and owner of cpyright on line 189 of the license. |
-| 0b.  | Documentation |<ul><li>[x] </li></ul>|[Link](https://solang.readthedocs.io/en/latest/running.html#starting-a-new-project)|Good |
-| 0c. | Testing and Testing Guide |<ul><li>[x] </li></ul>|[Link](https://github.com/hyperledger/solang/blob/main/src/bin/cli/test.rs)|Refer to Item 1 in General Notes regarding Testing Guide.|
-| 0d.  | Docker |<ul><li>[] </li></ul>|| No docker image provided. Refer to item 2 in General Notes. |
-| 0e. | Article |<ul><li>[x] </li></ul>|[Link](https://forum.polkadot.network/t/introducing-solang-improvements/3361)| Link provided.|
-| 1.  | Implement Solang projects |<ul><li>[x] </li></ul>|[Link](https://github.com/hyperledger/solang/pull/1392)| See Item 4 in General Notes. |
-
-
+| Number | Deliverable               | Accepted               | Link                                                                                | Evaluation Notes                                                                           |
+| ------ | ------------------------- | ---------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 0a.    | License                   | <ul><li>[x] </li></ul> | [Link](https://github.com/hyperledger/solang/blob/main/LICENSE)                     | License is Acceptable. Please write year and owner of cpyright on line 189 of the license. |
+| 0b.    | Documentation             | <ul><li>[x] </li></ul> | [Link](https://solang.readthedocs.io/en/latest/running.html#starting-a-new-project) | Good                                                                                       |
+| 0c.    | Testing and Testing Guide | <ul><li>[x] </li></ul> | [Link](https://github.com/hyperledger/solang/blob/main/src/bin/cli/test.rs)         | Refer to Item 1 in General Notes regarding Testing Guide.                                  |
+| 0d.    | Docker                    | <ul><li>[] </li></ul>  |                                                                                     | No docker image provided. Refer to item 2 in General Notes.                                |
+| 0e.    | Article                   | <ul><li>[x] </li></ul> | [Link](https://forum.polkadot.network/t/introducing-solang-improvements/3361)       | Link provided.                                                                             |
+| 1.     | Implement Solang projects | <ul><li>[x] </li></ul> | [Link](https://github.com/hyperledger/solang/pull/1392)                             | See Item 4 in General Notes.                                                               |
 
 ## General Notes
 
@@ -52,13 +49,14 @@ Tapped 1 cask (17 files, 33.4KB).
 ==> Linking Binary 'solang-mac-arm' to '/opt/homebrew/bin/solang'
 🍺  solang was successfully installed!
 ```
-Some of the documentaiton seems to be outdated. For example, the following command fails: 
+
+Some of the documentaiton seems to be outdated. For example, the following command fails:
 
 ```
 solang compile --target polkadot examples/polkadot/flipper.sol
 ```
 
-because there is no ***polkadot*** target, but rather ***substrate***. 
+because there is no **_polkadot_** target, but rather **_substrate_**.
 
 ```
 error: invalid value 'polkadot' for '--target <TARGET>'
@@ -67,7 +65,7 @@ error: invalid value 'polkadot' for '--target <TARGET>'
 For more information, try '--help'.
 ```
 
-4. Tested the solang new command and it runs successfully locally. 
+4. Tested the solang new command and it runs successfully locally.
 
 ```
 solang new --target substrate

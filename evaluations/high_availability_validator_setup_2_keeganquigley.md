@@ -5,23 +5,24 @@
 - **Milestone:** 2
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | https://github.com/bright/substrate-raft/blob/milestone-1/LICENSE-GPL3 | GPLv3, Unlicense | 
-| 0b. | Documentation | <ul><li>[x] </li></ul> | Inline | Looks good. | 
-| 0c. | Testing and Testing Guide | <ul><li>[x] </li></ul> | - | Looks good. |
-| 0d. | Docker | <ul><li>[x] </li></ul> | https://github.com/bright/substrate-raft/tree/milestone-1/docker | Looks good. |
-| **1** | Basic Service | <ul><li>[x] </li></ul> | [Authority-service](https://github.com/bright/substrate-raft-setup/blob/milestone-2/bin/authority-service) code | Looks good. |
-| **2** | Getting permission from microservice | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/substrate-raft-setup/blob/milestone-2) for the custom node, and the [implementation](https://github.com/bright/substrate-raft-setup/blob/milestone-2/permission_resolver/src/lib.rs) for the PermissionResolver | Looks good. |
-| **3** | Allow as optional | <ul><li>[x] </li></ul> | Code for the [cli](https://github.com/bright/substrate-raft-setup/blob/milestone-2/node/src/cli.rs) | Looks good. |
-| **4** | Clean up substrate code | <ul><li>[x] </li></ul> | Changes in [code](https://github.com/bright/substrate-raft/commit/f4bab8f2a461271ab52ec6343934f6b84623b6c8) | Looks good. |
-| **5** | Integration test | <ul><li>[x] </li></ul> |  | Looks good. |
+| Number | Deliverable                          | Accepted               | Link                                                                                                                                                                                                                                                   | Notes            |
+| ------ | ------------------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| 0a.    | License                              | <ul><li>[x] </li></ul> | https://github.com/bright/substrate-raft/blob/milestone-1/LICENSE-GPL3                                                                                                                                                                                 | GPLv3, Unlicense |
+| 0b.    | Documentation                        | <ul><li>[x] </li></ul> | Inline                                                                                                                                                                                                                                                 | Looks good.      |
+| 0c.    | Testing and Testing Guide            | <ul><li>[x] </li></ul> | -                                                                                                                                                                                                                                                      | Looks good.      |
+| 0d.    | Docker                               | <ul><li>[x] </li></ul> | https://github.com/bright/substrate-raft/tree/milestone-1/docker                                                                                                                                                                                       | Looks good.      |
+| **1**  | Basic Service                        | <ul><li>[x] </li></ul> | [Authority-service](https://github.com/bright/substrate-raft-setup/blob/milestone-2/bin/authority-service) code                                                                                                                                        | Looks good.      |
+| **2**  | Getting permission from microservice | <ul><li>[x] </li></ul> | [Repository](https://github.com/bright/substrate-raft-setup/blob/milestone-2) for the custom node, and the [implementation](https://github.com/bright/substrate-raft-setup/blob/milestone-2/permission_resolver/src/lib.rs) for the PermissionResolver | Looks good.      |
+| **3**  | Allow as optional                    | <ul><li>[x] </li></ul> | Code for the [cli](https://github.com/bright/substrate-raft-setup/blob/milestone-2/node/src/cli.rs)                                                                                                                                                    | Looks good.      |
+| **4**  | Clean up substrate code              | <ul><li>[x] </li></ul> | Changes in [code](https://github.com/bright/substrate-raft/commit/f4bab8f2a461271ab52ec6343934f6b84623b6c8)                                                                                                                                            | Looks good.      |
+| **5**  | Integration test                     | <ul><li>[x] </li></ul> |                                                                                                                                                                                                                                                        | Looks good.      |
 
 # General Notes
 
 ## Tests
 
 6 tests pass successfully in `authority-service`:
+
 ```rust
 running 6 tests
 test config::test::next_test ... ok
@@ -37,6 +38,7 @@ test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 Running on Ubuntu 20.04
 
 Running `cargo test` in `substrate-raft-setup` fails with:
+
 ```rust
 error: failed to run custom build command for `openssl-sys v0.9.80`
 
@@ -107,8 +109,10 @@ Caused by:
 
   ', /home/ubuntu/.cargo/registry/src/index.crates.io-6f17d22bba15001f/openssl-sys-0.9.80/build/find_normal.rs:191:5
   note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  ```
-  I tried installing OpenSSL tools with `sudo apt-get install libssl-dev` to no avail. Also tried `sudo apt install pkg-config`. That works to fix pkg-config error but then it displays an old Rust issue that has been fixed since this toolchain was released:
+```
+
+I tried installing OpenSSL tools with `sudo apt-get install libssl-dev` to no avail. Also tried `sudo apt install pkg-config`. That works to fix pkg-config error but then it displays an old Rust issue that has been fixed since this toolchain was released:
+
 ```rust
 error: `sp_trie::recorder::Recorder<H>::as_trie_recorder::{opaque#0}<'_>` does not live long enough
    --> /home/ubuntu/.cargo/git/checkouts/substrate-raft-e8c7ccdd76a0db97/f4bab8f/primitives/state-machine/src/trie_backend_essence.rs:181:44
@@ -126,30 +130,31 @@ error: could not compile `sp-state-machine` due to 2 previous errors
 ```
 
 Docker also fails to run:
-  ```rust
-  ~/substrate-raft-setup ~/substrate-raft-setup
+
+```rust
+~/substrate-raft-setup ~/substrate-raft-setup
 Building bright/substrate-raft-setup:latest docker image, hang on!
 [+] Building 3.7s (9/14)
- => [internal] load build definition from Dockerfile                                                                  0.0s
- => => transferring dockerfile: 1.53kB                                                                                0.0s
- => [internal] load .dockerignore                                                                                     0.0s
- => => transferring context: 2B                                                                                       0.0s
- => [internal] load metadata for docker.io/paritytech/ci-linux:1c0fde6a-20220811                                      1.5s
- => [internal] load metadata for docker.io/library/ubuntu:20.04                                                       1.3s
- => CANCELED [builder 1/4] FROM docker.io/paritytech/ci-linux:1c0fde6a-20220811@sha256:4e8c072ea12bc17d99cb531adb58d  2.2s
- => => resolve docker.io/paritytech/ci-linux:1c0fde6a-20220811@sha256:4e8c072ea12bc17d99cb531adb58dea5a4c7d4880a8a86  0.0s
- => => sha256:a4115f36e7e5073366d03bde65ca2cb5e4c8e443c1b1f316b6aa4179fab42000 1.05MB / 527.84MB                      2.2s
- => => sha256:660ac983e23e1bd2d0e97d5d2e468994e007da287a2e395ca13e53b8571e5283 2.10MB / 337.09MB                      2.2s
- => => sha256:4e8c072ea12bc17d99cb531adb58dea5a4c7d4880a8a86525052d24d1454e89e 761B / 761B                            0.0s
- => => sha256:a63a944a77f9ebe6cbf1d5100a7c9c07bb3fd3181d298bb166c8a1ce75b81aec 9.38kB / 9.38kB                        0.0s
- => => sha256:751ef25978b2971e15496369695ba51ed5b1b9aaca7e37b18a173d754d1ca820 8.39MB / 27.14MB                       2.2s
- => [internal] load build context                                                                                     0.6s
- => => transferring context: 50.35MB                                                                                  0.5s
- => [stage-1 1/5] FROM docker.io/library/ubuntu:20.04@sha256:db8bf6f4fb351aa7a26e27ba2686cf35a6a409f65603e59d4c203e5  0.0s
- => CACHED [stage-1 2/5] RUN apt-get update                                                                           0.0s
- => ERROR [stage-1 3/5] RUN apt-get install -y openssl                                                                2.2s
+=> [internal] load build definition from Dockerfile                                                                  0.0s
+=> => transferring dockerfile: 1.53kB                                                                                0.0s
+=> [internal] load .dockerignore                                                                                     0.0s
+=> => transferring context: 2B                                                                                       0.0s
+=> [internal] load metadata for docker.io/paritytech/ci-linux:1c0fde6a-20220811                                      1.5s
+=> [internal] load metadata for docker.io/library/ubuntu:20.04                                                       1.3s
+=> CANCELED [builder 1/4] FROM docker.io/paritytech/ci-linux:1c0fde6a-20220811@sha256:4e8c072ea12bc17d99cb531adb58d  2.2s
+=> => resolve docker.io/paritytech/ci-linux:1c0fde6a-20220811@sha256:4e8c072ea12bc17d99cb531adb58dea5a4c7d4880a8a86  0.0s
+=> => sha256:a4115f36e7e5073366d03bde65ca2cb5e4c8e443c1b1f316b6aa4179fab42000 1.05MB / 527.84MB                      2.2s
+=> => sha256:660ac983e23e1bd2d0e97d5d2e468994e007da287a2e395ca13e53b8571e5283 2.10MB / 337.09MB                      2.2s
+=> => sha256:4e8c072ea12bc17d99cb531adb58dea5a4c7d4880a8a86525052d24d1454e89e 761B / 761B                            0.0s
+=> => sha256:a63a944a77f9ebe6cbf1d5100a7c9c07bb3fd3181d298bb166c8a1ce75b81aec 9.38kB / 9.38kB                        0.0s
+=> => sha256:751ef25978b2971e15496369695ba51ed5b1b9aaca7e37b18a173d754d1ca820 8.39MB / 27.14MB                       2.2s
+=> [internal] load build context                                                                                     0.6s
+=> => transferring context: 50.35MB                                                                                  0.5s
+=> [stage-1 1/5] FROM docker.io/library/ubuntu:20.04@sha256:db8bf6f4fb351aa7a26e27ba2686cf35a6a409f65603e59d4c203e5  0.0s
+=> CACHED [stage-1 2/5] RUN apt-get update                                                                           0.0s
+=> ERROR [stage-1 3/5] RUN apt-get install -y openssl                                                                2.2s
 ------
- > [stage-1 3/5] RUN apt-get install -y openssl:
+> [stage-1 3/5] RUN apt-get install -y openssl:
 #7 0.363 Reading package lists...
 #7 0.953 Building dependency tree...
 #7 1.035 Reading state information...
@@ -174,17 +179,19 @@ Building bright/substrate-raft-setup:latest docker image, hang on!
 ------
 process "/bin/sh -c apt-get install -y openssl" did not complete successfully: exit code: 100
 ```
+
 ## Update 2
 
 Tried Docker on Ubuntu and fails with this:
+
 ```rust
 error: failed to run custom build command for `node-template-runtime v4.0.0-dev (/node-template/runtime)`
-#0 563.4 
+#0 563.4
 #0 563.4 Caused by:
 #0 563.4   process didn't exit successfully: `/node-template/target/release/build/node-template-runtime-37c0b72b2eac5a32/build-script-build` (exit status: 1)
 #0 563.4   --- stderr
 #0 563.4   Rust WASM toolchain not installed, please install it!
-#0 563.4 
+#0 563.4
 #0 563.4   Further error information:
 #0 563.4   ------------------------------------------------------------
 #0 563.4      Compiling wasm-test v1.0.0 (/tmp/.tmpyZyoTz)
@@ -193,13 +200,13 @@ error: failed to run custom build command for `node-template-runtime v4.0.0-dev 
 #0 563.4     = note: the `wasm32-unknown-unknown` target may not be installed
 #0 563.4     = help: consider downloading the target with `rustup target add wasm32-unknown-unknown`
 #0 563.4     = help: consider building the standard library from source with `cargo build -Zbuild-std`
-#0 563.4 
+#0 563.4
 #0 563.4   error: requires `sized` lang_item
-#0 563.4 
+#0 563.4
 #0 563.4   For more information about this error, try `rustc --explain E0463`.
 #0 563.4   error: could not compile `wasm-test` due to 2 previous errors
 #0 563.4   ------------------------------------------------------------
-#0 563.4 
+#0 563.4
 #0 563.4 warning: build failed, waiting for other jobs to finish...
 ------
 Dockerfile:9
@@ -207,19 +214,21 @@ Dockerfile:9
    7 |     WORKDIR /node-template
    8 |     COPY . .
    9 | >>> RUN cargo build --locked --release
-  10 |     
+  10 |
   11 |     # This is the 2nd stage: a very small image where we copy the binary."
 --------------------
 ERROR: failed to solve: process "/bin/sh -c cargo build --locked --release" did not complete successfully: exit code: 101
 ```
+
 ## Update 3
 
 Docker runs successfully in Codespaces:
+
 ```js
 @keeganquigley ➜ /workspaces/substrate-raft (milestone-2) $ bash docker/build.sh
 /workspaces/substrate-raft /workspaces/substrate-raft
 Building parity/substrate:latest docker image, hang on!
-[+] Building 5510.4s (20/20) FINISHED                                                                                                                                                                                     
+[+] Building 5510.4s (20/20) FINISHED
  => [internal] load .dockerignore                                                                                                                                                                                    0.3s
  => => transferring context: 99B                                                                                                                                                                                     0.0s
  => [internal] load build definition from substrate_builder.Dockerfile                                                                                                                                               0.5s
@@ -248,7 +257,7 @@ Building parity/substrate:latest docker image, hang on!
  => => extracting sha256:f4fff1446f7a40d17230f286942b0b1ee3ee84bc63de77562f72763ea4e3bafc                                                                                                                           33.0s
  => => extracting sha256:a1188d3531963af14d12a749ea904f2c144d4085ff80590d6e0279263007c748                                                                                                                           17.1s
  => [stage-1 2/8] RUN apt-get update                                                                                                                                                                                 8.3s
- => [stage-1 3/8] RUN apt-get install -y openssl                                                                                                                                                                     8.9s 
+ => [stage-1 3/8] RUN apt-get install -y openssl                                                                                                                                                                     8.9s
  => [builder 2/4] WORKDIR /substrate                                                                                                                                                                                 0.3s
  => [builder 3/4] COPY . /substrate                                                                                                                                                                                  4.2s
  => [builder 4/4] RUN cargo build --locked --release                                                                                                                                                              5391.6s
@@ -270,9 +279,11 @@ parity/substrate   latest    6db86cc74546   31 seconds ago   319MB
 parity/substrate   v3.0.0    6db86cc74546   31 seconds ago   319MB
 /workspaces/substrate-raft
 ```
+
 Had a call with the team and they gave demo of the tech. Essentially the issues were on my end as I wasn't running good enough hardware specs. They were able to show the basic boolean logic working, and see the `permissionResolver` trait in action. `Authority-Service` code could use more inline comments.
 
 `cargo test` successful but with some warnings:
+
 ```rust
 warning: using `.borrow()` on a double reference, which returns `&KArg1` instead of borrowing the inner type
   --> frame/support/src/storage/generator/double_map.rs:81:22
@@ -324,8 +335,9 @@ warning: using `.borrow()` on a double reference, which returns `&KeyArg` instea
 330 |             let key_hashed = key.borrow().using_encoded(OldHasher::hash);
     |                                 ^^^^^^^^^
 ```
-  
-  **Linting:**: Cargo clippy produces the following warnings for `substrate-raft`. Consider fixing for next milestone.
+
+**Linting:**: Cargo clippy produces the following warnings for `substrate-raft`. Consider fixing for next milestone.
+
 ```rust
 warning: associated function `project_ref` is never used
   --> client/telemetry/src/transport.rs:80:1

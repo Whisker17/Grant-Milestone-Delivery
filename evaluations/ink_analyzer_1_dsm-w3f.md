@@ -6,13 +6,13 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| **0a.** | License| <ul><li>[x] </li></ul>| [Apache 2.0](https://github.com/ink-analyzer/ink-analyzer/blob/master/LICENSE-APACHE) and [MIT](https://github.com/ink-analyzer/ink-analyzer/blob/master/LICENSE-MIT).|  |
-| **0b.** | Documentation| <ul><li>[x] </li></ul>| [README](https://github.com/ink-analyzer/ink-analyzer#readme) on GitHub, rustdoc documentation on docs.rs for [semantic analyzer crate (ink-analyzer)](https://docs.rs/ink-analyzer/latest/ink_analyzer/), [IR crate (ink-analyzer-ir)](https://docs.rs/ink-analyzer-ir/latest/ink_analyzer_ir/), [proc-macro crate (ink-analyzer-macro)](https://docs.rs/ink-analyzer-macro/latest/ink_analyzer_macro/) and extensive inline source documentation in all 3 crates. |  |
-| **0c.** | Testing and Testing Guide| <ul><li>[x] </li></ul>| [Testing guide](https://github.com/ink-analyzer/ink-analyzer#testing).| |
-| **0d.** | Docker| <ul><li>[x] </li></ul>| [Dockerfile](https://github.com/ink-analyzer/ink-analyzer/blob/master/Dockerfile).||
-| 1.      | Semantic Analyzer: Rust library crate: Diagnostic errors | <ul><li>[x] </li></ul>| [GitHub repository](https://github.com/ink-analyzer/ink-analyzer), [Semantic analyzer crate (ink-analyzer)](https://crates.io/crates/ink-analyzer), [IR crate (ink-analyzer-ir)](https://crates.io/crates/ink-analyzer-ir) and [proc-macro crate (ink-analyzer-macro)](https://crates.io/crates/ink-analyzer-macro).| Not fully evaluated yet |
+| Number  | Deliverable                                              | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Evaluation Notes        |
+| ------- | -------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| **0a.** | License                                                  | <ul><li>[x] </li></ul> | [Apache 2.0](https://github.com/ink-analyzer/ink-analyzer/blob/master/LICENSE-APACHE) and [MIT](https://github.com/ink-analyzer/ink-analyzer/blob/master/LICENSE-MIT).                                                                                                                                                                                                                                                                                              |                         |
+| **0b.** | Documentation                                            | <ul><li>[x] </li></ul> | [README](https://github.com/ink-analyzer/ink-analyzer#readme) on GitHub, rustdoc documentation on docs.rs for [semantic analyzer crate (ink-analyzer)](https://docs.rs/ink-analyzer/latest/ink_analyzer/), [IR crate (ink-analyzer-ir)](https://docs.rs/ink-analyzer-ir/latest/ink_analyzer_ir/), [proc-macro crate (ink-analyzer-macro)](https://docs.rs/ink-analyzer-macro/latest/ink_analyzer_macro/) and extensive inline source documentation in all 3 crates. |                         |
+| **0c.** | Testing and Testing Guide                                | <ul><li>[x] </li></ul> | [Testing guide](https://github.com/ink-analyzer/ink-analyzer#testing).                                                                                                                                                                                                                                                                                                                                                                                              |                         |
+| **0d.** | Docker                                                   | <ul><li>[x] </li></ul> | [Dockerfile](https://github.com/ink-analyzer/ink-analyzer/blob/master/Dockerfile).                                                                                                                                                                                                                                                                                                                                                                                  |                         |
+| 1.      | Semantic Analyzer: Rust library crate: Diagnostic errors | <ul><li>[x] </li></ul> | [GitHub repository](https://github.com/ink-analyzer/ink-analyzer), [Semantic analyzer crate (ink-analyzer)](https://crates.io/crates/ink-analyzer), [IR crate (ink-analyzer-ir)](https://crates.io/crates/ink-analyzer-ir) and [proc-macro crate (ink-analyzer-macro)](https://crates.io/crates/ink-analyzer-macro).                                                                                                                                                | Not fully evaluated yet |
 
 ## Evaluation V2
 
@@ -207,7 +207,7 @@ May 05 08:33:40.217  INFO cargo_tarpaulin::report: Coverage Results:
 || crates/macro/src/from_syntax.rs: 20/20
 || crates/macro/src/lib.rs: 0/5
 || crates/macro/src/utils.rs: 15/21
-|| 
+||
 87.15% coverage, 1384/1588 lines covered
 ```
 

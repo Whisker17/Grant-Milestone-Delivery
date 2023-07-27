@@ -1,24 +1,25 @@
 # Evaluation
 
 - Status: Accepted
-- Application Document:  https://github.com/w3f/Grants-Program/blob/master/applications/ink-pallet-benchmarking.md
+- Application Document: https://github.com/w3f/Grants-Program/blob/master/applications/ink-pallet-benchmarking.md
 - Milestone: 2
-- Previously successfully merged evaluation: All by keeganquigley_
+- Previously successfully merged evaluation: All by keeganquigley\_
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | :------: | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/17be56bb0b3d3e209c97877854b7c2b8ed103513/LICENSE) | Unlicense |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [Demo](https://talenticaall-my.sharepoint.com/:v:/g/personal/nikhil_desai_talentica_com/Ea_GbRhTgKBAr1bdCRsT1ZwBvIwtZZrm5Fhkom49lYTMUQ?e=kfU4b4) | Was able to complete the full demo. Would be nice to see more docs explaining the different commands and switches, such as `list`, etc. |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [Unit tests](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/test/lib.rs) | Tests all pass. |
-| 0d. | Article | <ul><li>[x] </li></ul> | [Article](https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS) | Ok.
-| 1.  | Solidity smart contract (native and WASM): basic read & write | <ul><li>[x] </li></ul> | [Solidity WASM](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/tree/contracts-benchmarking/solidity-sample-contract) [Solidity Native](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/solidity-native/template/benchmark-sample/build/contracts/BenchmarkSample.json) | Ok. |
-| 2.  | Adapt the benchmarking framework | <ul><li>[x] </li></ul> | - | Ok. |
+| Number | Deliverable                                                   |        Accepted        | Link                                                                                                                                                                                                                                                                                                                                       | Evaluation Notes                                                                                                                        |
+| ------ | ------------------------------------------------------------- | :--------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                                                       | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/17be56bb0b3d3e209c97877854b7c2b8ed103513/LICENSE)                                                                                                                                                                                            | Unlicense                                                                                                                               |
+| 0b.    | Documentation                                                 | <ul><li>[x] </li></ul> | [Demo](https://talenticaall-my.sharepoint.com/:v:/g/personal/nikhil_desai_talentica_com/Ea_GbRhTgKBAr1bdCRsT1ZwBvIwtZZrm5Fhkom49lYTMUQ?e=kfU4b4)                                                                                                                                                                                           | Was able to complete the full demo. Would be nice to see more docs explaining the different commands and switches, such as `list`, etc. |
+| 0c.    | Testing Guide                                                 | <ul><li>[x] </li></ul> | [Unit tests](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/contracts-benchmarking/test/lib.rs)                                                                                                                                                                                                       | Tests all pass.                                                                                                                         |
+| 0d.    | Article                                                       | <ul><li>[x] </li></ul> | [Article](https://talenticaall-my.sharepoint.com/:w:/g/personal/nikhil_desai_talentica_com/ESEnZ3pFvdhHi4_8VLlQLWYBKEhAuUz5_ee5gSPnKYMSkw?e=zZmrMS)                                                                                                                                                                                        | Ok.                                                                                                                                     |
+| 1.     | Solidity smart contract (native and WASM): basic read & write | <ul><li>[x] </li></ul> | [Solidity WASM](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/tree/contracts-benchmarking/solidity-sample-contract) [Solidity Native](https://github.com/Nikhil-Desai-Talentica/substrate-node-template-benchmarking/blob/solidity-native/template/benchmark-sample/build/contracts/BenchmarkSample.json) | Ok.                                                                                                                                     |
+| 2.     | Adapt the benchmarking framework                              | <ul><li>[x] </li></ul> | -                                                                                                                                                                                                                                                                                                                                          | Ok.                                                                                                                                     |
 
 # General Notes
 
 When running `cargo test` in the `benchmarking` branch, I'm getting an error about `protoc` not being installed. This went away with `sudo apt install protoc-compiler`.
 
 I'm getting more errors about certain libraries:
+
 ```rust
 error: failed to run custom build command for `librocksdb-sys v0.8.3+7.4.4`
 
@@ -31,9 +32,10 @@ warning: build failed, waiting for other jobs to finish...
 ```
 
 **UPDATE:** Works when using `nightly-2022-12-30` toolchain. I am able to run all the available benchmarking tests (sample):
+
 ```rust
-2023-04-01 20:24:33 🔨 Initializing Genesis block/state (state: 0x025c…0dec, header-hash: 0x2ec5…5346)    
-2023-04-01 20:24:33 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.    
+2023-04-01 20:24:33 🔨 Initializing Genesis block/state (state: 0x025c…0dec, header-hash: 0x2ec5…5346)
+2023-04-01 20:24:33 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.
 5Fan4r49ckuMk9SKivhoRyDX3T7KnJ9o9ouLUo4EkmkiiUYS
 
 5Fan4r49ckuMk9SKivhoRyDX3T7KnJ9o9ouLUo4EkmkiiUYS
@@ -50,18 +52,19 @@ warning: build failed, waiting for other jobs to finish...
 
 5Fan4r49ckuMk9SKivhoRyDX3T7KnJ9o9ouLUo4EkmkiiUYS
 
-2023-04-01 20:24:35 Running 10 warmups...    
-2023-04-01 20:24:35 Executing block 100 times    
-2023-04-01 20:24:35 Building block, this takes some time...    
-2023-04-01 20:24:39 Extrinsics per block: 1869    
-2023-04-01 20:24:39 Running 10 warmups...    
-2023-04-01 20:24:43 Executing block 100 times    
+2023-04-01 20:24:35 Running 10 warmups...
+2023-04-01 20:24:35 Executing block 100 times
+2023-04-01 20:24:35 Building block, this takes some time...
+2023-04-01 20:24:39 Extrinsics per block: 1869
+2023-04-01 20:24:39 Running 10 warmups...
+2023-04-01 20:24:43 Executing block 100 times
 2023-04-01 20:25:21 Executing a contract-test::get_num extrinsic takes[ns]:
 Total: 20310808
 Min: 195696, Max: 263040
 Average: 203108, Median: 199061, Stddev: 12145.57
 Percentiles 99th, 95th, 75th: 240891, 234942, 200436
 ```
+
 ## Solidity
 
 Solidity benchmarking works both for `solang` compiled contracts as well as native. I'm able to build and run the Frontier node with `cargo build --release --features=runtime-benchmarks`. Everything works as intended. Would be cool to see more complex logic added in the future such as for cross-contract calls.

@@ -1,23 +1,23 @@
 # Evaluation
 
 - **Status:** Accepted
-- **Application Document:**  https://github.com/w3f/Grants-Program/blob/master/applications/fair_squares.md
+- **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/fair_squares.md
 - **Milestone:** 5
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/fair-squares_4_alxs.md
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |                                           
-| 0a. | License: Apache 2.0 | <ul><li>[x] </li></ul> |[Link](https://github.com/Fair-Squares/fair-squares/blob/main/LICENSE)| | 
-| 0b.  | Documentation & Guide | <ul><li>[x] </li></ul> |[Link](https://docs.google.com/document/d/1M98KXcTvXFI75U4JnqlHuoa03x_YZQ0ZKLWWYDGAUl8/edit?usp=sharing)| | 
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> |[Link](https://github.com/Fair-Squares/fair-squares#run-all-tests) | | 
-| 0d. | Dockerfile | <ul><li>[x] </li></ul>|[Link](https://github.com/Fair-Squares/fair-squares/blob/main/Dockerfile) | | 
-| 0e.  | Article |<ul><li>[x] </li></ul>|[Link](https://docs.google.com/document/d/1DQeoj0VDqoFjVu3lGxe--iD6OmyWnh6cO4lbiHhZXQ4/edit?usp=sharing)| The article will be published once the milestone is approved. | 
-| 1.  | tenancy-pallet |<ul><li>[x] </li></ul>|[Link](https://github.com/Fair-Squares/fair-squares/tree/main/pallets/tenancy)| **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1`|
-| 2.  | payment-pallet |<ul><li>[x] </li></ul>|[Link](https://github.com/Fair-Squares/fair-squares/tree/main/pallets/payment)| **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1`|
-| 3.  | asset_management-pallet | <ul><li>[x] </li></ul> |[Link](https://github.com/Fair-Squares/fair-squares/tree/main/pallets/asset_management)| **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1`|
-| 4.  | fs-app | <ul><li>[x] </li></ul> |[Link](https://github.com/Fair-Squares/fs-dapp)| |
-| 4.  | fs-node M5 |<ul><li>[x] </li></ul>|[Link](https://github.com/Fair-Squares/fair-squares)| **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1`|
+| Number | Deliverable             | Accepted               | Link                                                                                                     | Evaluation Notes                                                             |
+| ------ | ----------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| 0a.    | License: Apache 2.0     | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares/blob/main/LICENSE)                                   |                                                                              |
+| 0b.    | Documentation & Guide   | <ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1M98KXcTvXFI75U4JnqlHuoa03x_YZQ0ZKLWWYDGAUl8/edit?usp=sharing) |                                                                              |
+| 0c.    | Testing Guide           | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares#run-all-tests)                                       |                                                                              |
+| 0d.    | Dockerfile              | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares/blob/main/Dockerfile)                                |                                                                              |
+| 0e.    | Article                 | <ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1DQeoj0VDqoFjVu3lGxe--iD6OmyWnh6cO4lbiHhZXQ4/edit?usp=sharing) | The article will be published once the milestone is approved.                |
+| 1.     | tenancy-pallet          | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares/tree/main/pallets/tenancy)                           | **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1` |
+| 2.     | payment-pallet          | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares/tree/main/pallets/payment)                           | **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1` |
+| 3.     | asset_management-pallet | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares/tree/main/pallets/asset_management)                  | **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1` |
+| 4.     | fs-app                  | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fs-dapp)                                                          |                                                                              |
+| 4.     | fs-node M5              | <ul><li>[x] </li></ul> | [Link](https://github.com/Fair-Squares/fair-squares)                                                     | **tag**: v0.1-m5 </br> **commit**:`3f59df53b51183622aa34b9d4ee767a1ab4563b1` |
 
 ## Evaluation V3
 
@@ -106,7 +106,7 @@ warning: the following packages contain code that will be rejected by a future v
 note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 10`
 ```
 
-I ran `cargo tarpaulin` and the testing coverage on the pallets is good in almost all parts besides Asset Management functions. 
+I ran `cargo tarpaulin` and the testing coverage on the pallets is good in almost all parts besides Asset Management functions.
 
 Tenancy pallet:
 
@@ -138,7 +138,6 @@ Assets Management pallet:
 || src/tests.rs: 340/341
 || src/types.rs: 26/27
 ```
-
 
 I ran `yarn lint` and got some warnings:
 

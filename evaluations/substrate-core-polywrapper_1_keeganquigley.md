@@ -5,16 +5,15 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-
-| Number | Deliverable   | Accepted | Link                                                                                 | Notes |
-|--------|---------------|----------|----------------------------------------------------------------------------|-------|
-| 0a.    | License   | <ul><li>[x] </li></ul> | [License](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/LICENSE.md)            |       |
-| 0b.    | Documentation       | <ul><li>[x] </li></ul> | https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/src/__tests__/e2e.spec.ts                      | Looks good.   |
-| 0c.    | Testing      | <ul><li>[x] </li></ul> | https://github.com/bsn-si/rubeus-smartcontract/blob/main/README.md#how-to | Looks good. |
-| 0d.    | Article         | <ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1G7l0sgyEI_X9ucnEkJMUcD_bYo-FeCm9Ot_ETR7giiM/edit#heading=h.uzkbekb348bf)            | See notes below.      |
-| 1.     | Schema Definitions | <ul><li>[x] </li></ul> | [Signer-Provider Plugin Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/src/schema.graphql), [RPC Wrapper Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/schema.graphql) | Looks good.      |
-| 2.     | `signer-provider` TypeScript Plugin | <ul><li>[x] </li></ul> | [Link](https://github.com/polywrap/integrations/tree/main/protocol/substrate/signer-provider-js)
-| 3.     | `rpc-wrapper` Wasm Wrapper | <ul><li>[x] </li></ul> | [Link](https://github.com/polywrap/integrations/tree/main/protocol/substrate/rpc-wrapper)
+| Number | Deliverable                         | Accepted               | Link                                                                                                                                                                                                                                                             | Notes            |
+| ------ | ----------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                             | <ul><li>[x] </li></ul> | [License](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/LICENSE.md)                                                                                                                                                          |                  |
+| 0b.    | Documentation                       | <ul><li>[x] </li></ul> | https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/src/__tests__/e2e.spec.ts                                                                                                                                                      | Looks good.      |
+| 0c.    | Testing                             | <ul><li>[x] </li></ul> | https://github.com/bsn-si/rubeus-smartcontract/blob/main/README.md#how-to                                                                                                                                                                                        | Looks good.      |
+| 0d.    | Article                             | <ul><li>[x] </li></ul> | [Link](https://docs.google.com/document/d/1G7l0sgyEI_X9ucnEkJMUcD_bYo-FeCm9Ot_ETR7giiM/edit#heading=h.uzkbekb348bf)                                                                                                                                              | See notes below. |
+| 1.     | Schema Definitions                  | <ul><li>[x] </li></ul> | [Signer-Provider Plugin Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/signer-provider-js/src/schema.graphql), [RPC Wrapper Link](https://github.com/polywrap/integrations/blob/main/protocol/substrate/rpc-wrapper/schema.graphql) | Looks good.      |
+| 2.     | `signer-provider` TypeScript Plugin | <ul><li>[x] </li></ul> | [Link](https://github.com/polywrap/integrations/tree/main/protocol/substrate/signer-provider-js)                                                                                                                                                                 |
+| 3.     | `rpc-wrapper` Wasm Wrapper          | <ul><li>[x] </li></ul> | [Link](https://github.com/polywrap/integrations/tree/main/protocol/substrate/rpc-wrapper)                                                                                                                                                                        |
 
 # General Notes
 
@@ -36,8 +35,10 @@ Time:        8.897 s
 Ran all test suites.
 ✨  Done in 9.44s.
 ```
+
 Although there are a number of conflicting packages warnings:
-```js
+
+````js
 console.warn
     @polkadot/util has multiple versions, ensure that there is only one installed.
     Either remove and explicitly install matching versions or dedupe using your package manager.
@@ -56,5 +57,6 @@ console.warn
       8 | export function mockExtension(): void {
       9 |   injectExtension(
       ```
-      
-      
+
+
+````

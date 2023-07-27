@@ -5,14 +5,14 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by alxs
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/AstarNetwork/plonk/blob/master/LICENSE) | MPL-2.0
-| 0b. | Documentation | <ul><li>[x] </li></ul> | inline documentation, [rustdocs](https://docs.rs/plonk-pallet/latest/plonk_pallet/) | tutorial already covered by deliverable 0d.
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [tests](https://github.com/AstarNetwork/plonk/blob/master/src/tests.rs) | Minimal but sufficient unit tests
-| 0d. | Article/Tutorial | <ul><li>[x] </li></ul> | [Documentation](https://github.com/AstarNetwork/plonk/tree/master/book), [online](https://astarnetwork.github.io/plonk/) | 
-| 1. | make plonk compatible | <ul><li>[x] </li></ul> | [fork](https://github.com/AstarNetwork/dusk-plonk)
-| 2. | implement zkSNARK plonk pallet | <ul><li>[x] </li></ul> | [repo](https://github.com/AstarNetwork/plonk) | includes example pallet
+| Number | Deliverable                    | Accepted               | Link                                                                                                                     | Evaluation Notes                            |
+| ------ | ------------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------- |
+| 0a.    | License                        | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/AstarNetwork/plonk/blob/master/LICENSE)                                                     | MPL-2.0                                     |
+| 0b.    | Documentation                  | <ul><li>[x] </li></ul> | inline documentation, [rustdocs](https://docs.rs/plonk-pallet/latest/plonk_pallet/)                                      | tutorial already covered by deliverable 0d. |
+| 0c.    | Testing Guide                  | <ul><li>[x] </li></ul> | [tests](https://github.com/AstarNetwork/plonk/blob/master/src/tests.rs)                                                  | Minimal but sufficient unit tests           |
+| 0d.    | Article/Tutorial               | <ul><li>[x] </li></ul> | [Documentation](https://github.com/AstarNetwork/plonk/tree/master/book), [online](https://astarnetwork.github.io/plonk/) |
+| 1.     | make plonk compatible          | <ul><li>[x] </li></ul> | [fork](https://github.com/AstarNetwork/dusk-plonk)                                                                       |
+| 2.     | implement zkSNARK plonk pallet | <ul><li>[x] </li></ul> | [repo](https://github.com/AstarNetwork/plonk)                                                                            | includes example pallet                     |
 
 ## General Notes
 

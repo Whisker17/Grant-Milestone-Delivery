@@ -11,8 +11,8 @@ This is the associated deliverable for milestone 2, an deep dive into the recent
 
 **Deliverables**
 
-| Number | Deliverable                      | Link                                                                | Notes        |
-| ------ | -------------------------------- | ------------------------------------------------------------------- | ------------ |
+| Number | Deliverable     | Link                                             | Notes        |
+| ------ | --------------- | ------------------------------------------------ | ------------ |
 | 2.     | Terra Deep Dive | [Repo](https://github.com/adit313/TerraDeepDive) | Presentation |
 
 **Additional Information**

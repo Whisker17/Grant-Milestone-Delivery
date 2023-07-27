@@ -6,23 +6,23 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul>|  Apache 2.0  |  | |
-| 0b. | Documentation |<ul><li>[x] </li></ul>|  https://decentration.medium.com/, https://wiki.kabocha.network/docs/Supersig/introduction |  |
-| 0c. | Testing Guide |<ul><li>[x] </li></ul>|  https://github.com/decentration/pallet_supersig/tree/polkadot-v0.9.37-fix-unbounded/src/tests |  |
-| 0d. | Article and Video  |<ul><li>[x] </li></ul>|  https://medium.com/@decentration/supersig-statemine-cbe6533233c2, https://www.loom.com/share/ea2fe68f99c44a4b91baaa85828b1745 |  |
-| 1. | Substrate module: pallet_supersig |<ul><li>[x] </li></ul>|   pallet_supersig https://github.com/decentration/pallet_supersig/tree/polkadot-v0.9.37-fix-unbounded |  |
-| 2. | Supersig-app: polkadot-js-ui (fork) |<ul><li>[x] </li></ul>|  https://github.com/decentration/apps | 
-| 3. | Benchmarking |<ul><li>[x] </li></ul>|  https://github.com/decentration/pallet_supersig/blob/master/src/weights.rs  |   | 
+| Number | Deliverable                         | Accepted               | Link                                                                                                                          | Evaluation Notes |
+| ------ | ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------- | --- |
+| 0a.    | License                             | <ul><li>[x] </li></ul> | Apache 2.0                                                                                                                    |                  |     |
+| 0b.    | Documentation                       | <ul><li>[x] </li></ul> | https://decentration.medium.com/, https://wiki.kabocha.network/docs/Supersig/introduction                                     |                  |
+| 0c.    | Testing Guide                       | <ul><li>[x] </li></ul> | https://github.com/decentration/pallet_supersig/tree/polkadot-v0.9.37-fix-unbounded/src/tests                                 |                  |
+| 0d.    | Article and Video                   | <ul><li>[x] </li></ul> | https://medium.com/@decentration/supersig-statemine-cbe6533233c2, https://www.loom.com/share/ea2fe68f99c44a4b91baaa85828b1745 |                  |
+| 1.     | Substrate module: pallet_supersig   | <ul><li>[x] </li></ul> | pallet_supersig https://github.com/decentration/pallet_supersig/tree/polkadot-v0.9.37-fix-unbounded                           |                  |
+| 2.     | Supersig-app: polkadot-js-ui (fork) | <ul><li>[x] </li></ul> | https://github.com/decentration/apps                                                                                          |
+| 3.     | Benchmarking                        | <ul><li>[x] </li></ul> | https://github.com/decentration/pallet_supersig/blob/master/src/weights.rs                                                    |                  |
 
 ## Evaluation V4
 
-The errors reported were fixed or justified. 
+The errors reported were fixed or justified.
 
 ## Evaluation V3
 
-### Testing 
+### Testing
 
 I ran `yarn build` and it finished without problems.
 
@@ -30,7 +30,7 @@ I ran `yarn lint` and got these errors:
 
 ```
 user@localhost:~/Documents/supersig/apps$ yarn lint
-$ polkadot-dev-run-lint 
+$ polkadot-dev-run-lint
 $ yarn polkadot-exec-eslint --fix --resolve-plugins-relative-to /home/user/Documents/supersig/apps/node_modules/@polkadot/dev/scripts --ext .js,.cjs,.mjs,.ts,.tsx /home/user/Documents/supersig/apps
 $ eslint --fix --resolve-plugins-relative-to /home/user/Documents/supersig/apps/node_modules/@polkadot/dev/scripts --ext .js,.cjs,.mjs,.ts,.tsx /home/user/Documents/supersig/apps
 
@@ -223,7 +223,7 @@ May 08 07:36:44.289  INFO cargo_tarpaulin::report: Coverage Results:
 
 The error with adding a member I reported in Evaluation V1 has occurred because the supersig doesn't have enough funds. With a supersig with enough funds, I could add the member without problems.
 
-Could you provide a testing guide for the derivable 2 and explain better about this derivable? 
+Could you provide a testing guide for the derivable 2 and explain better about this derivable?
 
 ## Evaluation V1
 
@@ -269,11 +269,11 @@ I got the error mentioned with `yarn build`:
 FATAL: page-supersig/src/Supersig/Dashboard/Summary.tsx:: line 1:: Invalid header definition::
     // Copyright 2017-2022 @decentration/page-supersig authors & contributors
 page-supersig/src/Supersig/Dashboard/Table.tsx:: line 1:: Invalid header definition::
-    
+
 page-supersig/src/Supersig/Dashboard/index.tsx:: line 1:: Invalid header definition::
-    
+
 page-supersig/src/SupersigDecoder/index.tsx:: line 1:: Invalid header definition::
-    
+
 page-supersig/src/definitions.ts:: line 1:: Invalid header definition::
     // import OverrideRpcDefinition from '@polkadot/types/interfaces/jsonrpc';
 page-supersig/src/util.ts:: line 1:: Invalid header definition::
@@ -281,7 +281,7 @@ page-supersig/src/util.ts:: line 1:: Invalid header definition::
 
 I followed [this guide](https://decentration.medium.com/add-supersig-to-your-chain-789de9356de1) to set up the substrate to test the pallets. I only had one problem with adding members. I created the supersig with Alice (Master) and Bob (Standard) and tried to add Charlie through propose_call, I voted with Alice and Bob, and the vote passed, but Charlie wasn't added. With only Alice in the supersig, I could add Bob or Charlie, but not both in the same propose_call. I didn't have problems with other functions.
 
-Could you provide a testing guide for the derivable 2? 
+Could you provide a testing guide for the derivable 2?
 
 I tried to run the lint but got this error:
 

@@ -5,18 +5,18 @@
 - **Milestone:** 2
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/polketio/polket-node/blob/8053f5a15c27784b7499bee88b8099d28eff8612/LICENSE) |  |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [gitbook](https://polketio.gitbook.io/toearnfun/) | Ok. |
-| 0c. | Testing Guide | <ul><li>[x] </li></ul> | [Rust Unit Test](https://github.com/polketio/polket-node/tree/milestone-02-delivery#testing), [ToEarnFun Demo Guide](https://polketio.gitbook.io/toearnfun/guides/how-to-run-toearnfun-app) | Ok. |
-| 0d. | Docker | <ul><li>[x] </li></ul> | [Dockfile](https://github.com/polketio/polket-node/blob/8053f5a15c27784b7499bee88b8099d28eff8612/Dockerfile), [Run in docker](https://github.com/polketio/polket-node/tree/8053f5a15c27784b7499bee88b8099d28eff8612#run-full-node-on-testnet) | Ok. |
-| 0e. | Article | <ul><li>[x] </li></ul> | [Getting Started](https://polketio.gitbook.io/toearnfun/guide/getting-started) | Ok. |
-| 1. | Substrate module: pallet-buyback | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/polket-node/tree/milestone-02-delivery/pallets/buyback) | Ok. |
-| 2. | Substrate module: pallet-vfe-order | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/polket-node/tree/milestone-02-delivery/pallets/vfe-order) | Ok. |
-| 3. | Flutter app: VFE Buyback Pool | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/toearnfun_flutter_app/tree/milestone-02-delivery) | Ok. |
-| 4. | Flutter app: VFE Market | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/toearnfun_flutter_app/tree/milestone-02-delivery) | Ok. |
-| 5. | Android test release | <ul><li>[x] </li></ul> | [simulated_device.dart](https://github.com/polketio/toearnfun_flutter_app/releases/tag/1.0.0-alpha) | Ok. |
+| Number | Deliverable                        | Accepted               | Link                                                                                                                                                                                                                                          | Evaluation Notes |
+| ------ | ---------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                            | <ul><li>[x] </li></ul> | [LICENSE](https://github.com/polketio/polket-node/blob/8053f5a15c27784b7499bee88b8099d28eff8612/LICENSE)                                                                                                                                      |                  |
+| 0b.    | Documentation                      | <ul><li>[x] </li></ul> | [gitbook](https://polketio.gitbook.io/toearnfun/)                                                                                                                                                                                             | Ok.              |
+| 0c.    | Testing Guide                      | <ul><li>[x] </li></ul> | [Rust Unit Test](https://github.com/polketio/polket-node/tree/milestone-02-delivery#testing), [ToEarnFun Demo Guide](https://polketio.gitbook.io/toearnfun/guides/how-to-run-toearnfun-app)                                                   | Ok.              |
+| 0d.    | Docker                             | <ul><li>[x] </li></ul> | [Dockfile](https://github.com/polketio/polket-node/blob/8053f5a15c27784b7499bee88b8099d28eff8612/Dockerfile), [Run in docker](https://github.com/polketio/polket-node/tree/8053f5a15c27784b7499bee88b8099d28eff8612#run-full-node-on-testnet) | Ok.              |
+| 0e.    | Article                            | <ul><li>[x] </li></ul> | [Getting Started](https://polketio.gitbook.io/toearnfun/guide/getting-started)                                                                                                                                                                | Ok.              |
+| 1.     | Substrate module: pallet-buyback   | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/polket-node/tree/milestone-02-delivery/pallets/buyback)                                                                                                                                        | Ok.              |
+| 2.     | Substrate module: pallet-vfe-order | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/polket-node/tree/milestone-02-delivery/pallets/vfe-order)                                                                                                                                      | Ok.              |
+| 3.     | Flutter app: VFE Buyback Pool      | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/toearnfun_flutter_app/tree/milestone-02-delivery)                                                                                                                                              | Ok.              |
+| 4.     | Flutter app: VFE Market            | <ul><li>[x] </li></ul> | [Source code link](https://github.com/polketio/toearnfun_flutter_app/tree/milestone-02-delivery)                                                                                                                                              | Ok.              |
+| 5.     | Android test release               | <ul><li>[x] </li></ul> | [simulated_device.dart](https://github.com/polketio/toearnfun_flutter_app/releases/tag/1.0.0-alpha)                                                                                                                                           | Ok.              |
 
 # General Notes
 
@@ -40,6 +40,7 @@ I was able to manually use all the functions on Polkadot.js as well.
 ## Tests
 
 All unit tests pass:
+
 ```rust
 running 8 tests
 test mock::__construct_runtime_integrity_test::runtime_integrity_tests ... ok
@@ -274,6 +275,7 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
+
 Many warnings in `cargo clippy`
 
 **UPDATE:** All warnings were resolved.

@@ -6,16 +6,16 @@
 - **Kusama Identity:** Address
 - **Previously successfully merged evaluation:** N/A
 
-| Number | Deliverable | Accepted | Link | Evaluation Notes |
-| ------ | ----------- | -------- | ---- |----------------- |
-| 0a. | License |<ul><li>[x] </li></ul> | [GPLv3](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/web3-grant/LICENSE) |  |
-| 0b. | Documentation |<ul><li>[x] </li></ul> |  - [A high-level Introduction](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/README.md) <br/> - [How to build in `pallet` tech stack](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/web3-grant/README.md) <br/> - [Tutorial of how to use](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/README.md)  |  |
-| 0c. | Testing Guide |<ul><li>[x] </li></ul> | [The test guide for milestone 1](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/test-guide/m1-test-guide.md) |  |
-| 0d. | Article |<ul><li>[x] </li></ul> | [link](https://medium.com/@xiyuzheng1984/omniverse-decentralized-ledger-technology-has-finished-the-first-milestone-66bbcd6546fa) |  |
-| 1. | Substrate module: omniverse assets |<ul><li>[x] </li></ul> | - [pallet for Omniverse FT](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant/pallets/assets) <br/> -[pallet for Omniverse NFT](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant/pallets/uniques) |  |
-| 2. | Substrate module: omniverse protocol |<ul><li>[x] </li></ul> | - [the basic operations](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant/pallets/omni-protocol) |  |  
-| 3. | Substrate chain |<ul><li>[x] </li></ul> | - [parachain itself](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant) |  |
-| 4. | Off-Chain Tools: Operate the o-tokens |<ul><li>[x] </li></ul> | [CLI Client](https://github.com/Omniverse-Web3-Labs/omniverse-swap-tools/tree/web3-grant) |  |
+| Number | Deliverable                           | Accepted               | Link                                                                                                                                                                                                                                                                                                                                                                             | Evaluation Notes |
+| ------ | ------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| 0a.    | License                               | <ul><li>[x] </li></ul> | [GPLv3](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/web3-grant/LICENSE)                                                                                                                                                                                                                                                                                           |                  |
+| 0b.    | Documentation                         | <ul><li>[x] </li></ul> | - [A high-level Introduction](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/README.md) <br/> - [How to build in `pallet` tech stack](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/web3-grant/README.md) <br/> - [Tutorial of how to use](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/README.md) |                  |
+| 0c.    | Testing Guide                         | <ul><li>[x] </li></ul> | [The test guide for milestone 1](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/test-guide/m1-test-guide.md)                                                                                                                                                                                                                                   |                  |
+| 0d.    | Article                               | <ul><li>[x] </li></ul> | [link](https://medium.com/@xiyuzheng1984/omniverse-decentralized-ledger-technology-has-finished-the-first-milestone-66bbcd6546fa)                                                                                                                                                                                                                                                |                  |
+| 1.     | Substrate module: omniverse assets    | <ul><li>[x] </li></ul> | - [pallet for Omniverse FT](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant/pallets/assets) <br/> -[pallet for Omniverse NFT](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant/pallets/uniques)                                                                                                                                       |                  |
+| 2.     | Substrate module: omniverse protocol  | <ul><li>[x] </li></ul> | - [the basic operations](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant/pallets/omni-protocol)                                                                                                                                                                                                                                                            |                  |
+| 3.     | Substrate chain                       | <ul><li>[x] </li></ul> | - [parachain itself](https://github.com/Omniverse-Web3-Labs/omniverse-swap/tree/web3-grant)                                                                                                                                                                                                                                                                                      |                  |
+| 4.     | Off-Chain Tools: Operate the o-tokens | <ul><li>[x] </li></ul> | [CLI Client](https://github.com/Omniverse-Web3-Labs/omniverse-swap-tools/tree/web3-grant)                                                                                                                                                                                                                                                                                        |                  |
 
 ## Evaluation V2
 
@@ -23,21 +23,21 @@
 
 I tested the system as presented in the videos below:
 
-* A full workflow of an [Omniverse Fungible Token named](https://omniversedlt.s3.amazonaws.com/FungibleToken-xyz-TestRecord.mp4) xyz
-* A full workflow of an [Omniverse NFT named](https://omniversedlt.s3.amazonaws.com/NFT-abc-TestRecord.mp4) abc
+- A full workflow of an [Omniverse Fungible Token named](https://omniversedlt.s3.amazonaws.com/FungibleToken-xyz-TestRecord.mp4) xyz
+- A full workflow of an [Omniverse NFT named](https://omniversedlt.s3.amazonaws.com/NFT-abc-TestRecord.mp4) abc
 
-
-The features for FT are working fine. 
+The features for FT are working fine.
 
 In the NFT part, I was able to check the collection in the substrate chain and in OpenSea testnet (Mumbai). I was able to transfer the NFT without problems.
 
-I had one problem with the ownership checking for NFT, which returned: 
+I had one problem with the ownership checking for NFT, which returned:
 
 ```
 $ node index.js -n abc,1
 secp256k1 unavailable, reverting to browser version
 Collection not exist.
 ```
+
 Besides this small problem with the owner checking in the CLI, the application is working fine. I think this problem is not impeditive to approving the evaluation and could be fixed for the next milestone.
 
 ### Code Quality
@@ -76,10 +76,9 @@ warning: `pallet-omniverse-protocol` (lib) generated 3 warnings (run `cargo fix 
 
 ## Evaluation V1
 
-I tried to test this locally following the Testing Guide. The instructions for creating an Omniverse account, creating a token, and deploying the EVM contract are fine. I personally had some difficulty getting the tokens to deploy the contract on Goerlin. Would be nice to have a way to test it locally using Ganache for example or another local EVM testnet. Would be very nice to have automated tests as well. 
+I tried to test this locally following the Testing Guide. The instructions for creating an Omniverse account, creating a token, and deploying the EVM contract are fine. I personally had some difficulty getting the tokens to deploy the contract on Goerlin. Would be nice to have a way to test it locally using Ganache for example or another local EVM testnet. Would be very nice to have automated tests as well.
 
-I noticed [in this part](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/Deployment.md#launch ) the command `npm src/main.js` should be `node src/main.js`. Please put some explanation of how to fill the fields in `.Secrets` file. I needed to guess that the json needed to be in a string escaped format. I used [this site](https://www.freeformatter.com/json-escape.html) to escape the json and put it in the backup. [For using the set members function in the remix](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/Deployment.md#set-members-1) would be nice if was explained that the SUBSTRATE-TOKEN-ID needs to be the hex code of the TokenID.
-
+I noticed [in this part](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/Deployment.md#launch) the command `npm src/main.js` should be `node src/main.js`. Please put some explanation of how to fill the fields in `.Secrets` file. I needed to guess that the json needed to be in a string escaped format. I used [this site](https://www.freeformatter.com/json-escape.html) to escape the json and put it in the backup. [For using the set members function in the remix](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/Deployment.md#set-members-1) would be nice if was explained that the SUBSTRATE-TOKEN-ID needs to be the hex code of the TokenID.
 
 When I tried to run the commands to test the operations, my token FT, which is in the local node, wasn't found, but the skywalker was.
 
@@ -112,8 +111,7 @@ secp256k1 unavailable, reverting to browser version
 
 ![image (16)](https://user-images.githubusercontent.com/112647953/229838133-b6544859-04c1-46cd-aebf-4fcd21a53740.png)
 
-
-I need some balance of the created token to check the other functions. I could not test since mint of the tokens failed. 
+I need some balance of the created token to check the other functions. I could not test since mint of the tokens failed.
 
 If this could help, here are the address of the contract and accounts .
 

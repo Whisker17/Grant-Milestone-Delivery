@@ -14,14 +14,14 @@
 
 ## :mailbox: Milestone Delivery Process
 
-The milestone delivery process is part of the [W3F Grants Program](https://github.com/w3f/Grants-Program). You can find the application process [here](https://grants.web3.foundation/docs/Process/how-to-apply).  
+The milestone delivery process is part of the [W3F Grants Program](https://github.com/w3f/Grants-Program). You can find the application process [here](https://grants.web3.foundation/docs/Process/how-to-apply).
 
 :warning: Before you submit a milestone, make sure it complies with our [Guidelines for Milestone Deliverables](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines).
 
 1. **Milestone Delivery:**
    1. [Fork](https://github.com/w3f/Grant-Milestone-Delivery/fork) this repository with the **same GitHub account** that you used to submit the application (ignore if you applied privately).
    2. In the newly created fork, create a copy of the milestone delivery template ([`deliveries/milestone-delivery-template.md`](deliveries/milestone-delivery-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grant-Milestone-Delivery/master/deliveries/milestone-delivery-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**. In the case of a maintenance application, use the ([`maintenance template`](maintenance_deliveries/maintenance-delivery-template.md)) instead.
-   5. Fill out the template with the details of your milestone, including all deliverables as listed in your application.
+   3. Fill out the template with the details of your milestone, including all deliverables as listed in your application.
    4. Name the file `project_name-milestone_number.md` or in the case of maintenance agreement `project_name-delivery_number.md`
    5. Fill out the [invoice form](https://forms.gle/LSRr7PCjBpEbKGh89).
    6. Create a pull request and fill out the comment template.
@@ -36,8 +36,7 @@ Grant applications can be [amended](https://grants.web3.foundation/docs/Process/
 
 ## :ballot_box_with_check: External Evaluations
 
-As part of the grant program, we allow everyone to participate in the evaluation process of submitted milestones. Successfully merged external evaluations will receive **up to 15 KSM**, depending on the quality and depth of the evaluation. The payout will be sent to their Kusama identity address. *You can evaluate as many deliveries as you like.*
-
+As part of the grant program, we allow everyone to participate in the evaluation process of submitted milestones. Successfully merged external evaluations will receive **up to 15 KSM**, depending on the quality and depth of the evaluation. The payout will be sent to their Kusama identity address. _You can evaluate as many deliveries as you like._
 
 ### Requirements
 
@@ -59,9 +58,9 @@ As part of the grant program, we allow everyone to participate in the evaluation
 
 ### Additional information
 
-| <img src="src/web.png?s=50" width="50"> | <img src="src/twitter.png?s=50" width="50"> | <img src="src/medium.png?s=50" width="50"> | <img src="src/like.png?s=50" width="50"> | <img src="src/reddit.png?s=50" width="50"> | <img src="src/youtube-play.png?s=50" width="50"> |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
+| <img src="src/web.png?s=50" width="50"> |    <img src="src/twitter.png?s=50" width="50">    |   <img src="src/medium.png?s=50" width="50">    |      <img src="src/like.png?s=50" width="50">      |   <img src="src/reddit.png?s=50" width="50">    |            <img src="src/youtube-play.png?s=50" width="50">             |
+| :-------------------------------------: | :-----------------------------------------------: | :---------------------------------------------: | :------------------------------------------------: | :---------------------------------------------: | :---------------------------------------------------------------------: |
+| [W3F Website](https://web3.foundation)  | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
 
 ### Real-time conversation
 

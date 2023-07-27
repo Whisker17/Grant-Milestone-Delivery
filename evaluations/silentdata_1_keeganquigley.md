@@ -5,22 +5,23 @@
 - **Milestone:** 1
 - **Previously successfully merged evaluation:** All by keeganquigley
 
-| Number | Deliverable | Accepted | Link | Notes |
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| 0a.  | License | <ul><li>[x] </li></ul> | [Node.js library](https://github.com/appliedblockchain/silentdata-node-public/blob/main/LICENSE) <br/>[Smart contract](https://github.com/appliedblockchain/silentdata-polkadot-public/blob/main/LICENSE) | Ok. |
-| 0b. | Documentation | <ul><li>[x] </li></ul> | [Silent Data whitepaper](https://www.linkedin.com/smart-links/AQEE0cyaT_nw0g) <br/>[Node.js library](https://github.com/appliedblockchain/silentdata-node/blob/main/README.md) <br/>[Smart contract](https://github.com/appliedblockchain/silentdata-polkadot/blob/main/README.md) | Ok. |
-| 0c.  | Testing Guide | <ul><li>[x] </li></ul> |[Guide](https://docs.google.com/document/d/1B5woRIl_ZNuahx007V6nXmjW3_Ne4aQ4kVFB-I_Bu0M/edit?usp=sharing) | Ok. |
-| 0d.  | Docker | <ul><li>[x] </li></ul> |[Node.js library usage example](https://github.com/appliedblockchain/silentdata-polkadot/blob/main/examples/Dockerfile) <br/>[Silent Data pallet](https://github.com/appliedblockchain/silentdata-polkadot/blob/main/docker/Dockerfile.node) | Ok. |
-| 0e.  | Article | <ul><li>[x] </li></ul> |[Polkadot Foundation Partnership Silent Data](https://www.linkedin.com/pulse/polkadot-foundation-partnership-silent-data-silentdata)| Ok. |
-| 1.  | Library | <ul><li>[x] </li></ul> |[silentdata-node](https://github.com/appliedblockchain/silentdata-node) | Ok. |
-| 2.  | Smart Contract | <ul><li>[x] </li></ul> |[silentdata-polkadot](https://github.com/appliedblockchain/silentdata-polkadot) | Ok. |
-| 3.  | Extension | <ul><li>[x] </li></ul> | | Ok. |
+| Number | Deliverable    | Accepted               | Link                                                                                                                                                                                                                                                                               | Notes |
+| ------ | -------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 0a.    | License        | <ul><li>[x] </li></ul> | [Node.js library](https://github.com/appliedblockchain/silentdata-node-public/blob/main/LICENSE) <br/>[Smart contract](https://github.com/appliedblockchain/silentdata-polkadot-public/blob/main/LICENSE)                                                                          | Ok.   |
+| 0b.    | Documentation  | <ul><li>[x] </li></ul> | [Silent Data whitepaper](https://www.linkedin.com/smart-links/AQEE0cyaT_nw0g) <br/>[Node.js library](https://github.com/appliedblockchain/silentdata-node/blob/main/README.md) <br/>[Smart contract](https://github.com/appliedblockchain/silentdata-polkadot/blob/main/README.md) | Ok.   |
+| 0c.    | Testing Guide  | <ul><li>[x] </li></ul> | [Guide](https://docs.google.com/document/d/1B5woRIl_ZNuahx007V6nXmjW3_Ne4aQ4kVFB-I_Bu0M/edit?usp=sharing)                                                                                                                                                                          | Ok.   |
+| 0d.    | Docker         | <ul><li>[x] </li></ul> | [Node.js library usage example](https://github.com/appliedblockchain/silentdata-polkadot/blob/main/examples/Dockerfile) <br/>[Silent Data pallet](https://github.com/appliedblockchain/silentdata-polkadot/blob/main/docker/Dockerfile.node)                                       | Ok.   |
+| 0e.    | Article        | <ul><li>[x] </li></ul> | [Polkadot Foundation Partnership Silent Data](https://www.linkedin.com/pulse/polkadot-foundation-partnership-silent-data-silentdata)                                                                                                                                               | Ok.   |
+| 1.     | Library        | <ul><li>[x] </li></ul> | [silentdata-node](https://github.com/appliedblockchain/silentdata-node)                                                                                                                                                                                                            | Ok.   |
+| 2.     | Smart Contract | <ul><li>[x] </li></ul> | [silentdata-polkadot](https://github.com/appliedblockchain/silentdata-polkadot)                                                                                                                                                                                                    | Ok.   |
+| 3.     | Extension      | <ul><li>[x] </li></ul> |                                                                                                                                                                                                                                                                                    | Ok.   |
 
 # General Notes
 
 ## Tests
 
 6 tests for the pallet are successful:
+
 ```rust
 running 6 tests
 test tests::__construct_runtime_integrity_test::runtime_integrity_tests ... ok
@@ -38,7 +39,9 @@ running 0 tests
 
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
+
 4 tests run successfully for the smart-contract:
+
 ```rust
 running 4 tests
 test silentdata::tests::decode_works ... ok
@@ -48,7 +51,9 @@ test silentdata::tests::verify_and_decode_works ... ok
 
 test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
+
 Docker image builds successfully for `silentdata-example`:
+
 ```
 docker build -t silentdata-example .
 
@@ -83,13 +88,15 @@ docker build -t silentdata-example .
  => exporting to image                                                                                                0.5s
  => => exporting layers                                                                                               0.5s
  => => writing image sha256:166414d1cac1dc8c830fa4e2cd3f65cbb25aa749f67882a2fc6537af75cb7b5c                          0.0s
- => => naming to docker.io/library/silentdata-example 
- ```
+ => => naming to docker.io/library/silentdata-example
+```
+
 Docker image successfully builds and runs for the pallet as well. I'm also able to manually build the pallet into the node. I'm able to deploy and instantiate the contract on the node and call it.
- 
+
 Instagram checks work in Docker but `npm run build` fails with the following errors:
- ```
- npm run build
+
+```
+npm run build
 
 > examples@1.0.0 build
 > npm run clean && tsc
@@ -101,109 +108,111 @@ Instagram checks work in Docker but `npm run build` fails with the following err
 src/index.ts:1:19 - error TS2307: Cannot find module 'yargs' or its corresponding type declarations.
 
 1 import yargs from 'yargs'
-                    ~~~~~~~
+                   ~~~~~~~
 
 src/index.ts:4:20 - error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
 
 4 const argv = yargs(process.argv.slice(2))
-                     ~~~~~~~
+                    ~~~~~~~
 
 src/index.ts:29:3 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 29   console.log(`An error occurred: ${error.message}`)
-     ~~~~~~~
+    ~~~~~~~
 
 src/lib.ts:1:68 - error TS2307: Cannot find module '@appliedblockchain/silentdata-node' or its corresponding type declarations.
 
 1 import { silentdata, Silentdata, CheckType, CheckBlockchain } from '@appliedblockchain/silentdata-node'
-                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 src/lib.ts:13:3 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 13   console.log(check.data)
-     ~~~~~~~
+    ~~~~~~~
 
 src/util.ts:1:62 - error TS2307: Cannot find module '@appliedblockchain/silentdata-node' or its corresponding type declarations.
 
 1 import { CheckResource, InstagramCheckCertificateData } from '@appliedblockchain/silentdata-node'
-                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 src/util.ts:2:23 - error TS2307: Cannot find module 'secp256k1' or its corresponding type declarations.
 
 2 import secp256k1 from 'secp256k1'
-                        ~~~~~~~~~~~
+                       ~~~~~~~~~~~
 
 src/util.ts:3:20 - error TS2307: Cannot find module 'keccak' or its corresponding type declarations.
 
 3 import create from 'keccak'
-                     ~~~~~~~~
+                    ~~~~~~~~
 
 src/util.ts:35:21 - error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
 
 35   const signature = Buffer.from(signatureHex, 'hex')
-                       ~~~~~~
+                      ~~~~~~
 
 src/util.ts:36:19 - error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
 
 36   const message = Buffer.from(messageHex, 'hex')
-                     ~~~~~~
+                    ~~~~~~
 
 src/util.ts:39:22 - error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
 
 39   const signingKey = Buffer.from(signingKeyHex, 'hex')
-                        ~~~~~~
+                       ~~~~~~
 
 src/util.ts:42:9 - error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
 
 42     if (Buffer.compare(signingKey, Buffer.from(recoveredKey)) === 0) {
-           ~~~~~~
+          ~~~~~~
 
 src/util.ts:42:36 - error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
 
 42     if (Buffer.compare(signingKey, Buffer.from(recoveredKey)) === 0) {
-                                      ~~~~~~
+                                     ~~~~~~
 
 src/util.ts:50:3 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 50   console.log('Proof certificate:')
-     ~~~~~~~
+    ~~~~~~~
 
 src/util.ts:51:3 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 51   console.log(parseCertificateData(check))
-     ~~~~~~~
+    ~~~~~~~
 
 src/util.ts:52:3 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 52   console.log('Proof verification:')
-     ~~~~~~~
+    ~~~~~~~
 
 src/util.ts:53:37 - error TS2550: Property 'entries' does not exist on type 'ObjectConstructor'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2017' or later.
 
 53   for (const [key, value] of Object.entries(check.data)) {
-                                       ~~~~~~~
+                                      ~~~~~~~
 
 src/util.ts:55:7 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 55       console.log(key + ' = ' + addRecoveryId(value, check.data.rawData, check.data.signingKey))
-         ~~~~~~~
+        ~~~~~~~
 
 src/util.ts:57:7 - error TS2584: Cannot find name 'console'. Do you need to change your target library? Try changing the 'lib' compiler option to include 'dom'.
 
 57       console.log(key + ' = ' + value)
-         ~~~~~~~
+        ~~~~~~~
 
 
 Found 19 errors in 3 files.
 
 Errors  Files
-     3  src/index.ts:1
-     2  src/lib.ts:1
-    14  src/util.ts:1
+    3  src/index.ts:1
+    2  src/lib.ts:1
+   14  src/util.ts:1
 ```
+
 **UPDATE:** Build issues were resolved.
 
 In the `silentdata-node` repo, yarn is unsuccessful in installing the dependancies:
+
 ```
 ubuntu@ip-172-31-3-233:~$ yarn add @appliedblockchain/silentdata-node
 yarn add v1.22.19
@@ -239,11 +248,13 @@ Done in 5.18s.
 info There appears to be trouble with the npm registry (returned undefined). Retrying...
 info There appears to be trouble with the npm registry (returned undefined). Retrying...
 ```
- **UPDATE:** Repo doesn't apply.
- 
+
+**UPDATE:** Repo doesn't apply.
+
 ## Guide
 
 I'm able to get through the guide and register and create an API key. Building the Docker file works, but then for some reason the command fails:
+
 ```
 docker run silentdata-example \
 --clientId={8eb12c0d-5352-4bcb-b5da-d02c3dd61ea1} \
@@ -252,4 +263,5 @@ docker run silentdata-example \
 --walletAddress={WALLET_ADDRESS}
 An error occurred: Client ID or API key incorrect
 ```
+
 Instagram check works.
