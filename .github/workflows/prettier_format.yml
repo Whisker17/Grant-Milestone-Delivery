@@ -12,22 +12,55 @@ jobs:
     steps:
       - name: Check Out Repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Install Prettier
         run: npm install prettier --global
 
-      - name: Format Files
+      - name: Check Commit History
+        run: git log --oneline
+      
+      - name: Check Current Branch
+        run: git rev-parse --abbrev-ref HEAD
+      
+      - name: Get Previous Commit
+        id: previous-commit
         run: |
-          prettier --write .
+          previous_commit=$(git log --skip 1 -n 1 --pretty=format:"%H")
+          echo "PREVIOUS_COMMIT=$previous_commit" >> $GITHUB_ENV
 
+      - name: Get Modified Files
+        id: modified-files
+        run: |
+          previous_commit=${{ env.PREVIOUS_COMMIT }}
+          modified_files=$(git diff --name-only $previous_commit ${{ github.sha }})
+          echo "$modified_files" > modified_files.txt
+
+      - name: Set Modified Files Environment Variable
+        run: |
+          modified_files_encoded=$(base64 modified_files.txt)
+          echo "MODIFIED_FILES=$modified_files_encoded" >> $GITHUB_ENV
+        
+      - name: Encode Modified Files
+        id: encode-modified-files
+        run: |
+          modified_files_encoded=$(base64 modified_files.txt)
+          echo "MODIFIED_FILES=$modified_files_encoded" >> $GITHUB_ENV
+      
+      - name: Format Modified Files
+        run: |
+          modified_files_encoded="${{ env.MODIFIED_FILES }}"
+          echo "$modified_files_encoded" | base64 --decode > modified_files.txt
+          prettier --write --parser [file-type] $(cat modified_files.txt)
+  
       - name: Commit Changes
         run: |
           git config --global user.name "Whisker17"
           git config --global user.email "demiwhisker@gmail.com"
-          git add .
-          git commit -m "Auto-format code with Prettier [skip ci]"
+          git commit -m "Auto-format code with Prettier [skip ci]" --amend --no-edit
 
       - name: Push Changes
         run: |
           branch_name=${{ github.ref }}
-          git push origin $branch_name
+          git push origin $branch_name --force-with-lease
