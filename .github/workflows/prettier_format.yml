@@ -1,0 +1,23 @@
+name: Prettier Auto-Format
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repository
+        uses: actions/checkout@v2
+
+      - name: Install Prettier
+        run: npm install prettier --global
+
+      - name: Display Prettier Version
+        run: prettier --version
+
+      - name: Run Prettier Auto-Format
+        run: prettier --write .

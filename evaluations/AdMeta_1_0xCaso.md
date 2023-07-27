@@ -1,5 +1,6 @@
 # Evaluation
 
+
 - **Status:** Accepted
 - **Application Document:** https://github.com/w3f/Grants-Program/blob/master/applications/AdMeta.md
 - **Milestone:** 1
@@ -20,6 +21,7 @@
 <br/>
 
 ## General Notes v2 - Jan 11, 2023
+
 The Testing Guide has been updated, it's findable in the WebApp [README](https://github.com/AdMetaNetwork/admeta-webapp/blob/bb74d090d815bb9af5cfb9314968672bffa54ffa/README.md).
 
 ## General Notes v1 - Jan 9, 2023
